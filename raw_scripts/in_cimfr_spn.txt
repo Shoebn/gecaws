@@ -1,0 +1,64 @@
+scrscript_name : in_cimfr_spn
+
+url : "https://cimfr.nic.in/tenders.html"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "File" field has "File" keyworded documents appears then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+dcoument_type_description : "Tenders"
+
+notice_no : Tender No. , split the data after "Bid No."
+
+local_title : 	Tender Details
+
+publish_date : Tender No.,  split the data below "Bid No."
+
+document_opening_time : Opening Date	
+
+notice_deadline : Closing Date	
+
+est_amount / grossbudgetlc : Estimated Cost	
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://cimfr.nic.in/tenders.html
+
+
+attachments
+-----------
+
+file_name : "File"
+
+external_url : download from "File" field
+
+
+customer_details 
+----------------
+
+org_name : "CENTRAL INSTITUTE OF MINING AND FUEL RESEARCH"
+
+org_parent_id : 7558169
+
+org_Country : IN
+
+org_language : EN
+
+
+
+
+
+
+
+	

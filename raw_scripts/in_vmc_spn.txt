@@ -1,0 +1,60 @@
+script_name : in_vmc_spn
+
+originalUrl / main_url / : "https://vmc.gov.in/TenderDetails.aspx"
+
+page_no : 5
+
+countryNames / performance_country : IN
+
+notice_type : 4 
+
+currency: INR
+
+languageCode / org_language / main_language :  EN
+
+procurment_emthod : 2
+
+org_name : "VADODARA MUNICIPAL CORPORATION" static
+
+org_address: Department
+
+org_city : "vadodara" static
+
+org_state : "gujrat" static
+
+org_parent_id : 7522077
+
+notice_url : https://vmc.gov.in/TenderDetails.aspx
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+notice_no : Tender P.R.O No.
+
+local_title : Tender Details , take texual data
+
+publish_date :  Tender Details >>  Tender Upload Date :   	
+
+document_purchase_start_date , Issue Start Date	
+
+document_purchase_end_date , Tender End Date	
+
+notice_deadline : Last Date of Receipt	
+
+document_type_description : "Download Tender Forms"  static
+
+attachments:
+-------------------
+
+file_name :  "Tender Details" static
+
+file_type : Tender Details
+
+external_url :   Tender Details , take from "Tender Details" field
+
+-----------------------------------------------------------------------------------
+
+file_name  : "Download Tenders Form" statice
+
+file_type : Download Tenders Form
+
+external_url : Download Tenders Form , take from "Download Tenders Form	" field

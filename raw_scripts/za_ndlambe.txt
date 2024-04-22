@@ -1,0 +1,117 @@
+
+
+-----------------------------------------------------------------------------spn--------------------------------------------------------------------------------------------------------------------
+
+
+script_name : za_ndlambe_spn
+
+url : "https://ndlambe.gov.za/web/current-invitations-to-bid/"
+
+page_no : 3 , cmt : only one page available 
+
+main_language : EN
+
+performacne_country : za
+
+notice_type : 4 , cmt : if the local_title has "Cancellation Notice" word then take notice_type = 16 , also if the document file_name has  "ADDENDUM" word take noptice_type = 16
+
+procurment_method : 2
+
+currency : ZAR
+
+---------------------------------------------------------
+
+tender_html_page
+------------------
+
+document_type_description : "Current Invitations to Bid"
+
+notice_no , Bid. No , cmt : split only no for ex."14/ 2024"
+
+
+local_title , Bid , cmt : take only local_title for ex."Tender notice 33 2024 APPOINTMENT OF CONSULTANTS FOR PROFFESSIONAL SERVICE FOR STORWATER DESIGN IN BATHURST" here take only "APPOINTMENT OF 			  CONSULTANTS FOR PROFFESSIONAL SERVICE FOR STORWATER DESIGN IN BATHURST"
+
+publish_date , cmt : take publish_date as a threshold date 
+
+document_opening_time , Opening Date	
+
+notice_deadline , Closing Date	
+
+org_parent_id : 7559363
+
+org_name : Ndlambe Municipality 
+
+org_country : za
+
+org_language : EN
+
+org_phone : +27 (46) 604 5500
+
+org_email : "info@ndlambe.gov.za"
+
+notice_url : https://ndlambe.gov.za/web/current-invitations-to-bid/
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+file_name , cmt : take only file_name for ex."NOTICE NO 14 2024 TENDER BID DOCUMENT SALE VACANT RESIDENTIAL ERVEN – 576 KB" here take only "NOTICE NO 14 2024 TENDER BID DOCUMENT SALE VACANT RESIDENTIAL ERVEN"
+
+file_type , cmt : take only file_name for ex."NOTICE NO 14 2024 TENDER BID DOCUMENT SALE VACANT RESIDENTIAL ERVEN – 576 KB" here take only "576 KB"
+
+external_url , take hyperlink of "file_name"
+
+
+--------------------------------------------------------------------contract_award----------------------------------------------------------------------------------------------------------------
+
+
+script_name : za_ndlambe_ca
+
+url : "https://ndlambe.gov.za/web/bid_awards/"
+
+page_no : 3 , cmt : only one page available 
+
+main_language : EN
+
+performacne_country : za
+
+notice_type : 7
+
+procurment_method : 2
+
+currency : ZAR
+
+document_type_description : Bid Awards
+
+org_parent_id : 7559363
+
+org_name : Ndlambe Municipality 
+
+org_country : za
+
+org_language : EN
+
+org_phone : +27 (46) 604 5500
+
+org_email : "info@ndlambe.gov.za"
+
+
+notice_url : https://ndlambe.gov.za/web/bid_awards/
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+lot_title == local_title 
+
+
+tender_html_page
+---------------------	
+
+notice_no , Tender Nr.	
+
+local_title , Tender Description
+	
+bidder_name , Successful Bidder
+	
+publish_date , Award Date
+
+award_date , Award Date
+
+

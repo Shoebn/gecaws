@@ -1,0 +1,61 @@
+
+36257
+script_name : in_upcl_spn
+
+url : "https://www.upcl.org/tender-notices/"
+
+page_no : 10
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the local_tile ("Description") have keyword "Corrigendum" then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Tender & EOI’s"
+
+notice_no : Ref No
+	
+local_title : Description
+
+publish_date : Date
+	
+notice_deadline :take threshold 
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://www.upcl.org/tender-notices/
+
+
+customer_details
+----------------
+
+org_parent_id : 7522238
+
+org_name :  UTTARAKHAND POWER CORPORATION LIMITED (UPCL)
+
+org_address : Department
+
+org_state : Uttrakhand
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : Document Name
+
+external_url : Download Pdf
+
+
+

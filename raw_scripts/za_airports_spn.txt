@@ -1,0 +1,30 @@
+
+
+after opening the main_url click on "Current Tenders" to grab data.
+
+
+
+script_name			za_airports_spn 
+notice_type			4		
+procurement_method	2
+urls				"https://www.airports.co.za/business/tender-bulletin/current-and-future-tenders#"
+   
+page_no					3
+performance_country		ZA
+currancy				ZAR
+main_language			EN
+org_Name          		'Airports Company South Africa'     
+org_parent_id 			'7524024' 
+org_country				ZA
+org_language			EN
+
+				***********************************************************************
+
+Grab below data from tender_html_element.
+
+org_address:Airport	
+category:TCategory
+local_title:Description
+notice_deadline:Closing Date
+attachments:Name
+attachments:Additional Documents

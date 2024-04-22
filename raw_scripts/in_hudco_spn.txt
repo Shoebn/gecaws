@@ -1,0 +1,73 @@
+######################################################################################################################################################
+script_name:in_hudco_spn
+
+urls: "https://hudco.org.in/TenderHome.aspx"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name:Housing And Urban Development Corporation Limited
+
+org_parent_id: 6293380
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- CURRENT TENDERS	
+
+org_city --- LOCATION
+
+publish_date --- OPENING	
+
+notice_deadline --- CLOSING
+
+notice_url --- CURRENT TENDERS	>>> clcik on "CURRENT TENDERS" for page_detail data and take href as notice_url 
+
+notice_text --- page_detail
+ #Note - take HTML body of main page	
+
+*****************************************************************************
+                                 #page_detail
+*****************************************************************************
+notice_no --- Tender ID:	
+
+est_amount / grossbudget_lc --- Estimated Tender Value:	
+
+earnest_money_deposit --- EMD :	
+
+contact_person --- Contact Details:	
+
+org_phone --- Contact Number:	
+
+org_email --- Email
+
+org_address --- Deposit Address:	
+
+loacl_description / notice_summary_english --- Work Description:
+
+document_purchase_end_time --- Last Date for Document Collection:	
+
+document_cost --- Document Fee:	
+
+document_opening_time --- Technical Bid Opening Date/Time:	
+
+
+
+
+#attachment >>>> Tender Documents >>> FILE NAME	,DOWNLOAD
+
+external_url --- "DOWNLOAD" >>> (click on the href for documents File)	
+
+file_name --- FILE NAME		
+
+file_type --- (extension)... eg - pdf	

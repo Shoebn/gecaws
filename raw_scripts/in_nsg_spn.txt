@@ -1,0 +1,56 @@
+Note : Go to URL : "https://www.nsg.gov.in/tender/current-tenders"
+
+script_name : "in_nsg_spn"	
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4		Com : If in "Amendments" this field have data than take in notice_type 16
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+local_title	: Title
+
+notice_no	: Tender No.
+
+publish_date	:  Date of Release
+
+notice_deadline	: End Date
+
+est_amount / grossbudgetlc	: Est.Cost(Rs.)
+
+org_name	: 'NATIONAL SECURITY GUARD (NSG)'
+
+org_parent_id	: '7248624'
+
+org_address		: 'HQ NSG, MEHRAMNAGAR, PALAM, NEW DELHI-110037' pass static
+
+org_phone	: '011-2089-2405' pass static
+
+notice_url	: If in "Amendments" this field data present than take notice_url is "Amendments >> Details" ..But If data is not present than take notice_url is main url
+
+notice_text	: Take all the data from page_detail as well the "tender_html_element" of each record
+			
+-------------------------------------------------------------------------------------------------
+attachments format 1
+
+attachments		: 'Tender Document' pass static
+
+file_size	: Downloads/Details
+
+external_url	: Downloads/Details
+-------------------------------------------------------------------------------------------------
+attachments format 2			[page_detail]		Com:Click on "Details" this keyword	in "Amendments" this field than grab the data			Ref_notice_no:"36/CS/2023-24/NSG/2ndCall"
+
+attachments		: 'Tender Document' pass static
+
+file_size	: Amendments >> Downloads
+
+external_url	: Amendments >> Downloads

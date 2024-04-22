@@ -1,0 +1,48 @@
+script_name : in_cag_spn
+
+url : "https://cag.gov.in/en/tenders"
+
+page_no : 5 
+
+main_language : EN
+
+performacne_country : IN
+
+notice_type : 4 , if the main title has "cancellation" keyword appears then take notice_type = 16
+
+procurment_method : 2
+
+currency : INR
+
+document_type_description : "Tenders And Contracts"
+-----------------------------------------------------------------------
+
+local_title :  split the above data from "Date of Issue" field
+
+Date of Issue : publish_date 
+
+notice_deadline : Last Submission  take time too
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+notice_url : https://cag.gov.in/en/tenders
+
+
+attachments
+-----------
+file_name : "tender documents"
+
+file_size : take the size after following keyword "PDF"
+
+external_url : click on attachments size , for ex. click on "PDF"  
+
+
+customer_details
+----------------
+org_name : "COMPTROLLER AND AUDITOR GENERAL OF INDIA"
+
+org_parent_id : 7703511
+
+org_country : IN
+
+org_language : EN

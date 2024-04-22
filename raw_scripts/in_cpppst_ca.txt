@@ -1,0 +1,57 @@
+Note:Fill the captcha in detail_page to get data
+
+script_name			in_cpppst_ca                       urls:"https://eprocure.gov.in/cppp/resultoftendersnew/mmpdata/byYzJWc1pXTjBBMTNoMUExM2gxQTEzaDFBMTNoMU1qQXlNZz09QTEzaDFNUT09"
+page_no				tender_html_element 	//*[@id="table"]/tbody/tr		5
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			7
+
+local_title : tender_html_element > Title/Ref.No./Tender Id
+
+notice_url : tender_html_element > Title/Ref.No./Tender Id
+
+notice_text : page_detail         Note:Take "tender_html_element" data also
+
+notice_no : page_detail > Tender Ref. No.
+
+local_description : page_Detail > Tender Description	
+
+notice_summary_english : page_Detail > Tender Description
+	
+additional_tender_url : page_Detail > Tender Document
+
+notice_contract_type : page_detail > Tender Type	Note:Repleace following keywords with given keywords("Works=Works")
+
+publish_date : page_detail > Published Date		Note:Grab time also
+
+customer_detail[] : page_detail
+	org_name : page_detail > Organisation Name
+	org_state : tender_html_element > State Name
+	org_country :  IN
+	org_language : EN
+	
+
+lot_detail[] : tender_html_element
+	lot_title : tender_html_element > Title/Ref.No./Tender Id
+
+award_detail[] : tender_thml_element
+	award_date :tender_html_element	> AOC Date		Note:Grab time also
+	bidder_name : page_detail > Name of the selected bidder(s)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

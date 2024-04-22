@@ -1,0 +1,64 @@
+Note : Go to URL :"https://purcosa.co.za/tenders"
+
+script_name :'za_purcosa_spn'
+page_no :3
+main_language:'EN'
+org_language:'EN'
+countryNames / performance_country:'ZA'
+estimatedAmountCurrency / Currency :'ZAR'
+procurementMethod / procurement_Method:2
+noticeType / contract_type:4
+
+
+
+id / Notice no:Number	(tender_html_element)    cmt:also split from notice_url.
+publishDate:threshold
+externalId / buyer internal id / org_parent_id:'7030962'
+languageCode / org_language / main_language:'EN'
+title/ local_title :Title	(tender_html_element)
+noticeSummary / local_description / notice_summery_english:null
+buyerName / org_name:'PURCHASING CONSORTIUM SOUTHERN AFRICA NPC'
+contact.firstName / contact person :Contact >> Submit enquiries to	(page_details)		cmt:ref_url:"https://purcosa.co.za/tender/12432"	grab all the names.grab up to "-"
+contact.lastName  :  null
+contact.address / org_address:For	(tender_html_element)
+contact.address2 title:null
+contact.city / org_city:null
+contact.state / org_state:null
+contact.country:ZA
+contact.email / org_email:Contact >> Submit enquiries to	(page_details)		cmt:ref_url:"https://purcosa.co.za/tender/12432"	grab after "/"
+contact.phone / org_phone:Contact >> Submit enquiries to	(page_details)		cmt:ref_url:"https://purcosa.co.za/tender/12432"	grab between "-" and "/"
+contact.url / org_url:null
+eligibilityCriteria/ eligibility:null
+projectName / project_Name:null
+fundingAgency / funding_Agency:null
+Source of Funds - :null
+bidDeadline  / Notice_deadline / submission_deadline:Registration / purchase deadline	(tender_html_element)
+document_purchase_start_time:null
+document_purchase_end_time: Registration / purchase deadline	(tender_html_element)
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	=:null
+contractDuration /contract_Duration:null
+lotsInfo:null
+documentCost / document_cost / document_fee:Payment >> Fee payable to PURCO SA		(page_details)
+noticeContractType / Contract_Type:null
+
+Attachments / Documents:Download advertisement/supporting documents		(page_details)			cmt:ref_url:"https://purcosa.co.za/tender/12354"
+External URL  :Download advertisement/supporting documents		(page_details)			cmt:ref_url:"https://purcosa.co.za/tender/12354"
+
+CPVNames /class_at_source:null
+CPVCodes:null
+Name of Product Category of the sources /Category:Categories	cmt:za_purcosa_spn_procedure.csv
+class_title_at_source:null
+
+notice_url :Title	(tender_html_element)		cmt:click on hyperlink.
+Corrosponsing Codes:null
+originalUrl / main_url / :"https://purcosa.co.za/tenders"
+additional_url :null
+noticeText / html_body / Notice_text:		cmt:take all the "tender_html_element" Row wisedata in Notice Text.Also in page_details grab the data from following tabs-1)Description 2)Delivery 3)Payment 4)Contact
+contractAward.companyName  / bidder_name:null
+contractAward.companyAddress / bidder_address:null
+contractAward.companyCountry / bidder_Country:null
+contractAward.contractDuration / contract_Duration:null
+contractAward.initialEstimatedValue:null
+contractAward.finalValue   / award_Value:null
+contractAward.currency:null
+contractAward.awardDate / award_date:null

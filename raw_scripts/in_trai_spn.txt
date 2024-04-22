@@ -1,0 +1,54 @@
+
+######################################################################################################################################################
+
+script_name: in_trai_spn		
+           
+urls:"https://www.trai.gov.in/notifications/tenders"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: Telecom Regulatory Authority of India	
+
+org_parent_id: 7571146
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Title	
+
+publish_date --- Date of Release	
+
+notice_deadline --- Last Date 
+
+document_type_description --- (static) Tenders
+
+notice_url --- https://www.trai.gov.in/notifications/tenders
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment
+
+click on  "Download/Details" for attachments
+
+external_url --- Download/Details (click on the href for documents File)	
+
+file_name --- Download/Details
+
+file_size --- Download/Details	(537.19 KB)
+
+file_type --- (extension)... eg - pdf	
+

@@ -1,0 +1,59 @@
+
+######################################################################################################################################################
+script_name: in_jaipurmc_spn
+
+urls: "http://jaipurmc.org/Presentation/Others/JTender.aspx"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name ---Jaipur Nagar Nigam 
+
+org_parent_id -- 7722342
+	
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+notice_no --- NIT No.	
+
+related_tender_id --- Tender-ID	
+
+org_address --- Issue Authority
+
+local_title --- Subject	
+
+publish_date --- Subm. Start Date & Time
+
+notice_deadline --- Opening Date & Time
+
+document_opening_time --- Subm. End Date & Time
+
+notice_url --- http://jaipurmc.org/Presentation/Others/JTender.aspx
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page- 
+
+
+
+
+#attachment >>>> click on the Documents >>> NIT	+ Tender
+	
+external_url --- " Documents >>> NIT + Tender" (click on the href for documents File, ZIP)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf
+
+
+
+

@@ -1,0 +1,56 @@
+script_name :  in_osmcl_spn
+
+url : "https://osmcl.nic.in/?q=tender-quotations"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4  , if the "Title" field has "extension" or "corrigendum" keyword appears then take notice_type= 16
+
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Tenders/Quotations"
+
+local_title :  	Title
+
+notice_no : Title >>  Bid Ref. No , split the data between " Bid Ref. No." and "dtd." 
+
+publish_date : 	Start date , take time too		
+
+notice_deadline : End Date , take time too		
+		
+notice_text :  take the data from  tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://osmcl.nic.in/?q=tender-quotations
+
+
+attachments
+--------------
+
+file_name :  "Download" 
+
+external_url : take from download field
+
+
+-----------------
+customer_details
+----------------
+org_parent_id : 7554307
+
+org_name : "ODISHA STATE MEDICAL CORPORATION LTD"
+
+org_country : IN
+
+org_language : EN
+
+org_state : odisha

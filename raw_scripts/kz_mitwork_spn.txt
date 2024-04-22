@@ -1,0 +1,56 @@
+Note : Go to URL : "https://eep.mitwork.kz/ru/publics/buys" 
+
+script_name : "kz_mitwork_spn"				
+
+page_no : 3
+
+main_language/ org_language  : 'RU'
+
+performance_country / org_country	: 'KZ'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'KZT'
+
+=================================================================================================================================================
+notice_no		: Номер
+
+local_title		: Наименование закупки
+
+est_amount/ netbudgetlc		:Сумма закупки, тенге (без НДС)
+
+publish_date		: Дата начала приема заявок			Com:Grab time also
+
+notice_deadline		: Дата окончания приема заявок		Com:Grab time also
+
+notice_url			: Наименование закупки				
+
+notice_text			: Take all the data from page_detail as well the "tender_html_element" of each record			Com:Click on "Наименование закупки" and "Организатор" grab both data		Com:Click on "Наименование закупки >> Лоты в объявлении >> Наименование" this hyperlink data also grab in notice_text 
+
+------------------------------------------------- [page_detail] ---------------------------------------------------------------------------------
+
+org_name		: Наименование закупки >> Организатор			   Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data
+
+org_address		: Организатор >> Адрес		      Com:Click on "Организатор" this field hyperlink in tender_html_element page than grab the data
+
+org_phone		: Организатор >> Телефон		  Com:Click on "Организатор" this field hyperlink in tender_html_element page than grab the data
+
+org_fax			: Организатор >> Факс			  Com:Click on "Организатор" this field hyperlink in tender_html_element page than grab the data
+
+attachments		: Наименование закупки >> Документы >> Наименование документа		   Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data			Ref_url:"https://eep.mitwork.kz/ru/publics/buy/120902"
+
+file_size		: Наименование закупки >> Документы >> Размер			   Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data
+
+external_url	: Наименование закупки >> Документы >> 	Уникальный хэш			      Com:Click on right site of "	Уникальный хэш" this field
+
+notice_contract_type / contract_type_actual	:Тип закупки   		Com:Replace follwing keywords with given keywords ("Закупка услуг=Service","Закупка товаров=Supply","Закупка работ=Works")			Ref_url:"https://eep.mitwork.kz/ru/publics/buy/120957"
+
+lot_actual_number	: Наименование закупки >> Лоты в объявлении >> Номер			Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data			Ref_url:"https://eep.mitwork.kz/ru/publics/buy/120959"
+
+lot_title		: Наименование закупки >> Лоты в объявлении >> Наименование			Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data
+
+lot_description		: Наименование закупки >> Лоты в объявлении >> Описание			Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data
+
+lot_grossbudget_lc		: Наименование закупки >> Лоты в объявлении >> Общая сумма, без НДС				Com:Click on "Наименование закупки" this field hyperlink in hender_html_element page than grab the data

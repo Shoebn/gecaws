@@ -1,0 +1,192 @@
+
+*********************************************************************vn_pvgas_spn******************************************************
+script_name='vn_pvgas_spn'
+urls="https://tender.pvgas.com.vn/#/tender/package?_k=3ee253"
+page_no=5
+performance_country='VN'
+main_language='VI'   
+notice_type=4
+org_language='VI'
+org_country='VN'
+document_type_description='BIDDING NOTICES'
+
+
+Grab below data from tender_html_element.
+local_title=Thời gian phát hành: 			cmt:grab the title before the given field.don't grab notice_no.
+notice_no=Thời gian phát hành: 				cmt:split notice_no from local_title.Here "Cung cấp vật tư phục vụ BDSC theo YCMS số 13-XĐX/2024 (Mã: DVK24-033)" grab "DVK24-033" this number in notice_no.
+document_purchase_start_time=Thời gian phát hành: 			cmt:before "đến" keyword grab the date in document_purchase_start_time.
+document_purchase_end_time=Thời gian phát hành: 			cmt:after "đến" keyword grab the date in document_purchase_end_time.
+org_name=Bên mời thầu:
+
+
+
+notice_url=click on local_title.
+notice_text=arb all the page_details_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+
+
+Grab below data from page_details.
+category=Chi tiết >> Danh mục hàng hoá, dịch vụ						cmt:vn_pvgas_category.csv
+source_of_funds=Chi tiết >> Nguồn vốn
+procurement_method=Chi tiết >> Hình thức lựa chọn nhà thầu			cmt:(Đấu thầu rộng rãi trong nước=0,Đấu thầu rộng rãi quốc tế=1) otherwise pass 2.
+document_opening_time=Chi tiết >> Thời điểm mở thầu
+doeument_fee=Chi tiết >> Giá bán 01 bộ HSMT/HSYC
+earnest_money_deposite=Chi tiết >> Bảo đảm dự thầu
+currancy=Chi tiết >> Bảo đảm dự thầu								cmt:grab currency name after the amount.If not present then pass 'VND' as static.
+contract_duration=Chi tiết >> Thời gian thực hiện hợp đồng
+notice_deadline=Chi tiết >> Thời điểm đóng thầu
+publish_date=Chi tiết >> Thời gian đăng tải
+
+notice_summary_english=Mô tả tóm tắt về nội dung gói thầu
+local_description=Mô tả tóm tắt về nội dung gói thầu
+
+contact_person=Địa điểm phát hành >> Người liên hệ
+org_phone=Địa điểm phát hành >> Số điện thoại
+org_email=Địa điểm phát hành >> Email
+org_address=Địa điểm phát hành >> Địa chỉ
+
+
+
+identifier=notice_no+local_title
+
+
+*********************************************************************vn_pvgas_ca******************************************************
+script_name='vn_pvgas_ca'
+urls="https://tender.pvgas.com.vn/#/tender/result?_k=yu36qy"
+page_no=3
+performance_country='VN'
+main_language='VI'   
+notice_type=7
+org_language='VI'
+org_country='VN'
+document_type_description='RESULT SELECTION OF CONTRACTORS'
+
+
+Grab below data from tender_html_element.
+local_title=Đơn vị trúng thầu:			cmt:grab title above from given field.don't grab "(ID: DVK24-011)" this number.
+related_tender_id=						cmt:split from local_title.Here "Cung cấp vật tư phục vụ BDSC theo YCMS số 04-ĐCM/2024 (ID: DVK24-017)" grab this "DVK24-017" number only.
+bidder_name=Đơn vị trúng thầu:
+contractAward.contractDuration / contract_Duration=Thời gian thực hiện hợp đông:
+grossawardvaluelc=Giá trúng thầu: 		cmt:grab only amount.
+currancy=Giá trúng thầu: 				cmt:grab currency name after the amount.
+publish_date=Thời gian đăng: 
+
+
+notice_url=click on local_title.
+notice_text=grab all the page_details,page_details1 data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+			page_details1 click is present in page_details.(Chi tiết >> Gói thầu).
+
+Grab below data from page_details.
+org_name=Bên mời thầu
+category=Danh mục hàng hoá, dịch vụ			cmt:vn_pvgas_category.csv
+
+
+
+Grab below data from page_details1.page_details1 click is present in page_details.(Chi tiết >> Gói thầu).
+source_of_funds=Chi tiết >> Nguồn vốn
+procurement_method=Chi tiết >> Hình thức lựa chọn nhà thầu			cmt:(Đấu thầu rộng rãi trong nước=0,Đấu thầu rộng rãi quốc tế=1) otherwise pass 2.
+document_opening_time=Chi tiết >> Thời điểm mở thầu
+doeument_fee=Chi tiết >> Giá bán 01 bộ HSMT/HSYC
+earnest_money_deposite=Chi tiết >> Bảo đảm dự thầu
+contract_duration=Chi tiết >> Thời gian thực hiện hợp đồng
+
+notice_summary_english=Mô tả tóm tắt về nội dung gói thầu
+local_description=Mô tả tóm tắt về nội dung gói thầu
+
+contact_person=Địa điểm phát hành >> Người liên hệ
+org_phone=Địa điểm phát hành >> Số điện thoại
+org_email=Địa điểm phát hành >> Email
+org_address=Địa điểm phát hành >> Địa chỉ
+
+
+identifier=related_tender_id+local_title
+
+*********************************************************************vn_pvgas_pp******************************************************
+script_name='vn_pvgas_pp'
+urls="https://tender.pvgas.com.vn/#/tender/plan?_k=h8kmot"
+page_no=3
+performance_country='VN'
+main_language='VI'   
+notice_type=3
+org_language='VI'
+org_country='VN'
+document_type_description='PLAN SELECTION OF CONTRACTORS'
+
+
+Grab below data from tender_html_element.
+local_title=Giá gói thầu:				cmt:grab title above from given field.don't grab "(ID: DVK24-011)" this number.
+notice_no=Giá gói thầu:					cmt:split from local_title.Here "Cung cấp vật tư phục vụ BDSC theo YCMS số 04-ĐCM/2024 (ID: DVK24-017)" grab this "DVK24-017" number only.
+est_amount=Giá gói thầu:
+gorssbudgetlc=Giá gói thầu:
+currancy=Giá gói thầu:					cmt:grab currency name after the amount.
+source_of_funds=Nguồn vốn: 
+category=Danh mục hàng hoá, dịch vụ:	cmt:vn_pvgas_category.csv
+org_name=Bên mời thầu:
+publish_date=Thời gian đăng tải:
+
+
+notice_url=click on local_title.
+notice_text=grab all the page_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+
+Grab below data from page_details.
+procurement_method=Chi tiết >> Hình thức lựa chọn nhà thầu			cmt:(Đấu thầu rộng rãi trong nước=0,Đấu thầu rộng rãi quốc tế=1) otherwise pass 2.
+contract_duration=Chi tiết >> Thời gian thực hiện hợp đồng
+notice_deadline=threshold
+
+identifier=notice_no+local_title
+
+*********************************************************************vn_pvgas_amd******************************************************
+script_name='vn_pvgas_amd'
+urls="https://tender.pvgas.com.vn/#/orthernotice?_k=dsw44f"
+page_no=3
+performance_country='VN'
+main_language='VI'   
+notice_type=16			cmt:if local_title contains the keyword "Renewal notification" or "Modified notification" then pass notice_type=16 otherwise pass org_language='VI'
+org_country='VN'
+
+Grab below data from tender_html_element.
+local_title=Thời gian phát hành: 		cmt:grab title above from given field.don't grab "(ID: DVK24-011)" this number.
+notice_no=								cmt:split from local_title.Here "Cung cấp vật tư phục vụ BDSC theo YCMS số 04-ĐCM/2024 (ID: DVK24-017)" grab this "DVK24-017" number only.
+document_purchase_start_time:Thời gian phát hành: 
+org_name=Bên mời thầu: 
+category=Danh mục hàng hoá, dịch vụ:	cmt:vn_pvgas_category.csv
+
+
+notice_url=click on local_title.
+notice_text=grab all the page_details,page_details1 data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+			page_details1 click is present in page_details.(Chi tiết >> Gói thầu).
+
+Grab below data from page_details.
+document_type_description=Chi tiết			cmt:grab the heading above the given field "Chi tiết".
+est_amount=Chi tiết >> Giá gói thầu						cmt:grab only the amount.
+grossbudgetlc=Chi tiết >> Giá gói thầu					cmt:grab only the amount.
+currancy=Chi tiết >> Giá gói thầu						cmt:geab currancy name after the amount.
+document_purchase_end_time=Chi tiết >> Thời điểm đóng thầu
+notice_deadline=Chi tiết >> Thời điểm đóng thầu
+document_opening_time=Chi tiết >> Thời điểm mở thầu
+publish_date=Chi tiết >> Thời gian đăng tải
+
+
+attachments[]	ref_url:"https://tender.pvgas.com.vn/#/orthernotice/detail/f4a2b3c4-08f9-4a63-aec9-1b3c1e89b85b?_k=162jzx"
+file_name=Chi tiết >> Quyết định
+external_url=Chi tiết >> Quyết định
+
+Grab below data from page_details.page_details1 click is present in page_details.(Chi tiết >> Gói thầu).
+if below three fields are not present in the page_details then have to grab them from page_details1.
+document_purchase_end_time=Chi tiết >> Thời điểm đóng thầu
+notice_deadline=Chi tiết >> Thời điểm đóng thầu
+document_opening_time=Chi tiết >> Thời điểm mở thầu
+
+source_of_funds=Chi tiết >> Nguồn vốn
+procurement_method=Chi tiết >> Hình thức lựa chọn nhà thầu
+doeument_fee=Chi tiết >> Giá bán 01 bộ HSMT/HSYC
+earnest_money_deposite=Chi tiết >> Bảo đảm dự thầu
+contract_duration=Chi tiết >> Thời gian thực hiện hợp đồng
+
+contact_person=Địa điểm phát hành >> Người liên hệ
+org_phone=Địa điểm phát hành >> Số điện thoại
+org_email=Địa điểm phát hành >> Email
+org_address=Địa điểm phát hành >> Địa chỉ
+
+
+
+identifier=notice_no+local_title

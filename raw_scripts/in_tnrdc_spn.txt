@@ -1,0 +1,42 @@
+
+######################################################################################################################################################
+script_name: in_tnrdc_spn
+   
+urls: "http://tnrdc.com/online-tenders/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: TAMIL NADU ROAD DEVELOPMENT COMPANY LIMITED (TNRDC)	
+
+org_parent_id: 7533221
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+local_title --- Description
+
+contract_duration --- Period of Completion
+
+document_purchase_start_time --- Sale of Bid Document  >>> split data from "From" till "To"
+
+document_purchase_end_time --- Sale of Bid Document  >>> split data from "To"
+
+notice_deadline --- Last Date of Submission
+
+notice_url --- http://tnrdc.com/online-tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+

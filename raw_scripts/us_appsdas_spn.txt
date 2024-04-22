@@ -1,0 +1,64 @@
+static_fields
+-----------------
+
+script_name : us_appsdas_spn
+
+url : "https://apps.das.nh.gov/bidscontracts/bids.aspx"
+
+page_no : 3  
+
+main_language : EN
+
+performacne_country : US
+
+notice_type : 4  ,  in table if following field  "Addendum" has documnents are available then take notice_type = 16
+
+procurment_method : 2
+
+currency : USD
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+local_title , tender_html_page ,  Description
+
+notice_no  , tender_html_page ,  Bid #
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+attachment_details
+--------------------
+
+file_name : , tender_html_page , Attachments  , cmt : split only file_name for example "Attachment_1" , take value as a textual
+
+file_type : , tender_html_page ,  Attachments ,   cmt : split from inspect element 
+
+external_url : ,  tender_html_page ,  Attachments ,   cmt : split from inspect element 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+publish_Date :  cmt : take publish_date as a threshold date 
+
+notice_deadline ,  tender_html_page ,  Closing Date + Closing Time  , cmt : append the both field i.e "Closing Date" +"Closing Time"
+
+category , tender_html_page  , Commodity Category
+
+notice_url : "https://apps.das.nh.gov/bidscontracts/bids.aspx"
+
+notice_text :  tbody > tr
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+customer_details 
+------------------
+
+org_name : "Department of Administrative Services"
+org_phone : "(603)-271-2550"
+org_email: " nh.purchasing@das.nh.gov"
+org_country : "US"
+org_language : "EN"
+org_parent_id : "7619838"
+contact_person : tender_html_page , Contact
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------

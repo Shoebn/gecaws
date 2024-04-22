@@ -1,0 +1,140 @@
+
+static_fields
+-----------------
+
+script_name : us_alabamabuys_spn
+
+url : "https://alabamabuys.gov/page.aspx/en/rfp/request_browse_public"
+
+page_no : , tender_html_page , 7
+
+main_language : EN
+
+performance_country : US
+
+currency : USD
+
+procurement method : 2
+
+notice_type : 4  , when "Solicitation Type" this field contains "Cancellation" keyword then pass notice_type = 16
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Notice_no , tender_html_page , 	Sourcing Project Number , cmt : if notice_no is not available in this field then grab from notice_url 
+
+local_title , tender_html_page ,  Solicitation Label
+
+notice_deadline ,  tender_html_page ,  Due / Close Date
+
+document_type_Description ,  tender_html_page , Status
+
+category , tender_html_page , Main Commodity , cmt : 
+
+publish_Date , tender_html_page , Begin (UTC-7)  , cmt : take time too
+
+notice_deadline , tender_html_page , End (UTC-7)  , cmt : take time too
+
+
+notice_url : tender_html_page , cmt : click on pencil symbol which is the first column of table 
+
+notice_text , detail_page , selector :  div.panel-content div#content 
+
+
+local_description :  , detail_apge , Summary , cmt : split the data between "Summary" and "Additional Information" 
+
+notice_summary_english :  , detail_apge , Summary , cmt : split the data between "Summary" and "Additional Information" 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+customer_details
+-----------------
+org_name , tender_html_page , Buying Agency		
+org_country : AZ
+org_language : EN
+contact_person : , detail_page , Procurement Officer
+org_phone : , detail_page , Procurement Officer Phone
+org_email , detail_page ,Procurement Officer Email
+contact_person : , tender_html_page , Sourcing Responsible First Name	+ Sourcing Responsible Last Name  , cmt : get both fields for contact_peeson i.e (firstname + lastname)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+lot_details  (detail_page >> Solicitation Links >> View Quotation Form )
+--------------
+
+for lot_details click on  "View Quotation Form" in detail_page , in will pass another page i.e (page_main)
+
+
+lot_title : page_main ,   Label  ,   cmt : Response >> Label
+
+lot_descritpion : page_main , Detailed Description
+
+lot_actual_number :  page_main , Code , cmt : Response >> Code
+
+lot_quantity : page_main , QTY ,  cmt : Response >> Quantity
+
+lot_quantity_uom : page_main , Unit ,  cmt : Response >> Unit of Measure
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+attachment_details
+--------------------
+
+file_name : , detail_page , Title  , cmt : Solicitation Documents >> Documentation
+
+file_type : , detail_page ,  Att. ,   cmt : Solicitation Documents >>  Att.  cmt : take only type for ex."SRC20835. SLd-FW Trailer_Specifications (1).pdf" , here split only "pdf" , ref_url : "https://alabamabuys.gov/page.aspx/en/bpm/process_manage_extranet/26441	"
+
+external_url : ,  detail_page ,  Att. ,   cmt : Solicitation Documents >>  Att.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

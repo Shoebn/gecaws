@@ -1,0 +1,62 @@
+for tender details go to the "procurement" tab and select "Limited Tenders", "Quotation", "Open Tenders", "Engineering and estate tenders"
+
+note : below URLs are respective tabs
+
+script_name : in_aiimsbathindia_spn
+
+url : "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=mELirpUhRYksFj7k8/XBcQ==&JnH7tY=+PSeLQ31maQSqQsOZD9o4BeEsruIeVI4cuMYO/K9n2A=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=BOII5FUynjpl5RZJJ8nW1g==&JnH7tY=BTQgLv+ebY48FN9pEezgn4swg+G4uRJpYiYSMufUrUU=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=ydRRTTxkdt6Trx91pX1+cA==&JnH7tY=ni6p7uJmUYh6NtRIoH1zej6ayg0V9vON2iB6aRQlYRo=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=Tg3R3dzL5d8qh2W0SyphdQ==&JnH7tY=CfSTx/Yb+7q/NEJxeY2YGllghxg1Ok/cLCsiQTgBnH4N9ON01ZDB602kF+Gx4BaidYTTaYzEpDTazCAnCJDRoQ=="
+
+page_no : 5
+
+main_language / org_language : EN
+
+performance_country : IN
+
+procurment_method : 2
+
+notice_type: 4, if "Related Links" has "Corrigendum" or "Addendum" documents appear then take notice_type = 16
+
+currency: INR
+
+
+------------------------
+tender_html_page 
+-------------------------
+
+document_type_Description: take the below text from the "department" navigation bar tab
+
+notice_no ,  Tender Ref. . cmt : split only no for ex."AIIMS Bathinda/Proc.Cell/OBGY/2022/1248" , here split only "Cell/OBGY/2022/1248"
+
+local_title , Title 
+
+publish_date , Start Date 
+
+notice_deadline , End Date
+
+
+org_name : "ALL INDIA INSTITUTE OF MEDICAL SCIENCES, BATHINDA"
+
+org_mail : procurementcellaiimsbti@gmail.com
+
+org_parent_id : 7807718
+
+org_country : IN
+
+org_language : EN
+
+notice_url : "url : "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=mELirpUhRYksFj7k8/XBcQ==&JnH7tY=+PSeLQ31maQSqQsOZD9o4BeEsruIeVI4cuMYO/K9n2A=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=BOII5FUynjpl5RZJJ8nW1g==&JnH7tY=BTQgLv+ebY48FN9pEezgn4swg+G4uRJpYiYSMufUrUU=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=ydRRTTxkdt6Trx91pX1+cA==&JnH7tY=ni6p7uJmUYh6NtRIoH1zej6ayg0V9vON2iB6aRQlYRo=" , "https://aiimsbathinda.edu.in/Procurements.aspx?FXoLDJ=Tg3R3dzL5d8qh2W0SyphdQ==&JnH7tY=CfSTx/Yb+7q/NEJxeY2YGllghxg1Ok/cLCsiQTgBnH4N9ON01ZDB602kF+Gx4BaidYTTaYzEpDTazCAnCJDRoQ=="
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+-----------------
+attachments 
+----------------
+file_name , Related Links
+
+file_type , Related Links
+
+external_url , Related Links 
+
+
+

@@ -1,0 +1,34 @@
+script_name					in_angul_spn
+notice_type					4	
+							Com:  If in tender_html_element "Title" start with  "Corrigendum" this keyword than take notice_type "16"	
+procurement_method			2
+urls						"https://angul.nic.in/notice_category/tenders/"
+page_no						3
+performance_country	/ Country	:	IN
+currancy							INR
+main_language/org_language			EN
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://angul.nic.in/notice_category/tenders/" and grab the data
+
+Tender_Html_Element
+
+local_title			=	Description
+
+publish_date		=		Start Date
+
+notice_dedline		=		End Date
+
+attachments			=		File   (take all the attachment )
+
+notice_url			=	pass main url "https://angul.nic.in/notice_category/tenders/page/1/"
+
+notice_text			=	take row wise sigle data from  "tener_html_element"
+
+org_name			=	District of Angul 
+
+org_parent_id		=	7248574
+
+org_city 			=  pass static as Angul
+
+org_state  			= pass static as "Odisha"

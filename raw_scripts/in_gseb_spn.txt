@@ -1,0 +1,72 @@
+in_gseb_spn
+
+
+######################################################################################################################################################
+script_name:in_gseb_spn
+
+urls: "https://tender.guvnl.com/index.html?compcode=0"
+
+page_no: 20
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+	
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+org_name --- COMPANY NAME
+
+org_address --- CIRCLE / DEPT. NAME + DIVISION NAME (take both these in address)
+
+local_title --- TENDER TITLE
+
+publish_date --- START DATE
+
+notice_deadline --- END DATE 
+
+notice_no --- THIRD PARTY TENDER No.
+
+notice_url --- click on "ADDITIONAL. DOCS" for url
+
+notice_text --- page_detail 
+ #Note - take HTML body of main pa
+
+
+
+
+
+
+
+#attachment >>>> MAIN DOCUMENT >>> DOWNLOAD....... 
+
+external_url --- "DOWNLOAD" >>> (click on the href for documents )	
+
+file_name --- Tender Document		
+
+file_type --- (extension)... eg - pdf
+
+
+****************************************************************************
+                                 #page_details 
+****************************************************************************
+
+
+
+
+#attachment >>>> ADDITIONAL. DOCS (click on the href) 
+
+external_url --- "ADDITIONAL. DOCS" >>> DOCUMET >>> click on "download" (click on the href for documents )	
+
+file_name --- DOCUMENT TITLE		
+
+file_type --- (extension)... eg - pdf
+

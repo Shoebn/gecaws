@@ -1,0 +1,34 @@
+script_name					in_brpnnl_spn	
+notice_type					4		Com:If in "	Tender Descriptions" this selector have "[See Corrigendum!]" this keyword than take notice_type "16"		
+procurement_method			2
+urls						"http://brpnnl.bihar.gov.in/Tenders.aspx"
+page_no						3
+performance_country			IN
+currancy					INR
+main_language				EN
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "http://brpnnl.bihar.gov.in/Tenders.aspx" and grab the data
+
+Temder_Html_Element
+
+notice_no		=		Tender Number
+
+local_title		=		Tender Descriptions
+
+notice_deadline			=		Expiry Date
+
+publish_date		=		Take a threshold		Com:If the publication date is threshold date : than in live code add condition that submission deadline should not be less than current date
+
+notice_url		=		"http://brpnnl.bihar.gov.in/Tenders.aspx"
+
+notice_text			=		take data from "tender_html_element" in notice_text of each record 	
+
+org_name		=		BIHAR RAJYA PUL NIRMAN NIGAM LTD
+
+prg_parent_id		=		7549340
+
+org_cuntry		=		IN
+
+org_language		=		EN
+
+attachments			=	Com:Click on "Tender Descriptions" hyperlink on tender_html_element

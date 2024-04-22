@@ -1,0 +1,123 @@
+Aftre clicking on notice_url,there are login required for go to page_details.
+login:dgMarket
+password:Ak@123456
+***********************************************************************in_nddb_spn***********************************************************
+in spn grab the tenders present above "UPCOMING TENDERS LIST" this keyword 
+
+script_name = 'in_nddb_spn'
+
+url = "http://tenders.nddb.coop/SitePages/Tenders.aspx"
+
+page_no = 1
+
+main_language = 'EN'
+
+performance_country = 'IN' 
+
+currency = 'INR'
+
+procurement_method = 2
+
+notice_type = 4		
+
+org_country = 'IN'
+
+org_language = 'EN'	
+			************************************tender_html_element****************************************
+notice_no =  Reference No.:
+
+local_title = Tender
+
+publish_date = Event Start Date and Time 
+
+notice_deadline = Last Date of Bid Receipt & Time
+
+local_description / notice_summary_english = Description
+
+notice_url = Click here for details
+
+notice_text = 	cmt:take all page_details as well as the "tender_html_element" Row wisedata in Notice Text.There are 7 rows for one tender.
+
+
+			**************************************page_details******************************************************
+file_name = DOWNLOADS
+
+external_url = DOWNLOADS
+
+file_type = 	cmt:split file_extension only.
+
+category = Type Of Work
+
+document_fee = Cost Of Tender Document
+
+document_purchase_start_time = Tender Sale Date and Time
+
+pre_bid_meeting_date = Pre-bid Meeting Date and Time
+
+document_purchase_end_time = Last Date of Sale of Tender
+
+document_opening_time = Bid Opening Date and Time
+
+est_amount = Estimated Cost
+
+grossbudgetlc = Estimated Cost
+
+earnest_money_deposite = EMD Value
+
+contract_duration = Completion Period
+
+eligibility = Eligibility
+
+org_name = Issued By			cmt:Here "National Dairy Development Board, Anand – 388001 (Gujarat) (In the capacity of Pure Agent)" grab only "National Dairy Development Board".
+
+org_address = Issued By			cmt:Here "National Dairy Development Board, Anand – 388001 (Gujarat) (In the capacity of Pure Agent)" grab only "National Dairy Development Board, Anand – 388001 (Gujarat)".
+
+
+
+
+
+
+*************************************************************************************in_nddb_pp***********************************************************
+in spn grab the tenders present below "UPCOMING TENDERS LIST" this keyword 
+
+script_name = 'in_nddb_pp'
+
+url = "http://tenders.nddb.coop/SitePages/Tenders.aspx"
+
+page_no = 1
+
+main_language = 'EN'
+
+performance_country = 'IN' 
+
+currency = 'INR'
+
+procurement_method = 2
+
+notice_type = 3
+
+org_country = 'IN'
+
+org_language = 'EN'
+
+
+				****************************tender_html_element************************************************
+notice_no = Reference No.:
+
+local_title = Tender
+
+publish_date = Event Start Date and Time
+
+notice_deadline = Last Date of Bid Receipt & Time
+
+local_description / notice_summary_english = Description
+
+org_address = Project Location
+
+org_name = 'NATIONAL DAIRY DEVELOPMENT BOARD'
+
+org_parent_id = '6971886'
+
+notice_url = 		cmt:as page_details click was not there , so pass main url as notice_url.
+
+notice_text 		cmt:take all "tender_html_element" Row wisedata in Notice Text.

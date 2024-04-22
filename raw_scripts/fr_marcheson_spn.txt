@@ -1,0 +1,229 @@
+########################################################################## SPN FORMAT -I ############################################################################
+
+*******************           *****************************           *************************        ************************        ************************
+#NOTE
+After url has been loaded select "Appels d’offres"   >>> 
+click on "Avis en cours" >>>> Date de mise en ligne >>>> select " Publié entre " and add the current date >>> next click on "Appliquer"
+
+*******************           *****************************           *************************        ************************        ************************
+
+
+
+script_name: fr_marcheson_spn                            
+
+urls:"https://www.marchesonline.com/appels-offres/en-cours"
+
+page_no: 50
+
+performance_country/ org_country    : "FR"
+
+currency: "EUR"
+
+main_language. org_language: "FR"
+
+procurement_method: 2 
+
+notice_type: 4
+
+******************************************************************************
+                            #below are the identified formats
+******************************************************************************
+*Format -1
+https://www.marchesonline.com/appels-offres/avis/ad-ap-vague-2-territoire-caux-nord-bouquet-a-travau/ao-9168974-1 ,
+https://www.marchesonline.com/appels-offres/avis/l-exploitation-par-concession-de-la-collecte-et-du-trai/ao-9168872-1  
+
+*Format -2
+https://www.marchesonline.com/appels-offres/avis/nettoyage-de-la-vitrerie-des-batiments-de-la-commune/ao-9168093-1,
+https://www.marchesonline.com/appels-offres/avis/travaux-mecanises-de-cloisonnement-de-degagement-et/ao-9168540-1  
+ 
+*Format -3 
+https://www.marchesonline.com/appels-offres/avis/amenagement-d-un-plateau-multisports/ao-9168162-1  
+*Format -4
+https://www.marchesonline.com/appels-offres/avis/execution-de-services-publics-de-transports-scolaires/ao-9168873-1 
+*Format -5
+https://www.marchesonline.com/appels-offres/avis/gestion-et-animation-de-deux-outils-de-developpement/ao-6967407-1 
+*Format -6
+https://www.marchesonline.com/appels-offres/avis/creation-d-une-plaine-des-sports-phase-2-constructi/ao-6786752-3 
+*Format -7
+https://www.marchesonline.com/appels-offres/avis/travaux-d-isolation-sur-divers-sites-charente/ao-6726344-1  
+*Format -8   
+https://www.marchesonline.com/appels-offres/avis/concession-du-service-public-d-eau-potable/ao-6966274-1
+ 
+
+
+******************************************************************************
+                                  #Tender_html_page
+******************************************************************************
+
+org_name --- take first line as org name .. eg (Saint Quentin en Yvelines Communauté d'agglomération)
+
+local_title --- take second line as title (bold letters text)..
+(bold letters text)..
+
+notice_no --- take third line  as notice no  .. eg (AO-2409-0342, AO-2409-0345) 
+
+org_address --- take from fourth line, first column (data having location symbol)
+
+notice_contact_type/ contract_type_atual --- take from fourth line, second column (data having a bag symbol) /  Nature de prestation  ...  eg (travaux work, services)
+map it with "fr_marcheson_spn_contract_type.csv"
+
+type_of_procedure_actual --- take from fourth line, last data column   (data having a person symbol) .... eg (Procédure adaptée) 
+
+publication_date --- Mise en ligne 
+
+notice_deadline -Limite de réponse
+
+notice_url --- take second line as notice_url (bold letters text)..
+
+notice_text --- page_detail 
+#Note - take HTML body of main page
+
+*******************************************************************************
+                                    #Page_detail
+*******************************************************************************
+
+local_description / Notice_summary_english --- Procédure >>> Description
+
+customer_nuts --- Lieu d'exécution >>> Subdivision pays (NUTS) ....
+ref url (https://www.marchesonline.com/appels-offres/avis/nettoyage-de-la-vitrerie-des-batiments-de-la-commune/ao-9168093-1)
+
+
+type_of_authority_code ----  Forme juridique de l'acheteur:
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-mecanises-de-cloisonnement-de-degagement-et/ao-9168540-1)
+
+customer_main_activity ---- Activité du pouvoir adjudicateur: 
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-mecanises-de-cloisonnement-de-degagement-et/ao-9168540-1)
+
+
+lot_actual_no --- Lot: 	eg(LOT-0001, LOT-0002)
+
+lot_title --- LOT >> Titre
+
+lot_description --- LOT >> Description
+
+lot_contarct_type /lot.contract_type_actual  --- LOT >> Nature du marché:
+map it with "fr_marcheson_spn_contract_type.csv"
+
+lot_contract_duration ---  LOT >> Durée estimée >> Durée
+
+tender_criteria_title ---  Critères  >>> Type ...
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-mecanises-de-cloisonnement-de-degagement-et/ao-9168540-1)
+
+tender_criteria_weight --- Critères  ... 
+ref url (https://www.marchesonline.com/appels-offres/avis/realisation-de-la-phase-2-du-groupe-scolaire-jeanne-mo/ao-9167935-1)
+
+lot_criteria_title ---  Critères  >>> Type ...
+
+lot_criteria_weight ---  Critères  >>> Type ...
+
+
+lot_cpv --- Lot >>> Objet >>> Nomenclature principale (cpv): / cpv... 
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-mecanises-de-cloisonnement-de-degagement-et/ao-9168540-1)
+
+org_email --- Acheteur >>>e-mail  
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-d-isolation-sur-divers-sites-charente/ao-6726344-1)
+
+org_website --- Acheteur >>> URL   
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-d-isolation-sur-divers-sites-charente/ao-6726344-1)
+
+org_phone --- Acheteur >>> tél     
+ref url (https://www.marchesonline.com/appels-offres/avis/travaux-d-isolation-sur-divers-sites-charente/ao-6726344-1)
+
+est_amount  / netbudgeteuro --- Type de marché : >>>  totale estimée / hors TVA .... 
+ref url(https://www.marchesonline.com/appels-offres/avis/l-exploitation-par-concession-de-la-collecte-et-du-trai/ao-9168872-1)
+
+org_city --- Ville .... 
+ref url (https://www.marchesonline.com/appels-offres/avis/execution-de-services-publics-de-transports-scolaires/ao-9168873-1)
+
+postal_code --- Code postal....  
+ref url(https://www.marchesonline.com/appels-offres/avis/execution-de-services-publics-de-transports-scolaires/ao-9168873-1)
+
+t.cpvs --- Classification CPV .... 
+ref url (https://www.marchesonline.com/appels-offres/avis/concession-du-service-public-d-eau-potable/ao-6966274-1)
+
+
+
+
+########################################################################## SPN FORMAT -II ############################################################################
+
+
+
+*******************           *****************************           *************************        ************************        ************************
+#NOTE
+After url has been loaded select "Avis de sourcing et devis" next >>> 
+click on "Avis en cours" >>>> Date de mise en ligne >>>> select " Publié entre " and add the current date >>> next click on "Appliquer"
+
+*******************           *****************************           *************************        ************************        ************************
+
+
+
+
+
+******************************************************************************
+                                  #Tender_html_page
+******************************************************************************
+
+org_name --- take first line as org name .. eg (COMMUNE D'ETAMPES)
+
+local_title --- take second line as title (bold letters text)..
+
+notice_no --- take third line  as notice no  .. eg (AD-31732-0001, AD-31730-0001) 
+
+org_address --- take from fourth line, first column (data having location symbol)
+
+type_of_procedure_actual --- take from fourth line, last data column   (data having a person symbol) .... eg (Procédure adaptée) 
+
+publication_date --- Mise en ligne 
+
+notice_url --- take second line as notice_url (bold letters text)..
+
+notice_text --- page_detail 
+#Note - take HTML body of main page
+
+*******************************************************************************
+                                    #Page_detail
+*******************************************************************************
+
+notice_deadline --- Date limite de réponse
+
+loacl_description / notice_summary_enflish --- Détails >>>> split data from "Descriptif" till "Contexte"  or  split data from "Descriptif" till "Caractéristiques"...     (from click "Avis de sourcing et devis") 
+ref url (https://www.marchesonline.com/appels-offres/avis/maintenance-des-systemes-de-desenfumage/ad-31732-0001)
+
+t.contract_duration --- Caractéristiques >>>  Délai de mise en œuvre
+
+org_email --- Contact 
+ref url (https://www.marchesonline.com/appels-offres/avis/appel-a-manifestation-d-interet-pour-la-mise-a-disp/as-31716-0001)
+
+notice_contract_type --- Caractéristiques >>>  Nature de prestation         
+ref url (https://www.marchesonline.com/appels-offres/avis/maintenance-des-systemes-de-desenfumage/ad-31732-0001)
+map it with "fr_marcheson_spn_contract_type.csv"
+
+
+est_amount  / netbudgeteuro --- Caractéristiques >>> Délai de mise en œuvre     
+ref url (https://www.marchesonline.com/appels-offres/avis/achat-de-materiel-pour-activites-pedagogiques-ludiq/ad-31721-0001)
+
+
+contact_person --- Contact(s).... just take the data which is before email id... eg(Remy HIRET - r.hiret@idfhabitat.fr , then just take "Remy HIRET" )
+ref url (https://www.marchesonline.com/appels-offres/avis/sourcing-relatif-aux-travaux-d-entretien-de-la-vitrerie/as-31719-0001)
+
+
+
+
+
+# attachments  (from click "Avis de sourcing et devis")....
+ref url --- "https://www.marchesonline.com/appels-offres/avis/achat-de-materiel-pour-activites-pedagogiques-ludiq/ad-31721-0001"
+
+external_url   --- click on "consulter les pièces jointes" >>> "Les pièces jointes de l’avis"    (click on down arrow ⬇️)
+
+file_type --- take extension of the underlined sentenece ...  eg (.docx) 
+
+file_name  --- take data which is above "Date du dernier dépôt" , the underlined sentence is the file name                                                                       
+
+
+
+
+
+
+
+
+ 

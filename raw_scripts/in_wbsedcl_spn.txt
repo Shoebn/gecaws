@@ -1,0 +1,50 @@
+Note : Go to URL : "https://www.wbsedcl.in/irj/go/km/docs/internet/new_website/TenderBids.html"
+
+script_name : "in_wbsedcl_spn"			
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4
+
+currancy			INR
+
+======================================================================================================================================================
+
+notice_no	: Tender/Bid/EOI References 	Com:Take between "NIT NO" and "Dated" value. Take between "Pre-tender Notice vide Memo No" and "Dated" value 				Ex,."NIT NO.: WBSEDCL/ IT&C/ 114.00(RDSS)/ 2527 Dated: 28.02.2024" take only "NIT NO.: WBSEDCL/ IT&C/ 114.00(RDSS)/ 2527"
+
+publish_date	: Tender/Bid/EOI References		Com:Take the data after "Dated" this keyword		Ex,."NIT NO.: WBSEDCL/ IT&C/ 114.00(RDSS)/ 2527 Dated: 28.02.2024" take only "28.02.2024"
+
+local_title		: Broad Head of the Material/Service/Contract (Click here for below details)	
+
+document_purchase_end_time	: Last Date of Sale of Document (Manual)
+
+document_purchase_start_time	: Document Download Start Date (E-Tender)         Com:grab time also
+
+notice_deadline		: Due Date Of Bid/EOI Submission	Com:Grab time also
+
+document_opening_time	: Due Date Of Bid/EOI Opening	Com:Grab time also
+
+attachments	: Details
+
+external_url	: Details	
+
+org_name	: 'WEST BENGAL STATE ELECTRICITY DISTRIBUTION COMPANY LIMITED'
+
+org_parent_id	: '7563311'
+
+est_amount 	: Estimated Value (In Rs.)		Com:In this field after the value present "(In Rs.) , (including GST)" than take this value in "est_amount / grossbudgetlc". Otherwise take only in "est_amount" field
+											
+grossbudgetlc	: Estimated Value (In Rs.)		Com:In this field after the value present "(including GST)" than take in grossbudgetlc
+											
+notice_url	:	pass main url "https://www.wbsedcl.in/irj/go/km/docs/internet/new_website/TenderBids.html"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record
+
+
+
+

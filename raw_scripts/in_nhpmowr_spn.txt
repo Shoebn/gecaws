@@ -1,0 +1,41 @@
+Note : Go to URL : "https://nhp.mowr.gov.in/HomeNew/TenderDetails.aspx"
+
+script_name : "in_nhpmowr_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+publish_date	: Publish Date
+
+notice_no	: Bid ref No	Com:If "Bid ref No" is not present than take "Tender Ref No" this field data....If "Bid ref No" amd "Tender Ref No" is both field data is not present than take "Package No" this field data.
+
+local_title	: 	Description
+
+org_name	: Office Inviting Tender
+
+org_email	: Office Email Id
+
+document_purchase_start_time	: Bid Sale Start Date			Com:Grab time also
+
+document_purchase_end_time		: Bid Sale Closing Date			Com:Grab time also
+
+notice_deadline	: Bid Closing Date		Com:Grab time also
+
+document_opening_time	: Bid Opening Date		Com:Grab time also
+
+additional_tender_url	: 	URL
+
+notice_url	: pass main url "https://nhp.mowr.gov.in/HomeNew/TenderDetails.aspx"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record

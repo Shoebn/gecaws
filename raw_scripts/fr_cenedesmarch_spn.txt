@@ -1,0 +1,103 @@
+######################################################################################################################################################
+
+
+
+script_name: fr_cenedesmarch_spn                           
+
+urls:"https://centraledesmarches.com/marches-publics?avisType=1&publicationType=1"
+
+page_no: 50
+
+performance_country / org_country    : "FR"
+
+currency: "EUR"
+
+main_language / org_language: "FR"
+
+notice_type: 4
+
+
+
+
+******************************************************************************
+                                 #Tender_html_page
+******************************************************************************
+local_title --- take data from first line, take data which is besides a "star"
+
+contract_duration --- take data which is besides "clock" , having keyword "Reste"
+
+notice_deadline --- Date de clôture estimée :
+
+notice_contract_type / contract_type_actual --- Type d'avis
+#mapping -- Services - Services, Works - Travaux, Supplies - Fournitures
+
+
+procurement_method ---  Type de marché = 2
+#note - for word such as "National" = " 0 ".... rest take as 2	
+
+publication_date --- Date de publication 
+
+notice_no --- Référence
+
+org_name --- Acheteur 
+
+notice_url --- Voir le détail
+
+notice_text --- page_detail 
+#Note - take HTML body of main page
+
+
+**************************************************************************
+                               #page_detail
+**************************************************************************
+
+local_document / notice_summary_english ----
+condition 1 - split from " Objet du marché " till "Prestation divisée en lots"
+ref url - "https://centraledesmarches.com/marches-publics/Villeneuve-la-Guyard-commune-Travaux-pour-restructuration-d-un-batiment-existant/201165"
+
+condition 2 - split from "Objet " till "Référence acheteur"
+ref url - "https://centraledesmarches.com/marches-publics/Vannes-cedex-Conseil-Departemental-du-Morbihan-Construction-d-un-batiment-d-accueil-Cairn-du-Petit-Mont-a-Arzon-relance-du-lot7-en-lot71-ossature-parement-bois-lot72-menuiserie-interieure-agencement/201589"
+
+condition 3 - split from "Description succincte du marché" till "Lieu principal d'exécution"
+ref url - "https://centraledesmarches.com/marches-publics/La-Roche-sur-Yon-SAEM-VENDEE--Vendee-Globe-prestations-techniques-de-couverture-photographique-des-evenements/201587"
+
+condition 4 - split from "Description succincte du marché " till " Lieu principal dexécution du marché "
+ref url - "https://centraledesmarches.com/marches-publics/Langan-Commune-de-Langan-Rehabilitation-de-l-ancienne-mairie-en-epicerie/201597"
+
+condition 5 - split from "Objet du marché" till "Lieu d'exécution : "
+ref url - "https://centraledesmarches.com/marches-publics/Honfleur-France-communaute-de-communes-du-Pays-de-Honfleur--Beuzeville-fourniture-en-location-d-une-benne-a-ordures-menageres-ci-compartimentee/201610"
+
+org_phone --- Tel 
+Note - if multiple telephone are present just take the first one
+
+org_city --- Ville
+
+postal_code --- Code postal
+
+cpv --- 
+condition 1 - cpv --- Classification CPV
+ref url - "https://centraledesmarches.com/marches-publics/La-Roche-sur-Yon-SAEM-VENDEE--Vendee-Globe-prestations-techniques-de-couverture-photographique-des-evenements/201587"
+
+condition 2 -cpv --- Code CPV
+ref url "https://centraledesmarches.com/marches-publics/Baud-Baud-Communaute-ENTRETIEN-DES-ESPACES-VERTS-2024-2027/201166"
+
+class_at_source --- CPV
+
+additional_url --- Adresse internet
+ref url - https://centraledesmarches.com/marches-publics/Coulommiers-Ville-de-Coulommiers-Accord-cadre-concernant-la-maintenance-preventive-du-systeme-de-videosurveillance-equipant-le-patrimoine-de-l-Office-Public-de-l-Habitat-de-Coulommiers/198315
+
+netbudget_lc/ est_value --- Valeur estimée hors TVA
+ref url - "https://centraledesmarches.com/marches-publics/La-Roche-sur-Yon-SAEM-VENDEE--Vendee-Globe-prestations-techniques-de-couverture-photographique-des-evenements/201587"
+
+
+
+
+
+
+
+
+
+
+
+
+

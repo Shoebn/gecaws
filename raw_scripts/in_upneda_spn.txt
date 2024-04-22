@@ -1,0 +1,31 @@
+script_name='in_upneda_spn'
+urls="http://upneda.org.in/Tenders.aspx"
+page_no=3
+performance_country='IN'
+main_language='EN'   
+notice_type=4			. 
+procurement_method=2
+currency='INR'
+org_language='EN'
+org_country='IN'
+org_name='DEPARTMENT OF ADDITIONAL SOURCES OF ENERGY, GOVERNMENT OF UTTAR PRADESH'
+org_parent_id='7786531'
+
+
+notice_url="http://upneda.org.in/Tenders.aspx"
+notice_text=take all the "tender_html_element" Row wisedata in Notice Text
+
+
+Grab below data from tender_html_element.
+publish_date=Published Date
+notice_deadline=Submission End Date
+document_opening_time=Opening Date
+local_title=Tender Number / Title
+notice_no=Tender Number / Title			cmt:here "Solar Street Lighting System (NTPC) (Q3) / GEM/2024/B/4570709" grab "GEM/2024/B/4570709" this no as notice_no.
+notice_no=Tender Number / Title			cmt:here "Hiring Agency for Services of Senior Energy Consultants and Energy Consultants. / GEM/2023/B/4301516" grab this no in "GEM/2023/B/4301516" notice_no.
+
+attachments[]
+file_name=Attachment >> View Detail
+external_url=Attachment >> View Detail
+file_type=Attachment >> View Detail		cmt:split file_extension from url.
+file_size=Attachment >> Size:

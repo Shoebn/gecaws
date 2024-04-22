@@ -1,0 +1,110 @@
+
+*******************************************za_nhls_spn*******************************************************
+for "za_nhls_spn" script you have to grab the data from below three url's.
+1)https://www.nhls.ac.za/supply-chain/latest-rfqs-2/
+2)https://www.nhls.ac.za/supply-chain/latest-tender/
+3)https://www.nhls.ac.za/bids-received/received-bids/
+
+
+
+
+script_name:'za_nhls_spn'
+url:"https://www.nhls.ac.za/supply-chain/latest-rfqs-2/","https://www.nhls.ac.za/supply-chain/latest-tender/","https://www.nhls.ac.za/bids-received/received-bids/"
+page_no:3
+notice_type:4
+procurement_method:2
+performance_country:'ZA'
+main_language:'EN'
+currency:'ZAR'
+org_name:'NATIONAL HEALTH LABORATORY SERVICE'
+org_parent_id:'7234267'
+org_country:'ZA'
+org_language:'EN'
+org_address:'1 Modderfontein Road,Sandringham,Johannesburg,South Africa'
+org_phone:'011-386-6000'
+org_email:'enquiries@nhls.ac.za'
+
+
+document_type_description:
+				cmt:1)if grabbing data from "https://www.nhls.ac.za/supply-chain/latest-rfqs-2/" this url then pass document_type_description as 'RFQs'.
+					2)if grabbing data from "https://www.nhls.ac.za/supply-chain/latest-tender/" this url then pass document_type_description as 'Tenders'.
+					3)if grabbing data from "https://www.nhls.ac.za/bids-received/received-bids/" this url then pass document_type_description as 'Received Bids'.
+
+Grab below data from tender_html_element.
+notice_no:RFQ No.
+notice_no:Bid No.
+notice_no:Tender No.
+local_title:Description
+publish_date:Advert Date
+		cmt:if publish_date not present then pass threshold.
+notice_deadline:Closing Date
+
+Attachments / Documents:RFQ Documents
+External URL:RFQ Documents
+
+Attachments / Documents:Tender Documents
+External URL:Tender Documents
+
+Attachments / Documents:Received Bidders
+External URL:Received Bidders
+
+notice_url:pass main url as notice_url.
+notice_text:take all the "tender_html_element" Row wisedata in Notice Text.
+
+identifier:notice_no+local_title+publish_date
+
+
+
+
+*******************************************za_nhls_amd*******************************************************
+for "za_nhls_amd" script you have to grab the data from below four url's.
+1)"https://www.nhls.ac.za/supply-chain/bid-cancellations-2/"
+2)"https://www.nhls.ac.za/supply-chain/bid-withdrawalnew-look/"
+3)"https://www.nhls.ac.za/supply-chain/supply-chain-management-scm-procedures-policies/rfq-cancellations/"
+4)"https://www.nhls.ac.za/supply-chain/rfq-withdrawal-2/"
+
+
+
+script_name:'za_nhls_amd'
+url:"https://www.nhls.ac.za/supply-chain/bid-cancellations-2/","https://www.nhls.ac.za/supply-chain/bid-withdrawalnew-look/","https://www.nhls.ac.za/supply-chain/supply-chain-management-scm-procedures-policies/rfq-cancellations/","https://www.nhls.ac.za/supply-chain/rfq-withdrawal-2/"
+page_no:3
+notice_type:16
+procurement_method:2
+performance_country:'ZA'
+main_language:'EN'
+currency:'ZAR'
+org_name:'NATIONAL HEALTH LABORATORY SERVICE'
+org_parent_id:'7234267'
+org_country:'ZA'
+org_language:'EN'
+org_address:'1 Modderfontein Road,Sandringham,Johannesburg,South Africa'
+org_phone:'011-386-6000'
+org_email:'enquiries@nhls.ac.za'
+
+
+document_type_description:
+				cmt:1)if grabbing data from "https://www.nhls.ac.za/supply-chain/bid-cancellations-2/" this url then pass document_type_description as 'Bid Cancellations'.
+					2)if grabbing data from "https://www.nhls.ac.za/supply-chain/bid-withdrawalnew-look/" this url then pass document_type_description as 'Bid Withdrawal'.
+					3)if grabbing data from "https://www.nhls.ac.za/supply-chain/supply-chain-management-scm-procedures-policies/rfq-cancellations/" this url then pass document_type_description as 'RFQ Cancellations'.
+					4)if grabbing data from "https://www.nhls.ac.za/supply-chain/rfq-withdrawal-2/" this url then pass document_type_description as 'RFQ Withdrawal'.
+
+
+
+
+Grab below data from tender_html_element.
+notice_no:Tender No.
+notice_no:RFQ No.
+local_title:Description
+notice_deadline:Closing Date
+publish_date:threshold
+
+notice_url:pass main url as notice_url.
+notice_text:take all the "tender_html_element" Row wisedata in Notice Text.
+
+identifier:notice_no+local_title+notice_deadline
+
+
+
+
+
+

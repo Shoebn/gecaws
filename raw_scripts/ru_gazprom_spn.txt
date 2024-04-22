@@ -1,0 +1,63 @@
+Note : Go to URL : "http://zakupki.gazprom-neft.ru/tenderix/index.php?FILTER%5BSORT%5D=DATE_START_DESC&LIMIT=100"
+
+script_name :	'ru_gazprom_spn'		Note:Use "Urban VPN-Russia"			Com:If attachments possible than take otherwise skip
+
+page_no : 5
+
+main_language/ org_language  : 'RU'
+
+performance_country / org_country	: 'RU'
+
+procurment_method : 2
+
+notice_type : 4				Com:If you are taking for date for "Текущие закупки" and "Закупки малой стоимости" this tab than take notice_type "4"....If you are taking for date for "Предквалификация" this tab than take notice_type "6".
+
+currency	: 'RUB'
+======================================================================================================================================================
+
+notice_no	: №		Com:Take after this keyword	      	Ex., Take "№ 13-1005732-363-2024"      
+
+local_title		:Take between "№" and "Начало приёма" data			Ex.,"№ 13-1005732-363-2024   Поставка светильников, электротехнических материалов, комплектующих и приборов различного назначения ПО Омск  Начало приёма Окончание приёма" Take only "Поставка светильников, электротехнических материалов, комплектующих и приборов различного назначения ПО Омск"
+
+publish_date	: Начало приёма				Com:Grab time also
+
+notice_deadline		: Окончание приёма			Com:Grab time also
+
+document_opening_time	: Дата вскрытия 	[page_detail]
+
+notice_url	: Click on "notice_no" hyperlink than grab the data
+
+local_description / notice_summary_english	: Объем работ		[page_detail]			Com:If present than take  		Ref_uel="https://zakupki.gazprom-neft.ru/msp/fast/?ID=3757"
+
+org_name	: Организатор
+
+org_address	: Место поставки товаров, оказания работ/услуг		[page_detail]
+
+contact_person	: Контактная информация >> Контактное лицо		[page_detail]		Com:Take between "Контактное лицо" and "Тел" data			Ref_url="https://zakupki.gazprom-neft.ru/tenderix/view.php?ID=45297"
+				: Контактные данные		[page_detail]		Com:Take the data below "Контактные данные" this keyword		Ref_url="https://zakupki.gazprom-neft.ru/msp/fast/?ID=3766"
+
+org_phone	: Контактная информация >> Тел		[page_detail]			Com:Take also "доб." this data			Ref_url="https://zakupki.gazprom-neft.ru/tenderix/view.php?ID=45286"
+			: Телефон		[page_detail]			Com:Take also "доб." this data         Ref_url="https://zakupki.gazprom-neft.ru/msp/fast/?ID=3765"		
+
+org_email	: E-mail		[page_detail]		Ref_url="https://zakupki.gazprom-neft.ru/tenderix/view.php?ID=45276"
+			: Email			[page_detail]		Ref_url="https://zakupki.gazprom-neft.ru/msp/fast/?ID=3765"
+		
+class_title_at_source	: Категории закупки		[page_detail]
+
+notice_url	: Click on "notice_no" hyperlink than grab the data
+
+notice_text		: Take all the data from page_detail as well the  "tender_html_element" of each record		Com:If you click on "notice_no" hyperlink than open "page_detail".....But if you click on "local_title" than open "page_main"... Grab all data 
+
+attachments	: Список документов		[page_detail]
+
+file_size	: Список документов	[page_detail]
+
+external_url	: Список документов		[page_detail]
+
+lot_title	: Лоты >> Название лотов	[page_detail]   	Ref_url="https://zakupki.gazprom-neft.ru/tenderix/view.php?ID=45287#ij_profile"
+
+document_type_description	: Than "Текущие закупки" this tab data grab than take document_type_description "Текущие закупки" pass static...
+							: Than "Предквалификация" this tsb data grab than take document_type_description "Предквалификация" pass static...
+							: Than "Закупки малой стоимости" this tab data grab than take document_type_description "Закупки малой стоимости" pass static ..
+
+

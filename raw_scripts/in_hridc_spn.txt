@@ -1,0 +1,54 @@
+
+######################################################################################################################################################
+script_name: in_hridc_spn
+   
+urls: "http://www.hridc.co.in/active-tender.php"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if any data is present in "Corrigendum" then take notice_type - "16"
+
+procurement_method: "2"
+
+org_name: HARYANA RAIL INFRASTRUCTURE DEVELOPMENT CORPORATION
+
+org_parent_id: 7500755
+
+
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+notice_no --- Tender Number
+
+local_title --- Name of Work	
+
+publish_date --- Start Date	
+
+notice_deadline --- End Date	
+
+notice_url --- http://www.hridc.co.in/active-tender.php 
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment >>>> click on Remarks"		
+
+external_url --- "Remarks" >>> (click on the href for documents File)	
+
+file_name --- Remarks (take the title given in "Remarks" field)	
+
+file_type --- (extension)... eg - pdf	

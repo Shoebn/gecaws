@@ -1,0 +1,78 @@
+script_name='za_samsaorg_spn'
+urls="https://www.samsa.org.za/Pages/Current-TendersBids.aspx"
+page_no=3
+performance_country='ZA'
+currancy='ZAR'
+main_language='EN'   
+procurement_method=2
+notice_type=4
+org_language='EN'
+org_country='ZA'
+org_name="SOUTH AFRICAN MARITIME SAFETY AUTHORITY (SAMSA)"
+org_parent_id="7723936"
+
+
+Grab below data from tender_html_element.
+notice_deadline=Tender Closing Date
+local_title=Name
+
+
+
+notice_url:Name
+notice_text:garb all the page_details_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+
+Grab below data from page_details.
+document_type_description=DESCRIPTION		cmt:grab the above word of "DESCRIPTION" field.		ref_url:"https://www.samsa.org.za/Pages/SAMSA-074-2023-24-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PROJECTS-WITH-.aspx"
+document_type_description=PART A 			cmt:grab the below word of "PART A" field.			ref_url:"https://www.samsa.org.za/Pages/SAMSA-CORPORATE-PRINTING,-DESIGN-%26-EDITING-REF-NUMBER-RFP-001-.aspx"
+
+notice_no=BID NUMBER						ref_url:"https://www.samsa.org.za/Pages/BID-NO-SAMSA078202324-FOR-THE-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PRO.aspx"
+notice_no=REF NUMBER:						ref_url:"https://www.samsa.org.za/Pages/SAMSA-CORPORATE-PRINTING,-DESIGN-%26-EDITING-REF-NUMBER-RFP-001-.aspx"
+
+org_address=LOCATION OF THE SAMSA HEAD OFFICE	ref_url:"https://www.samsa.org.za/Pages/BID-NO-SAMSA078202324-FOR-THE-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PRO.aspx"
+org_address=DELIVERY ADDRESS  					ref_url:"https://www.samsa.org.za/Pages/SAMSA-CORPORATE-PRINTING,-DESIGN-%26-EDITING-REF-NUMBER-RFP-001-.aspx"
+
+contact_person=Tel							cmt:"grab the name above Tel keyword"	ref_url:"https://www.samsa.org.za/Pages/APPOINTMENT-OF-SERVICE-PROVIDER-FOR-THE-RENEWAL-AND-ADDITIONAL-OPENTEXT-SOFTWARE-LICENCES-INCLUDING-MAINTENANCE-ANDSUPPORT.aspx"
+org_phone=Tel
+org_email=Email
+
+contact_person=Tel​							cmt:"grab the name left side of Tel keyword"	ref_url:"https://www.samsa.org.za/Pages/SAMSA068202324-APPOINTMENT-OF-A-SUITABLE-SERVICE-PROVIDER-FOR-RENEWAL-OF-ADOBE-LICENSES-AND-ADDITIONAL-SOFTWARE-LICENSES-IN.aspx"
+org_phone=Tel
+org_email=Email
+
+ref_url:"https://www.samsa.org.za/Pages/SAMSA-CORPORATE-PRINTING,-DESIGN-%26-EDITING-REF-NUMBER-RFP-001-.aspx"
+contact_person=QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO >> CONTACT PERSON
+org_phone=​​QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO ​ ​ ​>>  TELEPHONE NUMBER
+org_email=​​QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO ​ ​ ​>>  E-MAIL ADDRESS
+contact_person=TECHNICAL ENQUIRIES MAY BE DIRECTED TO: ​>> CONTACT PERSON 
+org_phone=​​​TECHNICAL ENQUIRIES MAY BE DIRECTED TO: ​>>  CONTACT PERSON ​
+org_email=​​​TECHNICAL ENQUIRIES MAY BE DIRECTED TO: ​>> TELEPHONE NUMBER
+
+format-1 attachmnets)ref_url="https://www.samsa.org.za/Pages/BID-NOSAMSA076202324-FOR-THE-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PRO.aspx"
+file_name=Technical and financial proposal			cmt:grab file_name below this keyword "Technical and financial proposal"
+external_url=Technical and financial proposal			cmt:grab external_url below this keyword "Technical and financial proposal"
+file_type=Technical and financial proposal			cmt:grab file_type below this keyword "Technical and financial proposal".Grab only file_extension.						
+
+format-2 attachmnets)ref_url="https://www.samsa.org.za/Pages/SAMSA-073-2023-24-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PROJECTS.aspx"
+file_name=Technical and financial proposal			cmt:grab file_name above this keyword "Technical and financial proposal"
+external_url=Technical and financial proposal			cmt:grab external_url above this keyword "Technical and financial proposal"
+file_type=Technical and financial proposal			cmt:grab file_type above this keyword "Technical and financial proposal".Grab only file_extension.
+
+format-3 attachmnets)ref_url="https://www.samsa.org.za/Pages/SAMSA-CORPORATE-PRINTING,-DESIGN-%26-EDITING-REF-NUMBER-RFP-001-.aspx"
+file_name=​​QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO ​ ​>> ​E-MAIL ADDRESS		cmt:attachmnet are present below given field	
+external_url=QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO ​ ​>>E-MAIL ADDRESS
+file_type=QUOTATION PROCEDURE ENQUIRIES MAY BE DIRECTED TO ​ ​>>E-MAIL ADDRESS		cmt:Grab only file_extension.
+
+ 
+ref_url:"https://www.samsa.org.za/Pages/SAMSA-073-2023-24-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-PROVIDE-SAMSA-MARITIME-SPECIAL-PROJECTS.aspx"
+publish_date=publish_date have to split from first file_name.Ex.,here "TENDER AIR CONDITIONING _ CAPE TOWN 12 Dec 2023 (003).pdf" "12 Dec 2023" this is publish_date.Grab only if possible.if not grabbed then pass publish_date threshold.
+
+ref_url:"https://www.samsa.org.za/Pages/APPOINTMENT-OF-ACCREDITED-VEEAM-SERVICE-PROVIDER-(PARTNER)-FOR-THE-LICENSE-RENEWAL-FOR-VEEAM-BACKUP-%26-REPLICATION-INCLUDING.aspx"
+loacl_description="​DESCRIPTION"
+notice_summary_english="​DESCRIPTION"
+
+
+ref_url:"https://www.samsa.org.za/Pages/SAMSA-CORPORATE-CLOTHING-PANEL-OF-SERVICE-PROVIDERSREF-NUMBERRFP-003-.aspx"
+loacl_description=DESCRIPTION/SPECIFICATION
+notice_summary_english=DESCRIPTION/SPECIFICATION
+
+identifier:notice_no+notice_deadline+local_title

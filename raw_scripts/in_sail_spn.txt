@@ -1,0 +1,55 @@
+Note : Go to URL : "https://sailtenders.co.in/Home/AdvancedSearch"
+
+script_name : "in_sail_spn"					
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : Tender Type		[page_detail]			Com:If in this field have "Open - Indigenous" this keyword than take procurment_method "0". If in this field have "Open - Global" this keyword than take procurment_method "1"
+
+notice_type : 4			
+
+currency		: INR
+
+======================================================================================================================================================
+
+local_title	: Tender Title
+
+notice_no	: 	Tender No & date
+
+publish_date	: Tender issue date and time		Com:Grab time also
+
+notice_deadline		: Bid Submission Closing date and Time		Com:Grab time also
+
+notice-url	: Action		Com:Click on "search icon" than grab the data
+
+notice_text		: take all the data from page_detail as well the  "tender_html_element" of each record
+
+org_name	: TENDER DETAILS >> Organization	[page_detail]
+
+noticeContractType / Contract_Type		: Tender Category	[page_detail]		Com:notice contrac type mapping as per below ("Goods=Supply","Services=Service","Works=Works")
+
+document_fee	: AMOUNT DETAILS >> Bidding Document/Processing Fee (INR)		[page_detail]
+
+earnest_money_deposit	: AMOUNT DETAILS >> EMD Amount	[page_detail]
+
+document_purchase_end_time	: TENDER DATES >> Bid Document Download End Date &Time (dd/mm/yyyy hh:mm:ss)	[page_detail]		Com:Grab time also
+
+document_purchase_start_time	: TENDER DATES >> Bids Opening Date And Time (mm/dd/yyyy hh:mm:ss)		[page_detail]		Com:Grab time also
+
+pre_bid_meeting_date	: TENDER DATES >> Pre Bid Meeting	[page_detail]       Com:Grab time also
+
+contact_person	: CONTACT DETAILS >> Name		[page_detail]
+
+org_address		: CONTACT DETAILS >> Address		[page_detail]
+
+org_phone	: CONTACT DETAILS >> Phone/Fax		[page_detail]
+
+org_fax		: CONTACT DETAILS >> Phone/Fax		[page_detail]
+
+org_email	: CONTACT DETAILS >> Email Address		[page_detail]
+
+

@@ -1,0 +1,189 @@
+Note : Go to URL : "https://www.rurallink.gov.my/tender-sebut-harga/iklan-kenyataan-kerja-undi/"
+
+script_name : "my_rurallinkikku"			
+
+page_no : 3
+
+main_language/ org_language  : 'MS'
+
+performance_country / org_country	: 'MY'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'MYR'
+
+=====================================================(Format - 1)===============================================================
+
+Note : Go to URL : "https://www.rurallink.gov.my/tender-sebut-harga/"
+
+script_name : "my_rurallinktsh_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'MS'
+
+performance_country / org_country	: 'MY'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'MYR'
+
+-------------------------------------------------------------------------------------------------------------------------------------
+org_state	: NEGERI
+
+notice_no	: NO RUJUKAN
+
+local_title	: PENERANGAN
+
+publish_date	: Tarikh Terbitan		Com:Grab time also
+
+notice_deadline	 : TARIKH TUTUP			Com:Grab time also
+
+attachments		: 'Tender Document' pass static
+
+external_url	: LAMPIRAN
+
+notice_url	: pass main url "https://www.rurallink.gov.my/tender-sebut-harga/"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'KEMENTERIAN KEMAJUAN DESA DAN WILAYAH'
+
+org_parent_id	: '7813426'
+
+
+
+
+=====================================================(Format - 2)===============================================================
+Note : Go to URL : "https://www.rurallink.gov.my/tender-sebut-harga/iklan-tawaran-tender/"
+
+script_name : "my_rurallinkitt_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'MS'
+
+performance_country / org_country	: 'MY'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'MYR'
+
+-------------------------------------------------------------------------------------------------------------------------------------
+org_state	: NEGERI
+
+local_title	: 	TAJUK
+
+notice_no	: NO RUJUKAN
+
+local_description / notice_summary_english	: PENERANGAN
+
+publish_date	: Tarikh Terbitan		Com:Grab time also
+
+notice_deadline	 : TARIKH TUTUP			Com:Grab time also
+
+attachments		: 'Tender Document' pass static
+
+external_url	: LAMPIRAN
+
+notice_url	: pass main url "https://www.rurallink.gov.my/tender-sebut-harga/iklan-tawaran-tender/"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'KEMENTERIAN KEMAJUAN DESA DAN WILAYAH'
+
+org_parent_id	: '7813426'
+
+
+=====================================================(Format - 3)===============================================================
+Note : Go to URL : "https://www.rurallink.gov.my/tender-sebut-harga/iklan-kenyataan-sebutharga/"
+
+script_name : "my_rurallinkiks_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'MS'
+
+performance_country / org_country	: 'MY'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'MYR'
+
+-------------------------------------------------------------------------------------------------------------------------------------
+org_state	: NEGERI
+
+local_title	: 	TAJUK
+
+notice_no	: NO RUJUKAN
+
+local_description / notice_summary_english	: PENERANGAN
+
+publish_date	: Tarikh Terbitan		Com:Grab time also
+
+notice_deadline	 : TARIKH TUTUP			Com:Grab time also
+
+attachments		: 'Tender Document' pass static
+
+external_url	: LAMPIRAN
+
+notice_url	: pass main url "https://www.rurallink.gov.my/tender-sebut-harga/iklan-kenyataan-sebutharga/"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'KEMENTERIAN KEMAJUAN DESA DAN WILAYAH'
+
+org_parent_id	: '7813426'
+
+
+=====================================================(Format - 4)===============================================================
+Note : Go to URL : "https://www.rurallink.gov.my/tender-sebut-harga/iklan-kenyataan-kerja-undi/"
+
+script_name : "my_rurallinkikku_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'MS'
+
+performance_country / org_country	: 'MY'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'MYR'
+
+-------------------------------------------------------------------------------------------------------------------------------------
+org_state	: NEGERI
+
+local_title	: 	TAJUK
+
+notice_no	: NO RUJUKAN
+
+local_description / notice_summary_english	: PENERANGAN
+
+publish_date	: Tarikh Terbitan		Com:Grab time also
+
+notice_deadline	 : TARIKH TUTUP			Com:Grab time also
+
+attachments		: 'Tender Document' pass static
+
+external_url	: LAMPIRAN
+
+notice_url	: pass main url "https://www.rurallink.gov.my/tender-sebut-harga/iklan-kenyataan-kerja-undi/"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'KEMENTERIAN KEMAJUAN DESA DAN WILAYAH'
+
+org_parent_id	: '7813426'
+
+

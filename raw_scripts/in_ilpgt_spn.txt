@@ -1,0 +1,55 @@
+main_url : "https://www.ilpgt.com/html/tender.php"
+
+script_name : "in_ilpgt_spn"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4 
+
+procurment_method : 2
+
+
+-------------------------------------
+tender_html_page
+-------------------------------------
+document_type_description : "Tender"
+
+notice_no : 	Tender Number , if not available then grab from notice_url
+
+publish_Date : Tender Date
+
+org_name : "Instrumentation Limited"
+
+org_parent_id : "7805973"
+
+org_state : "kerala"
+
+org_city : palakkad
+
+org_address : Address
+
+org_country : IN
+
+org_language : EN
+
+local_title : Description
+
+notice_url : Tender Number
+
+notice_text :   along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+detail_page
+-----------
+notice_deadline : Closing Date , take time too
+
+file_name  : "Tender documents"
+
+external_url : take from detail_page click on "Tender" red coloured hyperlink , ref_url : https://www.ilpgt.com/html/tenderview.php?id=22341

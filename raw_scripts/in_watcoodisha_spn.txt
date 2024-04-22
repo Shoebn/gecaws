@@ -1,0 +1,56 @@
+
+######################################################################################################################################################
+script_name: in_watcoodisha_spn	
+
+urls: "https://watcoodisha.in/tenders/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if data is present in "Corrigendum" then pass notice_type -16 and change data accordingly
+
+procurement_method: "2"
+
+org_name --- WATER CORPORATION OF ODISHA
+
+org_parent_id -- 7490590
+
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- Tender Title	
+
+publish_date --- Published Date	
+
+notice_date --- Last Date Of Submission	
+
+notice_url --- https://watcoodisha.in/tenders/
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+
+
+#attachment >>>> Documents (click on the blue href link o download_
+	
+
+external_url --- "Documents" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Documents	
+
+file_type --- (extension)... eg - pdf
+
+	
+
+

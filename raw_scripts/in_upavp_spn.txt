@@ -1,0 +1,57 @@
+
+
+36256
+script_name : in_upavp_spn
+
+url : "https://upavp.in/en/tenders"
+
+page_no : 10
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the local_tile ("Description") have keyword "Corrigendum" or "Cancellation" then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Tenders / EOI"
+	
+local_title : Tender Specification
+
+publish_date : Date of Uploading
+	
+notice_deadline :Date and Time of Submission   ( take time also )
+
+document_opening_date : Date and Time of Opening
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://upavp.in/en/tenders
+
+
+customer_details
+----------------
+
+org_parent_id : 7469004
+
+org_name : UTTAR PRADESH HOUSING AND DEVELOPMENT BOARD
+
+org_state : Uttar Pradesh 
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : Tender Specification ( Take file name in text form )
+
+external_url : Tender Specification

@@ -1,0 +1,61 @@
+
+######################################################################################################################################################
+
+script_name: in_hcl_spn
+           
+urls:"https://hindustancopper.com/Page/TenderList"
+
+page_no: 20
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: HINDUSTAN COPPER LIMITED
+
+org_parent_id: 7527321
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+org_address --- Unit Name
+
+notice_no --- Enquiry No 
+
+local_title --- Short Title
+
+notice_deadline --- Closing Date/Time
+
+est_amount / netbudgetlc --- Cost of Tender Document (Rs.)
+
+publish_date --- Enquiry Date
+
+notice_url --- Enquiry No
+
+notice_text --- page_detail 
+#Note - take HTML body of main page
+
+earnest_money_deposit --- EMD (Rs)
+
+*****************************************************************************
+                                 #Page_main
+*****************************************************************************
+
+
+#attachment
+
+click on ""Download Tender Document" and " Download Corrigendum Document"" and " Download Corrigendum Document	" for attachments
+
+external_url --- "Download Tender Document" and " Download Corrigendum Document" (click on the href for documents Tender Document)	
+
+file_name --- "Download Tender Document" and " Download Corrigendum Document" 
+
+file_type --- "Download Tender Document" and " Download Corrigendum Document" (extension)... eg - pdf	
+
+file_size --- "Download Tender Document" and " Download Corrigendum Document"... eg- (164152 bytes) 

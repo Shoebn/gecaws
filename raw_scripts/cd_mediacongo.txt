@@ -1,0 +1,51 @@
+publish_date is in order.
+
+*******************************************************************************************************
+
+urls="https://www.mediacongo.net/appels.html"
+
+page_no=2
+
+main_language='FR'
+
+performance_country='CD'
+
+currency='CDF'
+
+procurement_method=2
+
+notice_type=4		condition-1)if before local_title "Extension de date" or "Modifié" click was present then pass notice_type=16. Ref_notice_no=AOF37915.
+					condition-2)if local_title contains "AVIS D'ANNULATION" then pass notice_type 16. Ref_notice_no=AOF37864.
+					condition-3)if local_title contains "ATTRIBUTION DE MARCHE" then pass notice_type 7. Ref_notice_no=AOF37936.
+					otherwise pass notice_type=4.
+							
+script_name='cd_mediacongo_spn'			cmt:if notice_type=4 then script_name='cd_mediacongo_spn'. if notice_type=7 then script_name='cd_mediacongo_ca'. if notice_type=16 then script_name='cd_mediacongo_amd'.
+
+org_country = CD
+
+org_language = FR
+*******************************************************tender_html_element*********************************
+local_title = Objet			cmt:grab only title.Don't grab notice_no.
+
+notice_no = Objet			cmt:grab only the number after local_title.
+
+org_name = Organisme
+
+org_city = Lieu
+
+publish_date = Insérée
+
+notice_url = Objet			cmt:click on local_title.
+
+notice_text = grab all the page_details data as well as the row wisw data of tender_html_element.
+
+**************************************************page_details************************************************
+ref_url:"https://www.mediacongo.net/appel-societe-37854_cordaid_acquisition_des_reactifs_de_bacteriologie_a_livrer_a_bukavu_en_rdc.html"
+notice_deadline = Date de clôture :			cmt:deadline not present then pass threshold.Don't pass notice_deadline if notice_type=7.
+
+document_opening time = Ouverture des offres :
+
+attachments[] Cliquez ici pour télécharger le
+file_name = 'Tender Document' 
+file_description = 'Tender Document'
+external_url = Cliquez ici pour télécharger le

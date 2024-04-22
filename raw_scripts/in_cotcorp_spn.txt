@@ -1,0 +1,64 @@
+script_name : in_cotcorp_spn
+
+url : "https://cotcorp.org.in/Notices.aspx"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4
+
+-----------------
+tender_html_page
+-----------------
+
+notice_no : Tender Number	
+
+local_title : Description
+
+publish_date : Tender Date/Time	, take time too
+
+document_opening_time : Opening Date and Time of Submission	
+
+notice_deadline : Last Date and Time of Submission	
+
+est_amount / grossbudgetlc : Estimated Cost	
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://cotcorp.org.in/Tender.aspx	
+
+
+attachments
+-----------
+
+file_name : "Document"
+
+external_url : download from "Document" field
+
+
+customer_details 
+----------------
+org_address : Branch (field from tender page)	
+
+org_name : "THE COTTON CORPORATION OF INDIA LIMITED"
+
+org_parent_id : 7125613
+
+org_Country : IN
+
+org_language : EN
+
+
+
+
+
+
+
+	

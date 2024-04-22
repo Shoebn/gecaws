@@ -1,0 +1,54 @@
+script_name : in_orissahighcourt_spn
+
+url : "https://www.orissahighcourt.nic.in/tender-notice/"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the main title  has "Corrigendum" appears then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+dcoument_type_description : "Tender Notice"
+
+local_title :  , split the above text from "Publish Date:" field
+
+publish_date : Publish Date: 
+
+documnent_opening_time : Opening Date
+
+notice_deadline : Closing Date:
+
+notice_text :  take the from detail_page as well as data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : click on file_size for detail_page
+
+-----------
+attachments  (available in detail_page)
+-----------
+file_size : , split the file size  after "Closing Date:" field
+
+file_name :  , for file_name click on "file_size" it will pass into detail_page , split only file_name for ex."tender_1709291519.pdf" , here take only "tender_1709291519"
+
+external_url : take from detail_page
+
+----------------
+customer_details 
+----------------
+org_name : "HIGH COURT OF ORISSA"
+
+org_parent_id : 7281210
+
+org_Country : IN
+
+org_language : EN
+
+org_state : "orissa"

@@ -1,0 +1,52 @@
+######################################################################################################################################################
+transalte the site into english "click on top right corner "hindi" to translate"
+
+script_name: in_mpurban_spn
+   
+urls: "https://www.mpurban.gov.in/DMSDocument?doctypeid=Tg3R3dzL5d8qh2W0SyphdQ=="
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: Urban Development and Housing Department (Madhya Pradesh Government)
+
+org_parent_id: 7787439
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- (static) TENDER-NIT
+
+local_title --- Subject
+
+notice_no --- Dispatch No.	
+
+publish_date --- Issued Date	
+
+notice_deadline --- Submission date and time(also take time)
+
+notice_url --- https://www.mpurban.gov.in/DMSDocument?doctypeid=Tg3R3dzL5d8qh2W0SyphdQ==
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment >>>> Download		
+
+external_url --- Download >>> (click on the href for documents File)	
+
+file_name --- Tender Document 	
+
+file_type --- (extension)... eg - pdf
+

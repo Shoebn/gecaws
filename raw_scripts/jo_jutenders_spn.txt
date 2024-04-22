@@ -1,0 +1,43 @@
+Note : Go to URL : "http://tenders.ju.edu.jo/Tenders/Forms/School_All_Tenders.aspx"
+
+script_name : "jo_jutenders_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'AR'
+
+performance_country / org_country	: 'JO'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'JOD'
+
+=================================================================================================================================================
+
+notice_no		: 	رقم العطاء
+
+local_title		: اسم العطاء
+
+publish_date	: تاريخ طرح العطاء
+
+notice_deadline		: تاريخ تقديم العروض
+
+document_purchase_end_time		: تاريخ انتهاء بيع نسخ العطاء
+
+org_name	: 'UNIVERSITY OF JORDAN'
+
+org_parent_id	: '7536419'
+
+org_email	: 'Admin@ju.edu.jo' pass static
+
+org_phone	: '5355000 6 962' pass ststic
+
+attachments		: 'Tender Document' pass static
+
+external_url	: Click on rhgtt stde of "رقم العطاء" this field 
+
+notice_url		: اسم العطاء			Com:Click on "اسم العطاء" this field hyperlink than grab the data
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record

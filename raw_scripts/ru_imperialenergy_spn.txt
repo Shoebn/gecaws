@@ -1,0 +1,55 @@
+Note : Go to URL : "https://www.imperialenergy.com/en/contractingwithus/tendersnew/"
+
+script_name : "ru_imperialenergy_spn"				
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'RU'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'RUB'
+
+=================================================================================================================================================
+
+local_title		: Get data above "Date started receiving offers" this keyword
+
+noitce_no		: Take after "local_title" round brackets numerical value			Ex.,"Repair of facilities of Snezhnoye OTF https://www.imperialenergy.ru/ru/contractingwithus/tendersnew/full/4022/ (№08-2024)" Take only "№08-2024"
+
+publish_date	: Date started receiving offers
+
+notice_deadline		: The deadline offers
+
+notice_url		: Read more				 Com:Click on "Read more" hyperlink	than grab the data
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record
+
+attachments		: Documentation			[page_detail]		Com:Click on after "Documentation" this keyword hyperlink
+
+file_size		: Documentation			[page_detail]		Com:Click on after "Documentation" this keyword hyperlink
+	
+external_url	: Documentation			[page_detail]		Com:Click on after "Documentation" this keyword hyperlink
+
+org_name		: 'IMPERIAL ENERGY'
+
+org_parent_id	: '7717682' 
+
+org_address		: 'Prospekt Kirova d. 51 a, str. 15, Tomsk, Russian Federation, 634041' pass static
+
+org_phone		: '+7 (3822) 55 68 68' pass static
+
+org_fax			: '+7 (3822) 56 14 74' pass static
+
+org_email		: 'office@imperialenergy.ru' pass static
+
+--------------------------------------------------------------------------------------------------------
+notice_contract_type / contract_type_actual		: Get data above the "local_title" on tender_html_element		
+
+Ex.,"Services Provision of services on repair of nodes and components, technical maintenance of automobiles and support vehicles of LLC Nord Imperial https://www.imperialenergy.ru/ru/contractingwithus/tendersnew/full/4016/ (№07-2024)" take only "Services"
+
+Com:notice contrac type mapping as per below ("Geological exploration operations=sevices","Oil-field related services=sevices","Supply of block-modular equipment=Supply","Supply of block-modular constructions (buildings)=Supply","Supply of oil-field equipment=Supply","Supply of inventory items=Supply","Construction of oilfield facilities=Works","Construction of wells and related services=Works","Transportation services","Insurance=services","Construction (purchases)=Supply","Supply (purchases)=Supply","Engineering (purchases)=services","Assets disposal (purchases)=services")
+---------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,57 @@
+Note : login is required for details login :  akanksha3 -------- password :Ak@123456
+
+script_name : cn_cnbidding_ca
+
+url : "http://www.cnbidding.com/successbid/search.php"
+
+page_no : 7 
+
+main_language : CN
+
+performance_country : CN
+
+procurement_method : 2
+
+notice_type : 7
+
+currency : CNY
+
+
+tender_html_page
+----------------------------
+document_type_description : "中标公告"
+
+document_opening_time , 开标日期
+
+publish_date , 公示日期
+
+org_name , 招标机构
+
+notice_url , 标题
+
+notice_text , cmt : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+detail_page
+------------------
+local_title , cmt : take the main title of the page for ex. "番禺丽江花园、粤海丽江花园员工饭堂食材配送项目采购中选公告" , ref_url : "http://www.cnbidding.com/successbid/disp_brid_n65af00c47b081.html"
+
+notice_no , 招标编号：
+
+award_date , 评标结果公示日期：, cmt : take "2023-12-26" date as a award_date , ref_url : "http://www.cnbidding.com/successbid/disp_brid_n6589347e42497.html"
+
+bidder_name , 最终中标商：, ref_url : "http://www.cnbidding.com/successbid/disp_brid_n65a87ac5b3ac3.html" , cmt : if this field not availabel then grab from "" 
+
+
+bidder_address , 供应商地址：
+
+net_awardvaluelc , 中标（成交）金额, url_ref : 	http://www.cnbidding.com/successbid/disp_brid_n65a4db73a5953.html , if the amount has 	single quantity such as "380 yuan/person" ref_url : 					"http://www.cnbidding.com/successbid/disp_brid_n65a4db73a5953.html" then dont take 	value , take overall  amount such as "473,000 yuan" ref_url : 						"http://www.cnbidding.com/successbid/disp_brid_n6556cd1eef87f.html"
+
+org_address , 代理机构地址：  , ref_url : http://www.cnbidding.com/successbid/disp_brid_n65b758d03f56d.html
+
+contact_person , 联系人（业务）：  
+
+org_phone , 联系电话：
+
+org_email , Emai：

@@ -1,0 +1,98 @@
+
+
+*******************************************************za_jhbproperty_spn*****************************************
+
+script_name			'za_jhbproperty_spn'		
+urls				"https://jhbproperty.co.za/supply-chain-management-scm/rfqs/","https://jhbproperty.co.za/supply-chain-management-scm/rfps/"					
+page_no					3
+procurement_method		2
+notice_type				4		
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN' 
+org_country				'ZA'
+org_language			'EN'
+org_name			'City of Joburg Property Company SOC Ltd.'
+org_parnet_id		'7804896'
+org_phone			'+27 10 219 9000'
+org_fax				'+27 10 219 9400'
+org_email			'clientservicingunit@jhbproperty.co.za'
+org_website			'www.jhbproperty.co.za'
+org_address			'P.O Box 31565,Braamfontein,2017'
+
+
+document_type_description:
+				cmt:1)if grabbing data from "https://jhbproperty.co.za/supply-chain-management-scm/rfqs/" this url then pass document_type_description as 'Request For Quotations (RFQs)'.
+					2)if grabbing data from "https://jhbproperty.co.za/supply-chain-management-scm/rfps/" this url then pass document_type_description as 'Request For Proposals (RFPs)'    
+
+Grab below data from tender_html_element.
+publish_date:Date
+notice_no:Bid Number
+local_title:Bid Description
+notice_deadline:Closing Date
+
+
+
+notice_url:Bid Description
+notice_text:take all the data from page_detail as well the "tender_html_element" Row wisedata in Notice Text. of each record. 
+
+
+Grab below data from page_details.
+
+attachments[]	ref_url:"https://jhbproperty.co.za/web_tender/request-for-proposals-for-the-appointment-of-an-urban-designer-to-strategicly-develop-a-precint-plan-for-the-development-of-the-inner-city/"
+file_name:Download Tender Document
+file_type:Download Tender Document
+		cmt:split only file_extension from external_url.
+external_url:Download Tender Document
+
+file_name:Download Annexure
+file_type:Download Annexure
+		cmt:split only file_extension from external_url.
+external_url:Download Annexure
+
+
+
+
+
+
+
+
+
+
+*******************************************************za_jhbproperty_ca*****************************************
+if in document_type_description field "AWARDED" keyword is present then only grab that record.
+
+
+script_name			'za_jhbproperty_ca'		
+urls				"https://jhbproperty.co.za/supply-chain-management-scm/awarded-bids/"
+page_no					3
+procurement_method		2
+notice_type				7		
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN' 
+org_country				'ZA'
+org_language			'EN'
+org_name			'City of Joburg Property Company SOC Ltd.'
+org_parnet_id		'7804896'
+org_phone			'+27 10 219 9000'
+org_fax				'+27 10 219 9400'
+org_email			'clientservicingunit@jhbproperty.co.za'
+org_website			'www.jhbproperty.co.za'
+org_address			'P.O Box 31565,Braamfontein,2017'
+
+
+
+
+Grab below data from tender_html_element.
+related_tender_id:Bid Number
+local_title:Bid Description
+publish_date:Published Date
+document_type_description:Status
+
+Grab below data from page_details.
+bidder_name:Name Of Awarded Bidder
+
+ref_url:"https://jhbproperty.co.za/bid_status/notice-of-award-egc-properties-ipty-limited-rfp-23-i-2011-%c2%b7-request-for-proposal-for-the-lease-and-development-of-erf-4956-johannesburg/"
+format-1)attachments:Submitted Bids (Opening Register)
+format-2)attachments:Appointment Letter

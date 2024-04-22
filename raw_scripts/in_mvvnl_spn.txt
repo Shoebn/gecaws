@@ -1,0 +1,34 @@
+script_name			in_mvvnl_spn
+urls				"https://www.mvvnl.in/en/tenders"
+page_no				tender_html_element 	//*[@id="ContentPlaceHolder_Body_gvtender"]/tbody/tr		2
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			4
+----------------------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.mvvnl.in/en/tenders" and grab the data
+
+tender_html_element
+
+"https://www.mvvnl.in/en/tenders" notice_url
+
+take all the data from "tender_html_element" of each record  = notice_text
+
+Tender Specification = notice_no	com:take hyperlink as a text
+
+Particulars = local _title
+
+Date and Time of Opening = publish_date		com:take time also
+
+"Take a threshold" = notice_deadline
+
+Date and Time of Opening = document_opening_time	com:take time also
+
+Issuing Authority = org_name
+
+Tender Specification = attachments
+
+IN = org_country
+
+EN = org_langu

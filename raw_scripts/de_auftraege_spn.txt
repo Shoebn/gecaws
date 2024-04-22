@@ -1,0 +1,44 @@
+script_name					de_auftraege_spn 
+notice_type					4		
+procurement_method			2
+urls						"https://www.auftraege.bayern.de/Dashboards/Dashboard_off?BL=09"
+page_no						3
+performance_country			DE
+currancy					EUR
+main_language				DE
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.auftraege.bayern.de/Dashboards/Dashboard_off?BL=09" and grab the data
+
+Temder_Html_Element
+
+local_title   =   Titel
+
+publish_date    =  Publikation
+
+notice_deadline		=  Frist
+
+type_of_procedure	= 	Titel		Com:Grab the last line
+
+org_address   =   Vergabestelle
+
+notice_url    =  to  open the page_main click on " I " button hyperlink 
+
+notice_text     =      take all the data from page_main as well the  "tender_html_element" of each record  
+-----------------------------------------------------------------------------------------------------
+Page_Main
+
+org_name    =    Healy Hudson GmbH
+
+org_parent_id   = 7800848
+
+org_country    = DE
+
+org_language  = DE
+
+notice_no		= page_main    Com:Splite a notice_no after title........ Take a numaric value
+
+cpv_code   =  CPV - Klassifizierung			Com:take a numaric value
+
+category		=   CPV - Klassifizierung        Com:Splite after numaric value text
+
+attachments 	=   Dokumente		Com:Click on "Dokumente" and "Bekanntmachung" take both data grab

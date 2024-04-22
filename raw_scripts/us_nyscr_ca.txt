@@ -1,0 +1,58 @@
+LogIn ID=akanksha.a@dgmarket.com
+Password=Ak@1234567
+
+Note:Open the site than first "Lon in" than click on "Bid Results/Awards" tab than grab the data 
+ 
+script_name:us_nyscr_ca		
+
+urls:"https://www.nyscr.ny.gov/contracts.cfm"
+
+page_no:       tender_html_element 	//*[@id="adData"]/table/tbody/tr    10
+
+performance_country:'US'
+
+currancy:'USD'	
+
+main_language:'EN'      
+
+procurement_method:2
+
+notice_type:7
+
+local_title  : tender_html_element  > Title
+
+publish_date : tender_html_elementt  >  Awards Posted
+
+notice_url : tender_html_element > View bids/awards
+
+notice_text: page_detail															Note:Grab "Description","Contact Info","Documents","Updates","Bid Results/Awards" this all tab data in notice_text.	Note:Take "tender_html_element" data also
+
+notice_no : page_detail > Contract Number
+	Note:If notice_no is blank than grab frmo "CR Number:" this filed
+
+contract_duration : page_detail > Contract term
+
+customer_detail[]
+	Note:Click on "Contact Info" this tab than grab the data
+   	org_name:	tender_html_element > Agency
+    	org_country:'US'
+    	org_city: page_detaiul > County(ies)
+    	org_language:'EN'
+    	org_address :  page_detail  > Primary contact 	Note:Click on "Contact Info" this tab than grab the data	Note:Splite between "Primary contact:" and "Ph:" data
+    	org_phone : page_detail > Ph:		Note:Splite after this keyword
+	org_email : page_detail > Primary contact 	Note:Splite <a> tab
+
+attachments[] : page_detail > Bid Results/Awards		Note: Click on "Bid Results/Awards" this tab on page_detail
+	Ref_url=https://www.nyscr.ny.gov/business/adsPubView.cfm?ID=F81ABC92-B761-4F79-B6E9-65B242FB09ED&page=Open%20Ads	
+	file_name : page_detail	 > Document name	Note:Don't take file extention.........Take both data
+	file_type : page_detail	 > Document name	Note:Take only file extention.........Take both data
+	external_url: page_detail > Document title	
+
+	
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+Note : Go to URL : "https://choutatsu.riken.jp/r-world/info/procurement/"
+
+script_name : "jp_choutatsurik_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'JA'
+
+performance_country / org_country	: 'JP'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'JPY'
+
+=================================================================================================================================================
+
+publish_date		: 公告日
+
+notice_deadline		: 入札締切日
+
+document_opening_time		: 開札日
+
+document_type_description	; 調達形態
+
+local_title		: 件名
+
+attachments		: 入札公告のダウンロード		[page_detail]     Com : Click on "件名" local_title hyperlink than grab the data
+
+external_url	: 入札公告のダウンロード		[page_detail]     Com : Click on "件名" local_title hyperlink than grab the data
+
+org_name		: 'RIKEN'
+
+org_parent_id	: '7731746'
+
+org_address		: 調達場所
+
+contact_person	: 担当		[page_detail]  Com:Grab first line text.......Ex.,"白井　健太 0791-58-0063" take only "白井　健太"
+
+org_phone		: 担当		[page_detail]  Com:Grab second line numbber.......Ex.,"白井　健太 0791-58-0063" take only "0791-58-0063"
+
+notice_url		: 件名
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record

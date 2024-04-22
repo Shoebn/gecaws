@@ -1,0 +1,51 @@
+script_name : in_uiic_spn
+
+url : "https://uiic.co.in/en/tenders-rfp"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Tenders/RFP"
+
+local_title :  Tender Description
+
+publish_date : Date
+	
+notice_deadline : Submission Date , take time too
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://uiic.co.in/en/tenders-rfp
+
+
+customer_details
+----------------
+org_parent_id : 7527219
+
+org_name : "UNITED INDIA INSURANCE COMPANY LIMITED"
+
+org_address : field from "Venue" field
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : take from "Download"  field
+
+external_url : take from "Download"  field

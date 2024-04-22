@@ -1,0 +1,76 @@
+
+for tender_details go to  "DPR (Version 1) Projects"   ,  "DPR (Version 2) Projects" , "DPR (Version 3) Projects" , "AE Projects" , "AE (Version 2) Projects"
+
+
+script_name : in_infracon_spn
+
+url : "https://infracon.nic.in/projects.asp?nid=5" , "https://infracon.nic.in/projects.asp?nid=4" , "https://infracon.nic.in/projects.asp?nid=1" , "https://infracon.nic.in/projects.asp?nid=2"
+      "https://infracon.nic.in/projects.asp?nid=3"
+page_no : 5
+
+main_language / org_language : EN
+
+performance_country : IN
+
+procurment_method : 2
+
+notice_type: 4, 
+
+currency: INR
+
+
+------------------------
+tender_html_page 
+-------------------------
+
+document_type_Description : take the textual heading (above data) from main tbody table , for ex."DPR (Version 3) Projects" 
+
+notice_no ,  Tender No 
+
+local_title , Project Name
+
+publish_date , 	Tender Date
+
+document_purchase_start_Date , Tender Start Date
+
+document_purchase_end_date , Tender End Date
+
+
+notice_deadline , Tender End Date
+
+
+org_name : "ministry of road transport and highways"
+
+
+org_parent_id : 7527167
+
+org_country : IN
+
+org_language : EN
+
+notice_url : "https://infracon.nic.in/projects.asp?nid=5" , "https://infracon.nic.in/projects.asp?nid=4" , "https://infracon.nic.in/projects.asp?nid=1" , "https://infracon.nic.in/projects.asp?nid=2"
+      "https://infracon.nic.in/projects.asp?nid=3"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+-----------------
+attachments 
+----------------
+file_name , Document
+
+file_type , Document
+
+external_url , Document
+
+
+
+
+
+
+
+
+
+
+

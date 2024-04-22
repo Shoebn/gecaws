@@ -1,0 +1,48 @@
+Note : Go to URL : "http://www.meconlimited.co.in/active_tender.aspx"
+
+script_name : "in_meconlimited_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4			Com:If in "Remarks" this field data is present than take notice_type 16
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no	: Tender No.
+
+publish_date	: Tender Date
+
+document_type_description	: Type
+
+local_title		: Tender Description
+
+document_purchase_end_time	: Sale End Date		Com:Grab time also
+
+notice_deadline	: Tender Due Date			Com:Grab time also
+
+notice_url	: take main url "http://www.meconlimited.co.in/active_tender.aspx"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'MECON LIMITED'
+
+org_parent_id	: '7522250'
+
+org_address	: 'MECON Limited, Vivekananda Path, P.O.Doranda, Ranchi, Jharkhand' pass static
+
+postal_code		: '834002' pass static
+
+org_fax	: '0651-2482189 /2214' pass static
+
+org_phone	: '0651-2483000' pass static
+
+org_email	: 'ranchi@meconlimited.co.in' pass static
+

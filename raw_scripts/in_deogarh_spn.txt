@@ -1,0 +1,57 @@
+######################################################################################################################################################
+
+
+script_name:in_deogarh_spn	
+   
+urls:"https://deogarh.nic.in/notice_category/tenders/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if keyword sach as " Expression of interest " encounters then take notice_type - 5
+
+procurement_method: "2"
+
+org_name: District of Deogarh	
+
+org_parent_id: 7786344
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- Tenders
+
+publish_date --- Start Date	
+
+notice_deadline --- End Date	
+
+local_title --- Title	
+
+local_description --- Description
+	
+notice_url --- https://deogarh.nic.in/notice_category/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+
+#attachment >>>> File
+
+external_url --- File (click on the href for documents File)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf	
+
+file_size --- File... eg (2MB,3MB)

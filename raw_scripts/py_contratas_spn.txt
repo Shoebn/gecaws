@@ -1,0 +1,87 @@
+######################################################################################################################################################
+#note --- "Fecha Desde" select date  >>>> Etapa >>> click on "En Convocatoria (Abierta)", "Convenio Vigente", "Convenio Finalizado", "Subasta en Competencia" (take data from each selected tab if present) 
+
+script_name: py_contratas_spn
+
+urls: "https://www.contrataciones.gov.py/buscador/licitaciones.html?nro_nombre_licitacion=&fecha_desde=22-03-2024&fecha_hasta=&tipo_fecha=ENT&convocante_tipo=&convocante_nombre_codigo=&codigo_contratacion=&catalogo%5Bcodigos_catalogo_n4%5D=&page=1&order=&convocante_codigos=&convocante_tipo_codigo=&unidad_contratacion_codigo=&catalogo%5Bcodigos_catalogo_n4_label%5D="
+
+page_no: 20
+
+performance_country / org_country    : "PY"
+
+currency: "PYG"
+
+main_language / org_language: "ES"
+
+notice_type: "4"
+
+procurement_method: "2"
+#note - take "AI - International Agreement" as "0", "AN - National Agreement"as "1"
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- take first line, black bold letter, href link 
+
+notice_no --- ID de Licitación
+
+org_name --- Convocante 
+
+document_type_description --- Etapa
+
+publish_date --- Publicación de la Convocatoria
+
+notice_deadline --- Fecha de Entrega de Ofertas
+
+notice_url --- take first line, black bold letter, href link (take href)
+
+notice_text --- page_detail ... also take data from "Pliego de Bases y Condiciones", "Ítems Solicitados", "Documentos" (page_detail)
+#note - also take tender_html_page 
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+est_amount / grossbudget_lc --- Datos de la Convocatoria >>> Monto Estimado
+
+earnest_money_deposit --- Datos de la Convocatoria >>> Porcentaje de Garantía de Mantenimiento de Ofertas
+
+document_opening_time --- Etapas y Plazos >>> Fecha de Apertura de Ofertas
+
+org_phone --- Datos del Contacto >>> Teléfono
+
+contact_person --- Datos del Contacto >>> Nombre
+
+org_email --- Datos del Contacto >>> Correo Electrónico
+
+
+
+#click on "Ítems Solicitados"
+#lots-  
+
+lot_actual_no --- Código de Catálogo	
+
+lot_title --- Nombre
+
+lot_quantity_uom --- Atributos >>> Unidad de Medida: (take data after "Unidad de Medida:")
+
+lot_quantity --- Cantidad	
+
+lot_grossbudget_lc --- Precio Unitario Estimado	
+
+lot_cpv --- Acciones >>> click on "Ver Catalogo" >>> Nivel Jerárquico >>> take the code 
+#note - click on  "Otros Productos de este Nivel 4" and take data from "codigo" 
+
+
+
+
+#attachment >>>> click on the "Documentos" >>> Documentos anexos
+	
+external_url --- "Documentos" >>> Acciones >>> Descargar Archivo (click on the href for documents File, ZIP)	
+
+file_name --- Nombre del Archivo	
+
+file_type --- (extension)... eg - pdf
+
+
+

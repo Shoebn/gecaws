@@ -1,0 +1,139 @@
+
+Note : use vpn (country : uzbekistan) for this source 
+
+
+for spn go to "Активные лоты" click on  1)Тендер   and  2)Отбор наилучшего предложения
+
+script_name : uz_uzex_spn
+
+url : "https://etender.uzex.uz/lots/1/0" , "https://etender.uzex.uz/lots/2/0"
+
+page_no : 20
+
+main_language : RU
+
+performance_country : UZ
+
+notice_type = 4
+
+procurment_method : 2
+
+currency : grab the currency from "Старт. цена:" field , for ex."56,000,000 UZS" , here take only "UZS"
+
+
+----------------
+tender_html_page
+----------------
+
+notice_no : № лота:  
+
+local_title : split the text below from "№ лота" field
+
+notice_deadline : Дата окончания:
+
+org_city : take data below from local_title , split only org_city for ex."город Ташкент,Мирзо-Улугбекский район" here split only "город Ташкент"
+
+notice_url : click on "Подробнее" for detail_page
+
+notice_text :  take the data from detail_page as well as tender_html_element  give td / tbody of main pg  ----
+
+
+detail_page
+-----------
+publish_date : Beginning Date:
+
+est_amount / grossbudgetlc : Итого стартовая стоимость:
+
+local_title : split the above data from  "Количество товара" field , for ex grab "Услуга по техническому обслуживанию инженерных сетей и коммуникаций"  , ref_url : "https://etender.uzex.uz/lot/345672"
+
+lot_quantity : Количество товара 
+
+lot_grossbudgetlc :Общая сумма
+
+lot_contract_duration :Срок гарантии
+
+org_name : Наименование заказчика:
+
+document_opening_time :Дата вскрытия:
+
+org_address : Адрес заказчика:
+
+org_phone : Телефон:
+
+contact_person : Контакты >> Ф.И.О , split the data below from "Ф.И.О" field
+
+
+attachments
+------------
+
+file_name : Файлы для скачивания: >> Название файла: , split only file_name for ex." 202402270616583923.pdf" here take only "202402270616583923"
+
+file_Szie :Размер: 
+
+file_type :  Тип:
+
+external_url :  Скачать , click on green button
+
+
+
+--------------------------------------------------------------------------------------------contract_award-----------------------------------------------------------------------------
+
+
+
+
+script_name : uz_uzex_ca
+
+url : "https://etender.uzex.uz/deals-list"
+
+page_no : 20
+
+main_language : RU
+
+performance_country : UZ
+
+notice_type = 7
+
+procurment_method : 2
+
+currency : 
+
+----------------
+tender_html_page
+----------------
+
+document_type_Description : "Состоявшиеся"
+
+related_tender_id  : № лота:  
+
+publish_date : Дата протокола:
+
+award_date : Дата протокола:
+
+local_title : Наименование:
+
+org_name : Наименования заказчика:
+
+org_country : UZ
+
+org_language : RU
+
+bidder_name : Наименования победителя:
+
+grosawardvaluelc : Сумма сделки:
+
+grossbudgetlc / est_Amount : Стартовая сумма:
+
+notice_url : "https://etender.uzex.uz/deals-list"
+
+notice_text :  take the data from tab  as well as tender_html_element  give td / tbody of main pg  ----
+
+
+
+
+attachments (open the tab for attachments )
+------------
+file_name : Файлы для скачивания: >> "Основной протокол" give static
+
+external_url :  Скачать , click on green button  
+
+

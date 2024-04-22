@@ -1,0 +1,44 @@
+Note : Go to URL : "https://www.nhsrcl.in/tenders/active-tenders"			
+
+script_name : "in_nhsrcl_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4		com:If in "Document Type >> Corrigendum" this field have data than take notice_type 16
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no	: Tender Ref No.
+
+local_title		: Tender Title
+
+publish_date	: Date of NIT
+
+notice_deadline	: Last Date of Submission		Com: Grab time also
+
+attachments		: Document Type >> Download		Com:Go to "Document" field than click on "View Details" than grab the data	Com:Take Corrigendum date also
+
+external_url	: Document Type >> Download		Com:Go to "Document" field than click on "View Details" than grab the data	Com:Take Corrigendum date also
+
+notice_url	:	take main url	"https://www.nhsrcl.in/tenders/active-tenders"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'NATIONAL HIGH SPEED RAIL CORPORATION LIMITED'
+
+org_parent_id	: '7558197'
+
+org_address	: 'National High Speed Rail Corporation Limited (NHSRCL) 2nd FLOOR, ASIA BHAWAN, ROAD NO-205 SEC-09, DWARKA, New Delhi -110077' pass static
+
+org_phone	: '011-28070000/01/02/03/04' pass static
+
+org_fax	: '011-28070150' pass static
+

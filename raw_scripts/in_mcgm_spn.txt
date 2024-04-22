@@ -1,0 +1,52 @@
+script_name : in_mcgm_spn	
+
+main_url : "https://portal.mcgm.gov.in/irj/portal/anonymous/qletenders_new?guest_user=english"
+
+page_no : 8
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Tender Description" has "Corrigendum" document available then take notice_type = 16
+
+
+tender_html_page
+----------------
+local_title : Tender Description
+
+notice_no : Bid Number
+
+notice_deadline : Closing Date
+
+publish_date : take threshold
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+notice_url : https://portal.mcgm.gov.in/irj/portal/anonymous/qletenders_new
+
+
+customer_details
+----------------
+org_name : BRIHANMUMBAI MUNICIPAL CORPORATION
+
+org_parent_id : 7788858
+
+org_adddress : Department Name
+
+org_country : IN
+
+org_language : EN
+
+org_state : Maharashtra
+
+
+attachments
+-----------
+file_name : take from "Tender Description" field
+
+external_url : take from "Tender Description" field

@@ -1,0 +1,83 @@
+
+######################################################################################################################################################
+
+script_name: tr_turasas_spn
+
+urls: "https://www.turasas.gov.tr/ihaleler"
+
+page_no: 1
+
+performance_country / org_country    : "TR"
+
+currency: "TRY"
+
+main_language / org_language: "TR"
+
+notice_type: "4"
+
+procurement_method: "2"
+ 
+org_name : TÜRKIYE RAIL SYSTEM ARAÇLARI SANAYİ A.Ş.
+
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- Açıklama
+
+publication_date --- İlanın Yayınlanma Tarihi	(dates are not in sequence )
+
+notice_deadline --- İhale Tarihi ve Saati (dates are not in sequence )
+ 
+notice_url --- click on " incele "
+
+notice_text --- page_detail
+#note- take tender_html page 
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+notice_no --- Dosya No :	
+
+notice_contract_type/ contract_type_actual --- İhale Türü  
+note - "Mal Alımı - Supply", "Hizmet Alımı - Services"
+
+org_city --- İhale Yeri :
+
+org_address --- İhale Adresi :	
+
+org_phone --- Telefon
+
+org_fax ---  Faks (split data after "-" "dash")
+
+org_mail --- E-posta :	
+
+contact_person --- Sorumlu Adı :
+
+org_address --- Yetkili Adı :  + İhale Adresi :
+
+
+
+
+İhale Dosyası
+
+#attachment >>>> click on the "İhale Dosyası" 
+#NOTE - also if data is present below "İhale Dosyası" if href is present take it in attachments
+	
+external_url --- "İhale Dosyası" >>>  (click on the href for documents File, ZIP)	
+#NOTE - also if data is present below "İhale Dosyası" if href is present take it in attachments
+
+file_name ---İhale Dosyası	
+#NOTE - also if data is present below "İhale Dosyası" if href is present take it in attachments
+
+file_type --- (extension)... eg - pdf
+#NOTE - also if data is present below "İhale Dosyası" if href is present take it in attachments
+
+
+
+
+	
+

@@ -1,0 +1,51 @@
+
+######################################################################################################################################################
+
+
+
+script_name: in_licindia_spn
+           
+urls:"https://licindia.in/tenders"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: LIC OF INDIA
+
+org_parent_id: 7733589
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+org_address --- Sort By Department	
+
+local_title --- Tender Description	
+
+published_date --- Date
+
+notice_deadline --- threshold
+
+
+#attachment
+
+click on "Tender Document" for attachments
+
+external_url --- Tender Document (click on the href for documents Tender Document)	
+
+file_name --- Tender Document 
+
+file_type --- Tender Document (extension)... eg - pdf	
+
+file_size --- Tender Document... eg- 566KB
+
+

@@ -1,0 +1,1076 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/tender"
+  },
+  "definitions": {
+    "tender": {
+      "type": "object",
+      "properties": {
+        "additional_source_id": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "additional_source_name": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "additional_tender_url": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          ]
+        },
+        "attachments": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/Attachment"
+          }
+        },
+        "bidding_response_method": {
+          "enum": [
+            "Not Available",
+            "Electronic",
+            "Manual"
+          ]
+        },
+        "category": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "class_at_source": {
+          "enum": [
+            "OTHERS",
+            "UNSPSC",
+            "NAICS",
+            "CPV",
+            "HSCode",
+            "BPM6",
+            "GSIN"
+          ]
+        },
+        "class_codes_at_source": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "class_title_at_source": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "completed_steps": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "contract_duration": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "cpvs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/cpvs"
+          }
+        },
+        "crawled_at": {
+          "type": "string",
+          "format": "datetime"
+        },
+        "currency": {
+          "$ref": "#/definitions/Curency",
+          "minLength": 1,
+          "maxLength": 3
+        },
+        "custom_tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/custom_tags"
+          }
+        },
+        "customer_details": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/customer_details"
+          }
+        },
+        "dispatch_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "datetime"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_cost": {
+          "$ref": "#/definitions/Budget"
+        },
+        "document_fee": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "document_opening_time": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_purchase_end_time": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_purchase_start_time": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_type_description": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "earnest_money_deposit": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "eligibility": {
+          "$ref": "#/definitions/NonMandatoryString"
+        },
+        "est_amount": {
+          "$ref": "#/definitions/Budget"
+        },
+        "funding_agencies": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/funding_agencies"
+          }
+        },
+        "grossbudgeteuro": {
+          "$ref": "#/definitions/Budget"
+        },
+        "grossbudgetlc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "identifier": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 4000
+        },
+        "local_description": {
+          "type": "string"
+        },
+        "local_title": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 4000
+        },
+        "lot_details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/lot_details"
+          }
+        },
+        "main_language": {
+          "type": "string",
+          "pattern": "^[a-zA-Z]{2,}$"
+        },
+        "netbudgeteuro": {
+          "$ref": "#/definitions/Budget"
+        },
+        "netbudgetlc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "notice_contract_type": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "enum": [
+            "Service",
+            "Works",
+            "Supply",
+            "Consultancy",
+            "Non consultancy"
+          ]
+        },
+        "notice_deadline": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "datetime"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notice_no": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "notice_summary_english": {
+          "type": "string",
+          "minLength": 5
+        },
+        "notice_text": {
+          "type": "string",
+          "minLength": 50
+        },
+        "notice_title": {
+          "type": "string",
+          "minLength": 5
+        },
+        "notice_type": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "notice_url": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "performance_country": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/definitions/performance_country"
+            }
+          ]
+        },
+        "performance_state": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/performance_state"
+          }
+        },
+        "pre_bid_meeting_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "procurement_method": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "project_name": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "publish_date": {
+          "type": "string",
+          "format": "datetime"
+        },
+        "related_tender_id": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "script_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "source_of_funds": {
+          "enum": [
+            "Others",
+            "Self Funded",
+            "Government funded",
+            "International agencies",
+            "NGO",
+            "Own"
+          ]
+        },
+        "tender_criteria": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/tender_criteria"
+          }
+        },
+        "type_of_procedure": {
+          "enum": [
+            "Competitive dialogue",
+            "Competitive tendering",
+            "Concession award procedure",
+            "Concession award without prior concession notice",
+            "Contract award without prior publication",
+            "Direct award",
+            "Innovation partnership",
+            "Negotiated procedure",
+            "Negotiated with prior publication of a call for competition /   competitive with negotiation",
+            "Negotiated without prior call for competition",
+            "Open",
+            "Other",
+            "Other multiple stage procedure",
+            "Other single stage procedure",
+            "Restricted"
+          ]
+        },
+        "type_of_procedure_actual": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "vat": {
+          "type": "number",
+          "minLength": 1,
+          "maxLength": 4
+        }
+      },
+      "required": [
+        "additional_source_id",
+        "additional_source_name",
+        "additional_tender_url",
+        "attachments",
+        "bidding_response_method",
+        "category",
+        "class_at_source",
+        "class_codes_at_source",
+        "class_title_at_source",
+        "completed_steps",
+        "contract_duration",
+        "cpvs",
+        "crawled_at",
+        "currency",
+        "custom_tags",
+        "customer_details",
+        "dispatch_date",
+        "document_cost",
+        "document_fee",
+        "document_opening_time",
+        "document_purchase_end_time",
+        "document_purchase_start_time",
+        "document_type_description",
+        "earnest_money_deposit",
+        "eligibility",
+        "est_amount",
+        "funding_agencies",
+        "grossbudgeteuro",
+        "grossbudgetlc",
+        "identifier",
+        "local_description",
+        "local_title",
+        "lot_details",
+        "main_language",
+        "netbudgeteuro",
+        "netbudgetlc",
+        "notice_contract_type",
+        "notice_deadline",
+        "notice_no",
+        "notice_summary_english",
+        "notice_text",
+        "notice_title",
+        "notice_type",
+        "notice_url",
+        "performance_country",
+        "performance_state",
+        "pre_bid_meeting_date",
+        "procurement_method",
+        "project_name",
+        "publish_date",
+        "related_tender_id",
+        "script_name",
+        "source_of_funds",
+        "tender_criteria",
+        "type_of_procedure",
+        "type_of_procedure_actual",
+        "vat"
+      ],
+      "title": "tender"
+    },
+    "NonMandatoryString": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "NonMandatoryString"
+    },
+    "Attachment": {
+      "type": "object",
+      "properties": {
+        "external_url": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "file_description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "file_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "file_size": {
+          "type": "number"
+        },
+        "file_type": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 60
+        }
+      },
+      "required": [
+        "external_url",
+        "file_description",
+        "file_name",
+        "file_size",
+        "file_type"
+      ],
+      "title": "Attachment"
+    },
+    "cpvs": {
+      "type": "object",
+      "properties": {
+        "cpv_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cpv_code"
+      ],
+      "title": "cpvs"
+    },
+    "lots_cpvs": {
+      "type": "object",
+      "properties": {
+        "lot_cpv_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lot_cpv_code"
+      ],
+      "title": "lots_cpvs"
+    },
+    "Curency": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "minLength": 1,
+          "maxLength": 3
+        }
+      ],
+      "title": "Curency"
+    },
+    "custom_tags": {
+      "type": "object",
+      "properties": {
+        "tender_custom_tag_description": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "tender_custom_tag_value": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "tender_custom_tag_company_id": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        }
+      },
+      "required": [
+        "tender_custom_tag_description",
+        "tender_custom_tag_value",
+        "tender_custom_tag_company_id"
+      ],
+      "title": "custom_tags"
+    },
+    "customer_details": {
+      "type": "object",
+      "properties": {
+        "contact_person": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 250
+        },
+        "customer_main_activity": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 250
+        },
+        "customer_nuts": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "org_address": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 250
+        },
+        "org_city": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "org_country": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-zA-Z]{2,}$",
+              "minLength": 1,
+              "maxLength": 2
+            }
+          ]
+        },
+        "org_description": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "org_email": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "email",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          ]
+        },
+        "org_fax": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "org_language": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2
+        },
+        "org_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "org_parent_id": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "org_phone": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "org_state": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "org_type": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "org_website": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "postal_code": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "type_of_authority_code": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        }
+      },
+      "required": [
+        "contact_person",
+        "customer_main_activity",
+        "customer_nuts",
+        "org_address",
+        "org_city",
+        "org_country",
+        "org_description",
+        "org_email",
+        "org_fax",
+        "org_language",
+        "org_name",
+        "org_parent_id",
+        "org_phone",
+        "org_state",
+        "org_type",
+        "org_website",
+        "postal_code",
+        "type_of_authority_code"
+      ],
+      "title": "customer_details"
+    },
+    "Budget": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "number",
+          "format": "float"
+        }
+      ],
+      "title": "Budget"
+    },
+    "funding_agencies": {
+      "type": "object",
+      "properties": {
+        "funding_agency": {
+          "type": "number",
+          "format": "int"
+        }
+      },
+      "required": [
+        "funding_agency"
+      ],
+      "title": "funding_agencies"
+    },
+    "lot_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lot_criteria_title": {
+          "type": "string"
+        },
+        "lot_criteria_weight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lot_is_price_related": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "lot_criteria_title",
+        "lot_criteria_weight",
+        "lot_is_price_related"
+      ],
+      "title": "lot_criteria"
+    },
+    "tender_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tender_criteria_title": {
+          "type": "string"
+        },
+        "tender_criteria_weight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tender_is_price_related": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "tender_criteria_title",
+        "tender_criteria_weight",
+        "tender_is_price_related"
+      ],
+      "title": "tender_criteria"
+    },
+    "AwardDetail": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bidder_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "address": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "initial_estimated_value": {
+          "$ref": "#/definitions/Budget"
+        },
+        "final_estimated_value": {
+          "$ref": "#/definitions/Budget"
+        },
+        "bid_recieved": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 10
+        },
+        "contract_duration": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "award_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "winner_group_name": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "grossawardvalueeuro": {
+          "$ref": "#/definitions/Budget"
+        },
+        "netawardvalueeuro": {
+          "$ref": "#/definitions/Budget"
+        },
+        "grossawardvaluelc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "netawardvaluelc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "award_quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "notes": {
+          "$ref": "#/definitions/NonMandatoryString"
+        }
+      },
+      "required": [
+        "bidder_name",
+        "address",
+        "initial_estimated_value",
+        "final_estimated_value",
+        "bid_recieved",
+        "contract_duration",
+        "award_date",
+        "winner_group_name",
+        "grossawardvalueeuro",
+        "netawardvalueeuro",
+        "grossawardvaluelc",
+        "netawardvaluelc",
+        "award_quantity",
+        "notes"
+      ],
+      "title": "awardDetail"
+    },
+    "Quantity": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "number",
+          "format": "float"
+        }
+      ],
+      "title": "Quantity"
+    },
+    "lot_details": {
+      "type": "object",
+      "properties": {
+        "award_details": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/AwardDetail"
+          }
+        },
+        "contract_duration": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "contract_end_date": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "datetime"
+            }
+          ]
+        },
+        "contract_number": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "contract_start_date": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "datetime"
+            }
+          ]
+        },
+        "contract_type": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "lot_actual_number": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "lot_award_date": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "datetime"
+            }
+          ]
+        },
+        "lot_cancellation_date": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "datetime"
+            }
+          ]
+        },
+        "lot_cpvs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/lots_cpvs"
+          }
+        },
+        "lot_criteria": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/lot_criteria"
+          }
+        },
+        "lot_description": {
+          "$ref": "#/definitions/NonMandatoryString"
+        },
+        "lot_grossbudget": {
+          "$ref": "#/definitions/Budget"
+        },
+        "lot_grossbudget_lc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "lot_is_canceled": {
+          "type": "boolean"
+        },
+        "lot_max_quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "lot_min_quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "lot_netbudget": {
+          "$ref": "#/definitions/Budget"
+        },
+        "lot_netbudget_lc": {
+          "$ref": "#/definitions/Budget"
+        },
+        "lot_number": {
+          "type": "number",
+          "format": "int"
+        },
+        "lot_nuts": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "lot_quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "lot_quantity_uom": {
+          "$ref": "#/definitions/NonMandatoryString",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "lot_title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "lot_vat": {
+          "$ref": "#/definitions/Budget"
+        }
+      },
+      "required": [
+        "award_details",
+        "contract_duration",
+        "contract_end_date",
+        "contract_number",
+        "contract_start_date",
+        "contract_type",
+        "lot_actual_number",
+        "lot_award_date",
+        "lot_cancellation_date",
+        "lot_cpvs",
+        "lot_criteria",
+        "lot_description",
+        "lot_grossbudget",
+        "lot_grossbudget_lc",
+        "lot_is_canceled",
+        "lot_max_quantity",
+        "lot_min_quantity",
+        "lot_netbudget",
+        "lot_netbudget_lc",
+        "lot_number",
+        "lot_nuts",
+        "lot_quantity",
+        "lot_quantity_uom",
+        "lot_title",
+        "lot_vat"
+      ],
+      "title": "lot_details"
+    },
+    "performance_country": {
+      "type": "object",
+      "properties": {
+        "performance_country": {
+          "type": "string",
+          "pattern": "^[a-zA-Z]{2,}$",
+          "minLength": 1,
+          "maxLength": 2
+        }
+      },
+      "required": [
+        "performance_country"
+      ],
+      "title": "performance_country"
+    },
+    "performance_state": {
+      "type": "object",
+      "properties": {
+        "performance_state": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "performance_state"
+      ],
+      "title": "performance_state"
+    }
+  }
+}

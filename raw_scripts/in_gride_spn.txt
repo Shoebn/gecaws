@@ -1,0 +1,70 @@
+######################################################################################################################################################
+script_name: in_gride_spn
+
+urls: "https://gride.org.in/tenders/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if data is given in "Corrigendum" then take notice_type = 16
+
+procurement_method: "2"
+
+org_name --- GUJARAT RAIL INFRASTRUCTURE DEVELOPMENT CORPORATION LIMITED (GRIDE)
+	
+
+org_parent_id -- 7620330
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+notice_no --- Nit No.(do not take hrf just take title)	
+
+local_title --- Name of Work
+
+publish_date --- Notification Date	
+
+notice_deadline --- Submission Date	
+
+earnest_money_deposit --- EMD(Rs.)
+
+notice_url ---	 Nit No.(click on href)	
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+org_phone --- Phone
+
+org_email --- Email
+
+contact person --- Contact Person
+
+notice_summary_english / local_description --- Tender Detail + Summary	
+
+document_opening_time --- Opening Date for Download		
+
+
+
+	
+
+#attachment >>>> Download	
+
+external_url --- "Download" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Download	
+
+file_type --- (extension)... eg - jpeg
+
+

@@ -1,0 +1,46 @@
+Note : Go to URL : "https://www.un.org/Depts/ptd/eoi?field_date_2_value%5Bvalue%5D=&field_date_2_value_1%5Bvalue%5D=&field_commodity_group_eoi_rfi_tid=All&items_per_page=40&order=field_date_2&sort=desc"
+
+script_name : "mfa_unpd_rei"			
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+notice_type : 5
+
+currancy			'USD'
+
+==========================================================================================================================================
+
+notice_no	: EOI No.
+
+local_title		: Title
+
+publish_date	: 	Start Date
+
+notice_deadline		: Expiry Date
+
+attachments	: EOI Details
+
+external_url	:  EOI Details		Com:Click on "Download PDF file" than grab the data
+
+additional_tender_url	: Com:Right site of "EOI Details" this field 
+
+notice_url	: pass main url "https://www.un.org/Depts/ptd/eoi?field_date_2_value%5Bvalue%5D=&field_date_2_value_1%5Bvalue%5D=&field_commodity_group_eoi_rfi_tid=All&items_per_page=40&order=field_date_2&sort=desc"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'United Nations (UN)'
+
+org_parent_id	: '7753241'
+
+org_address	:'405 East 42nd Street New York, NY 10017' pass static
+
+org_phone	: '+1-212-963-1127' pass static
+
+org_fax		: '+1-212-963-9858' pass static
+

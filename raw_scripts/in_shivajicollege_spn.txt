@@ -1,0 +1,48 @@
+script_name : in_shivajicollege_spn
+
+originalUrl / main_url / : "https://www.shivajicollege.ac.in/tender.php"
+
+page_no : 3
+
+countryNames / performance_country : IN
+
+notice_type : 4 , if  "Tender/Quotation description" has "Corrigendum" keyword then take notice_type=16
+
+currency: INR
+
+languageCode / org_language / main_language :  EN
+
+procurment_emthod : 2
+
+org_name : "SHIVAJI COLLEGE" static
+
+ORG_email : "shivajicollege.ac@gmail.com" static
+
+org_phone : "011-25116644" stattic
+
+org_address: Department
+
+org_city : "Delhi" static
+
+org_parent_id : 7624235
+
+notice_url : https://www.shivajicollege.ac.in/tender.php
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+local_title : Tender/Quotation description 
+
+publish_date :  Date of Publish   	
+
+notice_deadline : Last Date of Submission
+
+document_type_description : "Tenders & Quotations"  static
+
+
+attachments:
+-------------------
+file_name :  "Downloads" static
+
+file_type : Downloads
+
+external_url :   Downloads

@@ -1,0 +1,62 @@
+######################################################################################################################################################
+
+
+script_name: in_jipmer_spn		
+           
+urls:"https://www.jipmer.edu.in/tender"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#Note - if "CORRIGENDUM" is present in "Tender Notice" then take notice_type = "16"
+
+procurement_method: "2"
+
+org_name: Jawaharlal Institute of Postgraduate Medical Education and Research (JIPMER)
+	
+
+org_parent_id: 7784891
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+document_type_description --- Tenders
+
+local_title --- Title	
+
+published_date --- Date of Release	
+
+notice_deadline --- Last Date
+
+notice_url --- https://www.jipmer.edu.in/tender
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+#attachment
+
+click on  "Downloads" for attachments
+
+external_url --- Downloads (click on the href for documents File)	
+
+file_name --- Downloads	
+
+file_size --- Downloads	(717.87 KB)
+
+file_type --- (extension)... eg - pdf	
+
+
+
+
+	

@@ -1,0 +1,6 @@
+Type of procedure actual,Type of Procedure
+Simple acquisition,Other
+Open procedure,Open
+Competitive procedure with negotiations,Other
+Negotiation procedure without prior publication of invitations to tender,Negotiated procedure
+Partnership for Innovation,Other

@@ -1,0 +1,55 @@
+wa have required 2 VPN , 1) HMA VPN  2) hola vpn extention (https://chromewebstore.google.com/detail/hola-vpn-the-website-unbl/gkojfkhlekighikafcpjkiklfbnlmeio) 
+
+step 1) HMA vpn - first set on US server
+
+step 2) hola vpn - second  set on  kuwait server  (time limit only 30 min )
+
+
+note : zoom out screen for view all the fields
+
+
+script_name : kw_eprocmew_spn
+
+url : "https://eprocurement.mew.gov.kw/Content/AdsList.aspx"
+
+page_no : 7
+
+main_language : AR
+
+performance_country : KW
+
+notice_type : 4
+
+procurment_mthod : 2
+
+org_name : THE MINISTRY OF ELECTRICITY AND WATER
+
+org_parent_id : 7555159
+
+org_country : KW
+
+org_language : AR
+
+tender_html_page 
+-----------------
+notice_no : رقم الممارسة
+
+local_title : 	عنوان الممارسة
+
+notice_deadline : تاريخ الإغلاق
+
+publish_date : take threshold
+
+earnest_money_deposit : التامين الاولى بالدينار
+
+document_fee : الرسوم
+
+notice_url : https://eprocurement.mew.gov.kw/Content/AdsList.aspx
+
+notice_text :  take the data from tender_html_element (main page) ---- give td / tbody of main pg
+
+attachments
+--------------
+file_name : "تحميل المرفقات"
+
+external_url : تحميل المرفقات

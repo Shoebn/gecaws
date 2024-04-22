@@ -1,0 +1,63 @@
+in_pdicai_spn
+Professional Development Committee	
+7777969
+https://pdicai.org/Opportunities.aspx
+######################################################################################################################################################
+script_name: in_pdicai_spn
+
+urls: "https://pdicai.org/Opportunities.aspx"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note --- "
+
+procurement_method: "2"
+
+org_name --- Professional Development Committee	
+
+org_parent_id -- 7777969
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- first line, red href text 
+
+local_description / notice_summary_english --- split after "first line, red href text" till "Address"
+
+notice_deadline --- left hand top corner of tender    ........eg(May, 02 2024)
+
+org_address --- Address 
+
+org_phone --- Phone 
+
+org_email --- Email 
+
+publish_date --- Posted On:
+
+notice_url ---- click on  first line, red href text (just take href)
+
+notice_text --- page_detail
+#note - also take tender_html_page 	
+
+
+
+
+
+#attachment >>>> click on the blue form href for attachments, below Email
+	
+
+external_url --- "lick on the blue form href for attachments, below Email" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf
+
+file_size ---  eg (View ( 105.37 KB ) pdficon)

@@ -1,0 +1,41 @@
+Note : Go to URL : "https://cpcb.nic.in/tender.php"
+
+script_name : "in_cpcb_spn"				
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4			Com:If in "Corrigendum" this field have data than teke for notice_type 16	
+
+currency	: INR
+
+======================================================================================================================================================
+
+local_title		: Tender Title		Com:Take a text
+
+publish_date	: Release Date		Com:Grab time also
+
+notice_deadline		: Closing Date		Com:Grab time also
+
+org_name	: 'CENTRAL POLLUTION CONTROL BOARD'
+
+org_parent_id	: '7551616'
+
+contact_person	: Contact Person/Phone No.		Com:Take before the "," / "-" 		Ex.,"Smt. Meena Sharma, 011-43102243" take only "Smt. Meena Sharma"......Ex.,"Shri D. Gouda, DH Building  Division - 011-43102420" take only "Shri D. Gouda, DH Building  Division"
+
+org_phone	:	Contact Person/Phone No.		Com:Take after the "," / "-"	Ex.,"Smt. Meena Sharma, 011-43102243" take only "011-43102243"......Ex.,"Shri D. Gouda, DH Building  Division - 011-43102420" take only "011-43102420"
+
+notice_url	: pass main url	"https://cpcb.nic.in/tender.php"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record
+
+attachments	:	pass ststic 'Tender document'
+
+external_url	: Tender Title	 Com:Click on local_title hyperlink than grab the data		Com:Take for "Corrigendum" this field data also in attachments
+
+

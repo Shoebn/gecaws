@@ -1,0 +1,111 @@
+
+script_name : za_kznhealth_spn
+
+url : "https://www.kznhealth.gov.za/Tenders/current-tenders.htm"
+
+page_no : 3
+
+main_language / org_language : EN
+
+performance_country : ZA
+
+procurment_method : 2
+
+notice_type: 4 , if the "Bid Description" field has "Amendment" named document available then take notice_type = 16 
+
+currency: ZAR
+
+document_type_description : "Current Tenders"
+
+
+tender_page
+--------------	
+
+notice_number , Bid Number
+
+local_title , Bid Description
+
+publish_date , take threshold publish_date
+
+notice_deadline , Closing Date
+
+notice_url : "https://www.kznhealth.gov.za/Tenders/current-tenders.htm"
+
+notice_text :  take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+customer_details
+------------------
+org_name : "KWAZULU-NATAL DEPARTMENT HEALTH"
+
+org_country : ZA
+
+org_language : EN
+
+org_parent_id : 6991344
+
+
+documents
+---------
+file_name , 	Bid Number , Bid Description ,  	  cmt : take attachments from both fields
+external_url ,  Bid Number , Bid Description,      cmt : take attachments from both fields
+
+
+
+
+--------------------------------------------------------------------------contract-award--------------------------------------------------------------------------------------------------------
+
+
+steps : for award details go to URL : "https://www.kznhealth.gov.za/SCM/quotation-award.htm" , click on "Quotation Award 2024" tab select "february 2024" , and take date wise data
+
+script_name : za_kznhealth_ca
+
+url : "https://www.kznhealth.gov.za/SCM/quotation-award.htm"
+
+page_no : 3
+
+main_language / org_language : EN
+
+performance_country : ZA
+
+procurment_method : 2
+
+notice_type: 7 
+
+currency: ZAR
+
+document_type_description : "Quotation Award"
+
+
+tender_html_page
+----------------------
+local_title , Description	
+
+award_date , 	Award date
+
+notice_url : https://www.kznhealth.gov.za/SCM/Award/2024/February-2024.htm
+
+notice_text :  take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+notice_no  , Name , cmt : for ex."NKO 561.pdf" , here take only "NKO 561"
+
+
+documents , 
+---------
+file_name , 	Name , 	  cmt : ref_url : "https://www.kznhealth.gov.za/SCM/Award/2024/February-2024.htm"
+
+file_type  , 	Name , 	  cmt : ref_url : "https://www.kznhealth.gov.za/SCM/Award/2024/February-2024.htm"
+
+external_url ,  Bid Number , Bid Description,      cmt : take attachments from both fields
+
+
+customer_details (static)
+------------------
+org_name : "KWAZULU-NATAL DEPARTMENT HEALTH"
+
+org_address , 	Health Facility
+
+org_country : ZA
+
+org_language : EN
+
+org_parent_id : 6991344

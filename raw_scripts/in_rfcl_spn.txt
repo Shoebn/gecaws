@@ -1,0 +1,108 @@
+main_url : "https://www.rfcl.co.in/opentender.php"
+
+script_name : "in_rfcl_spn"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4  , if following cloumn field  "Download Addendum / Corrigendum" has field available then take notice_type = 16
+
+procurment_method : 2
+
+
+tender_html_page
+--------------------
+
+document_type_description : "Open Tenders"
+
+local_title : Tender Description
+
+notice_no : Tender No , if not available then grab from notice_url
+
+notice_deadline : vLast Submission Date and Time , take time too
+
+org_Addres : Department		
+
+
+notice_url : Tender Description , click on "Click to view Details" for details page
+
+
+detail_page
+--------------
+notice_text : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+local_description : Work Description	
+
+notice_summary _english : Work Description	
+
+pre_bid_meeting_date : Pre Bid Meeting Date and time	
+
+grossbudgetlc / est_Amount : Estimated Tender Value (INR)	
+
+netbdugetlc / estamount :  , if the amount has "(excl. GST)" keyword then take in netbudgetlc , ref_url : "https://www.rfcl.co.in/tenderdetail.php?id=421"
+
+tender_fee : Tender Fee (INR)	
+
+earnest_money_deposit : EMD Fee (INR)	
+
+publish_Date :Tender Publication date and time	, take time too
+
+document_opening_time :Tender opening date and time
+
+notice_contract_type : Tender Category	 , replace the following keyword with respective keywords ("Goods = Supply"  , "Services = Service" , "Works = Works")
+
+contract_type_Actual : 	Tender Category	
+
+
+org_details
+------------
+org_name : "Ramagundam Fertilizers and Chemicals Limited"
+
+org_address : Department , take from "tender_html_page"
+
+org_country : IN
+
+org_language : EN
+
+org_parent_id :  7624167
+
+contact_person : For Further Information Contact >> Name
+
+org_email : Email	
+
+org_phoene : Phone no	
+
+
+
+attachments (from detail_page)
+-----------
+
+file_name : Tender Document , take the data before the attachemtn file for ex."	Tender Document 1:" , ref_url : "https://www.rfcl.co.in/tenderdetail.php?id=412"
+
+file_type : Tender Document
+
+external_url : Tender Document
+
+
+attachment (from detail_page)
+
+file_name : Bidder Reply , take if available
+
+external_url : Bidder Reply
+
+
+
+attachments ((from detail_page) )
+------------
+
+file_name : File to be corrected , take the data before the attachemtn file for ex."Correct File 1 " , ref_url : "https://www.rfcl.co.in/tenderdetail.php?id=412"
+	
+file_type : File to be corrected	
+
+external_url : File to be corrected	
+	

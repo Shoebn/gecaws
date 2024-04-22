@@ -1,0 +1,54 @@
+Note : Go to URL : "https://www.saneg.com/tenders"
+
+script_name : "uz_saneg_spn"
+
+page_no : 5
+
+main_language/ org_language  : RU
+
+procurment_method : 2
+
+notice_type : 4
+
+================================TenderNotice==========================================
+
+id / Notice no	:Прямой запрос ТКП		Com:Splite between "Прямой запрос ТКП" this and "Дата объявления"
+				:Тендер		Com:Splite between "Тендер" this and "Дата объявления"
+				
+publishDate	:Take the line above the "local_title"			Com:Take in orange box data Ex.,"02/23/2024 Компрессор винтовой и ресивер сжатого воздуха" take only "02/23/2024"
+
+externalId / buyer internal id / org_parent_id	:'7772652'
+
+title/ local_title 	:Take the line above "Прямой запрос ТКП       /       Тендер" this keyword
+
+countryNames / performance_country	:'UZ'
+
+buyerName / org_name	:'Sanoat Energetika Guruhi'
+
+contact.address / org_address	: "Ташкент, проспект Бунедкор, 47" pass static
+
+contact.country		:'UZ'
+
+contact.email / org_email	: "info@saneg.com" pass static
+
+contact.phone / org_phone	: "+998 78 1500057" pass static
+
+bidDeadline  / Notice_deadline / submission_deadline	:Дата завершения приема заявок		Com:If "Дата завершения приема заявок" this keyword data is not present than take "Дата завершения приема предложений" this keyword data
+
+estimatedAmountCurrency / Currency 	:'UZS'
+
+lotsInfo 	:Лоты	[page_detail] 		Ref_url: "https://www.saneg.com/tender/1334-avtoshiny"
+
+lot_title	:Предмет	[page_detail]
+
+dispatch_date	:Дата объявления
+
+Attachments / Documents		:"Tender Documents" pass static
+
+External URL  	:Click on "ссылка для скачивания приглашения и сопроводительных документов" this hyperlink on "tender_html_element" page than grab the data
+
+notice_url 	:Click on "local_title" hyperlink than grab the data 
+
+originalUrl / main_url	:"https://www.saneg.com/tenders"
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the "tender_html_element" of each record

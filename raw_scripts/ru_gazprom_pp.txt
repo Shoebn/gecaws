@@ -1,0 +1,52 @@
+Note : Go to URL : "http://zakupki.gazprom-neft.ru/tenderix/index.php?FILTER%5BSORT%5D=DATE_START_DESC&LIMIT=100"
+
+script_name :	'ru_gazprom_pp'		Note:Use "Urban VPN-Russia"			Com:Click on "Планируемые закупки" this tab than grab the data			Com:If attachments possible than take otherwise skip
+
+page_no : 3
+
+main_language/ org_language  : 'RU'
+
+performance_country / org_country	: 'RU'
+
+procurment_method : 2
+
+notice_type : 3			
+
+currency	: 'RUB'
+======================================================================================================================================================
+
+notice_no	: Take after "№" this number		Ex.,"№ 478"
+
+local_title		: take the data below "№" this keyword
+
+notice_url	: click on "notice_no" hyperlink than grab the data
+
+notice_text	:	Take all the data from page_detail as well the  "tender_html_element" of each record
+
+local_description / notice_summary_english	: Описание
+
+publish_date	: Начало приема заинтересованности		[page_detail]
+
+notice_deadline	: Окончание приема заинтересованности	[page_detail]
+
+org_name	: Заказчик		[page_detail]
+
+class_title_at_source	: Категории закупки		[page_detail]
+
+document_type_description	: "Планируемые закупки" pass static
+
+-----------------------------------------------------------------------------------------------------------------
+Attachments 1 Format		Ref_url="https://zakupki.gazprom-neft.ru/tenderix/announcements/?ID=476"
+
+attachments	:	pass static 'Tender Document'
+
+external_url	: Список документов >> Скачать все			Com:Click on "Скачать все" this button than grab thre data
+-------------------------------------------------------------------------------------------------------------------
+Attachments 2 Format			Ref_url="https://zakupki.gazprom-neft.ru/tenderix/announcements/?ID=478"
+
+attachments	:	Список документов
+
+file_size	: Список документов
+
+external_url	: Список документов
+----------------------------------------------------------------------------------------------------------

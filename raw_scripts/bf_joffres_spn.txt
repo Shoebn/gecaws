@@ -1,0 +1,56 @@
+Note : Go to URL : "https://www.joffres.net/appel-offres-priv%C3%A9s"
+
+script_name : "bf_joffres_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'FR'
+
+performance_country / org_country	: 'BF'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'BHD'
+
+=================================================================================================================================================
+
+lical_title		:   Get data above "Expire le" this keyword	hyperlink as a text
+
+notice__deadline	: Expire le		Com:Take after "Expire le" this keywords data
+
+notice_url		: Click above "Expire le" this keyword	hyperlink
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record
+
+category		: Domaine de l'appel d'offre		[page_detail]
+
+notice_contract_type / contract_type_actual		:	Catégorie 		Com:notice contrac type mapping as per below ("Biens=Supply","Services=Service","Biens et service=Supply")
+
+publish_date		: Détails de l'offre >> Publié-le 		[page_detail]
+
+----------------------------------------------------------------------------------------
+
+org_phone		: Tél 	Com:Take between "Tél" and "E-mail" data		Ref_url="https://www.joffres.net/appeloffre/appel-d-offres-pour-le-recrutement-de-prestataires-de-services-en-vue-de-la-gestion-et-l-exploitation-du-restaurant-de-l-institut-2ie-a-ouagadougou-et-kamboinse-aao-n-2024-039-dsg-2ie-ps"
+			: If org_phone is not present in tender than pass static this '00226 02 45 07 07' 
+
+
+org_email		: E-mail	Com:Take data after "E-mail" this keyword		Ref_url="https://www.joffres.net/appeloffre/appel-d-offres-pour-le-recrutement-de-prestataires-de-services-en-vue-de-la-gestion-et-l-exploitation-du-restaurant-de-l-institut-2ie-a-ouagadougou-et-kamboinse-aao-n-2024-039-dsg-2ie-ps"
+			: If org_email is not present in tender than pass static this 'joffres@jofedigital.com'
+
+
+org_name		: 'JOFFRES'
+
+
+org_patent_id		: '7814757'
+
+
+org_address		: 'Rue Weem Doogo, Wemtenga, Ouagadougou, Burkina Faso' pass static
+
+--------------------------------------------------------------------------------------
+
+lot_title		: Take after "Lot" this keyword		[page_detail]		Ref_url="https://www.joffres.net/appeloffre/appel-d-offres-pour-le-recrutement-de-prestataires-de-services-en-vue-de-la-gestion-et-l-exploitation-du-restaurant-de-l-institut-2ie-a-ouagadougou-et-kamboinse-aao-n-2024-039-dsg-2ie-ps"
+			: Take after "LOT" this keyword		[page_detail]		Ref_url="https://www.joffres.net/appeloffre/appel-d-offres-pour-la-fourniture-de-200-kits-abris-d-urgence-dans-le-s-communes-de-tougan-100-kits-et-de-dedougou-100-kits"
+
+

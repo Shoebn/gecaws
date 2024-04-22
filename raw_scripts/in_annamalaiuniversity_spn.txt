@@ -1,0 +1,64 @@
+######################################################################################################################################################
+script_name: in_annamalaiuniversity_spn
+   
+urls: "https://annamalaiuniversity.ac.in/tenders.php"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: ANNAMALAI UNIVERSITY
+
+org_parent_id: 7533143
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+notice_deadline --- Closing Date
+
+local_title --- Title of the Tender	
+
+org_name --- Name of the Department / Division	
+
+notice_url --- Tender Details
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+
+*****************************************************************************
+                                 #page_main
+*****************************************************************************
+notice_no --- Amendment of Tender - Ref. No :	
+
+earnest_money_deposit --- Tender Value	
+
+org_email --- For further Information kindly Contact: >>> E-Mail :	
+
+org_phone ---  For further Information kindly Contact: >>> Phone Office :	
+
+org_fax --- For further Information kindly Contact: >>> Fax :	
+
+org_address --- For further Information kindly Contact: >>> Address 
+
+
+
+
+Tender Document :	
+
+#attachment >>>> Tender Document :	 
+
+external_url ---Tender Document :	  (click on the href for documents File)	
+
+file_name --- Tender Document 		
+
+file_type --- (extension)... eg - pdf	

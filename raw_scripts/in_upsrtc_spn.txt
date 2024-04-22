@@ -1,0 +1,120 @@
+Note : Go to URL : "https://upsrtc.up.gov.in/en/tenders"
+
+script_name : "in_upsrtc_spn"
+
+page_no : 5
+
+main_language/ org_language  : IN
+
+procurment_method : 2
+
+notice_type : 4
+
+================================TenderNotice==========================================
+
+id / Notice no	:Tender No.			Com:Take only numaric value		Ex., "1523 [1 MB] Language : Hindi" take only "1523"
+
+publishDate		:	Uploaded Date
+
+externalId / buyer internal id / org_parent_id	:7570970
+
+languageCode / org_language / main_language		:EN
+
+title/ local_title 		:Title
+
+noticeSummary / local_description / notice_summery_english	:null
+
+document_type_description	:Tender Category
+
+noticeType / contract_type	:4
+
+countryNames / performance_country		:IN
+
+buyerName / org_name	:UTTAR PRADESH STATE ROAD TRANSPORT CORPORATION
+
+contact.firstName / contact person 	:null
+
+contact.lastName  :  null 
+
+contact.address / org_address	: "HQ, Tehri Kothi, MG MargLucknow - 226 001" pass static
+
+contact.address2 title	:null
+
+contact.city / org_city		:null
+
+contact.state / org_state	:UP
+
+contact.country		:IN
+
+contact.email / org_email	: "info@upsrtc.com, helpline@upsrtc.com"	pass static
+
+contact.phone / org_phone	: "+91-522- 2622363, 1800-180-2877, +91-522-2623578" pass static
+
+contact.url / org_url	:null
+
+eligibilityCriteria/ eligibility	:null
+
+projectName / project_Name	:null
+
+fundingAgency / funding_Agency	:null
+
+Source of Funds - 	:null
+
+procurementMethod / procurement_Method	:2
+
+document_opening_time	:Date and Time of Opening		Com:Grab time also
+
+bidDeadline  / Notice_deadline / submission_deadline	:Date and Time of Submission	Com:Grab time also
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:null
+
+estimatedAmountCurrency / Currency 	:INR
+
+contractDuration /contract_Duration		:null
+
+lotsInfo	:null
+
+documentCost / document_cost / document_fee	:null
+
+noticeContractType / Contract_Type	:null
+
+Attachments / Documents		:Tender No
+
+file_size	:Tender No
+
+External URL  	:Tender No
+
+CPVNames /class_at_source	:take auto cpv
+
+CPVCodes	:null
+
+Name of Product Category of the sources /Category	:null
+
+class_title_at_source	:null
+
+
+notice_url 	:pass main url	"https://upsrtc.up.gov.in/en/tenders"
+
+Corrosponsing Codes		:null
+
+originalUrl / main_url / 	: "https://upsrtc.up.gov.in/en/tenders"
+
+additional_url 	:null
+
+noticeText / html_body / Notice_text	:take data from "tender_html_element" in notice_text of each record
+
+contractAward.companyName  / bidder_name	:null
+
+contractAward.companyAddress / bidder_address	:null
+
+contractAward.companyCountry / bidder_Country	:null
+
+contractAward.contractDuration / contract_Duration	:null
+
+contractAward.initialEstimatedValue		:null
+
+contractAward.finalValue   / award_Value	:null
+
+contractAward.currency	:null
+
+contractAward.awardDate / award_date	:null

@@ -1,0 +1,306 @@
+script_name : de_vergabemv_gpn	
+
+main_url : "https://vergabe.mv-regierung.de/NetServer/PublicationSearchControllerServlet?function=SearchPublications&Gesetzesgrundlage=All&Category=PriorInformation&thContext=preinformations"
+
+page_no : 3
+
+main_language : DE
+
+performance_country : DE
+
+currency : EUR
+
+procurment_method : 2
+
+notice_type : 2
+
+
+tender_html_page
+----------------
+publish_date : Erschienen am
+
+local_title : Ausschreibung
+
+org_name : Vergabestelle
+
+org_country : DE
+
+org_laguage : DE
+
+notice_url : click on "table row" of every tender
+
+notice_text : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+----------------
+org_address : Name und Anschrift:
+
+contact_person : Kontaktstelle (Ansprechpartner)
+
+org_email : E-Mail:
+
+org_phone : Telefon:	
+
+org_fax : Fax:
+
+local_description :  II Gegenstand: >> Umfang der Beschaffung:  
+
+notice_summary_english :  II Gegenstand: >> Umfang der Beschaffung:  
+
+est_Amount / netbudgetlc  : Gegenstand >> Geschätzter Gesamtwert (netto):
+
+cpvs : CPV-Code:
+
+cpvs_at_source : CPV-Code:
+
+notice_contract_type : Vertragsart:
+
+contract_type_actual : Vertragsart:
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2) format 2 for detail_page (ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18c1a93fe98-3d688a12666ee01a&Category=PriorInformation")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+detail_page
+------------
+org_address : append the fields -- "Offizielle Bezeichnung:" + "Postanschrift" + "Postleitzahl / Ort:" 	 +  "Land:"  +  "NUTS-3-Code" , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18c1a93fe98-3d688a12666ee01a&Category=PriorInformation""
+
+org_country : DE
+
+org_language : DE
+
+org_email : E-Mail: 
+
+org_phone : Telefon
+
+org_fax : Fax:
+
+local_description : Beschreibung der Beschaffung
+
+notice_summary_english : Beschreibung der Beschaffung
+
+cpvs : Hauptklassifikation
+
+cpv_at_source : Hauptklassifikation
+
+type_of_authority_code: : Art des öffentlichen Auftraggebers: 
+
+customer_main_activity  : Haupttätigkeiten des öffentlichen Auftraggebers
+
+
+
+funding_agency : Use of EU funds ,  if in below text written as " financed by European Union funds: No  " than pass the "None " in field name "T.FUNDING_AGENCIES::TEXT"
+"II.2.13) Information about European Union Funds  >  	The contract is part of a project/program financed by European Union funds: no "
+if the above  text written as " financed by European Union funds: YES  " than pass the "Funding agency" name as "European Agency (internal id: 1344862) " in field name "T.FUNDING_AGENCIES::TEXT"
+ 
+
+tender_criteria  (ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18df395f3af-35beba4f96a8a4aa&Category=InvitationToTender")
+----------------
+tender_criteria_title : Zuschlagskriterien  , take only title for ex. "Preis, Gewichtung: 100,00" , here take only "Preis" as a criteria title
+tender_criteria_weight : Zuschlagskriterien  , take only weight for ex. "Preis, Gewichtung: 100,00" , here take only "100" as a criteria weight
+
+ 
+attachments ( for attachments click on "Unterlagen zur Ansicht herunterladen" tab )
+--------------
+file_name : "Vergabeunterlagen" static
+
+external_url : click on "Download" section field  , ref_url : "https://vergabe.mv-regierung.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-NetTender-18e7a4bb481-253be1252731f78b&thContext=publications"
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------spn-----------------------------------------------------------------------------------
+script_name : de_vergabemv_spn	
+
+main_url : "https://vergabe.mv-regierung.de/NetServer/PublicationSearchControllerServlet?function=SearchPublications&Gesetzesgrundlage=All&Category=InvitationToTender&thContext=publications"
+
+page_no : 3
+
+main_language : DE
+
+performance_country : DE
+
+currency : EUR
+
+procurment_method : 2
+
+notice_type : 4
+
+
+tender_html_page
+----------------
+publish_date : Erschienen am
+
+type_of_procedure_Actual : Verfahrensart
+
+type_of_procedure : pushed on github "de_vergabemv_procedure"
+
+notice_deadline : Abgabefrist , taek time too
+
+local_title : Ausschreibung
+
+org_name : Vergabestelle
+
+org_country : DE
+
+org_laguage : DE
+
+notice_url : click on "table row" of every tender
+
+notice_text : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+----------------
+notice_no :  "Vergabenr" and "Vergabenummer:" , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e65db0fdc-259c5686e1e40d60&Category=InvitationToTender" , "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e329be881-3c49f87865d6479f&Category=InvitationToTender"
+
+org_address : "Name und Anschrift:"
+
+contact_person : Kontaktstelle (Ansprechpartner)
+
+org_email : "E-Mail:" and "E-Mail-Adresse:"
+
+org_phone : "Telefon:"  and   "Telefonnummer:"	
+
+org_fax : "Fax:" and "Telefaxnummer:"
+
+org_website : Internet-Adresse:
+
+local_description :  II Gegenstand: >> Umfang der Beschaffung:  
+
+notice_summary_english :  II Gegenstand: >> Umfang der Beschaffung:  
+
+est_Amount / netbudgetlc  : Gegenstand >> Geschätzter Gesamtwert (netto):
+
+cpvs : CPV-Code:
+
+cpvs_at_source : CPV-Code:
+
+notice_contract_type : Vertragsart:
+
+contract_type_actual : Vertragsart:
+
+contract_start_date : Beginn der Ausführung: , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e329be881-3c49f87865d6479f&Category=InvitationToTender"
+
+contract_end_date : Fertigstellung oder Dauer der Leistungen:  ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e329be881-3c49f87865d6479f&Category=InvitationToTender"
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) format 2 for detail_page (ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e5fe15ea3-6b69609d1f1d747d&Category=InvitationToTender")
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+detail_page
+------------
+org_address : append the fields -- "Offizielle Bezeichnung:" + "Postanschrift" + "Postleitzahl / Ort:" 	 +  "Land:"  +  "NUTS-3-Code" , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18e5fe15ea3-6b69609d1f1d747d&Category=InvitationToTender"
+
+org_country : DE
+
+org_language : DE
+
+org_email : E-Mail: 
+
+org_phone : Telefon
+
+org_fax : Fax:
+
+local_description : Beschreibung der Beschaffung
+
+notice_summary_english : Beschreibung der Beschaffung
+
+cpvs : Hauptklassifikation
+
+cpv_at_source : Hauptklassifikation
+
+type_of_authority_code: : Art des öffentlichen Auftraggebers: 
+
+customer_main_activity  : Haupttätigkeiten des öffentlichen Auftraggebers
+
+funding_agency : Use of EU funds ,  if in below text written as " financed by European Union funds: No  " than pass the "None " in field name "T.FUNDING_AGENCIES::TEXT"
+"II.2.13) Information about European Union Funds  >  	The contract is part of a project/program financed by European Union funds: no "
+if the above  text written as " financed by European Union funds: YES  " than pass the "Funding agency" name as "European Agency (internal id: 1344862) " in field name "T.FUNDING_AGENCIES::TEXT"
+ 
+
+tender_criteria  (ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18df395f3af-35beba4f96a8a4aa&Category=InvitationToTender")
+----------------
+tender_criteria_title : Zuschlagskriterien  , take only title for ex. "Preis, Gewichtung: 100,00" , here take only "Preis" as a criteria title
+tender_criteria_weight : Zuschlagskriterien  , take only weight for ex. "Preis, Gewichtung: 100,00" , here take only "100" as a criteria weight
+
+ 
+attachments ( for attachments click on "Unterlagen zur Ansicht herunterladen" tab )
+--------------
+file_name : "Vergabeunterlagen" static
+
+external_url : click on "Download" section field  , ref_url : "https://vergabe.mv-regierung.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-NetTender-18e7a4bb481-253be1252731f78b&thContext=publications"
+
+
+
+
+
+---------------------------------------------------------------------contract_award-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+script_name : de_vergabemv_ca	
+
+main_url : "https://vergabe.mv-regierung.de/NetServer/PublicationSearchControllerServlet?function=SearchPublications&Category=ContractAward&Gesetzesgrundlage=All&Start=0&thContext=awardPublications"
+
+page_no : 5
+
+main_language : DE
+
+performance_country : DE
+
+currency : EUR
+
+procurment_method : 2
+
+notice_type : 7
+
+
+tender_html_page
+----------------
+document_type_description : Vergebener Auftrag
+
+type_of_procedure_Actual : Verfahrensart
+
+type_of_procedure : pushed on github "de_vergabemv_procedure"
+
+publish_date : Erschienen am
+
+local_title : Ausschreibung
+
+org_name : Vergabestelle
+
+org_country : DE
+
+org_laguage : DE
+
+notice_url : click on "table row" of every tender
+
+notice_text : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+----------------
+org_address : "Name und Anschrift:"
+
+contact_person : Kontaktstelle (Ansprechpartner)
+
+org_email : "E-Mail:"
+
+org_phone : "Telefonnummer:"	
+
+org_fax : "Faxnummer:"
+
+org_website : Internet::
+
+contract_start_Date : Lieferung/Ausführung ab: , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18d5a6ec70a-13efcaea69ded55&Category=ContractAward"
+
+contract_end_date : Lieferung/Ausführung bis: ,ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18d5a6ec70a-13efcaea69ded55&Category=ContractAward"
+	
+
+award_details
+-------------
+bidder_name :  Auftragnehmer: , multiple bidders are also available , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18d34e1f6d1-14d2cf5879d4308a&Category=ContractAward"
+
+bidder_address : Auftragnehmer: multiple bidders are also available , ref_url : "https://vergabe.mv-regierung.de/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-18d34e1f6d1-14d2cf5879d4308a&Category=ContractAward"

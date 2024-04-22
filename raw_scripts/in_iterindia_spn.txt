@@ -1,0 +1,115 @@
+Note : Go to URL : "https://www.iterindia.in/tenders"
+	
+script_name : "in_iterindia_spn"
+
+page_no : 3
+
+main_language/ org_language  : EN
+
+procurment_method : 2
+
+notice_type : 4		
+
+================================TenderNotice==========================================
+
+id / Notice no	:Tender No
+
+publishDate		:Date of Issue
+
+externalId / buyer internal id / org_parent_id	:7264314
+
+languageCode / org_language / main_language		:EN
+
+title/ local_title 	:	Title
+
+noticeSummary / local_description / notice_summery_english	:null
+
+noticeType / contract_type	:null
+
+countryNames / performance_country	:IN
+
+buyerName / org_name	:ITER-INDIA,INSTITUTE FOR PLASMA RESEARCH	
+
+contact.firstName / contact person 	:null
+
+contact.lastName  :  null 
+
+contact.address / org_address	: "Block-A, Sangath Skyz IPL, Bhat-Koteshar Road, Koteshwar, Gandhinagar – 382 424, Gujarat, India." pass static
+
+contact.address2 title	:null
+
+contact.city / org_city	: Gandhinagar 
+
+contact.state / org_state	: Gujarat
+
+contact.country`	:IN
+
+contact.email / org_email	:null
+
+contact.phone / org_phone	: "+91-79-23269602, 23269603" pass static
+
+contact.url / org_url	:null
+
+eligibilityCriteria/ eligibility	:null
+
+projectName / project_Name	:null
+
+fundingAgency / funding_Agency	:null
+
+Source of Funds - 	:null
+
+procurementMethod / procurement_Method	:2
+
+bidDeadline  / Notice_deadline / submission_deadline	:Last Date of Submission
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:null
+
+estimatedAmountCurrency / Currency 	:INR
+
+contractDuration /contract_Duration		:null
+
+lotsInfo	:null
+
+documentCost / document_cost / document_fee	:null
+
+noticeContractType / Contract_Type	:null	
+
+Attachments / Documents	:Documents
+
+file_size	: null
+
+External URL  	:Documents
+
+CPVNames /class_at_source	:take auto cpv
+
+CPVCodes	:null
+
+Name of Product Category of the sources /Category	:null
+
+class_title_at_source	:null
+
+notice_url 	:pass main url "https://www.iterindia.in/tenders"
+
+Corrosponsing Codes	:null
+
+originalUrl / main_url 	:"https://www.iterindia.in/tenders" 
+
+additional_url 	:null
+
+noticeText / html_body / Notice_text	:take data from "tender_html_element" in notice_text of each record
+
+contractAward.companyName  / bidder_name	:null
+
+contractAward.companyAddress / bidder_address	:null
+
+contractAward.companyCountry / bidder_Country	:null
+
+contractAward.contractDuration / contract_Duration	:null
+
+contractAward.initialEstimatedValue	:null
+
+contractAward.finalValue   / award_Value	:null
+
+contractAward.currency	:null
+
+contractAward.awardDate / award_date	:null

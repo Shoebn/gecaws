@@ -1,0 +1,40 @@
+Note : Go to URL : "https://eportal.nspa.nato.int/eProcurement/RFP/PublicRFPList.aspx"
+
+script_name : "mfa_nato_spn"		
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+notice_type : 4
+-------------------------------------------------------------------------------------------------------------------------------------
+
+id / Notice no	:  REFERENCE  / TITLE         Com:take a first line in this field			Ex.,"TBA24002 Supply of Industrial Air Compressor System" take only "TBA24002"
+
+publishDate		: PUBLICATION DATE  / LAST MODIFICATION DATE >> Publication Date
+
+title/ local_title : REFERENCE  / TITLE 	 Com:Take a second line in this field			Ex.,"TBA24002 Supply of Industrial Air Compressor System" take only "Supply of Industrial Air Compressor System"
+
+buyerName / org_name	: PURCHASING ORGANISATION
+
+contact.email / org_email	: Control Information	[page_main]   Com:Take "Buyer Email Address" and "Buyer Backup Email" both email
+
+bidDeadline  / Notice_deadline / submission_deadline	: TENTATIVE RFP DATE  / CLOSING DATE (CET) >> Closing Date			Com:Grab time also
+
+noticeContractType / Contract_Type	: OPPORTUNITY TYPE  / TYPE		Com:Take a second line in this field			Ex.,"RFP Supply" take only "Supply" 			Com:notice contrac type mapping as per below ("Service=Service","Supply=Supply")
+
+document_type_description	: 	OPPORTUNITY TYPE  / TYPE 		Com;Take first line in this field
+
+Attachments / Documents	: Attachments			[page_main]
+
+file_size	: Attachments			[page_main]
+
+External URL  : Attachments >>  All Attachments as zip		[page_main]
+
+notice_url 	: REFERENCE  / TITLE    Com:Click on notice_no hyperlink than grab the data
+
+noticeText / html_body / Notice_text	:take all the data from page_main as well the  "tender_html_element" of each record

@@ -1,0 +1,34 @@
+script_name='om_etendering_amd'
+urls="https://etendering.tenderboard.gov.om/product/publicDash"		cmt:after opening the url click on "الملغية" to grab the data.
+page_no=3
+performance_country	='OM'
+currancy='OMR'	
+main_language='AR'
+notice_type=16
+org_language='AR'
+org_country='OM'
+
+grab below data from tender_html_element.
+related_tender_id=رقم المناقصة
+local_title=إسم المناقصة		cmt:grab data from "onmouseover".Here "Tip('صيانة الصبغ الخارجي لمدرسة روي للتعليم الأساسي ولاية مطرح')" grab only "صيانة الصبغ الخارجي لمدرسة روي للتعليم الأساسي ولاية مطرح" this text in local_title.
+org_name=مناقصة الجهة/الوحدة الحكومية		
+notice_contract_type=[ الدرجة]فئة المشتريات			cmt:Here don't grab the text between 'square brackets[]'.Repleace following keywords with given keywords("Business quality =Service","Consulting work - old =Works","Training Works - Old =Works","Supplies =Supply","Supplies and services - old =Service","Urban contracting and maintenance =Service","Consulting offices =Consultancy","Information technology services =Service","Contracting - old =Service","Electromechanical, communications and maintenance contracting =Service","Ports, roads, bridges, railways, dams and maintenance contracting=Service","Pipeline networks and well drilling contracting=Service")
+contract_type_actual=[ الدرجة]فئة المشتريات			cmt:Here don't grab the text between 'square brackets[]'.
+procurement_method=نوع المناقصه[نوع الشركة]			cmt:if in 'square brackets[]' written as- 1)"محلية" then pass "0"	2)"عالمية" then pass "1"    otherwise pass "2"
+
+notice_url=إجْراء 		cmt:clcik on search icon.
+notice_text=grab all the page_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.also add the data from following clicks og page_details-i)"ملخص نطاق العمل"	search icon after this field	ii)"معلومات زيارة الموقع" search icon after this field.
+
+grab below data from page_details.
+notice_no=: رقم المناقصة			cmt:here ": رقم المناقصة 49576 | الجهة الحكومية : مكتب محافظ شمال الباطنة" grab "49576" in notice_no.also split from notice_url.
+publish_date=تاريخ طرح المناقصة :
+org_address=		cmt:add "الولايات :" and "المحافظة :" both fields in address comma seperated.
+document_fee=رسوم المناقصه
+earnest_money_deposite=قيمة الضمان البنكي :
+document_purchase_start_time=تاريخ بدء بيع مستند المناقصة
+document_purchase_end_time=تاريخ نهاية بيع مستند المناقصة
+document_opening_time=فتح العطاء المالي	
+notice_deadline=اخر موعد لتقديم العطاءات	
+
+local_deacription=استمارات وبيانات أخرى		>>		ملخص نطاق العمل			cmt:click on search icon after the given field and grab the data from "ملخص نطاق العمل" field.
+notice_summary_english=استمارات وبيانات أخرى	>>		ملخص نطاق العمل			cmt:click on search icon after the given field and grab the data from "ملخص نطاق العمل" field.

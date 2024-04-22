@@ -1,0 +1,66 @@
+######################################################################################################################################################
+script_name:in_irel_spn
+
+urls: "https://irel.co.in/tender-information"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name:  IREL (India) Limited
+
+org_parent_id: 7816372 
+
+*****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+notice_no --- Tender Reference Number	
+
+local_title --- Tender Title	
+
+org_address --- Unit name + (Plot No. 1207, ECIL Bldg, Veer Savarkar Marg Opp. Siddhivinayak Temple, Prabhadevi, Mumbai-400 028) .... add unit name and static address
+
+local_description / notice_summary_english --- Tender Description	
+
+publish_date --- Start Date	
+
+notice_deadline --- End Date	
+
+notice_url --- click on "View" (click on href)
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+*****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+est_amount / grossbudget_lc --- Estimated Cost
+
+earnest_money_deposit --- EMD	
+
+contact_person  --- Contact Person	
+
+org_email --- Email Id	
+
+org_phone --- Mobile No.:/ Phone No.:	
+
+
+
+#attachment >>>> Tender Attachments >>> View
+
+external_url --- "View" >>> (click on the href for documents File )	
+
+file_name --- Tender Document		
+
+file_type --- (extension)... eg - pdf

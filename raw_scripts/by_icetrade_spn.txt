@@ -1,0 +1,197 @@
+by_icetrade_spn
+
+	
+######################################################################################################################################################
+Note -after url get loaded >>>  click on "Закупки Республики Беларусь / Procurement of the Republic of Belarus" for tenders
+
+script_name: by_icetrade_spn
+           
+urls:"https://icetrade.by/search/auctions?search_text=&search=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8&zakup_type[1]=1&zakup_type[2]=1&auc_num=&okrb=&company_title=&establishment=0&period=&created_from=&created_to=&request_end_from=&request_end_to=&t[Trade]=1&t[eTrade]=1&t[Request]=1&t[singleSource]=1&t[Auction]=1&t[Other]=1&t[contractingTrades]=1&t[socialOrder]=1&t[negotiations]=1&r[1]=1&r[2]=2&r[7]=7&r[3]=3&r[4]=4&r[6]=6&r[5]=5&sort=num%3Adesc&onPage=20"
+
+page_no: 20
+
+performance_country / org_country    : "BY"
+
+currency: "BYR"
+
+main_language / org_language: "RU"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+local_title --- Brief description of the subject of purchase / Краткое описание предмета закупки		
+
+org_name --- Name of customer/organizer / Наименование заказчика/организатора		
+
+notice_no --- Number / Номер
+#note --- if not present on tender_html_page then take from page_detail	
+
+est_amount / netbudgetlc --- Price / Стоимость*	 
+
+notice_deadline --- Offers up to / Предложения до
+
+notice_ url --- Краткое описание предмета закупки	
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+
+notice_contract_type --- Общая информация >>> Отрасль >>> split notice_contract_type.... Here "Construction / architecture > Other" grab only "Other"
+
+local_description / notice_summary_english --- Общая информация >>> Краткое описание предмета закупки
+
+org_address --- организаторе >>> заказчика, место нахождения организации, УНП 	
+
+org_phone ---  организаторе >>> телефонов номера ........... split data from "+" till "," (just take the phone no.)
+
+org_email ---  организаторе >>> телефонов номера ........... just take e-mails
+
+
+
+#Lots--- 
+click on "Раскрыть все лоты / Expand all lots" for lots detail
+
+lot_title --- ЛотыРаскрыть >>> vПредмет закупки	
+
+lot_quantity --- ЛотыРаскрыть >>> Количество / Quantity
+
+lot_netbudgetlc --- ЛотыРаскрыть >>> Cтоимость / Cost
+
+
+
+#attachments 
+#note - the following are the keywords for documents 
+
+Документы / Documentation
+ref url - "https://icetrade.by/tenders/all/view/1131074"
+
+Конкурсные документы / Competition documents
+ref url - "https://icetrade.by/tenders/all/view/1131093"
+
+
+file_name --- select the href,  select the blue text for attachment name
+
+external_url --- select the href,  select the blue text for attachment url 
+
+file_type ---  (extension)... eg - aspx, pdf, DOC, docx
+
+
+#NEXT
+######################################################################################################################################################
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+Note -after url get loaded >>>  click on "Порядки закупок / Purchasing procedures" for tenders
+
+
+local_title --- Name of the procurement procedure / Наименование порядка закупок	 
+
+org_name --- Name of company / Наименование организации		
+
+publish_date --- Posting date / Дата размещения
+
+notice_url --- Name of the procurement procedure / Наименование порядка закупок	
+
+notice_text ---  page_detail
+ #Note - take HTML body of main page
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+Note --- if date is given in this field "Дата последнего редактирования	" then take notice_type - 5
+
+org_address --- Адрес
+
+org_email --- Контактное лицо	(just grab email)
+
+org_phone --- Контактное лицо >>> Тел (just take tel)
+
+
+
+
+
+#attachments >>> Файлы / Files
+
+file_name --- select the href,  select the blue text for attachment name
+
+external_url --- select the href,  select the blue text for attachment url 
+
+file_type ---  (extension)... eg - aspx, pdf, DOC, docx
+
+
+
+#NEXT
+######################################################################################################################################################
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+Note -after url get loaded >>>  click on " Отраслевые особенности / Industry Features" for tenders
+
+
+local_title --- Name of industry feature / Наименование отраслевой особенности		 
+
+org_name --- Name of company / Наименование организации			
+
+publish_date --- Posting date / Дата размещения
+
+notice_url --- Name of the procurement procedure / Наименование отраслевой особенности	
+
+notice_text ---  page_detail
+ #Note - take HTML body of main page
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+Note --- if date is given in this field "Дата последнего редактирования	" then take notice_type - 5
+
+org_address --- Адрес
+
+org_email --- Контактное лицо	(just grab email)
+
+org_phone --- Контактное лицо >>> Тел (just take tel)
+
+
+
+
+
+#attachments >>> Файлы / Files
+
+file_name --- select the href,  select the blue text for attachment name
+
+external_url --- select the href,  select the blue text for attachment url 
+
+file_type ---  (extension)... eg - aspx, pdf, DOC, docx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

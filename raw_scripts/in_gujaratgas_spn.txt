@@ -1,0 +1,55 @@
+######################################################################################################################################################
+script_name:in_gujaratgas_spn
+
+urls: "https://www.gujaratgas.com/ggl-current-tender/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- GUJARAT GAS COMPANY LIMITED		
+
+org_parent_id -- 7504544
+
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+notice_no --- Tender ID	
+
+local_title --- Tender Description	
+
+notice_deadline --- Date of Bid Submission
+
+org_fax --- Fax
+
+org_email --- E-mail 
+
+org_phone --- Toll Free/ Helpdesk Number
+
+notice_url --- https://www.gujaratgas.com/ggl-current-tender/
+
+notice_text --- HTML_page
+ #Note - take HTML body of main pa
+
+
+
+
+
+#attachment >>>> Tender Document
+
+external_url --- "Tender Document" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Tender Document		
+
+file_type --- (extension)... eg - pdf
+

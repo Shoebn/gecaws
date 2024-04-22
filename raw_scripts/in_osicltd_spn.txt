@@ -1,0 +1,58 @@
+script_name : in_osicltd_spn
+
+url : "https://www.osicltd.in/Home/Tender"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Description:" field  has "Corrigendum" appears then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tender"
+
+notice_no : Tender No: , split only number for ex."BID Notice No.125/OSIC/MKT dt.18.01.2024" , here take only "125/OSIC/MKT"
+
+local_title :  , Description:
+
+publish_date : Tender No: ,  split only publish_date for ex."BID Notice No.125/OSIC/MKT dt.18.01.2024" , here take only "18.01.2024"
+
+document_purchase_start_date : Sales Open
+
+document_purchase_end_date : Sales Close
+
+notice_deadline : Last Date , take time too
+
+documnent_opening_time : Tender Open
+
+notice_text :  take the from detail_page as well as data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : "https://www.osicltd.in/Home/Tender"
+
+-----------
+attachments  -----------
+
+file_name :  "Tender documents"
+
+external_url : split the documents beside from "Description:" field
+
+
+customer_details
+-----------------
+org_name : "THE ODISHA SMALL INDUSTRIES CORPORATION LIMITED"
+
+org_parent_id : 7574548
+
+org_Country : IN
+
+org_language : EN
+
+org_state : "odisha"

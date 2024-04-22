@@ -1,0 +1,41 @@
+Note : Go to URL : "https://choutatsu.jst.go.jp/"
+
+script_name : "jp_choutatsujst_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'JA'
+
+performance_country / org_country	: 'JP'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'JPY'
+
+=================================================================================================================================================
+
+publish_date		: 公告日
+
+notice_no		: 公告番号
+
+local_title		: 件名			Com:Take a text	
+
+notice_contract_type / contract_type_actual		: 調達種別			Com:notice contrac type mapping as per below("工事=Works","設計・ｺﾝｻﾙﾃｨﾝｸﾞ=Consultancy","製造・印刷=Service","物品の購入=Supply","研究用機器・ 研究用消耗品類=Service","役務=Service","作業=Works","管理・ 運営=Service","保守=Service","使用・利用=Service","借入=Service","売払=Service","貸付=Service")
+
+document_type_description		: 公告の種類
+
+org_name		: 契約担当部署
+
+notice_deadline		: 提案書等の 提出期限			Com: Grab tome also
+
+document_purchase_end_time		: 入札書の 受領期限 	Com:Grab time also
+
+notice_url		: pass main url  "https://choutatsu.jst.go.jp/"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record			Com:Click on "件名" local_title field than grab the data
+
+attachments		: 本件に参加される場合は、必ず以下の「公告の詳細」、及び添付資料を確認してください。			Com:Click on "件名" local_title field than grab the data.........Take the hyperlink below "本件に参加される場合は、必ず以下の「公告の詳細」、及び添付資料を確認してください。" this keyword
+
+external_url 	 本件に参加される場合は、必ず以下の「公告の詳細」、及び添付資料を確認してください。			Com:Click on "件名" local_title field than grab the data.........Take the hyperlink below "本件に参加される場合は、必ず以下の「公告の詳細」、及び添付資料を確認してください。" this keyword  

@@ -1,0 +1,98 @@
+Note : Go to URL : "https://www.maine.gov/dafs/bbm/procurementservices/vendors/grants"
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+currancy	:	'USD'
+
+============================================================== (GRN) =========================================================================
+
+script_name : "us_dafsgrants_spn"			
+
+notice_type : 12        Com: If RFP status field having keyword like "Closed - Evaluation of Proposals" and "Awarded" than skip this data from GRN (notice type 12) 
+
+local_title	: RFA Title
+
+notice_no	: RFA #
+
+org_name	: Issuing Department
+
+notice_deadline	: Date Posted
+
+publish_date	: Application Due Date
+
+document_type_description	: RFA Status				
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/grants"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: RFA Title			Com:Click on "RFA Title" this field hyperlink 
+
+external_url 	: RFA Title			Com:Click on "RFA Title" this field hyperlink 
+
+
+============================================================== (CA) =========================================================================
+
+script_name : "us_dafsgrants_ca"
+
+notice_type : 7       Com: If RFP status field having keyword like "Closed - Evaluation of Proposals" and "Open" than skip this data from CA (notice type 7) 
+
+local_title	: RFA Title
+
+notice_no	: RFA #
+
+org_name	: Issuing Department
+
+publish_date	: Application Due Date
+
+award_date	: Application Due Date
+
+document_type_description	: RFA Status
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/grants"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: RFA Title			Com:Click on "RFA Title" this field hyperlink than grab the data
+				: Q/A Summary and Amendments		Com:Click on "Q/A Summary and Amendments" this field hyperlink than grab the data
+				: Award Documents			Com:Click on "Award Documents" this field hyperlink than grab the data
+
+external_url 	 : RFA Title			Com:Click on "RFA Title" this field hyperlink than grab the data
+				 : Q/A Summary and Amendments		Com:Click on "Q/A Summary and Amendments" this field hyperlink than grab the data
+				 : Award Documents			Com:Click on "Award Documents" this field hyperlink than grab the data
+				 
+============================================================== (AMD) =========================================================================
+
+script_name : "us_dafsgrants_amd"
+
+notice_type : 16        Com: If RFP status field having keyword like "Open" and "Awarded" than skip this data from AMD (notice type 16) 
+
+local_title	: RFA Title
+
+notice_no	: RFA #
+
+org_name	: Issuing Department
+
+notice_deadline	: Date Posted
+
+publish_date	: Application Due Date
+
+document_type_description	: RFA Status				
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/grants"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: RFA Title			Com:Click on "RFA Title" this field hyperlink than grab the data
+				: Q/A Summary and Amendments		Com:Click on "Q/A Summary and Amendments" this field hyperlink than grab the data
+				: Amendments			Com:Click on "Amendments" this field hyperlink than grab the data
+
+external_url 	 : RFA Title			Com:Click on "RFA Title" this field hyperlink than grab the data
+				 : Q/A Summary and Amendments		Com:Click on "Q/A Summary and Amendments" this field hyperlink than grab the data
+				 : Amendments			Com:Click on "Amendments" this field hyperlink than grab the data

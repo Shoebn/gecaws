@@ -1,0 +1,60 @@
+script_name : in_sidbi_spn
+
+url : "https://www.sidbi.in/tenders.php"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+notice_no : split the number from notice_url 
+
+local_title :  , Title
+
+publish_date : Tender Date	
+
+notice_deadline : Last Date Of Submission	
+
+notice_url : Title
+
+notice_text : take the from detail_page as well as data from tender_html_element  give td / tbody of main pg  ----
+
+
+
+
+detail_page
+-----------
+-----------
+attachments  
+-----------
+file_name :  take from "Documents" field , take only name for ex." Atma PFMS.pdf" here split only "Atma PFMS"
+
+external_url : take from "Documents" field , take only name for ex."Atma PFMS.pdf" here split only "pdf"
+
+
+
+
+customer_details
+-----------------
+org_name : "SMALL INDUSTRIES DEVELOPMENT BANK OF INDIA"
+
+org_parent_id : 7558255
+
+org_Country : IN
+
+org_language : EN
+
+org_state : "Uttar Pradesh"

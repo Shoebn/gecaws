@@ -1,0 +1,71 @@
+script_name : in_bvfcl_spn
+
+url : "https://tender.bvfcl.com/tender_search"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+
+-----------------
+tender_html_page
+-----------------
+
+category : Department
+
+notice_no : Tender No , if not available then take from "Tender id:" field  , available in detail_page
+
+publish_date : Issue of Tender Documents from
+
+notice_deadline : Issue of Tender Documents upto
+
+local_title :  , Title
+
+notice_deadline : Last Date Of Submission	
+
+notice_url : click on "View" field	
+
+notice_text : take the from detail_page as well as data from tender_html_element  give td / tbody of main pg  ----
+
+-----------
+attachments  
+-----------
+file_name :  take from "Download" field 
+
+external_url : take from "Download" field
+
+
+detail_page
+-----------
+local_title : split the above text from "Tender id:" field 
+
+est_amount / grossbudgetlc : Estimated Cost Of Work:
+
+Earnest Money Deposit: : Earnest Money Deposit:
+
+document_cost : Cost of Tender Document
+
+contract_duration : Validity of Offer:
+
+tender_opening_time : Tender opening Date:
+
+
+
+
+customer_details
+-----------------
+org_name : "BRAHMAPUTRA VALLEY FERTILIZER CORPORATION LIMITED"
+
+org_parent_id : 7527871
+
+org_Country : IN
+
+org_language : EN

@@ -1,0 +1,113 @@
+script_name:us_dafs
+
+urls:"https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfps"
+
+page_no:       tender_html_element 	 2
+
+performance_country:'US'
+
+currancy:'USD'	
+
+main_language:'EN'      
+
+procurement_method:2
+
+Note : take data from "The following is a list of MISC released postings, including Participating RFPs."  table also 
+
+============================================================== (SPN) ===========================================================================
+
+notice_type:4 					
+Com:If RFP status field having keyword like "Awarded" and "Cancelled" than skip this data from spn (notice type 4) 
+
+
+notice_no : tender_html_element > "RFP #"
+
+local_title : tender_html_element > Title
+
+publish_date : tender_html_element > Date Posted
+
+notice_deadline : tender_html_element > Proposal Due Date
+
+notice_url : main url will be pass "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfps"
+
+notice_text : tender_html_element   Note:Take "tender_html_element" page data
+
+document_type_description : tender_html_element > RFP Status
+
+
+
+customer_detail[] : tender_html_element
+	org_name : tender_hgtml_element > Issuing Department
+	org_country : "US"
+	org_language : "EN"
+
+attachments[] : tender_html_elemenmt
+	File_name : tender_html_element > hyperlink of Title 	
+	external_url : tender_html_element > hyperlink of Title 
+
+========================================================== (CA) ================================================================================
+
+notice_type:7						
+Com: If RFP status field having keyword like "Open" and "Cancelled" than skip this data from CA (notice type 7) 
+
+notice_no : tender_html_element > RFP #
+
+local_title : tender_html_element > Title
+
+publish_date : tender_html_element > Date Posted
+
+notice_url :main url will be pass "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfps"
+
+notice_text : tender_html_element   Note:Take "tender_html_element" page data
+
+document_type_description : tender_html_element > RFP Status
+
+bidder_name	: Awarded Vendor(s)
+
+
+customer_detail[] : tender_html_element
+	org_name : tender_hgtml_element > Issuing Department
+	org_country : "US"
+	org_language : "EN"
+
+attachments[] : 
+tender_html_element > Title 	
+tender_html_element > Q & A Summary and Amendment
+tender_html_element > Awarded Vendor(s)
+	
+external_url :
+tender_html_element > Title
+tender_html_element > Q & A Summary and Amendment
+tender_html_element > Awarded Vendor(s)
+===============================================================(AMD) ====================================================================
+notice_type:16						
+Com: If RFP status field having keyword like "Open" and "Awarded" than skip this data from AMD (notice type 16) 
+
+notice_no : tender_html_element > RFP #
+
+local_title : tender_html_element > Title
+
+publish_date : tender_html_element > Date Posted
+
+notice_deadline : tender_html_element > Proposal Due Date
+
+notice_url :main url will be pass "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfps"
+
+notice_text : tender_html_element   Note:Take "tender_html_element" page data
+
+document_type_description : tender_html_element > RFP Status
+
+
+
+customer_detail[] : tender_html_element
+	org_name : tender_hgtml_element > Issuing Department
+	org_country : "US"
+	org_language : "EN"
+
+attachments[] : 
+tender_html_element > Title 	
+tender_html_element > Q & A Summary and Amendment
+
+external_url:
+tender_html_element > Title 	
+tender_html_element > Q & A Summary and Amendment

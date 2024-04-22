@@ -1,0 +1,255 @@
+Note : Go to URL : "http://tenders.secureloginecl.co.in/tender_list_active.php?pid=2"
+	
+script_name : "in_ecl_spn"
+
+page_no : 3
+
+main_language/ org_language  : EN
+
+procurment_method : 2
+
+notice_type : 4		Com:If in page_detail "Corrigendum(s)" field data is present than take notice_type "16"
+
+================================TenderNotice==========================================
+
+id / Notice no	:Tender Number		Com:Take the data before ", dt."
+
+publishDate	: Publication Date  + TIME
+
+languageCode / org_language / main_language		:EN
+
+title/ local_title 	:Brief Description of Tender
+
+noticeSummary / local_description / notice_summery_english	:	Other Information >> Description of work		[page_detail]		
+															:	Other Information >> Name of Work				[page_detail]	
+
+noticeType / contract_type	:4
+
+countryNames / performance_country	:IN
+
+buyerName / org_name	:EASTERN COALFIELDS LIMITED
+
+contact.firstName / contact person 	:null
+
+contact.lastName  :  null 
+
+contact.address / org_address	:  NULL
+
+contact.address2 title	:null
+
+contact.city / org_city		: Tender Area / Location			[page_detail]
+
+contact.state / org_state	:null
+
+contact.country		:IN
+
+contact.email / org_email	:null
+
+contact.phone / org_phone	: NULL
+
+contact.url / org_url	:null
+
+eligibilityCriteria/ eligibility	:null
+
+projectName / project_Name	:null
+
+fundingAgency / funding_Agency	:null
+
+Source of Funds - 	null
+
+procurementMethod / procurement_Method	:2
+
+bidDeadline  / Notice_deadline / submission_deadline	: 
+(1) Last Date of Tender Paper collection		Com:Grab time also
+(2) Last Date of Submission
+
+estimatedAmount  /est_amount / GROSSBUDGET	:Estimated Cost / Tender Value		[page_detail]
+
+estimatedAmountCurrency / Currency 	:INR
+
+earnest_money_deposit	:Earnest Money
+
+contractDuration /contract_Duration	:null
+
+lotsInfo	:null
+
+document_opening_time	:Date of Opening of Tender		Com:Grab time also
+
+documentCost / document_cost / document_fee		:Cost of Tender Document
+
+noticeContractType / Contract_Type	:null
+
+Attachments / Documents		:Tender / Bid Document		[page_detail]
+
+External URL  	:Tender / Bid Document	[page_detail]		Com:Click on "DOWNLOAD" this button than grab the data
+
+CPVNames /class_at_source	:take auto cpv
+
+CPVCodes	:null
+
+Name of Product Category of the sources /Category	:null
+
+class_title_at_source	:  Tender Category  (detail page)
+
+notice_url	:View Tender Notice 	Com:Click on "VIEW" this button than grab the data
+
+Corrosponsing Codes		:null 
+
+originalUrl / main_url  : "http://tenders.secureloginecl.co.in/tender_list_active.php?pid=2"
+
+additional_url 	:null
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the  "tender_html_element" of each record
+
+document_purchase_end_time: Last Date of Document Collection	  (take time also 
+
+cntractAward.companyName  / bidder_name	:null
+
+contractAward.companyAddress / bidder_address	:null
+
+contractAward.companyCountry / bidder_Country	:null
+
+contractAward.contractDuration / contract_Duration	:null
+
+contractAward.initialEstimatedValue		:null
+
+contractAward.finalValue   / award_Value	:null
+
+contractAward.currency	:null
+
+contractAward.awardDate / award_date	:null
+
+document_opening_time: =    Date of Tender Opening  (detail page)
+
+pre_bid_meeting_date:  =  Pre-Bid Meeting Date
+
+=================================== corrigendum / amd =========================
+
+http://tenders.secureloginecl.co.in/tender_list_corrigendum.php?pid=3
+
+script_name : "in_ecl_amd"
+
+page_no : 3
+
+main_language/ org_language  : EN
+
+procurment_method : 2
+
+notice_type : 16
+
+
+id / Notice no	:Tender Number		Com:Take the data before ", dt."
+
+publishDate	: Publication Date  + TIME
+
+languageCode / org_language / main_language		:EN
+
+title/ local_title 	:Brief Description of Tender
+
+noticeSummary / local_description / notice_summery_english	:	Other Information >> Description of work		[page_detail]		
+															:	Other Information >> Name of Work				[page_detail]	
+
+noticeType :   16
+
+contract_type	:  null
+
+countryNames / performance_country	:IN
+
+buyerName / org_name	:EASTERN COALFIELDS LIMITED
+
+contact.firstName / contact person 	:null
+
+contact.lastName  :  null 
+
+contact.address / org_address	:  NULL
+
+contact.address2 title	:null
+
+contact.city / org_city		: Tender Area / Location			[page_detail]
+
+contact.state / org_state	:null
+
+contact.country		:IN
+
+contact.email / org_email	:null
+
+contact.phone / org_phone	: NULL
+
+contact.url / org_url	:null
+
+eligibilityCriteria/ eligibility	:null
+
+projectName / project_Name	:null
+
+fundingAgency / funding_Agency	:null
+
+Source of Funds - 	null
+
+procurementMethod / procurement_Method	:2
+
+bidDeadline  / Notice_deadline / submission_deadline	: 
+(1) Last Date of Tender Paper collection		Com:Grab time also
+(2) Last Date of Submission
+
+estimatedAmount  /est_amount / GROSSBUDGET	:Estimated Cost / Tender Value		[page_detail]
+
+estimatedAmountCurrency / Currency 	:INR
+
+earnest_money_deposit	:Earnest Money
+
+contractDuration /contract_Duration	:null
+
+lotsInfo	:null
+
+document_opening_time	:Date of Opening of Tender		Com:Grab time also
+
+documentCost / document_cost / document_fee		:Cost of Tender Document
+
+noticeContractType / Contract_Type	:null
+
+Attachments / Documents		:
+(1) Tender / Bid Document		[page_detail]
+(2) Corrigendum(s)	
+
+
+External URL  	:Tender / Bid Document	[page_detail]		Com:Click on "DOWNLOAD" this button than grab the data
+
+CPVNames /class_at_source	:take auto cpv
+
+CPVCodes	:null
+
+Name of Product Category of the sources /Category	:null
+
+class_title_at_source	:  Tender Category  (detail page)
+
+notice_url	:View Tender Notice 	Com:Click on "VIEW" this button than grab the data
+
+Corrosponsing Codes		:null 
+
+originalUrl / main_url  : "http://tenders.secureloginecl.co.in/tender_list_corrigendum.php?pid=3"
+
+additional_url 	:null
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the  "tender_html_element" of each record
+
+document_purchase_end_time: Last Date of Document Collection	  :take time also 
+
+cntractAward.companyName  / bidder_name	:null
+
+contractAward.companyAddress / bidder_address	:null
+
+contractAward.companyCountry / bidder_Country	:null
+
+contractAward.contractDuration / contract_Duration	:null
+
+contractAward.initialEstimatedValue		:null
+
+contractAward.finalValue   / award_Value	:null
+
+contractAward.currency	:null
+
+contractAward.awardDate / award_date	:null
+
+document_opening_time: =    Date of Tender Opening  (detail page)
+
+pre_bid_meeting_date:  =  Pre-Bid Meeting Date

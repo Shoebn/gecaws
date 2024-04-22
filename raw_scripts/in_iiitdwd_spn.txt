@@ -1,0 +1,54 @@
+
+
+######################################################################################################################################################
+script_name:in_iiitdwd_spn
+
+urls: "https://www.iiitdwd.ac.in/Tenders.php"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if keyword such as "Corrigendum" and "Addendum" get encounterd in the "TENDER DOCUMENT .. i.e. local_title" then take notice_type - 16
+
+procurement_method: "2"
+
+org_name: INDIAN INSTITUTE OF INFORMATION TECHNOLOGY DHARWAD
+
+org_parent_id: 7584054
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+publish_date --- PUBLISHED DATE
+
+local_title --- TENDER DOCUMENT (do not take href , attachments just take title)
+
+notice_deadline --- BID SUBMISSION CLOSING DATE (also take time)
+
+notice_url --- https://www.iiitdwd.ac.in/Tenders.php
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+
+
+#attachment >>>> TENDER DOCUMENT
+
+
+external_url --- "TENDER DOCUMENT" >>> (click on the href for documents File, do not take local_title , just take the blue text which is in href form )	
+
+file_name --- TENDER DOCUMENT (do not pass static, select the title)		
+
+file_type --- (extension)... eg - pdf	
+

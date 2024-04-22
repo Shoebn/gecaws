@@ -1,0 +1,66 @@
+by_icetradepr_spn
+######################################################################################################################################################
+Note -after url get loaded >>>  click on "Результаты закупок / Procurement results" for tenders
+
+script_name: by_icetrade_spn
+           
+urls:"https://icetrade.by/search/results?sort=num%3Adesc"
+
+page_no: 20
+
+performance_country / org_country    : "BY"
+
+currency: "BYR"
+
+main_language / org_language: "RU"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Brief description of the subject of purchase / Краткое описание предмета закупки		
+
+org_name --- Name of customer/organizer / Наименование заказчика/организатора		
+
+notice_no --- Result number / Номер результата	
+#note --- if not present on tender_html_page then take from page_detail	
+
+publish_date --- Posting date / Дата размещения 
+
+
+notice_ url --- Краткое описание предмета закупки	
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+
+local_description / notice_summary_english --- Общая информация >>> Краткое описание предмета закупки
+
+org_address --- организаторе >>> заказчика, место нахождения организации, УНП (second, line)	
+
+org_phone ---  организаторе >>> телефонов номера ........... split data from "+" till "," (just take the phone no.)
+
+org_email ---  организаторе >>> телефонов номера ........... just take e-mails
+
+
+
+#attachments 
+#note - the following are the keywords for documents 
+
+Файлы для информации о результатах закупок: /  Files for information on procurement results:
+ref url -https://icetrade.by/results/all/view/733683
+
+file_name --- select the href,  select the blue text for attachment name
+
+external_url --- select the href,  select the blue text for attachment url 
+
+file_type ---  (extension)... eg - aspx, pdf, DOC, docx

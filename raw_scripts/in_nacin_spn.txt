@@ -1,0 +1,43 @@
+Note : Go to URL : "https://nacin.gov.in/page/tender"
+
+script_name : "in_nacin_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4	
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+local_title		: Subject
+
+publish_date	: Start Date		Com:Grab time also
+
+notice_deadline	: End Date			Com:Grab time also
+
+oreg_address	: Location
+
+attachments		: pass 'Tender Document' static
+
+external_url	: Open File
+
+org_name	: 'NATIONAL ACADEMY OF CUSTOMS, INDIRECT TAXES & NARCOTICS'
+
+org_parent_id	: '7563221'
+
+org_email	: 'dg.nacen-cbec@nic.in' pass static
+
+org_phone	: '+91-129-2504636' pass static
+
+org_fax		: '(129) 2504632' pass static
+
+notice_url	: pass main url "https://nacin.gov.in/page/tender"
+
+notice_text 	: Take data from "tender_html_element" in notice_text of each record

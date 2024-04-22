@@ -1,0 +1,28 @@
+script_name			in_baroda_spn	
+urls				"https://www.bankofbaroda.in/tenders/corporate-office"
+page_no				tender_html_element 	//*[@id="TenderList"]/div/table/tbody/tr		5
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			4
+
+local_title : page_detail > "div.bob-blue-top-div > div > div > div > h2 > span"			
+	Note:Click on "Load More" this button on tender_html_element page than grab the data
+publish_date : tender_html_element > Publish Date
+notice_deadline : tender_html_element > Expiry Date
+notice_url: tender_html_element > Know More		Note:Click on "Know More" button than grab the data
+notice_text : page_detail > #content
+
+
+customer_detail [] : tender_html_element 
+	org_name: tender_html_element > Department
+	org_country : IN
+	org_language : EN
+
+attachments[] : page_detail
+	file_name : page_detail > "div.eauction-main-data-div > ul > li > a" 	Note:Don't take file extentiuon
+	file_type : page_detail > "div.eauction-main-data-div > ul > li > a" 	Note:Take only file extention
+	external_url : page_detail > "div.eauction-main-data-div > ul > li > a"
+
+

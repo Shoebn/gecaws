@@ -1,0 +1,57 @@
+script_name : in_transporajasthan_spn
+
+url : "https://transport.rajasthan.gov.in/content/transportportal/en/RSRTC/tender-auction.html"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 4 , if "Title" field has "Corrigendum" keyword then take notice_type = 16
+
+org_name : "RAJASTHAN STATE ROAD TRANSPORT CORPORATION"
+
+org_parent_id : 7538941
+
+org_language : EN
+
+org_state : Rajasthan
+
+org_country : IN
+
+org_phone :   0141-2374650
+
+
+
+
+
+tender_htmnl_page
+------------------
+
+document_type_description : "Tenders"
+
+local_title :  Title
+
+notice_deadline :  Last Date of Submission/Date of Opening 
+
+publish_date : Date of Issue 
+
+document_opening_date :  Last Date of Submission/Date of Opening 
+
+notice_url : "https://transport.rajasthan.gov.in/content/transportportal/en/RSRTC/tender-auction.html"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+attachment
+---------------
+
+file_name : "Downlaod" 
+
+external_url : take from "Downlaod" field 

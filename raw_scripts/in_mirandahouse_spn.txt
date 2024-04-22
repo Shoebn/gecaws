@@ -1,0 +1,46 @@
+
+######################################################################################################################################################
+
+script_name: in_mirandahouse_spn                    
+
+urls:"https://www.mirandahouse.ac.in/tender.php"
+
+page_no: 10
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: MIRANDA HOUSE	
+
+org_parent_id: 7695682
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Tender discription	
+
+notice_deadline --- Submission of tender upto	
+
+document_opening_time --- Opening of tender	
+
+document_type_description --- Tenders
+
+
+#attachments >>>> Details
+click on "click here" to download
+
+external_url --- Details >>> click here	 (click on the href for documents File )	
+
+file_name --- Tender Document 
+
+file_type --- (extension)... eg - pdf
+
+	

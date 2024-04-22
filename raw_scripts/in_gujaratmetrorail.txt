@@ -1,0 +1,113 @@
+
+script_name : in_gujaratmetrorail_spn
+
+url : "https://www.gujaratmetrorail.com/tenders/"
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if "Work Details & Document" field has "Addendum" keyowrd document available then take notice_type = 16
+
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+notice_no : Tender No. 
+	
+local_title :  Work Details & Document  , take only title , dont take attachments text
+
+
+attachments
+------------
+file_name : Work Details & Document  , take only attachments name for ex."20240316-NIT" 
+
+external_url : take from "Work Details & Document" field
+
+document_purchase_Start_Date : Document Sale Date , take only start_date for ex."21/03/2024 To 15/04/2024" , here take only "21/03/2024"
+
+documebnt_purchase_end_date :  Document Sale Date , take only start_date for ex."21/03/2024 To 15/04/2024" , here take only "15/04/2024"
+	
+notice_deadline : Submission Date  , take time too
+
+document_opening_time : Opening Date
+
+notice_url : https://www.gujaratmetrorail.com/tenders/
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+
+customer_details
+----------------
+
+org_parent_id : 7784503	
+
+org_name : "Gujarat Metro Rail Corporation (GMRC) Limited"
+
+org_country : IN
+
+org_language : EN
+
+org_state : Gujarat
+
+
+
+----------------------------------------------------------------------------------contract-award----------------------------------------------------------------------------------------------------
+
+
+script_name : in_gujaratmetrorail_ca
+
+url : "https://www.gujaratmetrorail.com/awarded-tenders/"
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 7 
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Awarded Tenders"
+
+notice_no : Tender No. 
+	
+local_title :  Work Details
+
+bidder_name : Awarded To
+
+award_Date : Work Order Date
+
+publish_date : Work Order Date
+
+notice_url : https://www.gujaratmetrorail.com/awarded-tenders/
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+
+customer_details
+----------------
+
+org_parent_id : 7784503	
+
+org_name : "Gujarat Metro Rail Corporation (GMRC) Limited"
+
+org_country : IN
+
+org_language : EN
+
+org_state : Gujarat

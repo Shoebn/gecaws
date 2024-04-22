@@ -1,0 +1,58 @@
+
+######################################################################################################################################################
+script_name:in_iitbhu_spn
+
+urls: "https://iitbhu.ac.in/tenders"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if keyword such as "Corrigendum"  encounterd in the "Attachments" then take notice_type - 16
+
+procurement_method: "2"
+
+org_name: INDIAN INSTITUTE OF TECHNOLOGY(BHU) VARANASI
+
+org_parent_id: 7527751
+
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+noitice_no --- Ref.No.	
+
+org_address --- Dept. Name	
+
+local_title --- Description	
+
+publish_date --- Upload Date	
+
+notice_deadline --- Closing Date (also take time)
+
+notice_url --- https://iitbhu.ac.in/tenders
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+document_type_descriptio --- Tenders (2023-24)
+
+
+
+
+
+
+#attachment >>>> Attachments
+
+external_url --- "Attachments" >>> (click on the href for documents File )	
+
+file_name --- Attachments		
+
+file_type --- (extension)... eg - pdf
+

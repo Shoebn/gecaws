@@ -1,0 +1,41 @@
+Note : Go to URL : "https://rguktrkv.ac.in/Institute.php?view=Tenders"
+
+script_name : "in_rguktrkv_spn"		
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4
+
+currancy			INR
+
+======================================================================================================================================================
+
+local_title		: Tender/Quotation Name
+
+publish_date	: Opening Date
+
+notice_deadline		: Closing Date
+
+attachments  File_name		: Downloads
+
+external_url	:Downloads    
+
+org_name	: 'Rajiv Gandhi University of Knowledge Technologies'
+
+org_parent_id	: '7788036'
+
+org_phone	: '08588-283603' pass static
+
+org_fax	: '08588-283603' pass static
+
+additional_tender_url	: Downloads			Com:Take "AP Online e procurement" this keyword data
+
+notice_url	: pass main url "https://rguktrkv.ac.in/Institute.php?view=Tenders"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record

@@ -1,0 +1,43 @@
+Note : Go to URL : "https://www.nid.ac.in/tender"
+
+script_name : "in_nid_spn"	 
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no	: File No/Tender ID
+
+local_tite	: 	Tender Details
+
+publish_date / tender_contract_start_date	: Start Date
+
+tender_contract_end_date	: End Date
+
+attachments		: 'Tender Document' pass static
+
+file_size	: 	Tender Document/Tender ID
+
+external_url	: 	Tender Document/Tender ID
+
+notice_url	: pass main url "https://www.nid.ac.in/tender"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'NATIONAL INSTITUTE OF DESIGN'
+
+org_parent_id	: '7427479'
+
+org_address	: 'National Institute of Design AP EEE Building,Acharya Nagarjuna University,Namburu 522510 Andhra Pradesh' pass static
+
+org_phone	: '08-632-377-204' pass static

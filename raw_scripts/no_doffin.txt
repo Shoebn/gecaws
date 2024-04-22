@@ -1,0 +1,509 @@
+script_name : no_doffin_pp
+
+originalUrl / main_url / : "https://www.doffin.no/search?page=1&type=PLANNING&status=ACTIVE"
+
+page_no : 20
+
+countryNames / performance_country : NO
+
+notice_type : 3 
+
+currency: NOK
+
+languageCode / org_language / main_language :  NO
+
+procurment_emthod : 2
+
+------------------------------------------------------------------------------------------------------------------------------------
+tender_html_page
+------------------
+title/ local_title  :  take the main heading as local_title for ex. "Notice of intention - Nationwide monitoring of epiphyte vegetation on birch in 2024"
+
+org_name : take org_name from above of the local title , for ex."The Norwegian Environment Agency"
+
+publish_date : take the publish_date from beside (right side) the amount field.
+
+notice_url : click on notice_card for detail_page
+
+org_country : NO
+
+org_language : NO
+
+
+detail_page 
+-----------------
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg , there are multiple tabs in details_page
+
+local_description : take the local_description between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_summary_english : take the notice_summary_english between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_no : Referanse , if not available then grab from "notice_url" 
+
+notice_deadline , Tilbudsfrist:  ,take time too
+
+estimatedAmount  /est_amount / NETBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+estimatedAmount  /est_amount / GROSSBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+main_activity : Hovedaktivitet
+
+notice_contract_type :   2.1.1 Hensikt >> Kontraktens art , replace the following keywords with respective keyword ("Services = Service" ,"Items = Supply" , "Construction = Works")
+
+contract_duration  : 5.1.3 Anslått varighet
+
+additional_tender_url :  3.1.6 Anskaffelsesdokumenter >> Adresse på anskaffelsesdokumentene
+
+postal_code : Del 8: Virksomheter >>  Postnummer
+
+org_city : Del 8: Virksomheter >> By
+
+contact_person :  Del 8: Virksomheter >> Kontaktpunkt
+
+org_email : Del 8: Virksomheter >>  E-post
+
+org_phone : Del 8: Virksomheter >> Telefon
+
+document_type_description : Del 11: Kunngjøringsinformasjon >> Type skjema
+
+dispatch_date : Varsel utsendelsesdato
+
+category : Category (CPV)
+
+externalId / buyer internal id / org_parent_id : null
+
+CPV_at_source :  null
+
+CPVCodes : auto
+
+document_opening_time :  null
+
+contractDuration /contract_Duration : null
+
+fundingAgency / funding_Agency :      null
+
+source_of_fund :  null
+
+documentCost / document_cost / document_fee : null
+
+eligibilityCriteria/ eligibility : null
+
+projectName / project_Name : null
+
+
+Attachments / Documents : NUll
+
+CPVNames /class_at_source : NUll
+
+Name of Product Category of the sources /Category : NUll
+
+class_title_at_source : NUll
+
+Corrosponsing Codes : NUll
+
+contractAward.companyName  / bidder_name : NUll
+
+contractAward.companyAddress / bidder_address : NUll
+
+contractAward.companyCountry / bidder_Country : NUll
+
+contractAward.contractDuration / contract_Duration : NUll
+
+contractAward.initialEstimatedValue : NUll
+
+contractAward.finalValue   / award_Value : NUll
+
+contractAward.awardDate / award_date : NUll
+
+
+
+
+
+
+
+------------------------------------------------------------------------spn-----------------------------------------------------------------------------------------
+script_name : no_doffin_spn
+
+originalUrl / main_url / : "https://www.doffin.no/search?page=1&type=COMPETITION&status=ACTIVE"
+
+page_no : 20
+
+countryNames / performance_country : NO
+
+notice_type : 4
+
+currency: NOK
+
+languageCode / org_language / main_language :  NO
+
+procurment_emthod : 2
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+tender_html_page
+------------------
+title/ local_title  :  take the main heading as local_title for ex. "Notice of intention - Nationwide monitoring of epiphyte vegetation on birch in 2024"
+
+org_name : take org_name from above of the local title , for ex."The Norwegian Environment Agency"
+
+publish_date : take the publish_date from beside (right side) the amount field.
+
+notice_url : click on notice_card for detail_page
+
+org_country : NO
+
+org_language : NO
+
+
+detail_page 
+-----------------
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg , there are multiple tabs in details_page
+
+contract_duration  : 5.1.3 Anslått varighet
+
+local_description : take the local_description between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_summary_english : take the notice_summary_english between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_no : Referanse , if not available then grab from "notice_url" 
+
+notice_deadline , Tilbudsfrist: ,  take time too
+
+estimatedAmount  /est_amount / NETBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+estimatedAmount  /est_amount / GROSSBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+main_activity : Hovedaktivitet
+
+notice_contract_type :   2.1.1 Hensikt >> Kontraktens art , replace the following keywords with respective keyword ("Services = Service" ,"Items = Supply" , "Construction = Works")
+
+
+contract_duration  : 5.1.3 Anslått varighet
+
+additional_tender_url :  3.1.6 Anskaffelsesdokumenter >> Adresse på anskaffelsesdokumentene
+
+postal_code : Del 8: Virksomheter >>  Postnummer
+
+org_city : Del 8: Virksomheter >> By
+
+contact_person :  Del 8: Virksomheter >> Kontaktpunkt
+
+org_email : Del 8: Virksomheter >>  E-post
+
+org_phone : Del 8: Virksomheter >> Telefon
+
+document_type_description : Del 11: Kunngjøringsinformasjon >> Type skjema
+
+dispatch_date : Varsel utsendelsesdato
+
+category : Category (CPV)
+
+
+externalId / buyer internal id / org_parent_id : null
+
+CPV_at_source :  null
+
+CPVCodes : auto
+
+document_opening_time :  Informasjon om offentlig åpning >> Dato/klokkeslett
+
+contractDuration /contract_Duration : null
+
+fundingAgency / funding_Agency :      null
+
+source_of_fund :  null
+
+documentCost / document_cost / document_fee : null
+
+eligibilityCriteria/ eligibility : null
+
+projectName / project_Name : null
+
+
+Attachments / Documents : NUll
+
+CPVNames /class_at_source : NUll
+
+Name of Product Category of the sources /Category : NUll
+
+class_title_at_source : NUll
+
+Corrosponsing Codes : NUll
+
+contractAward.companyName  / bidder_name : NUll
+
+contractAward.companyAddress / bidder_address : NUll
+
+contractAward.companyCountry / bidder_Country : NUll
+
+contractAward.contractDuration / contract_Duration : NUll
+
+contractAward.initialEstimatedValue : NUll
+
+contractAward.finalValue   / award_Value : NUll
+
+contractAward.awardDate / award_date : NUll
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------contract_award----------------------------------------------------------------------
+script_name : no_doffin_ca
+
+originalUrl / main_url / : "https://www.doffin.no/search?page=1&type=ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT"
+
+page_no : 20
+
+countryNames / performance_country : NO
+
+notice_type : 7
+
+currency: NOK
+
+languageCode / org_language / main_language :  NO
+
+procurment_emthod : 2
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+tender_html_page
+------------------
+title/ local_title  :  take the main heading as local_title for ex. "Notice of intention - Nationwide monitoring of epiphyte vegetation on birch in 2024"
+
+org_name : take org_name from above of the local title , for ex."The Norwegian Environment Agency"
+
+publish_date : take the publish_date from beside (right side) the amount field.
+
+notice_url : click on notice_card for detail_page
+
+org_country : NO
+
+org_language : NO
+
+
+detail_page 
+-----------------
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg , there are multiple tabs in details_page
+
+contract_duration  : 5.1.3 Anslått varighet
+
+local_description : take the local_description between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_summary_english : take the notice_summary_english between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_no : Referanse , if not available then grab from "notice_url" 
+
+notice_deadline , null
+
+estimatedAmount  /est_amount / NETBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+estimatedAmount  /est_amount / GROSSBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+main_activity : Hovedaktivitet
+
+notice_contract_type :   2.1.1 Hensikt >> Kontraktens art , replace the following keywords with respective keyword ("Services = Service" ,"Items = Supply" , "Construction = Works")
+
+lot_actual_number , 5.1 Skjebne LOT-0001 , here split only "LOT-0001" , ref_url : "https://www.doffin.no/notices/2024-102733"
+
+lot_title , Tittel
+
+lot_description , Beskrivelse: _
+
+lot_contract_type : 5.1.1 Hensikt >> Kontraktens art
+
+lot_contract_start_date :  5.1.3 Anslått varighet >> Startdato , ref_url : "https://www.doffin.no/notices/2024-102717"
+
+lot_contract_end_date :    5.1.3 Anslått varighet >> Sluttdato , ref_url : "https://www.doffin.no/notices/2024-102717"
+
+lot_netbudgetlc : 5.1.5 Verdi >> Anslått verdi eksklusiv merverdiavgift , ref_url : "https://www.doffin.no/notices/2024-102733"
+
+additional_tender_url :  null
+
+postal_code : Del 8: Virksomheter >>  Postnummer
+
+org_city : Del 8: Virksomheter >> By
+
+contact_person :  Del 8: Virksomheter >> Kontaktpunkt
+
+org_email : Del 8: Virksomheter >>  E-post
+
+org_phone : Del 8: Virksomheter >> Telefon
+
+document_type_description : Del 11: Kunngjøringsinformasjon >> Type skjema
+
+dispatch_date : Varsel utsendelsesdato
+
+category : Category (CPV)
+
+
+externalId / buyer internal id / org_parent_id : null
+
+CPV_at_source :  null
+
+CPVCodes : auto
+
+document_opening_time :  Informasjon om offentlig åpning >> Dato/klokkeslett
+
+contractDuration /contract_Duration : null
+
+fundingAgency / funding_Agency :      null
+
+source_of_fund :  null
+
+documentCost / document_cost / document_fee : null
+
+eligibilityCriteria/ eligibility : null
+
+projectName / project_Name : null
+
+Attachments / Documents : NUll
+
+CPVNames /class_at_source : NUll
+
+Name of Product Category of the sources /Category : NUll
+
+class_title_at_source : NUll
+
+Corrosponsing Codes : NUll
+
+grossawardvaluelc : Del 6: Resultater >> Verdien av alle kontrakter tildelt i denne prosedyren , ref_url : "https://www.doffin.no/notices/2024-102733"
+
+contractAward.companyName  / bidder_name :  Vinner >> Offisielt navn , ref_url : "https://www.doffin.no/notices/2024-102733"
+
+contractAward.companyAddress / bidder_address : NUll
+
+contractAward.companyCountry / bidder_Country : NUll
+
+contractAward.contractDuration / contract_Duration : NUll
+
+contractAward.initialEstimatedValue : NUll
+
+contractAward.awardDate / award_date : NUll
+
+
+
+
+
+
+------------------------------------------------------------------------------------------amendment---------------------------------------------------------------------------
+script_name : no_doffin_amd
+
+originalUrl / main_url / : "https://www.doffin.no/search?page=1&status=CANCELLED&type=ANNOUNCEMENT_OF_COMPETITION"
+
+page_no : 20
+
+countryNames / performance_country : NO
+
+notice_type : 16
+
+currency: NOK
+
+languageCode / org_language / main_language :  NO
+
+procurment_emthod : 2
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+tender_html_page
+------------------
+title/ local_title  :  take the main heading as local_title for ex. "Notice of intention - Nationwide monitoring of epiphyte vegetation on birch in 2024"
+
+org_name : take org_name from above of the local title , for ex."The Norwegian Environment Agency"
+
+publish_date : take the publish_date from beside (right side) the amount field.
+
+notice_url : click on notice_card for detail_page
+
+org_country : NO
+
+org_language : NO
+
+
+detail_page 
+-----------------
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg , there are multiple tabs in details_page
+
+contract_duration  : 5.1.3 Anslått varighet
+
+local_description : take the local_description between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_summary_english : take the notice_summary_english between "main_title" and "Del 1: Kjøper" , ref_url : https://www.doffin.no/notices/2024-102704
+
+notice_no : Referanse , if not available then grab from "notice_url" 
+
+notice_deadline , null
+
+estimatedAmount  /est_amount / NETBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+estimatedAmount  /est_amount / GROSSBUDGETLC :  2.1.3 Verdi > Anslått verdi eksklusiv merverdiavgift
+
+main_activity : Hovedaktivitet
+
+notice_contract_type :   2.1.1 Hensikt >> Kontraktens art , replace the following keywords with respective keyword ("Services = Service" ,"Items = Supply" , "Construction = Works")
+
+
+additional_tender_url :  null
+
+postal_code : Del 8: Virksomheter >>  Postnummer
+
+org_city : Del 8: Virksomheter >> By
+
+contact_person :  Del 8: Virksomheter >> Kontaktpunkt
+
+org_email : Del 8: Virksomheter >>  E-post
+
+org_phone : Del 8: Virksomheter >> Telefon
+
+document_type_description : Del 11: Kunngjøringsinformasjon >> Type skjema
+
+dispatch_date : Varsel utsendelsesdato
+
+category : Category (CPV)
+
+
+externalId / buyer internal id / org_parent_id : null
+
+CPV_at_source :  null
+
+CPVCodes : auto
+
+document_opening_time :  Informasjon om offentlig åpning >> Dato/klokkeslett
+
+contractDuration /contract_Duration : null
+
+fundingAgency / funding_Agency :      null
+
+source_of_fund :  null
+
+documentCost / document_cost / document_fee : null
+
+eligibilityCriteria/ eligibility : null
+
+projectName / project_Name : null
+
+Attachments / Documents : NUll
+
+CPVNames /class_at_source : NUll
+
+Name of Product Category of the sources /Category : NUll
+
+class_title_at_source : NUll
+
+Corrosponsing Codes : NUll
+
+grossawardvaluelc : null
+
+contractAward.companyName  / bidder_name : null
+
+contractAward.companyAddress / bidder_address : NUll
+
+contractAward.companyCountry / bidder_Country : NUll
+
+contractAward.contractDuration / contract_Duration : NUll
+
+contractAward.initialEstimatedValue : NUll
+
+contractAward.awardDate / award_date : NUll

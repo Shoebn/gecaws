@@ -1,0 +1,25 @@
+cmt:publish_date is in order
+
+script_name='il_iaa_ca'
+urls="https://www.iaa.gov.il/tenders-and-contracts/active-tenders#notifications"
+page_no=1
+main_language='HE'
+performance_country='IL'
+currency='ILS'
+procurement_mrthod=2
+notice_type=7
+org_name='ISRAEL AIRPORTS AUTHORITY'
+org_parent_id='7636991'
+
+Grab below data from tender_html_element.
+publish_date=תאריך פרסום	
+contract_start_date=תקופת ההתקשרות		cmt:here "31.05.2026 - 01.06.2024" grab "31.05.2026" this date.
+contract_end_date=תקופת ההתקשרות		cmt:here "31.05.2026 - 01.06.2024" grab "01.06.2024" this date.
+bidder_name=שם ספק/לקוח	
+publish_date=תאריך פרסום	
+local_title=הודעות פטור
+lot_title=	cmt:pass local_title
+
+notice_url=הודעות פטור	
+notice_text=take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.
+

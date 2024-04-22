@@ -1,0 +1,40 @@
+use HMA Vpn:Belarus
+
+script_name='uz_xarid_uzez_pp'
+urls="https://xarid.uzex.uz/trade/plangraph-list"
+page_no=1
+performance_country='UZ'
+main_language='UZ'   	cmt:this site have multiple languages.'TT','UZ','RU'.
+notice_type=3	
+procurement_method=2
+currency='UZS'
+org_language='UZ'
+org_country='UZ'
+
+Grab below data from tender_html_element.
+notice_no=№:		cmt:also split from notice_url
+org_name=Buyurtmachi:		cmt:here "207215726 - AKSIYADORLIK TIJORAT XALQ BANKI" grab "AKSIYADORLIK TIJORAT XALQ BANKI" this in notice_no.
+tender_custom_tag_company_id=Buyurtmachi:		cmt:here "207215726 - AKSIYADORLIK TIJORAT XALQ BANKI" grab "207215726" this in tender_custom_tag_company_id.
+local_title=Reja-jadvalning nomi:
+publish_date=Boshlanish sanasi:
+notice_deadline='threshold'		cmt:atke 1 year after the publish_date.
+source_of_funds=Moliyaviy manbasi: 
+org_address=Batafsil		cmt:grab the address above the "Batafsil" button. 
+
+notice_url=click on "Batafsil" button.
+notice_text=grab all the page_details data as well as take all the "tender_html_element" Row wisedata in Notice Text. 
+
+
+Grab below data from page_details.
+
+ref_url:"https://xarid.uzex.uz/trade/plangraph/4135063/details"		here 2 lots are present.grab both.
+lot_actual_number=		cmt:here "01.47.21.000-00001 Yangi tovuq tuxumi" grab "01.47.21.000-00001" this in lot_actual_number.
+lot_title=		cmt:here "01.47.21.000-00001 Yangi tovuq tuxumi" grab "Yangi tovuq tuxumi" this in lot_title.
+lot_quantity=Dastlabki miqdori
+lot_quantity_uom=O‘lchov birligi
+lot_class_codes_at_source=Статья расходов:		cmt:here "44252300 - Продуктов питания" grab "44252300" no only.
+lot_description=Tovar (ish, xizmat)ning batafsil tavsifi:
+
+class_codes_at_source:Статья расходов:		cmt:here "44252410 - Медикаменты и предметы медицинского назначения" grab "44252410" this number.
+class_title_at_source:Статья расходов:		cmt:here "44252410 - Медикаменты и предметы медицинского назначения" grab "Медикаменты и предметы медицинского назначения" this number.
+

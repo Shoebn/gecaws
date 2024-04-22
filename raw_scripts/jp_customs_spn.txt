@@ -1,0 +1,48 @@
+Note : Go to URL : "https://www.customs.go.jp/kyotsu/chotatsu/nyusatsu/n_index.htm"
+
+script_name : "jp_customs_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'JA'
+
+performance_country / org_country	: 'JP'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'JPY'
+
+=================================================================================================================================================
+
+org_city	: 公告税関
+
+org_address	: '〒100-8940 東京都千代田区霞が関3-1-1 ' pass static
+
+publish_date	: 公告年月日
+
+notice_no	: 掲示番号
+
+local_title	: 件名			Com:Don't take file_extention and don't take file_size....Take a text
+
+notice_deadline	: 入札書の受領期限
+
+document_purchase_end_time	: 入札書の受領期限
+
+attachments	: 件名
+
+file_size	: 件名
+
+external_url	: 件名
+
+notice_url	: pass main url "https://www.customs.go.jp/kyotsu/chotatsu/nyusatsu/n_index.htm"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'JAPAN PAVILION CUSTOMS TRANSPORT'
+
+org_parent_id	:'7457251'
+
+
+

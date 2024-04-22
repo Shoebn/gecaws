@@ -1,0 +1,57 @@
+######################################################################################################################################################
+script_name: in_gujarat_bsnl_spn
+
+urls: "http://gujarat.bsnl.co.in/TenderWatch/Tender_Watch_Detail.aspx?cat=all&ssa=all"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - "Corrigendum" keyword is presnt in the local_title then take notice_type --- 16 , also data is present im "corrigendom" so change the data if presnt in it
+
+procurement_method: "2"
+
+org_name --- BHARAT SANCHAR NIGAM LIMITED, GUJARAT
+
+org_parent_id -- 7105838
+
+
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+
+publish --- Date of Issue	
+
+notice_no --- Tender No
+
+local_title --- Title
+
+category --- Category
+
+notice_deadline --- Opening Date & Time	
+
+notice_url --- http://gujarat.bsnl.co.in/TenderWatch/Tender_Watch_Detail.aspx?cat=all&ssa=all
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+#attachment >>>> Download .Zip
+
+external_url --- "Download .Zip" >>> (click on the href for documents File)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf
+
+

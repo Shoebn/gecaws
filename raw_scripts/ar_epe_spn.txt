@@ -1,0 +1,65 @@
+Note : Go to URL : "https://www.epe.santafe.gov.ar/administracion/aperturas"
+	
+script_name : "ar_epe_spn"			Note:open the site than click on "Todas" tab than grab the data
+
+page_no : 3
+
+main_language/ org_language  : ES
+
+procurment_method : 2
+
+notice_type : 4
+================================TenderNotice==========================================
+id / Notice no	:Licitación Pública Nº 		Com:Take after this keyword data  (eg: Nº 7040003859)
+				:Concurso Privado Nº 		Com:Take after this keyword data
+				:Compra Menor Nº	 		Com:Take after this keyword data
+				
+publishDate		:'Take a threshold'    
+
+externalId / buyer internal id / org_parent_id	:'7570510'
+
+languageCode / org_language / main_language	:ES
+
+title/ local_title 	: take data between "Licitación Pública Nº "  upto "Presupuesto Oficial "   
+
+performance_country	:'AR'
+
+country 	:'AR'
+
+buyerName / org_name	:'ENERGIA DE SANTA FE'
+
+contact.address / org_address	:  Dirección	[page detail ]
+
+contact.city / org_city	:  hsLugarSanta  [page detail ]
+
+contact.country	:'AR'
+
+contact.email / org_email	:'mailto:suppliers@epe.santafe.gov.ar' pass static
+
+contact.phone / org_phone	:'(0342) 4505856' pass static
+
+bidDeadline  / Notice_deadline / submission_deadline	:Fecha de Apertura		[page_detail]		Com:take "Hora Inicio" time also
+
+est_amount / GROSSBUDGETLC 	:  Presupuesto Oficial     (tender_html_element) 
+
+estimatedAmountCurrency / Currency 	:'ARS'
+
+document_type_description	: take above the local_title having keywords like "Licitación Pública , Concurso Privado , Compra Menor " as "document_type_description" 
+
+noticeContractType / Contract_Type	:Take data from left site of "notice_no"  (tender_html_element)      		Com: notice contrac type mapping as per below  ("Obras=works","Materiales=Supply","Servicios=Service")
+
+Attachments / Documents	:	1)Descargar		[tender_html_element]		Com:Click "Descargar" this button and grab the data
+							2)Take the data between "Archivos de la Licitación" and "Buscando preguntas y respuestas..."		[page_detail]
+
+External URL	:1)Descargar		[tender_html_element]		Com:Click "Descargar" this button and grab the data
+				:2)Take the data between "Archivos de la Licitación" and "Buscando preguntas y respuestas..."		[page_detail]
+
+CPVCodes	: take auto cpv
+
+notice_url 	: Click on local_title hyperlink 
+
+originalUrl / main_url  :"https://www.epe.santafe.gov.ar/administracion/aperturas"
+
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the  "tender_html_element" of each record
+

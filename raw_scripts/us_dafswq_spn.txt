@@ -1,0 +1,35 @@
+Note : Go to URL : "https://www.maine.gov/dafs/bbm/procurementservices/vendors/noi/willingandqualified"
+
+script_name : "us_dafswq_spn"		
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+notice_type : 5		Com:If in "Q/A Summary and Amendment" this field data present than take notice_type 16
+
+currancy	:	'USD'
+
+===============================================================================================================================================
+
+local_title	: Description of Goods/Services
+
+notice_no	: Contract #
+
+org_name	: Issuing Department
+
+publish_date	: Posting Start Date
+
+notice_deadline	: Posting End Date						Com:If in "Posting End Date" this field date is not present than take 'Take a threshold'
+
+attachments	: Description of Goods/Services				Com:Click on "Description of Goods/Services" hyperlink than grab the data
+
+external_url	: Description of Goods/Services			Com:Click on "Description of Goods/Services" hyperlink than grab the data
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/noi/willingandqualified"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

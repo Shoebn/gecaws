@@ -1,0 +1,56 @@
+######################################################################################################################################################
+script_name:in_fsnl_spn
+
+urls: "https://www.fsnl.nic.in/limited-tenders.php"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note --- if date is given in "Extension/Prepone Date" then take notice_type - "16" and also take as notice_deadline
+
+procurement_method: "2"
+
+org_name --- FERRO SCRAP NIGAM LTD		
+
+org_parent_id -- 7071803
+
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+#note -- do not use google translation "en" language,.. go to top right hand corner and click on "enlish" to translate the site 
+
+notice_no --- Ref no.	
+
+local_title --- Title	
+
+org_address --- CO/Unit Name	
+
+publish_date --- Tender Date	
+
+notice_deadline --- Expiry Date	
+
+notice_url --- https://www.fsnl.nic.in/limited-tenders.php
+
+notice_text --- HTML_page
+ #Note - take HTML body of main pa
+
+
+
+
+
+#attachment >>>> Downloads
+
+external_url --- "Downloads" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Tender Document		
+
+file_type --- (extension)... eg - pdf
+

@@ -1,0 +1,84 @@
+script_name					in_bridgeroof_spn
+notice_type					4		
+procurement_method			2
+urls						"http://www.bridgeroof.co.in/tenders/active"
+page_no						5
+performance_country	/ org_country		IN
+main_language / org_language			EN
+currancy				INR
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "http://www.bridgeroof.co.in/tenders/active" and grab the data
+
+Temder_Html_Element
+
+notice_no		:	Notification No
+
+local_title		:	Description
+
+org_address		:	Location
+
+contact.email / org_email	: 'bridge@bridgeroof.co.in' pass ststic
+
+contact.phone / org_phone	: '+91(33) 2217 - 2108 / 2274' pass ststic
+
+publish_date		:	Notification Dt
+
+document_purchase_start_time	:	Notification Dt
+
+document_purchase_end_time		:	Dt. of Closure of Sale
+
+notice_deadline		:	Dt. of Submission
+
+notice_url    :  to open the page_detail click on "Notification No" hyperlink
+
+notice_text     :     take all the data from page_detail as well the  "tender_html_element" of each record  
+
+org_name		:	'BRIDGE AND ROOF COMPANY (INDIA) LIMITED'
+
+org_parent_id		:	'7527464'
+
+
+
+
+
+===============================================Corrigendum=====================================================
+	
+	Note:Open thr site than click on "Corrigendum" tab than grab the data 
+
+script_name					in_bridgeroof_amd
+notice_type					16	
+procurement_method			2
+urls						"https://www.bridgeroof.co.in/tenders/active"
+page_no						5
+performance_country	/ org_country		IN
+main_language / org_language			EN
+currancy				INR
+
+--------------------------------------------------------------------------------------------
+id / Notice no	:	Notification No
+
+publishDate		:	Notification Dt
+
+externalId / buyer internal id / org_parent_id		: '7527464'
+
+title/ local_title 	: Description
+
+buyerName / org_name	:	'BRIDGE AND ROOF COMPANY (INDIA) LIMITED'
+
+contact.address / org_address	: Location
+
+contact.email / org_email	: 'bridge@bridgeroof.co.in' pass ststic
+
+contact.phone / org_phone	: '+91(33) 2217 - 2108 / 2274' pass ststic
+
+publish_date	:	Notification Dt
+
+document_purchase_start_time	:	Notification Dt
+
+bidDeadline  / Notice_deadline / submission_deadline	:	Dt. of Submission
+
+document_purchase_end_time : Dt. of Closure of Sale
+
+notice_url	: Notification No.  	Com:Click on notice_no hyperlink than grab the data 
+
+noticeText / html_body / Notice_text	: take all the data from page_detail as well the  "tender_html_element" of each record  

@@ -1,0 +1,45 @@
+######################################################################################################################################################
+script_name: in_smartcitytvm_spn 
+   
+urls: "https://www.smartcitytvm.in/index.php/tenders"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name:Smart City Thiruvananthapuram Limited (SCTL)	
+
+org_parent_id: 7777575
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+notice_no --- No
+
+local_title --- Title
+
+publish_date --- Date
+
+notice_url --- https://www.smartcitytvm.in/index.php/tenders
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment >>>> Documents		
+
+external_url --- Documents >>> (click on the href for documents File)	
+
+file_name --- Tender Document 	
+
+file_type --- (extension)... eg - pdf

@@ -1,0 +1,72 @@
+main_url : "https://energy.rajasthan.gov.in/tender-list/953/0"
+
+script_name : "in_rajasthanenergy_spn"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4  , if in "NIT Purpose" field has "corrigendum" or "Date Extension" appers  then take notice_type = 16
+
+procurment_method : 2
+
+
+-------------------------------------
+tender_html_page
+--------------------
+document_type_description : "Tender List"
+
+
+publish_Date : Release Date
+
+document_opening_time : Tender Opening Date	
+
+document_purchase_start_date : Form Issuing Date	
+
+document_purchase_end_date : Form Submission Date	
+
+notice_deadline : Form Submission Date	
+
+local_title :	NIT Purpose
+
+org_name : "GOVERNMENT OF RAJASTHAN"
+
+org_parent_id : 7522201
+
+org_Address : Department
+
+org_state : "Rajasthan"	
+
+org_email : se.mis@rvpn.co.in
+
+org_phone : "0141-2293814"
+
+org_country : IN
+
+org_language : EN
+
+notice_url : View Details  , click on view button
+
+notice_no : 	NIT No , if not available then pass from "RN No" , otherwise null
+
+notice_url : "https://energy.rajasthan.gov.in/tender-list/953/0"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+attach
+------
+file_name : "Attachments"
+external_url : take from "Action" field
+
+take also attachments from "NIT Purpose" column field
+
+
+
+
+
+

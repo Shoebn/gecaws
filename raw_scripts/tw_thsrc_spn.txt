@@ -1,0 +1,57 @@
+*publish_dates are in order..
+
+*****************************************************************************************************
+script_name='tw_thsrc_spn'
+urls="https://pms.thsrc.com.tw"
+page_no=5
+main_language='CN'
+performance_country='TW'
+currency='TWD'
+procurement_method=2
+notice_type=4
+org_name='TAIWAN HIGH SPEED RAIL CORPORATION'
+org_parent_id='7583604'
+org_language='CN'
+org_country='TW'
+
+************************************************tender_html_element**************************************
+publish_date = 公告日期
+
+notice_deadline = 截止日期
+
+notice_no = 案號
+
+local_title = 標題	
+
+notice_url = 公告日期
+
+notice_text = take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.
+
+
+************************************************page_details*************************************************
+est_amount = 公告含稅預算：
+
+grossbudgetlc = 公告含稅預算：
+
+
+ref_url:"https://pms.thsrc.com.tw/web/epms/home?p_p_id=THSRCAnnouncement_WAR_THSRCPMSportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_THSRCAnnouncement_WAR_THSRCPMSportlet_VRS1=001&_THSRCAnnouncement_WAR_THSRCPMSportlet_ADDN=PCDL-24-0125&_THSRCAnnouncement_WAR_THSRCPMSportlet_UKID=1&_THSRCAnnouncement_WAR_THSRCPMSportlet_jspPage=%2Fhtml%2Fannouncement%2Fview.jsp&_THSRCAnnouncement_WAR_THSRCPMSportlet_CO=20155"
+contact_person=採購承辦人：			
+org_phone=連絡電話：
+
+ref_url:"https://pms.thsrc.com.tw/web/epms/home?p_p_id=THSRCAnnouncement_WAR_THSRCPMSportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_THSRCAnnouncement_WAR_THSRCPMSportlet_VRS1=001&_THSRCAnnouncement_WAR_THSRCPMSportlet_ADDN=PCDL-24-0127&_THSRCAnnouncement_WAR_THSRCPMSportlet_UKID=1&_THSRCAnnouncement_WAR_THSRCPMSportlet_jspPage=%2Fhtml%2Fannouncement%2Fview.jsp&_THSRCAnnouncement_WAR_THSRCPMSportlet_CO=20155"
+contact_person = 標案聯絡人：		cmt:split between "標案聯絡人：" and "電話".
+org_phone = 電話					cmt:split between "電話" and "分機".
+org_email = E-Mail:
+
+ref_url:"https://pms.thsrc.com.tw/web/epms/home?p_p_id=THSRCAnnouncement_WAR_THSRCPMSportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_THSRCAnnouncement_WAR_THSRCPMSportlet_VRS1=003&_THSRCAnnouncement_WAR_THSRCPMSportlet_ADDN=PCDD-24-0254&_THSRCAnnouncement_WAR_THSRCPMSportlet_UKID=1&_THSRCAnnouncement_WAR_THSRCPMSportlet_jspPage=%2Fhtml%2Fannouncement%2Fview.jsp&_THSRCAnnouncement_WAR_THSRCPMSportlet_CO=20155"
+contact_person = 採購承辦人：		cmt:Here "趙小姐(mandy_jhao@thsrc.com.tw)" grab only "趙小姐"
+org_email = 採購承辦人：			cmt:Here "趙小姐(mandy_jhao@thsrc.com.tw)" grab only "mandy_jhao@thsrc.com.tw"
+org_phone = 連絡電話：		cmt:split up to "分機"
+
+attachments[]	ref_url="https://pms.thsrc.com.tw/web/epms/home?p_p_id=THSRCAnnouncement_WAR_THSRCPMSportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_THSRCAnnouncement_WAR_THSRCPMSportlet_VRS1=001&_THSRCAnnouncement_WAR_THSRCPMSportlet_ADDN=PCDL-24-0125&_THSRCAnnouncement_WAR_THSRCPMSportlet_UKID=1&_THSRCAnnouncement_WAR_THSRCPMSportlet_jspPage=%2Fhtml%2Fannouncement%2Fview.jsp&_THSRCAnnouncement_WAR_THSRCPMSportlet_CO=20155"
+file_name = 標案相關附件：
+external_url = 標案相關附件：
+file_type = cmt:split extension only from file_name.
+
+
+identifier = local_title+notice_no

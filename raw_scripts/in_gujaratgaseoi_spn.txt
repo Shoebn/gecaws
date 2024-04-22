@@ -1,0 +1,39 @@
+Note : Go to URL : "https://www.gujaratgas.com/EOI/"
+
+script_name : "in_gujaratgaseoi_spn"	  			Com:Take "Expression of Interest (EOI)" this table data	
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 5
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no		: Reference No
+
+local_title		: Category Description
+
+publish_date	: vPublished Date
+
+notice_deadline		: Submission by Date
+
+notice_url		: pass main url "https://www.gujaratgas.com/EOI/"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record
+
+org_name		: 'GUJARAT GAS LIMITED-GUJARAT GAS LTD'
+
+org_parent_id	: '7039235' 
+
+org_address		: 'Gujarat Gas CNG Station, Sector 5/C, Gandhinagar - 382006 Gujarat' pass static
+
+attachments		: Category Description
+
+external_url	: Category Description			Com:Click on "Category Description" this field hyperlink than grab the data

@@ -1,0 +1,78 @@
+we have required 2 VPN , 1) HMA VPN  2) hola vpn extention (https://chromewebstore.google.com/detail/hola-vpn-the-website-unbl/gkojfkhlekighikafcpjkiklfbnlmeio) 
+step 1) HMA vpn - first set on US server
+step 2) hola vpn - second  set on  kuwait server  (time limit only 30 min )
+
+
+there are multiple drop down options for tender details 
+1) go to "Department" drop down menu select "medical Store" and click on "Search" for details
+2) go to "Department" drop down menu select "Biomedical Engineering" and click on "Search" for details
+3) go to "Department" drop down menu select "Purchase Department" and click on "Search" for details
+
+
+script_name : kw_etendersmoh_spn
+
+url : "https://etenders.moh.gov.kw/pdApps/CompanyRegistration/v1/ViewTenders"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : KW
+
+procurement_method : 2
+
+currency : KWD
+
+notice_type : 4 
+
+
+customer_details
+-----------------
+org_name : STATE OF KUWAIT MINISTRY OF HEALTH
+
+org_parent_id : 7614126
+
+org_country : KW
+
+org_language : AR
+
+
+tender_html_page
+--------------
+document_type_description : "TENDERS" static
+
+notice_no : Title	
+
+local_title : Description	
+
+org_address : Department
+	
+publish_date : Posting Date	
+
+notice_deadline : Closing Date , take time too
+
+document_fee : Amount	
+	
+notice_url : https://eprocurement.mew.gov.kw/Content/AdsList.aspx
+
+notice_text :  take the data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+attachments (take attachments from 3 column "Tenders" , "Terms" , "Extra Note")
+-------------	
+file_name :  "Tenders" static
+external_url : take from "Tenders" field
+
+
+file_name :  "Terms" static
+external_url : 	 take from "Terms" field
+
+file_name :  "Extra Note" static
+external_url : take from "Extra Note" field
+
+
+	
+Amount	
+Payment
+

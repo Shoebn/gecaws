@@ -1,0 +1,62 @@
+Note : Go to URL : "https://epi.gov.in/tender"
+
+script_name :	'in_epi_spn'		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4		Com:If in page_detail have "Corrigendum/Addendums" this field date is present than take notice_type 16
+
+currency	: 'INR'
+======================================================================================================================================================
+
+notice_no	: Tender Info   Com:Take a first line(Take a hyperlink text)
+
+local_title	: Tender Info	Com:Don't take frist line(Don't take hyper line)
+
+publish_date	: Tender Date >> Publish Date     Conm:Take between "Publish Date" and "Closing Date" date		Com:Grab time also
+
+notice_deadline	: Tender Date >> Closing Date		Com:Grab time also
+
+notice_url	: Action	Com:Click on " View Details" this button than grab the data
+
+noice_text	: Take all the data from page_detail as well the  "tender_html_element" of each record
+
+org_name	: 'ENGINEERING PROJECTS (INDIA) LTD'
+
+org_parent_id	: '6973225'
+
+org_phone	: '91-11- 24361666' pass static
+
+document_opening_time	: Open Date		[page_detail]	Com:Grab time also
+
+additional_tender_url	: Tender Link		[page_detail]
+
+---------------------------------------------------------------------------------------
+Foemat 1 for attachments			Ref_url="https://epi.gov.in/tender-detail/tender-for-supply-erection-testing-and-commissioning-of-balance-utility-works-comprise-of-dust-suppression-system-plant-cleaning-system-slurry-pumps-drinking-water-system-plant-ventilation-pressurization-and-air-conditioning-system-for-pkg-i-ii-for-construction-of-chp-for-transportation-of-coal-10-mty-at-mahanadi-coalfields-limited-mcl-hingula-area-talcher-dist-angul-odisha-dli-con-933-814"
+
+attachments	: Tender Documents >> NIT Document	[page_detail]		Com:Take a text
+
+file_description	: Tender Documents >> Work Item Documents		[page_detail]
+
+external_url	: Tender Documents >> NIT Document		[page_detail]
+----------------------------------------------------------------------------------------
+Foemat 2 for attachments				Ref_url="https://epi.gov.in/tender-detail/mep-works-including-cctv-networking-and-swimming-pool-works-for-the-project-of-provision-of-administrative-and-logistic-infrastructure-under-wp07-and-wp5b-at-naval-station-sro-con-ets-194"
+
+attachments	: Corrigendum/Addendums >> Document		[page_detail]
+
+file_description	: Corrigendum/Addendums >> Description		[page_detail]
+
+external_url	: Corrigendum/Addendums >> Document		[page_detail]
+------------------------------------------------------------------------------------------
+
+
+
+
+
+

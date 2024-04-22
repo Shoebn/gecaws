@@ -1,0 +1,101 @@
+######################################################################################################################################################
+
+
+
+script_name: ph_pihilgep_spn                           
+
+urls:"https://philgeps.gov.ph/Indexes/index"
+
+page_no: 50
+
+performance_country / org_country    : "PH"
+
+currency: "PHP"
+
+main_language / org_language: "EN"
+
+procurement_method: 2 
+
+notice_type: 4
+
+
+
+
+******************************************************************************
+                                 #Tender_html_page
+******************************************************************************
+notice_no --- 
+condition 1-  Bid Notice Reference Number 
+condition 2 - "Control Number:" (from detail page)
+
+local_title --- Notice Title	
+
+type_of_procedure_actual --- Mode of Procurement
+#Note - map it with "ph_pihilgep_spn_procedure"
+
+notice_contract_type/ contract_type_actual --- Classification
+#Notice - Civil Works - Works,Goods - Supply, Services - Services (mapping)
+
+org_name --- Agency Name	
+
+closing date --- Closing date (also take time)
+
+notice_text --- page_detail 
+#Note - take HTML body of main page
+
+notice_url --- Bid Notice Reference Number 
+
+
+
+*******************************************************************************
+                                    #Page_detail
+*******************************************************************************
+contract_duration --- Bid Validity Period (in Days):
+
+est_amount / netbudgetlc --- Approved Budget of the Contract:
+
+contact_person --- Contact Person:
+
+local_description / notice_summary_english --- Line Item Details  take entire data of "Line Item Details" in local description 
+
+published_date --- Published Date: (also take time)
+
+category - "UNSPSC"
+
+
+
+#Atachments 
+Documents >> for attachments click on >>> preview 
+   
+file_name --- Document Name
+
+file_type --- Document Name >>> take extension of document name 
+
+external_url --- Document Name	
+(take hyperlink as a external url )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

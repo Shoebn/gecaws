@@ -1,0 +1,60 @@
+script_name : tn_tuneps_spn
+
+url : https://www.tuneps.tn/portail/offres
+
+page_no : 10
+
+main_language : fr
+
+currency : TND
+
+notice_type : 4
+
+performance_country : TN
+
+
+tender_html_page
+--------------------
+
+notice_no : N° A.O , if not available then grab from notice_url
+
+org_name :  Acheteur public
+
+org_language : fr
+
+org_country : fr
+
+local_title : Objet A.O
+
+notice_deadline : Dernier Délai Soumissions Offres
+
+notice_url : click on blue (i) button for detail_page
+
+notice_txt : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+detail_page
+----------
+procurement_method : Type  , if the the  field has "national" word appears then take procurement_method : 0 , otherwise it will go procurment method = 2 
+
+publish_date : Date et heure publication
+	
+notice_contract_type : Type de commande , replace the following keywords with given respective keywords notice_contract_type : Type de commande , replace the following keywords with given respective keywords ( "Etudes = Service" , "Fourniture de services = Service" , "Fourniture de biens = Supply"  ,"Travaux = Works" , "Autres travaux = Works" , "Transport = Service" , "Revêtement routier = Works" , "Autres services = Service" , "Génie Civil = Works" , "Nourriture = Service")
+
+coontract_type_actual : Type de commande
+
+contact_person : Responsable
+
+document_opening_time : Date heure ouverture offres , ref_url : "https://www.tuneps.tn/portail/offres/details/60276/20240206611"
+
+tender >> contract_duration : Durée validité offre , ref_url : "https://www.tuneps.tn/portail/offres/details/60276/20240206611"
+
+org_Address : Department , ref_url : "https://www.tuneps.tn/portail/offres/details/60276/20240206611"
+
+document_type_description :  Mode passation	
+
+
+attachments 
+--------------
+attachment : attachment avaialble in site in detail_page , but can't take because login id password required 

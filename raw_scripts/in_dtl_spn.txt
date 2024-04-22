@@ -1,0 +1,48 @@
+Note : Go to URL : "https://dtl.gov.in/"		Com:open the site than click on "Tenders >> Current Tenders" this tab than grab the data
+
+script_name : "in_dtl_spn"		
+
+page_no : 10
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4		Com:If in "Corrigendum Date" field date present tha take notice_type 16
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no	:  Quotation No			Com: If this field date is not present than take for "Tender Reference Number" this field data
+
+local_title	: Scope of Work
+
+est_amount / grossbudgetlc	: Estimated Cost
+
+earnest_money_deposit	: EMD
+
+document_purchase_start_time	: Start of Sale of Tender End of Sale of Tender			Com: Take the data above the line and grab time also		Ex.,"15/Mar/2024 06:55 PM 30/Apr 2024 01:30 PM"	take only "15/Mar/2024 06:55 PM"
+
+document_purchase_end_time		: Start of Sale of Tender End of Sale of Tender			Com: Take the data below the line and grab time also		Ex.,"15/Mar/2024 06:55 PM 30/Apr 2024 01:30 PM"	take only "30/Apr 2024 01:30 PM"
+
+publish_date	:  Start of Bid Submission End of Bid Submission		Com: Take the data above the line and grab time also		Ex.,"15/Mar/2024 06:55 PM 30/Apr 2024 01:30 PM"	take only "15/Mar/2024 06:55 PM"
+
+notice_deadline	:  Start of Bid Submission End of Bid Submission		Com: Take the data below the line and grab time also		Ex.,"15/Mar/2024 06:55 PM 30/Apr 2024 01:30 PM"	take only "30/Apr 2024 01:30 PM"
+
+document_opening_time	: Opening Date of Tender		Com:Grab time also
+
+attachments		: 'Tender Document' pass static
+
+external_url	: Tender File		Com:Click on "View" this button than grab the data
+
+notice_url	:  Tender Reference Number		Com:Click on "Tender Reference Number" this field hyperlink than grab the data
+
+notice_text	: Take all the data from page_detail as well the "tender_html_element" of each record
+
+org_name	: 'DELHI TRANSCO LIMITED'
+
+org_parent_id	: '7545099'
+

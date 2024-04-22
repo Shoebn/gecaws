@@ -1,0 +1,68 @@
+Go to URL : "https://www.federalbank.co.in/tender-notices"				Com:Click on "Sale Notices" and "Tenders" this tab than grab all data 
+
+script_name : 'in_federalbank_spn'
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4
+
+currency	: 'INR'
+============================================================= Sale Notices ==========================================================================
+Com:Click on "Sale Notices" this tab than grab the data  
+
+local_title	: Title
+
+publish_date	: Open Date
+
+notice_deadline	: Close Date
+
+attachments	:	'tender Document' pass static
+
+file_size	: Take right site of "Close Date" this field data
+
+external_url	: Take right site of "Close Date" this field data 
+
+org_name	: 'FEDERAL BANK LIMITED'
+
+org_parent_id	: '7281241'
+
+org_phone	: '1800-425-1199' pass static
+
+document_type_description	: 'Sale Notices'
+
+notice_url	: pass main url "https://www.federalbank.co.in/tender-notices"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+============================================================= Tenders ==========================================================================
+Com:Click on "Tenders" this tab than grab the data  
+
+local_title	 : Title
+
+publish_date	: Release Date
+
+notice_deadline	: "Take a threshold"
+
+attachments	:	'tender Document' pass static
+
+file_size	: Take right site of "Release Date" this field data
+
+external_url	: Take right site of "Release Date" this field data 
+
+org_name	: 'FEDERAL BANK LIMITED'
+
+org_parent_id	: '7281241'
+
+org_phone	: '1800-425-1199' pass static
+
+document_type_description	: 'Tenders'
+
+notice_url	: pass main url "https://www.federalbank.co.in/tender-notices"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

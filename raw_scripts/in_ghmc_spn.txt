@@ -1,0 +1,43 @@
+Go to URL : "https://www.ghmc.gov.in/Tenderspage.aspx"
+
+script_name : 'in_ghmc_spn'	
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4				Com:If in "local_title" start with "Expression of Interest" this keyword than take notice_type 5 
+
+currency	: 'INR'
+======================================================================================================================================================
+document_type_description	: T.Type
+
+local_title	: Name of the Work			Com:Take between "Name of the Work" and "Download"
+
+publish_date	: Availablity >> Start Date			Com:grab tiem also
+
+notice_deadline	: Tenders >> Tenders				Com:Grab time also
+
+attachments		:  Take the data below the "local_title"		Com:Take all hyperlinks below the "local_title"
+
+external_url	: Take the data below the "local_title"			Com:Take all hyperlinks below the "local_title"
+
+document_opning_time	: Opening Bids >> Tech Bid				Com:Grab time also
+
+org_name	: 'GREATER HYDERABAD MUNICIPAL CORPORATION'
+
+org_parent_id	: '7522656'
+
+org_address	: 'CC Complex Tank Bund Road, Lower Tank Bund Hyderabad: 500063' pass static
+
+org_website	: 'www.ghmc.gov.in' pass static
+
+org_phone	: '21111111' , '040-23225397' pass static
+
+notice_url	: pass main url "https://www.ghmc.gov.in/Tenderspage.aspx"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

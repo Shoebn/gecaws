@@ -1,0 +1,131 @@
+script_name : za_kouga_spn
+
+url : "https://www.kouga.gov.za/notice-board/tenders"
+
+page_no : 3 
+
+main_language / org_language : EN
+
+performance_country : ZA
+
+procurment_method : 2
+
+notice_type: 4, 
+
+currency: ZAR
+
+---------------------
+tender_html_page
+-------------------- 
+local_title , split the data between "Number:" and "Start date" i.e bold text form data
+
+publish_date , Start date
+
+notice_deadline , closing date
+
+document_type_description : "Tenders"
+
+notice_no , Number: , cmt : if not available then grab from notice_url
+
+notice_url : take the notice_url from "local title" , 
+
+notice_text : take whole page of detail_page
+
+-----------------------
+static customer details
+---------------------
+
+org_name : KOUGA MUNICIPALITY
+
+org_country : ZA
+
+org_language : EN
+
+parent_id : 7000026
+
+org_email : registry@kouga.gov.za
+
+org_phone :+27 (0)42 200 2200
+
+
+---------------------
+detail_page
+----------------------
+
+file_name : , Documents  cmt : split the file_type for ex."Advert notice 2/2024 various stores requirements part 2 | PDF | 0.07 MB" , here take only "Advert notice 2/2024 various stores 					requirements part 2 "  , ref_url : "https://www.kouga.gov.za/notice-board-item/1661/various-stores-requirements-for-kouga-local-municipality"
+
+file_type : , Documents , cmt : split the file_type for ex."Advert notice 2/2024 various stores requirements part 2 | PDF | 0.07 MB" , here take only "PDF"  , ref_url : 				                         "https://www.kouga.gov.za/notice-board-item/1661/various-stores-requirements-for-kouga-local-municipality"
+  
+external_url : , Documents
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+note : for tender details go to URL : "https://www.kouga.gov.za/documentlibrary/supply-chain-tender-info" , and select "Tenders: Terms Of Reference" tab for tender format 2
+
+script_name : za_kougasct_spn
+
+url : "https://www.kouga.gov.za/documentlibrary/supply-chain-tender-info"
+
+page_no : 3 
+
+main_language / org_language : EN
+
+performance_country : ZA
+
+procurment_method : 2
+
+notice_type: 4, 
+
+currency: ZAR
+
+
+tender_html_page
+--------------------------
+document_type_description : "Tenders: Terms Of Reference"
+
+local_title , split the text between "document (blue texted)" and "Last modified: " field , for ex. "TERMS OF REFERENCE NOTICE 162 OF 2023 SUPPLY, DELIVERY AND OFFLOADING OF LIFESAVING EQUIPMENT TO KOUGA MUNICIPALITY"
+
+publish_date , Date Uploaded
+
+notice_Deadline : take it as a threshold
+
+notice_url : "https://www.kouga.gov.za/documentlibrary/supply-chain-tender-info"
+
+notice_text :   take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+static customer details
+---------------------
+
+org_name : KOUGA MUNICIPALITY
+
+org_country : ZA
+
+org_language : EN
+
+parent_id : 7000026
+
+org_email : registry@kouga.gov.za
+
+org_phone :+27 (0)42 200 2200
+
+
+
+attachments
+---------------------
+
+file_name : cmt : TERMS OF REFERENCE NOTICE 162 OF 2023 SUPPLY, DELIVERY AND OFFLOADING OF LIFESAVING EQUIPMENT TO KOUGA MUNICIPALITY.pdf | PDF | 0.87MB , here take only "TERMS OF REFERENCE NOTICE 162 OF 2023 SUPPLY, DELIVERY AND OFFLOADING OF LIFESAVING EQUIPMENT TO KOUGA MUNICIPALITY"
+
+file_size : cmt : TERMS OF REFERENCE NOTICE 162 OF 2023 SUPPLY, DELIVERY AND OFFLOADING OF LIFESAVING EQUIPMENT TO KOUGA MUNICIPALITY.pdf | PDF | 0.87MB , here take only "0.87MB"
+
+file_type : cmt : TERMS OF REFERENCE NOTICE 162 OF 2023 SUPPLY, DELIVERY AND OFFLOADING OF LIFESAVING EQUIPMENT TO KOUGA MUNICIPALITY.pdf | PDF | 0.87MB , here take only "PDF "
+ 
+external_url : take the hyperlink of blue text
+
+
+
+
+

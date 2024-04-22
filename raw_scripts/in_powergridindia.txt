@@ -1,0 +1,231 @@
+script_name			in_powergridindia_spn 
+notice_type			4		
+procurement_method	2
+urls						"https://apps.powergrid.in/pgciltenders/u/view-published-tender.aspx"
+Org_Name          			'Power Grid Corporation of India Limited'     
+buyer_internal_id = 		'7767417'    
+page_no						10
+performance_country			IN
+currancy					INR
+main_language				EN
+
+--------------------------------------------------------------------------------------------------------------
+
+Follow "tender_html_element" "https://apps.powergrid.in/pgciltenders/u/view-published-tender.aspx" and grab the data
+
+
+tender_html_element
+
+related_tender_id  =   Tender ID / निविदा आईडी(*) 
+
+notice_no  =   "Tender Ref No निविदा संदर्भ संख्या / Tender Title निविदा शीर्षक   "	 		Com:Take only red word value 
+
+local_title =   "Tender Ref No निविदा संदर्भ संख्या / Tender Title निविदा शीर्षक   "      	 	Com:take only data after Tender No. 
+
+document_purchase_start_time	   =   "Doc Collection Upto दस्तावेज़ जमा करने का समय / Tender Opening at  निविदा खुलने का समय: activate to sort column ascending"    			"Take first date $  time also
+
+document_purchase_end_time    =    "Doc Collection Upto दस्तावेज़ जमा करने का समय / Tender Opening at  निविदा खुलने का समय: activate to sort column ascending"        			"Take second  date $  time also
+
+publish_date	 = 	   Published At / प्रकाशन का समय	 =	Com:Grab time also
+
+notice_url    =     to open the detail page click on  "View" button (tender_html_element) =  field name  "Tender Details / निविदा विवरण " >
+
+notice_text  :   take all the data from page_detail as well the  "tender_html_element" Row wisedata in Notice Text.   of each record  
+
+
+PAGE DETAIL DATA :-
+
+local_title / notice_summary_english    =      Tender Description / निविदा विवरण (*) 
+
+document_fee   =   Tender Fee / निविदा शुल्क = 
+
+earnest_money_deposit   =   Tender Emd / निविदा ई.एम.डी (*) 
+
+pre_bid_meeting_date	  =      Pre Bid Meeting Date / प्री-बिड मीटिंग तारीख  		      Com:Grab time also
+
+notice_contract_type	   =     Tender Category / निविदा श्रेणी (*) 
+	Com:Repleace following keywords with given keywords("Services=Service","Works=Works","Goods=Supply")
+
+contract_type_actual     =       Tender Category / निविदा श्रेणी (*) 
+
+org_address       =   Tender Inviting Officer Address / निविदा आमंत्रण अधिकारी का पता (*) 
+
+contact_person   =      Tender Inviting Officer Name & Designation / निविदा आमंत्रण अधिकारी का नाम और पदनाम (*)  
+
+notice_deadline   =      Bid Submission EndDate (Soft Copy) / बोली जमा करने की अंतिम तिथि (सॉफ्ट कॉपी) (*)  		Com:Grab time also
+
+org_state      =     State / राज्य (*) = 
+
+org_cuntry   =     IN
+
+org_language   =    EN 
+
+postal_code    =    Pin Code / पिन कोड = 
+
+est_amount/grossbudgetlc   =     Tender Value / निविदा मूल्य 
+
+attachments     =         Tender Documents / निविदा दस्तावेज 		    Com:Take single record either take zip file as a attachment 
+	Ref_url="https://apps.powergrid.in/pgciltenders/u/view-published-tender-details.aspx?tid=b6258a47-09df-4b10-ada3-6383cd358668"
+
+class_title_at_source    =     Sector / क्षेत्र (*) 
+
+
+
+=============================================================================================================================================
+								*Corrigendum*
+
+script_name				in_powergridindia_amd
+notice_type				16
+procurement_method		2
+urls					"https://apps.powergrid.in/pgciltenders/u/view-published-corrigendum.aspx"
+page_no					10
+performance_country		IN
+currancy				INR
+main_language			EN
+Org_Name          			'Power Grid Corporation of India Limited'     
+buyer_internal_id = 		'7767417'
+
+
+------------------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://apps.powergrid.in/pgciltenders/u/view-published-corrigendum.aspx" and grab the data
+
+tender_html_element
+
+related_tender_id  =Tender Details >> Tender ID
+
+notice_no  =  Tender Details >> Ref No 
+
+publish_date    =     Corrigendum Date 
+
+notice_url    =      to open the tender_html_element page : click on "Corrigendum Details" hyperlink 
+
+notice_text     =      take all the data from page_detail as well the  "tender_html_element" of each record  
+
+  
+PAGE DETAIL  DATA
+
+local_title  =    Tender Title (*) 
+
+local_description/notice_summary_english   =        Tender Description (*) 
+
+postal_code   =     Pin Code 
+
+document_fee    =     Tender Fee 
+
+est_amount/grossbudgetlc      =      Tender Value 
+
+earnest_money_deposit   =     Tender EMD (*) 
+
+pre_bid_meeting_date	=   Pre Bid Meeting Date 		Com:Grab time also
+
+document_purchase_start_time	  =      Document Sale Start Date   	Com:Grab time also
+
+document_purchase_end_time	    =      Document Sale End Date 		Com:Grab time also
+	
+notice_deadline  =          Bid Submission End Date (Soft Copy) (*) 		Com:Grab time also
+
+document_opening_time   =     Bid Open Date (*) 			Com:Grab time also
+
+contact_person     =     Tender Inviting Officer Name & Designation (*) 
+
+org_address  =     Tender Inviting Officer Address (*) 
+
+org_country   =IN 
+
+org_language  = EN 
+
+notice_contract_type	   =    Tender Category (*) 
+	Com:Repleace following keywords with given keywords("Services=Service","Works=Works","Goods=Supply")
+
+contract_type_actual   =     Tender Category (*) 
+ 
+class_title_at_source      =    Sector (*) 
+
+org_state     =     State (*) 
+
+attachments   =   Uploaded Corrigendum Documents 
+
+=============================================================================================================================================
+								*Contract AWard* 
+
+script_name				in_powergridindia_ca
+notice_type				7
+procurement_method		2
+urls					"https://apps.powergrid.in/pgciltenders/u/view-published-aoc.aspx"
+page_no					10
+performance_country		IN
+currancy				INR
+main_language			EN
+Org_Name          		'Power Grid Corporation of India Limited'     
+buyer_internal_id = 	'7767417'
+
+Follow "tender_html_element" "https://apps.powergrid.in/pgciltenders/u/view-published-aoc.aspx" and grab the data
+
+Tender_html_element
+
+notice_no      =  AoC Id
+
+related_tender_id    =      Tender Details >> Ref No:
+
+award_date     =     Contract Date      Com:Grab time also
+
+bidder_name      =   L1 Bidder Name
+
+address    =  L1 Bidder Address
+
+notice_url    =      to open the tender_html_element page : click on "AoC Details" hyperlink 
+
+notice_text     =      take all the data from page_detail as well the  "tender_html_element" of each record  
+
+local_title    =   	Tender Title
+
+local_description/notice_summary_english   =     Tender Description
+
+grossawardvaluelc     =     Contract Value
+
+attachment   =    AoC Documents 				Ref_url = "https://apps.powergrid.in/pgciltenders/u/view-published-aoc-details.aspx?aocid=94785069-74c3-4442-abdf-d406571f1f3c" 
+
+=============================================================================================================================================
+								*Contract Award-Corrigendum*
+								
+script_name				in_powergridindia_amd
+notice_type				16
+procurement_method		2
+urls					"https://apps.powergrid.in/pgciltenders/u/view-published-aoc.aspx"
+page_no					10
+performance_country		IN
+currancy				INR
+main_language			EN
+Org_Name          		'Power Grid Corporation of India Limited'     
+buyer_internal_id = 	'7767417'
+
+notice_no      =  ID
+
+related_tender_id    =      Tender Details >> Ref No:	
+
+publish_date      =     Amendment to Contract Date			Com:Grab time also
+
+notice_url    =      to open the tender_html_element page : click on "Amendment to Contract Details" hyperlink 
+
+notice_text     =      take all the data from page_detail as well the  "tender_html_element" of each record  
+
+local_title    =  Tender Title (*)
+
+local_description/notice_summary_english   =  Tender Description (*)
+
+bidder_name    =  L1 Bidder Name (*)
+
+address      =  L1 Bidder Address
+
+grossawardvaluelc     =     Contract Value
+
+attachment    =   Amendment to Contract Documents 
+
+
+
+
+
+
+
+
+

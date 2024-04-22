@@ -1,0 +1,54 @@
+
+#####################################################################################################################################################
+
+
+script_name: in_mhada_spn
+		       
+urls:"https://www.mhada.gov.in/en/tenders"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: Water Resources Department (Mechanical)	
+
+org_parent_id: 7778447
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+document_type_description --- Tenders
+
+publish_date --- E-Publish Date	
+
+local_title --- Title	
+
+notice_no --- Ref No / Tender No	
+
+org_name --- Board
+
+notice_deadline --- Closing Date	
+
+notice_url --- https://kolkatapolice.gov.in/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+#ttachments >>> Download
+file_name --- Tender Document	
+
+external_url --- Download
+
+file_type --- (extension)... eg - pdf	

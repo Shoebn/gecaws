@@ -1,0 +1,49 @@
+Note : Go to URL : "https://www.aaup.edu/ar/Tenders"
+
+script_name : "ps_aaup_spn"				
+
+page_no : 5
+
+main_language/ org_language  : 'AR'
+
+performance_country / org_country	: 'PS'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	ثمن النسخة			[page_detail]		Com:If in this "ثمن النسخة"	field having "دولار أمريكي" this keyword than take currancy "USD" 	Ref_url="https://www.aaup.edu/ar/Tenders/%D8%AA%D9%88%D8%B1%D9%8A%D8%AF-%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-ups-tender36-2023-2024"
+
+=================================================================================================================================================
+
+notice_no		: رقم العطاء / الإستدراج
+
+local_title		: الموضوع
+
+publish_date	: موعد الطرح
+
+notice_dedline	: موعد الإنتهاء			Com:Grab time also
+
+notice_url		: الموضوع				Com:Click on "local_title " hyperlink than grab the data
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record
+
+org_name		: 'Arab American University'
+
+org_parent_id	: '7803568'
+
+org_address		: 'جنين - فلسطينصندوق البريد 240 جنين, 13 الزبابدة' pass static
+
+org_phone		: '00970-4-2418888' pass static
+
+org_fax			: '00970-4-2510810' pass static
+
+org_email		: 'info@aaup.edu' pass static
+
+attachments		: المرفقات			[page_detail]		Com:Take the hyperline below "المرفقات" this keyword
+	
+external_url	: المرفقات			[page_detail]		Com:Take the hyperline below "المرفقات" this keyword
+
+
+
+

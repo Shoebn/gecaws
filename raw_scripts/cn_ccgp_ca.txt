@@ -1,0 +1,80 @@
+cn_ccgp_ca
+https://www.ccgp.gov.cn/cggg/zygg/zbgg/
+
+
+######################################################################################################################################################
+
+script_name: cn_ccgp_ca
+
+urls: "https://www.ccgp.gov.cn/cggg/zygg/zbgg/"
+
+page_no: 20
+
+performance_country / org_country    : "CN"
+
+currency: "CNY"
+
+main_language / org_language: "ZH"
+
+notice_type: "7"
+
+procurement_method: "2"
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+publish_date --- 发布时间
+
+local_title --- select the first line, black bold (have href)
+
+org_name ---  采购人
+
+notice_url --- select the first line, black bold (have href) for page_detail
+
+notice_text --- page_detail
+#note- take tender_html page 
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+中标（成交）信息
+
+bidder_name --- 中标（成交）信息 >>> 供应商名称
+
+address --- 供应商地址
+
+netawardvaluelc --- 中标（成交）金额
+
+
+****************************************************************************
+                                 #page_detail1
+****************************************************************************
+note : To grabb below data do click on " 【显示公告概要】 "
+
+contact_person --- 联系人及联系方式：>>> 项目联系人	
+
+org_city --- 行政区域
+
+org_phone --- 项目联系电话	
+
+org_address --- 采购单位地址
+
+
+
+
+
+
+附件：
+#attachment >>>>附件：>>> 附件1, 附件2, 附件3	 (click on the blue href link o download)
+external_url --- "附件" >>> (click on the href for documents File, ZIP)
+
+file_name --- 附件 .... eg (附件1,附件2)
+
+file_type --- (extension)... eg - pdf
+
+	
+
+

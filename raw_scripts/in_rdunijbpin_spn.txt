@@ -1,0 +1,37 @@
+Note : Go to URL : "http://rdunijbpin.org/1375/Tender-Notice"
+
+script_name : "in_rdunijbpin_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'INR'
+
+===============================================================================================================================================
+
+publish_date	: Date Of Issue
+
+local_title		: Tender Name
+
+notice_deadline	: Last Date Of Sumbission
+
+org_name	: 'RANI DURGAVATI VISHWAVIDYALAYA JABALPUR'
+
+org_parent_id	: '7597111'
+
+notice_url	: pass main url "http://rdunijbpin.org/1375/Tender-Notice"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: pass static 'Tender Document'
+
+file_size	: File Size
+
+external_url	: View

@@ -1,0 +1,75 @@
+contract_type,mapping
+Building works,Works
+Public Works,Works
+Clothing items,Supply
+Other transport equipment,Supply
+Other non-metallic mineral products,Supply
+Leather Travel items Shoes,Supply
+Radio television and communication equipment,Supply
+Coal Lignite Peat,Supply
+Natural hydrocarbons,Supply
+Medical precision optical and horological instruments,Supply
+Office machines and computer equipment,Supply
+Electrical machines and appliances,Supply
+Machinery and equipment,Supply
+Construction Materials and Equipment,Supply
+Furniture and products from various industries,Supply
+Uranium ores,Supply
+Metal ores,Supply
+Papers Cardboards,Supply
+Chemical products,Supply
+Automotive industry products,Supply
+Textile industry products,Supply
+Publishing products Printed or reproduced products,Supply
+Products from coking refining and nuclear industries,Supply
+Cultivation and livestock products,Supply
+Fishing and aquaculture products,Supply
+Food industry products,Supply
+Miscellaneous products from the extractive industries,Supply
+Metalworking Products,Supply
+Woodworking Products,Supply
+Rubber or plastic products,Supply
+Metallurgical products,Supply
+Forestry products,Supply
+Manufactured tobacco,Supply   
+Studies Project management Control,Service
+Assistance for project management,Service
+Competition,Service
+Technical control,Service
+SPS coordination,Service
+ISS coordination,Service
+Various studies,Service
+Technical studies,Service
+Subject mastery,Service
+Insurance,Service
+Retail and repair of household goods,Service
+Wholesale trade and wholesale intermediary services,Service
+Automotive trade and repair,Service
+Water distributed,Service
+Education,Service
+Rental without operator,Service
+Research and development,Service
+Agricultural forestry horticultural and other related services,Service
+Auxiliary transport services,Service
+Public administration services,Service
+Sanitation road and waste management services,Service
+Financial auxiliary and insurance services,Service
+Hotel and restaurant services,Service
+Printing publishing and related services,Service
+Financial intermediation services,Service
+Recovery Services,Service
+Health and social services,Service
+Services of associative organizations,Service
+Postal and telecommunications services,Service
+Miscellaneous services,Service
+Domestic services,Service
+Extra-territorial services,Service
+Real estate services,Service
+IT services,Service
+Professional services,Service
+Services relating to the oil and gas industry,Service
+Recreational cultural and sports services,Service
+Air transport,Service
+Water transport,Service
+Land transportation,Service
+Electricity gas and heat,Service

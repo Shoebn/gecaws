@@ -1,0 +1,219 @@
+*dates are not on order.
+*grab the data from given tab: Všetky súťaže,Verejné obstarávania,Dynamické nákupné systémy,Verejné obchodné súťaže,Kvalifikační systémy.
+
+
+after opening the url, in the search box after the "Štát/NUTS" field select  "CZ - Česká republika" , "PL - Rzeczpospolita Polska", "SK - Slovenská republika" and then click on "Filtrovať".
+1)If selecting "CZ - Česká republika"	-then pass
+		main_language = 'CS'
+		performance_country = 'CZ'
+		org_country = 'CZ'
+		org_language = 'CS'
+		currency = 'CZK'
+
+2)If selecting "PL - Rzeczpospolita Polska"	-then pass
+		main_language = 'PL'
+		performance_country = 'PL'
+		org_country = 'PL'
+		org_language = 'PL'
+		currency = 'PLN'
+
+3)If selecting "SK - Slovenská republika"	-then pass
+		main_language = 'SK'
+		performance_country = 'SK'
+		org_country = 'SK'
+		org_language = 'SK'
+		currency = 'EUR'
+
+
+
+
+**************************************************sk_proebiz_spn**********************************************************************
+script_name = 'sk_proebiz_spn'
+
+url = "https://josephine.proebiz.com/sk/public-tenders/all"
+
+page_no = 50
+
+procurement_method = 2
+
+notice_type = 4
+
+******************************************************tender_html_element**********************************************
+notice_no = Číslo z vestníka VO		cmt:grab only the first number.
+notice_no = ID
+
+local_title = Hlavný CPV			cmt:grab the title from 1st <strong> tag only.
+
+org_name = Štát/NUTS				cmt:grab the name from 1st <strong> tag only.
+
+customer_nuts = Štát/NUTS			cmt:only grab the number present after <br> tag.
+
+est_amount = Druh postupu			cmt:grab the amount from <strong> tag only.
+
+grossbudgetlc = Druh postupu		cmt:grab the amount from <strong> tag only.
+	
+notice_deadline = Lehota na predkladanie ponúk a žiadostí
+
+notice_url = 	cmt:click on eye button on right side of the table.(Prehliadať)
+
+notice_text = 	cmt:take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.Also grab the data from "Komunikácia" tab from page_details.
+
+
+            
+                    
+*********************************************************page_deatails*********************************
+notice_contract_type = Druh obstarávania		cmt:Replace the grabbed keyword with given("Služby=Service","Stavebné práce=Works","Tovar=Supply")
+
+contract_type_actual = Druh obstarávania
+
+document_type_description = Výsledok obstarávania
+
+ref_url:"https://josephine.proebiz.com/sk/tender/53891/summary"
+class_at_source = 'CPV'
+
+class_codes_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV		cmt:grab only the number.grab from both fields.
+cpv_code = Informácie >> Hlavný CPV and Doplňujúci CPV					cmt:grab only the number.grab from both fields.
+cpv_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV				cmt:grab only the number.grab from both fields.
+
+class_title_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV		cmt:don't grab the number.grab from both fields.
+
+local_decsription = Stručný opis
+notice_summary_english == Stručný opis
+
+document_opening_time = Termíny >> Plánované otváranie ponúk 
+tender_criteria_title = Kritérium na vyhodnotenie ponúk
+
+attachments[]
+file_name = Dokumenty >> Názov dokumentu
+
+file_type = Dokumenty >> Typ
+
+file_size = Dokumenty >> Veľkosť
+
+external_url = Dokumenty			cmt:grab external_url from last cloumn of the table present after the "Dokumenty" keyword.
+
+publish_date = Dokumenty >> Nahrané		cmt:grab date from first row of given field.If not present then pass threshold.
+
+org_address = Verejný obstarávateľ >> Adresa
+
+contact_person = Verejný obstarávateľ >> Procesný garant		cmt:grab only name present in first line.
+
+org_email = Verejný obstarávateľ >> Procesný garant				cmt:grab only email present in second line.
+
+org_phone = Verejný obstarávateľ >> Procesný garant				cmt:grab only number present in third line.
+
+org_website = Verejný obstarávateľ >> Internetový odkaz na profil obstarávateľa     
+
+ref_url:"https://josephine.proebiz.com/sk/tender/54112/summary"		here Five lot are present. grab all the lots.
+lot_actual_number = Kategorie č.		cmt:Here "Kategorie č. 1 – Pečivo" take "Kategorie č. 1" in lot_actual_number.
+
+lot_title = Kategorie č.				cmt:Here "Kategorie č. 1 – Pečivo" take "Pečivo" in lot_title.   				 
+
+lot_class_codes_at_source = Kategorie č.  >> Hlavný CPV  and  Doplňujúci CPV		cmt:grab the code from both field.
+lot_cpv_at_source = Kategorie č.  >>  Hlavný CPV  and  Doplňujúci CPV				cmt:grab the code from both field.
+lot_cpv_code = Kategorie č.  >>  Hlavný CPV  and  Doplňujúci CPV					cmt:grab the code from both field.Also repeat this cpv in cpv_code field.
+
+
+
+
+
+********************************************************sk_proebiz_amd*******************************************
+script_name = 'sk_proebiz_amd'
+
+url = "https://josephine.proebiz.com/sk/public-tenders/all"
+		after opening the url, search box of "Stav" field select "Zrušená" and then click on "Filtrovať".
+		
+page_no = 50
+
+procurement_method = 2
+
+notice_type = 16
+
+******************************************************tender_html_element**********************************************
+notice_no = Číslo z vestníka VO		cmt:grab only the first number.
+notice_no = ID
+
+local_title = Hlavný CPV			cmt:grab the title from 1st <strong> tag only.
+
+org_name = Štát/NUTS				cmt:grab the name from 1st <strong> tag only.
+
+customer_nuts = Štát/NUTS			cmt:only grab the number present after <br> tag.
+
+est_amount = Druh postupu			cmt:grab the amount from <strong> tag only.
+
+grossbudgetlc = Druh postupu		cmt:grab the amount from <strong> tag only.
+	
+notice_deadline = Lehota na predkladanie ponúk a žiadostí
+
+notice_url = 	cmt:click on eye button on right side of the table.(Prehliadať)
+
+notice_text = 	cmt:take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.Also grab the data from "Komunikácia" tab from page_details.
+
+
+*********************************************************page_deatails*********************************
+notice_contract_type = Druh obstarávania		cmt:Replace the grabbed keyword with given("Služby=Service","Stavebné práce=Works","Tovar=Supply")
+
+contract_type_actual = Druh obstarávania
+
+document_type_description = Výsledok obstarávania
+
+ref_url:"https://josephine.proebiz.com/sk/tender/53206/summary"
+class_at_source = 'CPV'
+
+class_codes_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV		cmt:grab only the number.grab from both fields.
+cpv_code = Informácie >> Hlavný CPV and Doplňujúci CPV					cmt:grab only the number.grab from both fields.
+cpv_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV				cmt:grab only the number.grab from both fields.
+
+class_title_at_source = Informácie >> Hlavný CPV and Doplňujúci CPV		cmt:don't grab the number.grab from both fields.
+
+local_decsription = Stručný opis
+notice_summary_english == Stručný opis
+
+tender_criteria_title = Kritérium na vyhodnotenie ponúk
+
+document_opening_time = Termíny >> Plánované otváranie ponúk 
+
+org_address = Verejný obstarávateľ >> Adresa
+
+contact_person = Verejný obstarávateľ >> Procesný garant		cmt:grab only name present in first line.
+
+org_email = Verejný obstarávateľ >> Procesný garant				cmt:grab only email present in second line.
+
+org_phone = Verejný obstarávateľ >> Procesný garant				cmt:grab only number present in third line.
+
+org_website = Verejný obstarávateľ >> Internetový odkaz na profil obstarávateľa 
+
+attachments[]	ref_url:"https://josephine.proebiz.com/sk/tender/54122/summary"  here 2 tables of attachments are there.Grab data from both.Nad publush_date grab from first table.
+file_name = Dokumenty >> Názov dokumentu
+
+file_type = Dokumenty >> Typ
+
+file_size = Dokumenty >> Veľkosť
+
+external_url = Dokumenty				cmt:grab external_url from last cloumn of the table present after the "Dokumenty" keyword.
+
+publish_date = Dokumenty >> Nahrané		cmt:grab date from first row of given field.If not present then pass threshold.
+
+ref_url:"https://josephine.proebiz.com/sk/tender/52164/summary"		here two lot are present. grab all the lots.
+lot_actual_number = Część 		cmt:Here "Część 1 – LINIA PODSTAWOWA" take "Część 1" in lot_actual_number.
+
+lot_title = Część 				cmt:Here "Część 1 – LINIA PODSTAWOWA" take "LINIA PODSTAWOWA" in lot_title.   				 
+
+lot_class_codes_at_source = Część  >> Hlavný CPV		cmt:grab the code from both field.
+lot_cpv_at_source = Część  >>  Hlavný CPV  				cmt:grab the code from both field.
+lot_cpv_code = Część  >>  Hlavný CPV  					cmt:grab the code from both field.Also repeat this cpv in cpv_code field.
+
+lot_criteria_title = Część  >> Kritérium na vyhodnotenie ponúk
+
+ref_url:"https://josephine.proebiz.com/sk/tender/54122/summary"
+lot_actual_number =Časť 	cmt:here "Časť 1 - rozmetadlo na priemyselné hnojivá a vápenec" garb only "Časť 1" in lot_actual_number.
+
+lot_title =Časť 		cmt:here "Časť 1 - rozmetadlo na priemyselné hnojivá a vápenec" garb only "rozmetadlo na priemyselné hnojivá a vápenec" in lot_Title.
+
+lot_netbudget_lc = Predpokladaná hodnota bez DPH
+
+lot_criteria_title = Časť >> Kritérium na vyhodnotenie ponúk
+
+lot_class_codes_at_source = Časť  >> Hlavný CPV			cmt:grab the code from both field.
+lot_cpv_at_source = Časť  >> Hlavný CPV  				cmt:grab the code from both field.
+lot_cpv_code = Časť  >> Hlavný CPV  					cmt:grab the code from both field.Also repeat this cpv in cpv_code field.

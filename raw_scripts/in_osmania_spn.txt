@@ -1,0 +1,52 @@
+######################################################################################################################################################
+script_name:in_osmania_spn	
+
+urls: "https://www.osmania.ac.in/eProcurementTenders.php"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- OSMANIA UNIVERSITY	
+
+org_parent_id -- 7577868
+
+ 
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+local_title --- Name of The Tender
+
+publish_date --- Bid Submission Start Date & Time
+
+notice_deadline --- Bid Submission Closing Date & Time (also take time)
+
+notice_url --- https://www.osmania.ac.in/eProcurementTenders.php
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment >>>>Name of The Tender	(click on the href for doc)	
+
+external_url --- "Name of The Tender" >>> (click on the href for documents File )	
+
+file_name --- Name of The Tender	
+
+file_type --- (extension)... eg - pdf
+
+
+		

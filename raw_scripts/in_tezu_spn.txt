@@ -1,0 +1,55 @@
+script_name : in_tezu_spn
+
+url : "http://www.tezu.ernet.in/notice/tender.html"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Details field has "Cancellation" or "Extension" appears then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+dcoument_type_description : Notice No >> (red colured textual data )
+
+local_title : Details , take only textual format 
+
+notice_no : Notice No , split the data between dcoument_type_description and "Dated" field
+
+publish_date : Notice No >> Dated , split the date after "Dated"
+
+notice_deadline : Last Date 
+
+documnent_opening_time : Date  >> Date & time of opening:
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : http://www.tezu.ernet.in/notice/tender.html
+
+-----------
+attachments
+-----------
+file_name :  take from "Details" field
+
+external_url : download from "Details" field
+
+
+----------------
+customer_details 
+----------------
+org_name : "TEZPUR UNIVERSITY"
+
+org_parent_id : 7544711
+
+org_Country : IN
+
+org_language : EN
+
+org_state : "Assam"

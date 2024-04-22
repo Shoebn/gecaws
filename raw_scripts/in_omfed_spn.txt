@@ -1,0 +1,60 @@
+script_name : in_omfed_spn
+
+url : "http://omfed.com/Tender.asp?lnk=home"
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if "Headlines" field has "Corrigendum" keyowrd document available then take notice_type = 16 , if "Headlines" has "EOI" keyword appears then take notice_type = 5
+
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders & EOI by OMFED"
+
+notice_no : Tender No. 
+	
+local_title :  Headlines
+
+publish_date : take thrshold
+
+notice_deadline : Tender Last Date
+
+notice_url : http://omfed.com/Tender.asp?lnk=home
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  -
+
+
+
+attachments
+------------
+file_name : "Tender attachments" static
+
+external_url : take from "Download" field
+
+
+
+
+
+customer_details
+----------------
+
+org_parent_id : 7642369	
+
+org_name : "ORISSA STATE COOPERATIVE MILK PRODUCERS FEDERATION LIMITED (OMFED)"
+
+org_country : IN
+
+org_language : EN
+
+org_state : ORISSA
+
+

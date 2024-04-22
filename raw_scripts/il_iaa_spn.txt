@@ -1,0 +1,35 @@
+cmt:publish_date is in order
+
+script_name='il_iaa_spn'
+urls="https://www.iaa.gov.il/tenders-and-contracts/active-tenders/"
+page_no=1
+main_language='HE'	cmt:also have 'AR' language in page_details.
+performance_country='IL'
+currency='ILS'
+procurement_mrthod=2
+notice_type=4
+org_name='ISRAEL AIRPORTS AUTHORITY'
+org_parent_id='7636991'
+
+Grab below data from tender_html_element.	
+publish_date=תאריך פרסום		
+local_title=מכרז
+
+notice_url=מכרז
+notice_text=take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.Also add the following clicks from page_details	-1)מסמכי המכרז:	 >>  מודעת המכרז
+
+Grab below data from page_details.
+notice_no=מספר מכרז:	
+notice_deadline=תאריך אחרון להגשה:	
+
+attachments[]		there are multiple attchements in the מסמכי המכרז:	 fields.
+file_name=מסמכי המכרז:	
+external_url=מסמכי המכרז:	
+
+
+Grab below data from page_details1.		page_details1 click(מסמכי המכרז:  >>  מודעת המכרז)
+org_email=מייל:
+org_phone=טלפון:				cmt:split between "טלפון:" and "מייל:"
+contact_person=איש קשר:			cmt:split between "איש קשר:" and ","
+
+identifier=local_title+notice_no

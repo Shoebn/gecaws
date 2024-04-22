@@ -1,0 +1,68 @@
+
+statice_fields
+-------------------------------------------------------------
+data_id : 35815
+
+script_name : in_bhel_spn
+
+url : "https://www.bhel.com/index.php/tenders"
+
+page_no : 10 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4
+
+---------------------------------------------------------------------------------------------
+
+
+document_type_description : tender_html_page , static :  "Tenders"
+
+notice_no :   , tender_html_page , NIT Number , cmt : if notice_no not available then take notice_no from "Tender Notification Number :" field
+
+publish_date  , tender_html_page , Date of Notification , cmt : take time too
+
+document_opening_time , tender_html_page , Tender Opening Date
+
+notice_url : , tender_html_page , Tender Description >> Tender Description :  
+
+notice_text : , detail_page , selector :  div.bhel.mb-4.col-lg-12 > div > div:nth-child(2) 
+
+local_title : , detail_page , TENDER TITLE 
+
+local_description : , detail_page , TENDER DESCRIPTION	
+
+notice_summary_english : , detail_page , TENDER DESCRIPTION	
+
+earnest_money_deposit : , detail_page , EMD VALUE , cmt :   ref_url : "https://www.bhel.com/index.php/structural-steel-weldable-quality-spec-aa10119-rev-15"
+
+document_cost  , detail_page , DOCUMENT VALUE , cmt : ref_url : "https://www.bhel.com/index.php/structural-steel-weldable-quality-spec-aa10119-rev-15"
+
+----------------------------------------------------------------------------------------------------------
+customer_details : 
+		 org_name : Bharat Heavy Electricals Limited
+		 org_parent_id : 7235568
+                 org_language : EN
+		 org_country : IN
+		 org_city : , tender_html_page , Unit  , cmt : take only city for example "BHEL, Trichy" , here take only "Trichy"
+		 org_address : , detail_page , ADDRESS 
+		 org_email : , detail_page , EMAIL
+		 org_phone : , detail_page , TELEPHONE NO.	
+		 org_fax : ,  detail_page , FAX NO.	
+		 contact_person : , detail_page ,  CONTACT PERSON	
+
+---------------------------------------------------------------------------------------------------------------
+
+attachments_details :
+
+		   file_name : , detail_page , Download Full Details of Tender ,  cmt : split only file_name for ex."Supply of METFORMIN 500MG Tab to MAIN HOSPITAL– Trichy 671.14 KB" , here take 				 only "Supply of METFORMIN 500MG Tab to MAIN HOSPITAL"	, ref_url : "https://www.bhel.com/index.php/supply-metformin-500mg-tab-main-hospital-trichy"
+		   file_size : , detail_page , Download Full Details of Tender , cmt : split only file_size for ex. "Supply of METFORMIN 500MG Tab to MAIN HOSPITAL– Trichy 671.14 KB" , here take 				 only "671.14 KB"
+		   external_url : , detail_page , Download Full Details of Tender , ref_url : "https://www.bhel.com/index.php/supply-push-bench-fixed-roll-r66"
+		 
+                   file_type : , detail_page , Download Full Details of Tender  , ref_url : "https://www.bhel.com/index.php/supply-push-bench-fixed-roll-r66"

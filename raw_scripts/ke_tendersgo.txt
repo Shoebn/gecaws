@@ -1,0 +1,137 @@
+script_name : ke_tendersgo_spn
+
+url : "https://tenders.go.ke/OpenTenders"
+
+page_no : 5 
+
+main_language : EN
+
+performance_country : 2
+
+currency :  KES
+
+procurement_method : 2
+
+notice_type = 4  , if "Addendum" field has "YES" then take notice_type = 16
+
+
+tender_html_page
+----------------
+document_type_description : "Active Tenders" static
+
+notice_no : Tender NO , 
+
+local_title : Tender Description
+
+notice_contract_type : Proc Category , replace the following keywords with respective keywords ("Works = Works" , "Goods = Supply" , "Non Consultancy Services = Non consultancy", "Consultancy Services = Consultancy" , "Disposal of assets = Service")
+
+contract_type_actual : Proc Category 
+
+org_address : take from "PE" field
+
+notice_url : click on "View"
+
+notice_text : take the data from detail page , page_main, and , tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+page_main
+------------
+dispatched_date : publish_date 
+
+publish_date : Portal Publish Date: , take time also
+
+notice_deadline : Closing Date + closing time , append both field	
+
+document_fee : Tender Fee:
+
+
+click on  url "Public Link:"  for detail_page
+---------------
+
+detail_page >> attachements
+-----------------------------
+file_name : Document description
+
+external_url : click on View
+
+
+
+detail_page >> attachements (for notice_type = 16)    (in tender_html_page if "Addendum" field has "YES" then notice_type = 16
+----------------------------
+file_name : Description	
+external_url : click on View
+
+
+
+org_details
+-------------
+org_name : PUBLIC PROCUREMENT REGULATORY AUTHORITY
+
+org_parent_id : 7603908
+
+org_country : KE
+
+orglanguage : EN
+
+
+
+
+------------------------------------------------------------------------------prequalification notice---------------------------------------------------------------------------------------------
+
+script_name : ke_tendersgo_ppn
+
+url : "https://tenders.go.ke/OpenPortalPrequalificationNotice"
+
+page_no : 5 
+
+main_language : EN
+
+performance_country : 2
+
+currency :  KES
+
+procurement_method : 2
+
+notice_type = 6  
+
+
+tender_html_page
+----------------
+document_type_description : "Open Prequalification Notices" static
+
+local_title : Title
+
+Publication date : publish_date
+
+notice_deadline : Publication end date
+
+org_address : take from "PE" field
+
+notice_url : https://tenders.go.ke/OpenPortalPrequalificationNotice
+
+notice_text : take the data from detail page , page_main, and , tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+
+attachments
+---------------
+
+detail_page >> attachements
+-----------------------------
+file_name : View
+external_url : click on View
+
+
+
+
+org_details
+-------------
+org_name : PUBLIC PROCUREMENT REGULATORY AUTHORITY
+
+org_parent_id : 7603908
+
+org_country : KE
+
+orglanguage : EN

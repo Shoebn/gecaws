@@ -1,0 +1,36 @@
+script_name					in_becil_spn
+notice_type					4		
+procurement_method			2
+urls						"https://www.becil.com/tenders/?"
+page_no						3
+performance_country			IN
+currancy					INR
+main_language				EN
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.becil.com/tenders/?" and grab the data
+
+Tender_Html_Element
+
+local_title			=	Tender Title
+
+notice_no			=	Reference Number
+
+publish_date		=	Upload date
+
+notice_deadline		=	Submission Date
+
+attachments			=	Com:Click on "Eye button" on tender_html_element
+
+notice_url       	=   "https://www.becil.com/tenders/?"
+
+notice_text			=	take data from "tender_html_element" in notice_text of each record 	
+
+org_name			=	BROADCAST ENGINEERING CONSULTANTS INDIA LIMITED
+
+org_patent_id		=	7634435
+
+org_country			=	IN
+
+org_language		=	EN
+

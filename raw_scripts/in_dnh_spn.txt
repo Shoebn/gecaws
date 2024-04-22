@@ -1,0 +1,57 @@
+######################################################################################################################################################
+
+
+script_name: 	in_dnh_spn	
+           
+urls:"https://dnh.gov.in/notice_category/tenders/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: District of Dadra and Nagar Haveli
+
+org_parent_id: 7790997
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- Tenders
+
+publish_date --- Start Date	
+
+notice_deadline --- End Date	
+
+local_title --- Description
+
+org_name --- Title
+	
+notice_url --- https://dnh.gov.in/notice_category/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+
+#attachment >>>> File
+
+external_url --- File (click on the href for documents File)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf	
+
+file_size --- File... eg (101KB,3MB)
+
+

@@ -1,0 +1,50 @@
+To view this file, go to: https://login.skype.com/login/sso?go=webclient.xmm&docid=0-sa-d8-f417f7fff2bbe3c159f3815165754b63
+script_name					de_auftraege_ca				
+Com:Open the site than Click on "aktuelle Ausschreibungen" dropdown button than select "aktuelle Zuschlagsbekanntmachungen" than grab the data
+notice_type					7		
+procurement_method			2
+urls						"https://www.auftraege.bayern.de/Dashboards/Dashboard_off?BL=09"
+page_no						3
+performance_country			DE
+currancy					EUR
+main_language				DE
+
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.auftraege.bayern.de/Dashboards/Dashboard_off?BL=09" and grab the data
+
+Tender_Html_Element 
+
+local_title		=		Titel
+
+publish_date	=		Publikation 
+
+Award Date	=	Frist
+
+notice_url    =  to  open the page_main click on " I " button hyperlink 
+
+notice_text     =      take all the data from page_main as well the  "tender_html_element" of each record 
+
+org_name    =  Vergabestelle  
+
+Document_type_description :' award notice" pass static
+
+-----------------------------------------------------------------------------------------------------------------
+Page_Main
+
+org_country    = DE
+
+org_language  = DE
+
+notice_no		= split  a notice_no after title........ Take a numaric value  (eg: 482810)
+
+attachments 	=   Bekanntmachung	 (detail page)
+Note: there is no bidder name provied in a detail page it is published in pdf given in second tab "Bekanntmachung"..
+if possbile take bidder name from below field
+Bekanntmachung  +  e) Name und Anschrift des Auftragnehmers > Bezeichnung	
+
+Also Costomer details availabe in same pdf in field name 
+"Name und Anschrift der Vergabestelle" (detail page), if possible take this data as per below :-
+org address = Postanschrift  
+org_phone  = Telefon-Nummer
+org_email  =  E-Mail-Adresse
+Local Description + Summery english =  c) Auftragsgegenstand

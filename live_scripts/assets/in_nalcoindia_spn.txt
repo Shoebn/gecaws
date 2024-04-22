@@ -1,0 +1,62 @@
+script_name : in_nalcoindia_spn
+
+main_url : "https://nalcoindia.com/tenders/active-tenders/"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+
+tender_html_page
+----------------
+document_type_Description : "Active Tenders"
+	
+notice_no :  Tender Number:
+
+publish_date : Published Date
+
+notice_deadline : Last Date & Time of Submission, take time too	
+
+local_title : take main title as a local_title
+
+notice_url : "https://nalcoindia.com/tenders/active-tenders/"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+attachments
+------------
+file_name : "tender_documents" static 
+
+external_url : take from "Tender Document" field
+
+
+attachments
+------------
+file_name : "Tender Summary Document" static 
+
+external_url : take from "Tender Summary Document" field
+
+
+customer_details
+----------------
+org_name : NALCO-ALUMINA DIVISION-DAMANJODI||MATERIALS-AD-DAMANJODI-NALCO
+
+org_address : Unit: 
+
+org_parent_id : 7651403
+
+org_country : IN
+
+org_language : EN
+
+

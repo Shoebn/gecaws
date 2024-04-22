@@ -1,0 +1,59 @@
+script_name='in_wbhealth_spn'
+urls="https://www.wbhealth.gov.in/pages/tender"
+page_no=3
+performance_country='IN'
+main_language='EN'   
+notice_type=4			. 
+procurement_method=2
+currency='INR'
+org_language='EN'
+org_country='IN'
+org_name='Government Of West Bengal Health & Family Welfare Department'
+org_parent_id='7788206'
+
+notice_url="https://www.wbhealth.gov.in/pages/tender"
+notice_text=take all the "tender_html_element" Row wisedata in Notice Text
+
+Grab below data from tender_html_element.
+local_title=Title
+notice_deadline=Date
+publish_date='threshold'
+notice_no=Title		cmt:split notice_no from url.Here "https://www.wbhealth.gov.in/uploaded_files/tender/NIT138_2024.pdf" grab "NIT138_2024" this no in notice_no.
+
+attachments[]
+file_name=Title
+external_url=Title
+file_type=Title		cmt:grab only file extension from external_url.
+
+
+
+**after grabbing the data click on "Notice" and grab more the data.
+script_name='in_wbhealth_spn'
+urls="https://www.wbhealth.gov.in/pages/tender"
+page_no=3
+performance_country='IN'
+main_language='EN'   
+notice_type=4		cmt:if in local_title "Expression of Interest" keyword is present then pass notice_type=5;if "Cancellation Notice" or "Corrigendum" or "Extension Quotation Notice" keyword is present then pass notice_type=16; oterwisw pass notice_type=4. 
+procurement_method=2
+currency='INR'
+org_language='EN'
+org_country='IN'
+org_name='Government Of West Bengal Health & Family Welfare Department'
+org_parent_id='7788206'
+
+notice_url="https://www.wbhealth.gov.in/pages/tender"
+notice_text=take all the "tender_html_element" Row wisedata in Notice Text
+
+Grab below data from tender_html_element.
+local_title=Title
+local_description=Description
+notice_summary_english=Description
+publish_date=Date
+notice_deadline='threshold'
+notice_no=Title		cmt:split notice_no from url.Here "https://www.wbhealth.gov.in/uploaded_files/notice/16381.pdf" grab "16381" this no in notice_no.
+
+attachments[]
+file_name=Title
+external_url=Title
+file_type=Title		cmt:grab only file extension from external_url.
+

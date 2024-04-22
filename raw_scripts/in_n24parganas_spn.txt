@@ -1,0 +1,55 @@
+script_name : in_n24parganas_spn	
+
+main_url : "http://north24parganas.gov.in/documents/tender"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Subject:" field has "Corrigendum" or "extension" word available then take notice_type = 16
+
+
+tender_html_page
+----------------
+
+notice_no : Tender No. :
+
+local_title : Subject:
+
+notice_deadline : take threshold
+
+publish_date : Publishing Date:	
+
+notice_url : http://north24parganas.gov.in/documents/tender
+
+notice_text :take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+attachments
+------------
+
+file_name : "tender_documents"
+
+external_url : click on image of the pdf to download attachmetns
+
+
+
+customer_details
+----------------
+org_name : NORTH 24 PARGANAS DISTRICT
+
+org_parent_id : 7784540
+
+org_country : IN
+
+org_language : EN
+
+org_email :  dm-bar-wb@nic.in
+

@@ -1,0 +1,215 @@
+url : "https://zakupivli.pro/gov/tenders"
+
+page_no : 20 
+
+main_language/org_language: UA
+
+performance_country  / country  : UA
+
+currency : UAH
+
+procurment_method : 2
+=======================================Tender Notice ==============================
+
+script_name : ua_zakupivlipro_spn
+
+url : "https://zakupivli.pro/gov/tenders"
+	
+notice_type : 4
+
+Data of tender_html_page 
+
+notice_no : (1) "ID:"  (2) if"ID:" is not available on available on tender_html_page  then grab from notice_url
+
+local_title : take text below the "ID:" , cmt : click on  "ID:" to view the page detail 
+
+publish_date :  Оголошено
+
+notice_deadline :  Прийом пропозицій , cmt : take time also with notice deadline 
+
+est_amount / grossbudgetlc: , Очікувана вартість  (if its "з ПДВ" it will be grabbe in grossbudgetlc)
+
+est_amount / Netbudgetlc: , Очікувана вартість  (if its "(без ПДВ)" it will be grabbe in Netbudgetlc)
+
+notice_url : , take hyperlink of local_title
+
+notice_text : , take whole detail_page , cmt : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main page
+
+Document_type_description :  pass static "Government Procurement"
+
+detail_page 
+
+notice_contract_type / contract_type_Actual : Тип предмету закупівлі: , replace the following keywords with respective keywords ('Supply' = 'товари' , 'Service' = 'Послуги')
+
+org_name : Інформація про замовника> Інформація про замовника >> Назва:	 
+
+org_website   : Інформація про замовника> Веб сайт:
+
+org_address : Інформація про замовника> Адреса:
+
+contact_person : Основний контакт >> Ім'я: 
+
+org_phone :  Основний контакт >> Телефон:
+
+org_email :  Основний контакт >> E-mail: 
+
+org_fax :  Основний контакт >> Факс:
+
+local_description :  Список позицій  > Назва (take all the above data as per serial no )
+
+T.TENDER_QUANTITY	  : 	Список позицій  >  Кількість
+
+Attachment : Документи закупівлі (take all the avaiable attachment from this field) 
+
+file_name : Назва документу
+file_description  : Документи закупівлі > Тип документу
+file_type : take extrantion  of "Назва документу"
+external_url : Документи лоту >> Назва документу	 , cmt : take hyperlink of file name as a externl url "
+
+----------------------------------------------Procurement Plan-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+script_name : ua_zakupivlipro_pp	
+
+url : "https://zakupivli.pro/gov/plans"
+
+page_no : 20 
+
+main_language / org_language: UA
+
+performance_country  / country  : UA
+
+currency : UAH
+
+notice_type : 3
+
+procurment_method : 2
+
+Data of tender_html_page  :-   
+
+local_title : first line of first raw   (eg: apples  "   https://zakupivli.pro/gov/plans"
+
+grossbudgetlc: Планова сума закупівлі
+
+notice_url : click on hyperlink of title 
+
+publish_date  : "Початок процедури"     (take last date of the given month and year) 
+
+Document_type_description :  pass static "Procurement plans"
+
+Data of detail_page   :-   
+
+notice_text :  take whole page  , cmt : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main page
+
+notice_no :    Ідентифікатор плану закупівлі
+
+org_name : Інформація про замовника >> Назва:
+
+org_website   : Інформація про замовника> Веб сайт:
+
+org_address : Інформація про замовника> Адреса:
+
+contact_person : Основний контакт >> Ім'я: 
+
+org_phone :  Основний контакт >> Телефон:
+
+org_email :  Основний контакт >> E-mail: 
+
+org_fax :  Основний контакт >> Факс:
+
+cpv_at_source:  Код ДК 021:2015: , cmt : for ex. "39290000-1 Фурнітура різна"  here split only  "39290000" , ref_url : "https://zakupivli.pro/gov/plans/UA-P-2024-02-17-000001-b"
+
+cpvs : , detail_page , Код ДК 021:2015: , cmt : for ex. "39290000-1 Фурнітура різна"  here split only  "39290000" , ref_url : "https://zakupivli.pro/gov/plans/UA-P-2024-02-17-000001-b"
+
+class_at_source = "CPV"
+
+class_Code_at_source :    Про план  > Код ДК 021:2015:   cmt : split and grab text only "39290000-1" 
+
+class_title_at_source :  Про план  > Код ДК 021:2015:  cmt :  split and grab text only  "Фурнітура різна"
+
+related_tender_id : Ідентифікатор закупівлі:  , (if avaibale ) ref_url : "https://zakupivli.pro/gov/plans/UA-P-2024-02-16-005845-c"
+
+Local Description / summer english :   Список позицій   >  Назва
+
+T.TENDER_QUANTITY   :  Кількість
+
+Data of Attachment   :-    Список позицій   (take all the attachment file from this field )
+file_name :  Прикріплені документи  > Назва документу  
+
+file_type : Прикріплені документи >> Назва документу , take only extrantion of file name 
+
+external_url :  Прикріплені документи >> Назва документу , cmt : hyperlink of attachment will be take in external url 
+
+---------------------------------------------Contract Award ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+script_name : ua_zakupivlipro_ca	
+
+url : "https://zakupivli.pro/gov/contracts"
+
+page_no : 20 
+
+main_language / org_language: UA
+
+performance_country  / country  : UA
+
+currency : UAH
+
+notice_type : 7
+
+procurment_method : 2
+
+Data of tender_html_page     :- 
+
+local_title : take text above  the "Закупівельник" , 
+
+notice_url : Hyperlink of local title (Закупівельник) provide as a notice url 
+
+grossbudgetlc : Сума контракту (з ПДВ)
+
+netbudgetlc :  Сума контракту (без ПДВ)
+
+org_name : Постачальник
+
+contact_perosn , Ім'я:
+
+org_email, E-mail:
+
+org_phone , Телефон:
+
+org_website , Веб сайт:
+
+bidder_name : Інформація про постачальника
+
+bidder_address : Інформація про постачальника > Адреса
+
+notice_text , cmt: take whole page , , cmt : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main page
+
+Tender related id :  ID контракту:
+
+publish_date : Дата підписання:     : cmt : take time too
+
+local_description , Список позицій >> Назва , cmt : take only description for ex. "Електрична енергія для споживачів 2 класу напруги"  , ref_url : "https://zakupivli.pro/gov/contracts/32809f7bf19045fd912fe9185dd2102b"
+
+notice_summary_english , Список позицій >> Назва , cmt : take only description for ex. "Електрична енергія для споживачів 2 класу напруги"  , ref_url : "https://zakupivli.pro/gov/contracts/32809f7bf19045fd912fe9185dd2102b"
+
+lot_quantity , Кількість
+
+file_name : Документи закупівлі >> Назва документу , cmt : for ex. "обгрунтування.pdf" , here take only "обгрунтування"
+
+file_type :Документи закупівлі >> Назва документу , cmt : for ex. "обгрунтування.pdf" , here take only "pdf"
+
+external_url :  Документи закупівлі >> Назва документу , cmt : for download documents just hover text and click on "Завантажити" button to download doucments , ref_url : "https://zakupivli.pro/gov/contracts/32809f7bf19045fd912fe9185dd2102b" , sometimes when you click on text it is directly automatically get downloaded , for  
+
+bidder_address , Інформація про постачальника >> Адреса:
+
+cpv_at_source: , detail_page , Код ДК 021:2015: , cmt : for ex. "66510000-8 Страхові послуги"  here split only  "66510000-8" , ref_url : "https://zakupivli.pro/gov/contracts/901e6155b09f4909982279a7ab33a699"
+
+cpvs : , detail_page , Код ДК 021:2015: , cmt : for ex. "66510000-8 Страхові послуги"  here split only  "66510000" (8 digit) , ref_url : "https://zakupivli.pro/gov/contracts/901e6155b09f4909982279a7ab33a699"
+
+class_at_source = "CPV"
+
+class_Code_at_source : , detail_page ,  Код ДК 021:2015: , cmt : for ex. " 66510000-8 Страхові послуги"  here split only  "66510000-8" , ref_url : "https://zakupivli.pro/gov/contracts/901e6155b09f4909982279a7ab33a699"
+
+class_title_at_source :  detail_page ,  Код ДК 021:2015: , cmt : for ex. " 66510000-8 Страхові послуги"  here split only  "Страхові послуги" , ref_url : "https://zakupivli.pro/gov/contracts/901e6155b09f4909982279a7ab33a699"

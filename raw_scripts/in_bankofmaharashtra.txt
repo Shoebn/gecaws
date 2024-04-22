@@ -1,0 +1,81 @@
+script_name					in_bankofmaharashtra_spn
+notice_type					4		
+procurement_method			2
+urls						"https://bankofmaharashtra.in/tenders"
+page_no						5
+performance_country / org_country			IN
+main_language / org_language				EN
+currancy				INR
+
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://bankofmaharashtra.in/tenders" and grab the data
+
+Temder_Html_Element
+
+org_name			:			'BANK OF MAHARASHTRA'
+
+org_parent_id		:			'7538895'
+
+local_title			:			Com:take the line above "Date of Commencement"  this keyword
+
+publish_date		:			Date of Commencement
+
+notice_deadline		:			Last date of submission
+
+org_address			:			'Bank of Maharashtra Head Office Lokmangal, 1501, Shivajinagar Pune-411005' pass static
+
+org_phone			:			'020 - 25514501 to 12' pass ststic
+
+notice_url    :  to open the page_detail click on "local_title" hyperlink
+
+notice_text     :      take all the data from page_detail as well the  "tender_html_element" of each record  
+
+attachments			: [Page_detail]			Com:Take a hyperline below  "Last date of submission" this keyword
+
+
+
+
+========================================= Contract awards ==============================================================
+
+Note:Open the site than click on " Award of Tenders " this tab than grab the data
+
+script_name					in_bankofmaharashtra_ca
+notice_type					7		
+procurement_method			2
+urls						"https://bankofmaharashtra.in/tenders"
+page_no						5
+performance_country / org_country			IN
+main_language / org_language				EN
+currancy				INR
+
+---------------------------------------------------------------------------------------------------------------
+
+id / Notice no	:	RFP Number
+
+related_tender_id	:LOI / PO /			com: Splite before "dated" this keyword		Ex.,"AX1/IT/CARD/PO/08/2017 dated 24-08-2017" take only "AX1/IT/CARD/PO/08/2017" 
+
+publishDate	:	Date of Publication of NIT		
+
+externalId / buyer internal id / org_parent_id	:	'7538895'
+
+title/ local_title 	: Item / Nature of Work
+
+buyerName / org_name	: 'BANK OF MAHARASHTRA'
+
+org_address		:	'Bank of Maharashtra Head Office Lokmangal, 1501, Shivajinagar Pune-411005' pass static
+
+org_phone		:	'020 - 25514501 to 12' pass ststic
+
+notice_url 	: pas main urls "https://bankofmaharashtra.in/tenders" 
+
+originalUrl / main_url : "https://bankofmaharashtra.in/tenders"
+
+noticeText / html_body / Notice_text	: take data from "tender_html_element" in notice_text of each record 
+
+contractAward.companyName  / bidder_name	:Name of the Contractor
+
+est_amount	: Value of the Contract
+
+netawardvalueeuro	: Value of the Contract
+
+contractAward.awardDate / award_date	:LOI / PO /			com: Splite after "dated" this keyword		Ex.,"AX1/IT/CARD/PO/08/2017 dated 24-08-2017" take only "24-08-2017" 

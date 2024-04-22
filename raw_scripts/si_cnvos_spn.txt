@@ -1,0 +1,56 @@
+*after opening the url click on "nvo vseved  >>  razpisi za nvo".
+*publish_date is in oreder.
+
+**********************************************************si_cnvos_spn**************************************
+
+script_name = 'si_cnvos_spn'
+
+url = "https://www.cnvos.si/"
+
+page_no = 1
+
+performance_country = 'SI'
+
+main_language = 'SL'
+
+currency = 'EUR'
+
+notice_type = 4
+
+org_country = 'SI'
+
+org_language = 'SL'
+
+
+***************************************************tender_html_element*****************************************
+local_title = NASLOV RAZPISA
+
+procurement_mrthod = 2		cmt:If local_title contains "GLOBALNA EVROPA:" keyword then pass "procurement_mrthod = 1" otherwise pass 2.
+
+source_of_funds = 'International agencies'		cmt:If local_title contains "GLOBALNA EVROPA:" keyword then pass "source_of_funds = 'International agencies'" otherwise pass the bydefault option.
+
+funding_agency = '1344862'		cmt:If local_title contains "GLOBALNA EVROPA:" keyword then pass "funding_agency = '1344862'" otherwise pass null.
+
+publish_date = OBJAVLJEN
+
+notice_deadline = ROK PRIJAVE
+
+org_name = RAZPISOVALEC
+
+notice_url = NASLOV RAZPISA
+
+notice_no =		cmt:split notice_no from notice_url.
+
+notice_text = cmt:take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.
+
+***************************************************page_details*****************************************
+ref_url:"https://www.cnvos.si/razpisi/razpis/14572/globalna-evropa-sofinanciranje-projektov-na-podrocju-spodbujanja-clovekovih-pravic-ter-demokraticnih-nacel-v-izraelu"
+est_amount / grossbudgetlc / grossbudgeteuro = VREDNOST RAZPISA				cmt:Here "4,323,202 EUR (sklop 1: 2,323,202 EUR, sklop 2: 2,000,000 EUR)" grab only this "4,323,202" amount.
+
+contract_duration = TRAJANJE PROJEKTA
+
+additional_tender_url = DOMAČA STRAN
+
+local_description = 		cmt:(selector=col-md-8 main-content). split all the data above "Upravičeni prijavitelji" keyword.
+ 
+notice_summary_nglish =		cmt:(selector=col-md-8 main-content). split all the data above "Upravičeni prijavitelji" keyword.

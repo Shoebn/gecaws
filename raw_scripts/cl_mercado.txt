@@ -1,0 +1,314 @@
+Note : Go to URL : "https://www.mercadopublico.cl/Home/BusquedaLicitacion",  go to  "Ordenar por" drop down menu and select "Últimas publicadas" option 
+
+script_name : cl_mercado_spn
+
+url : https://www.mercadopublico.cl/Home/BusquedaLicitacion
+
+page_no : 50
+
+main_language : ES
+
+procurment_method : 2
+	
+notice_type : 4
+
+currency ,  Moneda:  ,      cmt : for currency go to detail_page, with will be in two method "if its "American dollar" than pass  "USD" and if its "Peso Chileno" than pass "CLP" , ref_url : 			     "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=nZtxiO/9uzrN0l1dlKuxGA==" , "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=kxDD4Ctq9QC0Z69XsdMJLg=="
+
+
+tender_html_page
+------------------
+id / Notice no , ID Licitación:
+
+title/ local_title , cmt : grab the  textual  data (below "ID Licitación:"  )  , 
+
+publishDate , Etapas y plazos >> Fecha de Publicación: take time too
+
+buyerName / org_name  , cmt : split the left side (bold textual data) from "Cantidad de compras efectuadas*" field
+
+originalUrl / main_url / notice_url , take the hyperlink from "local_title"
+
+
+detail_page
+--------------
+notice_deadline , Fecha de cierre
+
+externalId , null
+
+languageCode / org_language / main_language  , ES
+
+tender_quantity  , Productos o servicios >> 1 Unidad  , ref_url : "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg=="
+
+noticeSummary / local_description / notice_summery_english ,   Descripción:	
+
+document_purchase_end_time ,  null
+
+earnest_money_deposit ,  null
+
+document_type_description  ,  null
+
+noticeType / contract_type , Null
+
+countryNames / performance_country , CL
+
+tender_criteria_title , . Criterios de evaluación >> Ítem
+
+tender_criteria_weight , Criterios de evaluación >> Ponderación
+
+tender_contract_number , N° de contrato: , cmt : https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=CyOQsvK/D5NHQsTDhxjPMw== 
+
+contact.firstName / contact person , Nombre de responsable de pago:
+
+contact.lastName  : , Null
+
+contact.address / org_address , Null
+
+contact.address2 title ,  Organismo demandante >> Dirección:
+
+contact.city / org_city  , Null
+
+contact.state / org_state , Null
+
+contact.country / org_country ,  CL
+
+contact.email / org_email , e-mail de responsable de pago:
+
+
+contact.phone / org_phone , NULL
+
+contact.url / org_url , Null
+
+eligibilityCriteria/ eligibility , Null
+
+projectName / project_Name , Null
+
+fundingAgency / funding_Agency , null
+
+Source of Funds  , Fuente de financiamiento:
+
+procurementMethod / procurement_Method , Null
+
+bidDeadline  / Notice_deadline / submission_deadline , Null
+
+estimatedAmount  /est_amount / GROSSBUDGETLC	,  Montos y duración del contrato >> Monto Total Estimado:
+
+estimatedAmountCurrency / Currency , Null 
+
+contractDuration /contract_Duration , Null
+
+lotsInfo
+
+documentCost / document_cost / document_fee   ,   Null
+
+noticeContractType / Contract_Type , Null 
+
+CPVNames /class_at_source , "UNSPSC"  static
+
+CPVCodes , Cod: , cmt : cpv mapping has been pushed on github
+
+Name of Product Category of the sources /Category , Null
+
+class_title_at_source , Productos o servicios >> "Servicios de fiestas en carpas" ,   ref_url :"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspxqs=bZBMhqepEtCanY1fJo8NBg=="
+
+
+Corrosponsing Codes , Null
+
+originalUrl / main_url / notice_url ,  https://www.arabpotash.com/En/Modules/Tenders / cmt , for notice_url click on "Read More" button
+
+External URL / additional_url 
+
+noticeText / html_body / Notice_text   , cmt : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+contractAward.companyName  / bidder_name , Null
+
+contractAward.companyAddress / bidder_address , Null
+
+contractAward.companyCountry / bidder_Country , Null
+
+contractAward.contractDuration / contract_Duration , Null
+
+contractAward.initialEstimatedValue , Null
+
+contractAward.finalValue   / award_Value , Null
+
+contractAward.currency , Null
+
+contractAward.awardDate / award_date , Null
+
+
+detail_page
+-----------------
+attachment : for attachment click on "#imgAdjuntos" 
+
+file_name ,  Anexos Ingresados: >> Descripción	
+
+external_url ,  Anexos Ingresados: >> Acciones
+
+
+
+attachment 2  ,  4. Antecedentes para incluir en la oferta >>  click on green button
+
+file_name ,  Anexos Ingresados: >> Descripción	, ref_url : https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg==
+
+external_url ,  Anexos Ingresados: >> Acciones  , ref_url : https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg==
+
+
+
+
+
+-------------------------------------------------------------------------------------------contract-award-------------------------------------------------------------------------------------------
+
+
+
+- Note : Go to URL : "https://www.mercadopublico.cl/Home/BusquedaLicitacion" ,  click on "Estado" and select "Adjudicada" for award , then go to  "Ordenar por" drop down menu and select "Últimas adjudicadas" option 
+
+script_name : cl_mercado_ca
+
+url : "https://www.mercadopublico.cl/Home/BusquedaLicitacion"
+
+page_no : 50
+
+main_language : ES
+
+procurment_method : 2
+	
+notice_type : 7
+
+currency ,  Moneda:  , cmt : for currency go to detail_page
+
+
+tender_html_page
+------------------
+
+id / Notice no , ID Licitación:
+
+title/ local_title , cmt : grab the  textual blue data (below "ID Licitación:"  )  , 
+
+publishDate , Etapas y plazos >> Fecha de Publicación: 
+
+buyerName / org_name  , cmt : split the left side (bold textual data) from "Cantidad de compras efectuadas*" field
+
+originalUrl / main_url / notice_url , take the hyperlink from "local_title"
+
+
+detail_page
+--------------
+
+notice_deadline , Null
+
+externalId , null
+
+languageCode / org_language / main_language  , ES
+
+tender_quantity  , Productos o servicios >> 1 Unidad  , ref_url : "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg=="
+
+noticeSummary / local_description / notice_summery_english ,   Descripción:	
+
+document_purchase_end_time ,  null
+
+earnest_money_deposit ,  null
+
+document_type_description  ,  Estado:	
+
+noticeType / contract_type , Null
+
+countryNames / performance_country , CL
+
+tender_criteria_title , . Criterios de evaluación >> Ítem
+
+tender_criteria_weight , Criterios de evaluación >> Ponderación
+
+contact.firstName / contact person , Datos del Contacto para esta Licitación >> Nombre Completo  , cmt : click on "#imgAdjudicacion" for contact_person
+
+contact.lastName  : , Null
+
+contact.address / org_address , Null
+
+contact.address2 title ,  Organismo demandante >> Dirección:
+
+contact.city / org_city  , Null
+
+contact.state / org_state , Null
+
+contact.country / org_country ,  CL
+
+contact.email / org_email , Datos del Contacto para esta Licitación >> E-Mail , cmt : click on "#imgAdjudicacion" for org_email
+
+
+contact.phone / org_phone , Datos del Contacto para esta Licitación >> Teléfono , cmt : click on "#imgAdjudicacion" for org_phone
+
+contact.url / org_url , Null
+
+eligibilityCriteria/ eligibility , Null
+
+projectName / project_Name , Null
+
+fundingAgency / funding_Agency ,  Null
+
+Source of Funds , Fuente de financiamiento:
+
+procurementMethod / procurement_Method , Null
+
+bidDeadline  / Notice_deadline / submission_deadline , Null
+
+estimatedAmount  /est_amount / GROSSBUDGETLC	,  Montos y duración del contrato >> Monto Total Estimado:
+
+estimatedAmountCurrency / Currency , Null 
+
+contractDuration /contract_Duration , Tiempo del Contrato	
+
+lotsInfo
+
+documentCost / document_cost / document_fee   ,   Null
+
+noticeContractType / Contract_Type , Null 
+
+CPVNames /class_at_source , "UNSPSC"  static
+
+CPVCodes , Cod: , cmt : cpv mapping has been pushed on github
+
+Name of Product Category of the sources /Category , Null
+
+class_title_at_source , Productos o servicios >> "Servicios de fiestas en carpas" ,   ref_url :"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspxqs=bZBMhqepEtCanY1fJo8NBg=="
+
+
+Corrosponsing Codes , Null
+
+originalUrl / main_url / notice_url ,  https://www.arabpotash.com/En/Modules/Tenders / cmt , for notice_url click on "Read More" button
+
+External URL / additional_url 
+
+noticeText / html_body / Notice_text   , cmt : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+contractAward.companyName  / bidder_name , Resultado de la Adjudicación >> Proveedor	, if the "Estado" has "Adjudicada" keyword then take bidder_name from "Proveedor" field
+
+contractAward.companyAddress / bidder_address , Null
+
+contractAward.companyCountry / bidder_Country , Null
+
+contractAward.contractDuration / contract_Duration , Null
+
+contractAward.initialEstimatedValue , Null
+
+contractAward.finalValue   / award_Value , Null
+
+netawardvaluelc , Datos de la Adquisición >>  Monto Neto Adjudicado ,   cmt : click on "#imgAdjudicacion" for org_phone
+
+contractAward.awardDate / award_date , Null
+
+
+detail_page
+-----------------
+attachment : for attachment click on "#imgAdjuntos" 
+
+file_name ,  Anexos Ingresados: >> Descripción	
+
+external_url ,  Anexos Ingresados: >> Acciones
+
+
+attachment 2  ,  4. Antecedentes para incluir en la oferta >>  click on green button
+
+file_name ,  Anexos Ingresados: >> Descripción	, ref_url : https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg==
+
+external_url ,  Anexos Ingresados: >> Acciones  , ref_url : https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bZBMhqepEtCanY1fJo8NBg==
+

@@ -1,0 +1,40 @@
+script_name			in_agrirajasthan_spn
+urls				"https://agriculture.rajasthan.gov.in/tender-list/945/0$$in_agriculture.rajasthan_spn%5D"
+page_no				tender_html_element 	//*[@id="TenderList"]/div/table/tbody/tr		5
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			4		Note:If in "tender_html_element" page have "Corrigendum" this keyword in "NIT No" this field than take notice_type 16
+
+notice_no: tender_html_element > NIT No
+	Note:If notice_no is blank than take fron data in "RN No" field 
+	
+local_title : tender_html_elementNIT > Purpose
+
+publish_date : tender_html_element > Form Issuing Date
+
+notice_deatline : tender_html_element > Form Submission Date
+
+document_opening_time : tender_html_element > Tender Opening Date
+
+dispatch_date : tender_html_element > Release Date
+
+notice_url : "https://agriculture.rajasthan.gov.in/tender-list/945/0$$in_agriculture.rajasthan_spn%5D"
+
+notice_text : tender_html_element > tbody > tr		 Note:Take "tender_html_element" page data also
+
+
+customer_detail[] : tender_html_element
+	org_name : tender_html_element > Department
+	org_country : IN
+	org_language : EN
+
+attachments[] : tender_html_elmenet
+	file_name : Tender_document
+	file_type : tender_html_element >  Action
+	external_url : tender_html_element > Action
+
+
+
+ 

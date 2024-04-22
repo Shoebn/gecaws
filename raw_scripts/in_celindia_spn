@@ -1,0 +1,45 @@
+script_name : in_celindia_spn
+
+url : "https://www.celindia.co.in/tender-detail/ceramics/e-tender"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+procurment_method : 2
+
+notice_type : 5 , if following field i.e "CORRIGENDUM" has "Corrigendum"  word documents appears then take nptice_type = 16
+
+procurment_method : 2
+
+tender_html_page
+----------------
+document_type_description : "TENDER"
+
+local_title : Title
+
+notice_no : Tender Number		
+
+publish_date : Take threshold	
+
+notice_deadline : Submission Last Date		
+
+org_parent_id : 7806469
+
+org_name : "CENTRAL ELECTRONICS LIMITED"
+	
+org_country : IN
+
+org_language : EN
+
+notice_url : "https://www.celindia.co.in/tender-detail/ceramics/e-tender"
+
+notice_text : take the data from tender_html_element  give td / tbody of main pg
+
+attachments
+-------------
+file_name : take from "Corrigendum" field
+
+external_url : take from "Corrigendum" field

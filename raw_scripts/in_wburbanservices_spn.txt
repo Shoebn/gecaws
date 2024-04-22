@@ -1,0 +1,89 @@
+script_name : in_wburbanservices_spn
+
+url: "https://www.wburbanservices.gov.in/index.php?/Main/tender"
+
+page_no : 5
+
+procurment_method : 2
+	
+notice_type : 4 , if the "Subject" column field has "Corrigendum" world appears then take notice_type = 16
+
+currency :  INR
+
+id / Notice no : Tender No
+
+publishDate : 	Publishing Date
+
+externalId / buyer internal id / org_parent_id : "7653680" static
+
+languageCode / org_language / main_language : EN
+
+title/ local_title :  Subject
+
+noticeSummary / local_description / notice_summery_english : Null
+
+countryNames / performance_country : IN 
+
+buyerName / org_name : "URBAN DEVELOPMENT AND MUNICIPAL AFFAIRS DEPARTMENT"
+
+contact.firstName / contact person : Null
+
+contact.lastName  :   Null
+
+contact.address / org_address  :  "Nagarayan, DF-8, Sector-I, Salt Lake City, Kolkata-700064"  static
+
+contact.address2 title : Null
+
+contact.city / org_city : "Kolkata" static
+
+contact.state / org_state : "west bengal" static
+
+contact.country / org_country :	 "IN" static
+
+contact.email / org_email : Null
+
+contact.phone / org_phone : Null
+
+contact.url / org_url : Null
+
+eligibilityCriteria/ eligibility : Null
+
+projectName / project_Name :	 Null
+
+fundingAgency / funding_Agency : Null
+
+notice_url : "https://www.wburbanservices.gov.in/index.php?/Main/tender"
+
+notice_text  :  take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+Source of Funds -  : Null
+
+procurementMethod / procurement_Method :  Null
+
+bidDeadline  / Notice_deadline / submission_deadline : Closing Date	
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:
+
+estimatedAmountCurrency / Currency : INR
+ 
+contractDuration /contract_Duration : Null
+
+document_type_description : "Tender Notice" static
+
+lotsInfo
+documentCost / document_cost / document_fee
+noticeContractType / Contract_Type
+
+CPVNames /class_at_source : Null
+
+CPVCodes : Null
+
+Name of Product Category of the sources /Category : Null
+
+class_title_at_source : Null
+
+attachments
+---------------
+file_name : : "Download" static
+
+external_url  : Download

@@ -1,0 +1,41 @@
+script_name			tw_tccgroup_spn
+urls				"https://ebidding.taiwancement.com/ebidding/tenderList.html?type=STATUS&status=T&comArea=tcc_cn"
+page_no				tender_html_element 	//*[@id="app"]/div[2]/div[3]/table/tbody/tr	5
+performance_country		TW
+currancy			TWD	
+main_language			ZH
+procurement_method		2
+notice_type			4
+
+
+Follow "tender_html_element" "https://ebidding.taiwancement.com/ebidding/tenderList.html?type=STATUS&status=T&comArea=tcc_cn" and grab the data
+
+tender_html_element
+
+招標編號 = notice_no		com:if notice_no is blank than grab from notice_url 
+
+招標名稱 = local_title
+
+招標狀態 = document_type_description
+
+to open the tender_html_element page : click on local_title = notice_url
+
+take all the data from page_detail as well the  "tender_html_element" of each record  = notice_text
+
+page_detail
+
+投標起始時間 = publish_date   	com:Grab time also
+
+投標截止時間 = notice_deadline      com:Grab time also
+
+招標單位 = org_name
+
+經辦人 = contact_person     com:Take first line
+
+經辦人 = org_phone     com:Take second line ....Take numaric value
+
+TW = org_country
+
+ZH =org_language
+
+招標詳細資訊 = local_description / notice_summary_english

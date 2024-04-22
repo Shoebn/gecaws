@@ -1,0 +1,73 @@
+main_url : "https://www.suratmunicipal.gov.in/Information/Tender/Tenders"
+
+script_name : "in_suratmunicipal_spn"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4  
+
+procurment_method : 2
+
+-------------------------------------
+tender_html_page
+-------------------------------------
+
+document_type_description : "ACTIVE TENDERS"
+
+local_title : split the text before  "View Tender Details" button
+
+publish_date : Start Date
+
+document_purchase_end_date : End Date
+
+notice_url : click on "View Tender Details"  button
+
+notice_text :  cmt : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+-------------------
+
+local_description : Description
+
+notice_summary_english : Description
+
+notice_no : Tender Notice Number
+
+notice_deadline : Submission Date
+
+tender_fee : Tender Fees
+
+est_amount / grossbudgetlec :  Estimated Amount (in Rupees)
+
+emd :  Earnest Money Deposit (in Rupees)
+
+document_opening_date : Probable Date of opening
+
+
+customer_details
+---------------
+
+org_name : SURAT MUNICIPAL CORPORATION
+
+org_parent_id : 7527899
+
+org_address : append both fileds data "Issuing Authority" + "Filled tender to be submitted to"
+
+org_country : IN
+
+org_state : Gujarat
+
+org_language :  EN
+
+
+
+
+
+

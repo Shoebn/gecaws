@@ -1,0 +1,40 @@
+Note : Go to URL : "https://www.cugl.co.in/vendor-zone/view-search-tenders/active-tenders"			Com:Open the site than click on "Order" dropdown button and select "Descending" this keyword than grab the data
+
+script_name : "in_cugl_spn"				
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currency	: INR
+
+======================================================================================================================================================
+
+local_title		: Take the date above the "Reference Number" this keyword
+
+notice_no	: Reference Number
+
+publish_date	: Published On
+
+notice_deadline	: Bid Due Date	Com:Grab time also
+
+attachments	: Com:Take Below the "Published On" this keywords data 
+
+external_url : Click on "View Tender Document" and click below this keyword data also
+
+org_name	: 'Central U.P. Gas Limited'
+
+org_parent_id	: '7777906'
+
+org_website	: 'www.cugl.co.in'	pass static
+
+org_phone	: '0512-2246000' pass static
+
+notice_url	: pass main url "https://www.cugl.co.in/vendor-zone/view-search-tenders/active-tenders"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record

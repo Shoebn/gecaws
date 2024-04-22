@@ -1,0 +1,28 @@
+script_name='in_wbpwd_spn'
+urls="http://wbpwd.gov.in/home/tender"		cmt:also grab the data from following clicks i)Tender >> Auction / Bid   ii)Tender >> Tender / Auction Search
+page_no=3
+performance_country='IN'
+main_language='EN'   
+notice_type=4			cmt:1)if in notice_no "Corrigendum" keyword is present then pass notice_type=16.   2)if in <tr> "Ref. tender of above corrigendum" keyword is present then pass notice_type=16 for above record. 
+procurement_method=2
+currency='INR'
+org_language='EN'
+org_country='IN'
+
+Grab below data from tender_html_element.
+notice_no=Tender No		cmt:split notice_no after "	NIQ:" or "	NIT:" or "AUCTION".
+
+attachments[]
+file_name='Tender documents'
+external_url=Tender No >> Download
+
+publish_date=Publishing Date	
+org_name=Inviting Authority	
+local_description=Brief Description of Work
+notice_summary_english=Brief Description of Work
+document_opening_time=Brief Description of Work		cmt:hover the "?" sign in the field and grab the date.
+notice_deadline=Brief Description of Work	cmt:hover the "?" sign in the field and grab the date.If not present hen pass threshold.
+
+
+notice_url="http://wbpwd.gov.in/home/tender"
+notice_text=take all the "tender_html_element" Row wisedata in Notice Text

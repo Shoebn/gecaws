@@ -1,0 +1,52 @@
+
+######################################################################################################################################################
+
+
+
+script_name: in_uttarakhandtourism_spn
+                      
+urls:"https://uttarakhandtourism.gov.in/document/type/tenderseoi"
+
+page_no: 10
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: UTTARAKHAND TOURISM DEVELOPMENT BOARD
+
+org_parent_id: 6991197
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+local_title --- TENDER / NIT NO.	
+#Note: if keyword such as "VC Link" is presnet then split data from the title till "VC Link"
+eg: "Development, Operation and Maintenance of KMVN TRH Mukteshwar on Public Private Partnership Mode Date: 30.10.2023 at 12:00 Noon VC Link: https://meet.google.com/rea-fdrt-dst" ....split from "Development" till "VC Link"
+
+
+published_date --- START DATE	
+
+
+notice_deadline --- LAST DATE	
+
+
+
+#attachments
+external_url --- TENDER DOCUMENT
+
+file_name --- TENDER DOCUMENT
+
+file_type --- TENDER DOCUMENT
+
+
+
+

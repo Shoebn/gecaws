@@ -1,0 +1,44 @@
+Note : Go to URL : "https://ihale.erciyes.edu.tr/"
+
+script_name : "tr_ihale_spn"		
+
+page_no : 3
+
+main_language/ org_language  : 'TR'
+
+performance_country / org_country	: 'TR'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'TRY'
+
+=================================================================================================================================================
+notice_no	: 	ID
+
+org_name	: Birimi
+
+local_title		 : İhale Konusu
+
+publish_datre 	: İlan Tarihi 		Com: Grab time also
+
+notice_deadline		: İlan Tarihi 		Com:Grab time also
+
+type_of_procedure_actual	: Usulü
+
+org_address		: İhale Yeri 
+
+attachments		: İhale Dosyası 
+
+file_size	: İhale Dosyası 
+
+external_url	: İhale Dosyası 
+
+org_email 	: Ekleyen >> E-Mail
+
+org_phone	: Ekleyen >> Santral
+
+notice_url	: pass main url		 https://ihale.erciyes.edu.tr/
+
+notice_text	 :  Take data from "tender_html_element" in notice_text of each record

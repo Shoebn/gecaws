@@ -1,0 +1,61 @@
+######################################################################################################################################################
+script_name:in_iahe_spn
+
+urls: "https://www.iiserpune.ac.in/tenders"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if "LAST UPDATE" is present in tender then take notice_type -16, in page_detail if data is given in "Updates" field then take
+"Title" as "local_title"
+"Update Date" "notice_deadline"
+"Downloads" in "Atachments"
+
+procurement_method: "2"
+
+org_name:  INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH (IISER) PUNE	
+
+org_parent_id: 7577879
+ 
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- the blue text , the href text, (just take the english text.. do not take the regional language )
+
+notice_contract_type / contract_type_actual --- first line second word/ in some the first word of first line (red text)            eg... (WORKS, PURCHASE)
+#note - Purchase-Supply, Works-Work 
+ 
+notice_deadline --- split data from "Last Date" till "Issue Date"
+
+publish_date --- Issue Date
+
+notice_url --- click on the local_title for notice_url ,the blue text ,the href text
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+notice_no --- Reference Id	
+
+
+
+#attachment >>>>Important information >>> Downloads	
+
+
+external_url --- "Downloads" >>> (click on the href for documents File )	
+
+file_name --- Downloads
+
+file_type --- (extension)... eg - pdf
+

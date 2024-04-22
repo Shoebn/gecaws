@@ -1,0 +1,777 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Base"
+    },
+    "definitions": {
+        "Base": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "crawledAt": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "sourceName": {
+                    "type": "string"
+                },
+                "tenderId": {
+                    "type": "string"
+                },
+                "relatedTenderId": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "additionalSourceName": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "additionalSourceId": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "dispatchDate": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "publicationDate": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "submissionDeadline": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "documentType": {
+                    "type": "number",
+                    "format": "int"
+                },
+                "documentTypeDescription": {
+                    "type": "string"
+                },
+                "typeOfProcedure": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "typeOfProcedureActual": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "localTitle": {
+                    "type": "string"
+                },
+                "description": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "localDescription": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "grossBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "grossBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "vat": {
+                    "$ref": "#/definitions/Vat"
+                },
+                "tenderURL": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "additionalTenderURL": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    ]
+                },
+                "currency": {
+                    "$ref": "#/definitions/Curency"
+                },
+                "country": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z]{2,}$"
+                },
+                "language": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z]{2,}$"
+                },
+                "tenderCPVCodes": {
+                    "$ref": "#/definitions/CPVs"
+                },
+                "identifier": {
+                    "type": "string"
+                },
+                "customer": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/definitions/Customer"
+                    }
+                },
+                "lots": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "$ref": "#/definitions/Lot"
+                            }
+                        }
+                    ]
+                },
+                "awardCriteria": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/definitions/AwardCriterion"
+                    }
+                },
+                "attachments": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                },
+                "customTags": {
+                    "type": "array",
+                    "minItems": 0
+                },
+                "htmlBody": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "minQuantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "maxQuantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "quantityUOM": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractNumber": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "contractDuration": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "number",
+                            "format": "int"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractStartDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractEndDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "isCanceled": {
+                    "type": "boolean"
+                },
+                "cancellationDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lotAwardDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractType": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "awardDetails": {
+                    "items": {
+                        "$ref": "#/definitions/AwardDetail"
+                    },
+                    "minItems": 0,
+                    "type": "array"
+                }
+            },
+            "required": [
+                "additionalSourceId",
+                "additionalSourceName",
+                "additionalTenderURL",
+                "attachments",
+                "awardCriteria",
+                "country",
+                "crawledAt",
+                "currency",
+                "customTags",
+                "customer",
+                "description",
+                "localDescription",
+                "dispatchDate",
+                "documentType",
+                "documentTypeDescription",
+                "grossBudgetEuro",
+                "grossBudgetLC",
+                "htmlBody",
+                "identifier",
+                "language",
+                "localTitle",
+                "lots",
+                "netBudgetEuro",
+                "netBudgetLC",
+                "publicationDate",
+                "relatedTenderId",
+                "sourceName",
+                "submissionDeadline",
+                "tenderCPVCodes",
+                "tenderId",
+                "tenderURL",
+                "title",
+                "typeOfProcedure",
+                "typeOfProcedureActual",
+                "vat"
+            ],
+            "dependencies": {
+                "quantity": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "minQuantity": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "maxQuantity": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "quantityUOM": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "contractNumber": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "contractDuration": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "contractStartDate": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "contractEndDate": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "isCanceled": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "cancellationDate": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "lotAwardDate": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "awardDetails": {
+                    "properties": {
+                        "lots": {
+                            "type": "null"
+                        }
+                    }
+                }
+            },
+            "title": "Base"
+        },
+        "NonMandatoryString": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "NonMandatoryString"
+        },
+        "Budget": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "number",
+                    "format": "float"
+                }
+            ],
+            "title": "Budget"
+        },
+        "Vat": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "number",
+                    "format": "float"
+                }
+            ],
+            "title": "Vat"
+        },
+        "Curency": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "string",
+                    "pattern": "^[A-Z]{3}$"
+                }
+            ],
+            "title": "Curency"
+        },
+        "Attachment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "size": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "number",
+                            "format": "float"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "description",
+                "url",
+                "size"
+            ],
+            "title": "Attachment"
+        },
+        "AwardCriterion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "weight": {
+                    "type": "number",
+                    "format": "float"
+                },
+                "isPriceRelated": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "isPriceRelated",
+                "title",
+                "weight"
+            ],
+            "title": "AwardCriterion"
+        },
+        "Customer": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "country": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z]{2,}$"
+                        }
+                    ]
+                },
+                "city": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "street": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "postalCode": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "email": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "email"
+                        }
+                    ]
+                },
+                "phone": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "nuts": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "typeOfAuthorityCode": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "mainActivity": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                }
+            },
+            "required": [
+                "city",
+                "country",
+                "email",
+                "mainActivity",
+                "name",
+                "nuts",
+                "phone",
+                "postalCode",
+                "street",
+                "typeOfAuthorityCode"
+            ],
+            "title": "Customer"
+        },
+        "Lot": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "number": {
+                    "type": "number",
+                    "format": "int"
+                },
+                "actualNumber": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "grossBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "grossBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "vat": {
+                    "$ref": "#/definitions/Vat"
+                },
+                "quantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "minQuantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "maxQuantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "quantityUOM": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractNumber": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "contractDuration": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "number",
+                            "format": "int"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractStartDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contractEndDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lotNuts": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "isCanceled": {
+                    "type": "boolean"
+                },
+                "cancellationDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lotAwardDate": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lotCPVCodes": {
+                    "$ref": "#/definitions/CPVs"
+                },
+                "contractType": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "awardCriteria": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/definitions/AwardCriterion"
+                    }
+                },
+                "awardDetails": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/definitions/AwardDetail"
+                    }
+                }
+            },
+            "required": [
+                "awardCriteria",
+                "awardDetails",
+                "cancellationDate",
+                "contractDuration",
+                "contractEndDate",
+                "contractNumber",
+                "contractStartDate",
+                "contractType",
+                "description",
+                "grossBudgetEuro",
+                "grossBudgetLC",
+                "isCanceled",
+                "lotAwardDate",
+                "lotCPVCodes",
+                "lotNuts",
+                "maxQuantity",
+                "minQuantity",
+                "netBudgetEuro",
+                "netBudgetLC",
+                "number",
+                "actualNumber",
+                "quantity",
+                "quantityUOM",
+                "title",
+                "vat"
+            ],
+            "title": "Lot"
+        },
+        "CPVs": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "string",
+                    "pattern": "^(\\d{8})(,\\d{8})*$"
+                }
+            ],
+            "title": "CPVs"
+        },
+        "Quantity": {
+            "anyOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "number",
+                    "format": "float"
+                }
+            ],
+            "title": "Quantity"
+        },
+        "AwardDetail": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "awardWinner": {
+                    "type": "string"
+                },
+                "awardWinnerGroupName": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                },
+                "grossBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetEuro": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "grossBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "netBudgetLC": {
+                    "$ref": "#/definitions/Budget"
+                },
+                "quantity": {
+                    "$ref": "#/definitions/Quantity"
+                },
+                "notes": {
+                    "$ref": "#/definitions/NonMandatoryString"
+                }
+            },
+            "required": [
+                "awardWinner",
+                "awardWinnerGroupName",
+                "grossBudgetEuro",
+                "netBudgetEuro",
+                "grossBudgetLC",
+                "netBudgetLC",
+                "quantity",
+                "notes"
+            ],
+            "title": "awardDetail"
+        }
+    }
+}

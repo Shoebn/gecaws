@@ -1,0 +1,42 @@
+Note : Go to URL : "http://www.rvskvv.net/index.php/tenders"
+
+script_name : "in_rvskvv_spn"			
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+currancy			INR
+
+notice_type : 4			Com:If in "Download" this field have "Corrigendum" this keyword than take notice_type 16
+
+======================================================================================================================================================
+
+notice_no	: Tender Number
+
+local_title		:  Description
+
+publish_date	: Publication Date
+
+notice_deadline		: Submission End Date & Time		Com:Grab time also
+
+document_opening_time	: Opening Date & Time		Com:Grab time also
+
+attachments		: Download			Com:Present than take all attachments in "Submission End Date & Time" , "Opening Date & Time" , "Download" , "Remark" this all field 
+
+external_url	: Download
+
+org_name	: 'RAJMATA VIJAYARAJE SCINDIA KRISHI VISHWAVIDYALAYA (RVSKVV)' 
+
+org_parent_id	: '7123266'
+
+org_phone	: '0751-2970509' pass static
+
+org_email	: 'drs@rvskvv.net' pass static
+
+notice_url	: pass main url "http://www.rvskvv.net/index.php/tenders"
+
+notice_text	: take data from "tender_html_element" in notice_text of each record

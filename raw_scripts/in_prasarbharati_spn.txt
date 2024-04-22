@@ -1,0 +1,57 @@
+script_name : in_prasarbharati_spn
+
+url : "https://prasarbharati.gov.in/pbtenders/#1685415331190-0d746064-36c3"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 4  , if "subject / Particular" field has "Corrigendum" keyword then take notice_type = 16	
+
+
+customer_details
+-----------------
+
+org_name : "PRASAR BHARTI"
+
+org_parent_id : 7545014
+
+org_language : EN
+
+org_country : IN
+
+org_addres : Office
+
+
+
+tender_html_page
+------------------
+
+document_type_description : "Tenders"
+
+notice_no : NIT Number
+
+local_title :  Subject / Particular
+
+notice_deadline :  take threshold
+
+publish_date : NIT Number , take the date after "Dated "
+
+notice_url : "https://prasarbharati.gov.in/pbtenders/#1685415331190-0d746064-36c3"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+attachment
+---------------
+
+file_name :take from  "Download" field
+
+external_url : take from "Download" field
+

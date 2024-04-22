@@ -1,0 +1,85 @@
+
+***********************************************************************in_tmc_spn***********************************************************
+
+
+script_name = 'in_tmc_spn'
+
+url = "https://tmc.gov.in/m_events/Events/Tenders"
+
+page_no = 1
+
+main_language = 'EN'
+
+performance_country = 'IN' 
+
+currency = 'INR'
+
+procurement_method = 2
+
+notice_type = 4			cmt:if in "Tender Name" field "Corrigendum" keyword is present then pass notice_type=16.
+
+org_country = 'IN'
+
+org_language = 'EN'	
+
+org_name = 'TATA MEMORIAL HOSPITAL'
+
+org_parent_id = '7563060'
+
+org_address = 'Dr. E Borges Road, Parel,�Mumbai - 400 012 India'
+
+org_phone = '+91-22- 24177000, 24177300, 24161413'
+
+org_fax = '+91-22-24146937'
+
+org_email = 'msoffice@tmc.gov.in'
+
+					*********************************tender_html_element*********************************************
+notice_no = Tender No.			cmt:split it from notice_url also.
+
+local_title = Tender Name
+
+publish_date = Start Date
+
+tender_contract_start_date = Start Date
+		
+notice_deadline = End Date
+		
+tender_contract_end_date = End Date
+
+notice_url = View
+
+notice_text = 		cmt:take all page_details as well as the "tender_html_element" Row wisedata in Notice Text.
+
+
+
+					*********************************page_details*********************************************
+category = Tender Category :
+
+document_cost = Tender Registration Fees :
+
+est_cost = Estimated Cost :
+
+grossbudgetlc = Estimated Cost :
+
+earnest_money_deposite = 	EMD Amount
+
+document_opening_time = Description >> Bid Opening date & Time
+
+attachments[]
+format-1)
+file_name = View PDF
+external_url = View PDF
+
+format-2)ref_url:"https://tmc.gov.in/m_events/Events/TenderDetail?tendId=28498"      
+file_name = Corrigendum  >>  Downloadable files
+external_url = Corrigendum  >> Downloadable files
+file_type =     cmt:split only file_extension  
+
+format-3)ref_url:"https://tmc.gov.in/m_events/Events/TenderDetail?tendId=28498"   
+file_name = Downloadable files
+external_url = Downloadable files
+file_type =     cmt:split only file_extension       
+
+
+additional_tender_url = Links >> website                                                                                                                                               

@@ -1,0 +1,40 @@
+Note : Go to URL : "https://www.iom.int/procurement-opportunities?date=1&country=All&page='+str(page_num)+,"
+
+script_name : "mfa_iom_spn"			
+
+page_no : 3
+
+main_language/ org_language  : EN
+
+performance_country / org_country	: Country				File:mfa_iom_spn_countrycode.csv
+
+procurment_method : 2
+
+notice_type : 4
+-------------------------------------------------------------------------------------------------------------------------------------
+
+id / Notice no	:  Get the "notice_no" above attachment keyword			Ex.,"An EoI for the Pre-qualified Pool of Implementing Partners TD-GZT-2024-0094" take only "TD-GZT-2024-0094"
+
+publishDate		: Publication Date
+
+externalId / buyer internal id / org_parent_id	:'7462174'
+
+title/ local_title :  Get the "local_title" above attachment keyword 		Ex.,"An EoI for the Pre-qualified Pool of Implementing Partners TD-GZT-2024-0094" take only "An EoI for the Pre-qualified Pool of Implementing Partners"
+
+buyerName / org_name	:'International Organization for Migration'
+
+contact.address / org_address	:'International Organization for Migration (IOM) 17 Route des Morillons 1218 Grand-Saconnex P.O. Box 17 CH-1211 Geneva 19 Switzerland' pass static
+
+contact.phone / org_phone	: '+41.22.717 9111 , +41.22.798 6150' pass static
+
+bidDeadline  / Notice_deadline / submission_deadline	: Closing Date
+
+noticeContractType / Contract_Type	: Category			Com:notice contrac type mapping as per below ("Services=Service","Goods=Supply")
+
+Attachments / Documents	: Attachment		Com:Take the data below the "Attachment" keyword	
+
+External URL  : Attachment		Com:Take the data below the "Attachment" keyword
+
+notice_url 	: Click on "lical_title" hyperlink than grab the data
+
+noticeText / html_body / Notice_text	: take all the data from page_detail as well the "tender_html_element" of each record

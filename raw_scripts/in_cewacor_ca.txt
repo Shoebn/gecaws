@@ -1,0 +1,41 @@
+script_name			in_cewacor_ca
+urls				"https://cewacor.nic.in/MasterStatic/Contract_awarded"    
+page_no				tender_html_element 	//*[@id="datatablelistt"]/tbody/tr		3
+performance_country		IN
+currancy			INR
+main_language			EN
+procurement_method		: tender_html_element > MODE OF PROCUREMENT		
+	Note:If this field have "Open" this keyword than take procurement_method "1" , If this field have "Limited" this keyword than take procurement_method "0" other , otherwise take "2"
+
+notice_type			7
+
+notice_no : tender_html_element > TENDER/BID REF NO
+
+local_title : tender_html_element > DESCRIPTION 
+
+est_amount : tender_html_element > VALUE(INC.GST) IN INR
+
+grossbudgetlc : tender_html_element > VALUE(INC.GST) IN INR
+
+publish_date : temder_html_element > PUBLISHING DATE
+
+document_type_description : Contracts Awarded
+
+notice_url :"https://cewacor.nic.in/MasterStatic/Contract_awarded"
+
+notice_text : tender_html_element > tbody > tr
+
+customer_detail[] : tender_html_element 
+	org_name : Central Warehousing Corporation
+	org_parent_id : 7789431
+	org_address : tender_html_element > LOCATION
+	org_country: IN
+	org_language : EN
+
+
+lot_detail[] : tender_html_element
+	lot_title : tender_html_element > DESCRIPTION
+
+award_detail[]
+	bidder_name : tender_html_element > NAME OF PARTY
+	award_date : tender_html_element > AWARDED DATE

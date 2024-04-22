@@ -1,0 +1,105 @@
+note : there are 2 options for tender_details  1) Quotation , 2) E-Tender (both are same format)
+
+script_name : in_digitaluniversity_spn
+
+url : "https://su.digitaluniversity.ac/Content.aspx?ID=26476"  
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 4 
+
+
+attachments 
+---------------
+file_name : "Details"
+external_url : take from "Details" field
+
+tender_html_page
+---------------
+local_title :Tender Name 
+
+document_type_description : Quotation
+
+publish_date : Date
+
+notice_deadline : End Date
+
+notice_url : https://su.digitaluniversity.ac/Content.aspx?ID=26476
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+org_name : Punyashlok Ahilyadevi Holkar Solapur University
+
+org_city : Solapur
+
+org_state : maharashtra
+
+org_country : IN
+
+org_language : EN
+
+org_parent_id : 7785379
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+script_name : in_digitaluniversitye_spn
+
+url :  https://su.digitaluniversity.ac/Content.aspx?ID=1141
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 4 
+
+
+
+attachments 
+---------------
+
+file_name : "Details"
+
+external_url : take from "Details" field
+
+
+
+tender_html_page
+---------------
+document_type_Description : "E-Tender"
+
+local_title : E-Tender Name
+
+publish_date : Date
+
+notice_deadline : End Date
+
+notice_url :  https://su.digitaluniversity.ac/Content.aspx?ID=1141
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+org_name : Punyashlok Ahilyadevi Holkar Solapur University
+
+org_city : Solapur
+
+org_state : maharashtra
+
+org_country : IN
+
+org_language : EN
+
+org_parent_id : 7785379

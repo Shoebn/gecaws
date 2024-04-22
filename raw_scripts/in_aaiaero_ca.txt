@@ -1,0 +1,38 @@
+script_name			in_aaiaero_ca
+urls				"https://www.aai.aero/en/tender/contract-award"
+page_no				tender_html_element 	//*[@id="block-system-main"]/div/div/div[2]/table/tbody/tr	3
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			7
+
+local_title : tender_html_element > Tender No.
+
+publish_date : page_main > Important Dates >> Date of Publish on NIT 		
+	Note:Click on "Important Dates" button than grab data fram "Date of Publish on NIT" field
+
+related_tender_id :page_main > Contract Number
+	Note:Click on "View" this button on "Contractor Details" this field than grab the data
+
+
+customer_detail[] : tender_html_element
+	org_name: Airports Authority Of India
+	org_parent_id :1483743
+	org_city : tender_html_
+	org_address : Tender_html_element > Department
+
+lot_detail[] : tender_hgtml_element
+	lot_title : tender_html_element > Tender No.
+
+award_detail[] :tender_html_element
+	Note:Click on "View" this button on "Contractor Details" this field
+	award_date : page_main > Date of Award	
+	bidder_name : page_main > Name of Contractor
+	grossawardvaluelc : page_main > Value of the Contract
+
+
+
+
+
+

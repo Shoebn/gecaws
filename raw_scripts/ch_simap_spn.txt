@@ -1,0 +1,245 @@
+*publish_date is in order.
+*This site has session.
+*if in "Date" column keyword "Lot no" is present then don't grab the record.
+
+********************************************************************************************************************************************************************
+script_name='ch_simap_spn'
+
+urls="https://www.simap.ch/shabforms/COMMON/application/applicationGrid.jsp?template=2&view=1&page=/MULTILANGUAGE/simap/content/start.jsp"			after opening the url click on "Invitations to tender"
+
+page_no=15
+
+performance_country='CH'
+
+currency='CHF'
+
+procurement_method=2		
+
+org_country = 'CH'
+
+
+			***********************************tender_html_element*********************************************
+publish_date = Date
+
+notice_no = No.
+
+local_title = Notice		cmt:grab the title present in <a> tag.
+
+notice_url = Notice
+
+notice_text = cmt:take all page_main as well as the "tender_html_element" Row wisedata in Notice Text.
+			
+
+			*************************************page_main*********************************************
+document_type_description = 		cmt:1)use "div.result_head" this selector in page_main.  2)split document_type_description. eg., here "23.08.2023|Project ID 263224|Notice no. 1356801|Prior information notice" then take "Prior information notice".
+
+notice_type=4		if in document_type_description "Cancellation of invitation to tender" and "Rectification" words are grabbed then pass notice_type=16,otherwise pass notice_type=4.
+
+
+
+
+format-1)German:		ref_notice_no:1397919,1404393
+org_name = Offizieller Name und Adresse des Auftraggebers			cmt:1)split org_name between and "Bedarfsstelle/Vergabestelle:" and "Beschaffungsstelle/Organisator:".
+
+org_address = Beschaffungsstelle/Organisator:				cmt:split between "Beschaffungsstelle/Organisator:" and "E-Mail:".
+
+org_phone = Beschaffungsstelle/Organisator: 				cmt:split between "Telefon:" and "E-Mail:".
+
+org_email = Beschaffungsstelle/Organisator:				cmt:split after "E-Mail:".
+
+notice_deadline = Frist für die Einreichung des Angebotes						cmt:add time also.
+
+document_opening_time = Datum der Offertöffnung:			cmt:add time also.
+
+type_of_procedure = Verfahrensart				file_name:ch_simap_procedure.csv
+
+notice_contract_type = Auftragsart				cmt:1.Replace follwing keywords with given respective keywords ('Dienstleistungsauftrag =Service'),('Lieferauftrag=Supply'),('Bauauftrag=Works').
+
+contract_type_actual = Auftragsart
+
+type_of_authority_code =  Art des Auftraggebers
+
+ref_notice_no=1404393
+class_at_source = 'CPV'
+class_codes_at_source = Beschaffungsobjekt  >>  Gemeinschaftsvokabular  >>  CPV			cmt:ref_notice_no=1404393.grab all the cpv.Grab only the code not text.
+class_title_at_source = Beschaffungsobjekt  >>  Gemeinschaftsvokabular  >>  CPV			cmt:ref_notice_no=1404393.grab all the cpv.Grab only the text not code.
+cpvs[]
+	cpv_code = Beschaffungsobjekt  >>  Gemeinschaftsvokabular  >>  CPV			cmt:ref_notice_no=1404393.grab all the cpv.Grab only the code not text.
+cpv_at_source = Beschaffungsobjekt  >>  Gemeinschaftsvokabular  >>  CPV			cmt:ref_notice_no=1404393.grab all the cpv.Grab only the code not text.
+
+
+
+lot_details[]		ref_notice_no=1397919	here 8 lots are present, so grab the data accordingly.
+lot_actual_number = Aufteilung in Lose? >> Los-Nr:
+
+lot_title == Aufteilung in Lose? >> Typ / Art:
+
+lot_description	= Aufteilung in Lose? >> Beschreibung:
+	
+lot_criteria_title = Aufteilung in Lose? >> Zuschlagskriterien:
+
+lot_class_codes_at_source =  Aufteilung in Lose? >> CPV:	cmt:split only the number.
+
+lot_cpv_at_source = Aufteilung in Lose? >> CPV:				cmt:split only the number.
+
+lot_cpv_code = Aufteilung in Lose? >> CPV:					cmt:split only the number.Repeat this code in cpv_code also.
+
+contract_start_date = Aufteilung in Lose? >> Laufzeit des Vertrags, der Rahmenvereinbarung oder des dynamischen Beschaffungssystems:		cmt:split between "Beginn:" and ","
+
+contract_end_date = Aufteilung in Lose? >> Laufzeit des Vertrags, der Rahmenvereinbarung oder des dynamischen Beschaffungssystems:			cmt:split after "Ende:"
+
+
+local_description / notice_summary_english = Gegenstand und Umfang des Auftrags
+
+contract_duration = Gültigkeit des Angebotes
+
+eligibility = Eignungskriterien >> aufgrund der nachstehenden Kriterien:
+
+tender_criteria_title = Zuschlagskriterien >> aufgrund der nachfolgenden Angaben:
+
+ref_notice_no=1404393,1397919
+main_language / org_language = Sprache der Ausschreibungsunterlagen:     or     Sprache der Vorankündigungsunterlagen:			language mapping:(Deutsch=DE),(Français=FR),(Italiano=IT),(English=EN) otherwise pass EN.
+
+
+
+
+
+
+format-2)French:		ref_notice_no:1380867,1401949
+org_name = Nom officiel et adresse du pouvoir adjudicateur			cmt:1)split org_name between and "Service demandeur/Entité adjudicatrice:" and "Service organisateur/Entité"
+
+org_address = Service organisateur/Entité organisatrice: 	cmt:split between "Service organisateur/Entité organisatrice:" and "E-Mail:".
+
+org_phone = Service organisateur/Entité organisatrice:		cmt:split between "Téléphone: " and "E-Mail:".
+
+org_email = Service organisateur/Entité organisatrice: 	cmt:split after "E-Mail:".
+
+notice_deadline = Délai de clôture pour le dépôt des offres						cmt:add time also.
+
+document_opening_time = Date de l’ouverture des offres:		cmt:add time also.
+
+type_of_procedure = Mode de procédure choisi	file_name:ch_simap_procedure.csv
+
+notice_contract_type = Genre de marché			cmt:1.Replace follwing keywords with given respective keywords ('Marché de services=Service','Travaux = Works','Marché de fournitures=Supply','Marché de travaux de construction=Works')
+
+contract_type_actual = Genre de marché
+
+type_of_authority_code = Genre de pouvoir adjudicateur
+
+ref_notice_no=1401949
+class_at_source = 'CPV'
+class_codes_at_source = Vocabulaire commun des marchés publics  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+class_title_at_source = Vocabulaire commun des marchés publics >>  CPV			cmt:grab all the cpv.Grab only the text not code.
+cpvs[]
+	cpv_code = Vocabulaire commun des marchés publics  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+cpv_at_source = Vocabulaire commun des marchés publics  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+
+
+
+lot_details[]		ref_notice_no=1401949	here 8 lots are present, so grab the data accordingly.
+lot_actual_number = Marché divisé en lots? >> Lot n°:
+
+lot_title = Marché divisé en lots? >> Type / genre:
+
+lot_description	=  Marché divisé en lots? >> Description: 
+	
+lot_criteria_title =  Marché divisé en lots? >> Critères d'adjudication:
+
+lot_class_codes_at_source =   Marché divisé en lots? >> CPV:		cmt:split only the number.
+
+lot_cpv_at_source =  Marché divisé en lots? >> CPV:					cmt:split only the number.
+
+lot_cpv_code =  Marché divisé en lots? >> CPV:						cmt:split only the number.Repeat this code in cpv_code also.
+
+contract_start_date =  Marché divisé en lots? >> Durée du marché, de l'accord-cadre ou du système d'acquisition dynamique:				cmt:split between "Début:" and ","
+
+contract_end_date =  Marché divisé en lots? >> Durée du marché, de l'accord-cadre ou du système d'acquisition dynamique:				cmt:split after "Fin:"
+
+local_description / notice_summary_english = Objet et étendue du marché
+
+contract_duration = Durée du marché, de l'accord-cadre ou du système d'acquisition dynamique
+
+tender_criteria_title = Critères d'adjudication
+
+contract_duration =  Délai d'exécution
+
+main_language / org_language = Langues >> Langue de la procédure:			language mapping:(Deutsch=DE),(Français=FR),(Italiano=IT),(English=EN) otherwise pass EN.
+
+
+
+
+format-3)Italian:	ref_notice_no:1357353,1405533
+org_name = Nome ufficiale e indirizzo del committente				cmt:1)split org_name between and "Servizio richiedente/Ente aggiudicatore:" and "Servizio d'acquisto/Organizzatore:" 
+
+org_address = Servizio d'acquisto/Organizzatore: 			cmt:split between "Servizio d'acquisto/Organizzatore:" and "E-Mail:".
+
+org_phone = Servizio d'acquisto/Organizzatore:				cmt:split between "Telefono: " and "E-Mail:".
+
+org_email = Servizio d'acquisto/Organizzatore:			cmt:split after "E-Mail:".
+
+notice_deadline = Termine di chiusura per la presentazione delle offerte		cmt:add time also.
+
+document_opening_time = Data di apertura delle offerte:		cmt:add time also.
+
+type_of_procedure = Tipo di procedura			file_name:ch_simap_procedure.csv
+
+notice_contract_type = Tipo di commessa			cmt:1.Replace follwing keywords with given respective keywords ('Commessa di servizi=Service')
+
+contract_type_actual = Tipo di commessa
+
+type_of_authority_code = Tipo di committente
+
+ref_notice_no=1357353
+class_at_source = 'CPV'
+class_codes_at_source = Vocabolario comune per gli appalti pubblici  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+class_title_at_source = Vocabolario comune per gli appalti pubblici >>  CPV			cmt:grab all the cpv.Grab only the text not code.
+cpvs[]
+	cpv_code = Vocabolario comune per gli appalti pubblici  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+cpv_at_source = Vocabolario comune per gli appalti pubblici  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+
+
+local_description / notice_summary_english = Oggetto e entità della commessa
+
+eligiblity = Criteri d'idoneità  >>   base ai seguenti criteri:
+
+tender_criteria_title = Criteri per l'aggiudicazione  >> in base all'indicazione seguente:
+
+contract_duration = Termine d'esecuzione
+
+org_language / main_language = Lingue >> Lingua della procedura:			language mapping:(Deutsch=DE),(Français=FR),(Italiano=IT),(English=EN) otherwise pass EN.
+
+
+
+
+
+
+
+format-4)English:	ref_notice_no=1405753,1405679
+org_name = Official name and address of the contracting authority  >>  Contracting authority/Authority of assignment: 
+
+org_address = Official name and address of the contracting authority  >>  Procurement authority/Organizer:			cmt:split between "Procurement authority/Organizer:" and "Telephone".
+
+org_phone = Telephone:			cmt:split between "Telephone:" and "E-mail:".
+
+org_email = E-mail:				cmt:split after "E-mail:".
+
+type_of_authority_code = Type of contracting authority
+
+type_of_procedure = Type of procedure				file_name:ch_simap_procedure.csv
+
+notice_contract_type = Type of order			cmt:1.Replace follwing keywords with given respective keywords ('Service=Service'),('Competition=Service'),('Supply order=Supply'),('Delivery order=Supply'),('Construction contract=Works').
+
+contract_type_actual = Type of order
+
+local_description / notice_summary_english = Subject and scope of the contract
+
+
+class_at_source = 'CPV'
+class_codes_at_source = Common Procurement Vocabulary  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+class_title_at_source = Common Procurement Vocabulary >>  CPV			cmt:grab all the cpv.Grab only the text not code.
+cpvs[]
+	cpv_code = Common Procurement Vocabulary  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+cpv_at_source = Common Procurement Vocabulary  >>  CPV			cmt:grab all the cpv.Grab only the code not text.
+
+
+notice_deadline = Deadline for submitting offers				cmt:grab time also.

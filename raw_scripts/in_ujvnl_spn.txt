@@ -1,0 +1,63 @@
+main_url : "https://www.ujvnl.com/view-tenders"
+
+script_name : "in_ujvnl_spn"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4 
+
+procurment_method : 2
+
+
+-------------------------------------
+tender_html_page
+-------------------------------------
+document_type_description : "Tenders"
+
+notice_no : Click Here To Download NIT	, take only textual data
+
+publish_Date : Uploading Date
+
+notice_deadline : Closing Date
+
+org_name : "UJVN LIMITED"
+
+org_parent_id : "7522587"
+
+org_state : "utterakhand"
+
+org_city : Circle
+
+org_address : Address
+
+org_country : IN
+
+org_language : EN
+
+local_title : Description
+
+notice_url : "https://www.ujvnl.com/view-tenders"
+
+notice_text :   take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+attachments
+----------------
+file_name : Click Here To Download NIT 
+
+external_url : Click Here To Download NIT 
+
+
+attachments
+--------------
+
+file_name :  Corrigendum /Downloads , in this field , some tenders contains external_url (redirect to another page) and some tenders contains attachments like "Time Extn. 2" ,"Corrigendum 2" (which is notice_type = 16)
+
+external_url : "Corrigendum /Downloads "

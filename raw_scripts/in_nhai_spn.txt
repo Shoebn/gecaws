@@ -1,0 +1,73 @@
+
+######################################################################################################################################################
+#note --- to change the language from "hindi" to "english" click on top right  corner ... "english" >>>> fill the captcha in "Verification Code" filed and click on "search"
+
+script_name: in_nhai_spn
+
+urls: "https://nhai.gov.in/#/tenders"
+
+page_no: 20
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+ 
+
+procurement_method: "2"
+
+org_name --- National Highways Authority of India	
+
+org_parent_id -- 6967583
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+notice_no --- Tender No
+
+publish_date --- Date Published
+
+local_title --- Tender Title
+
+notice_deadline --- Bid Submission End Date/Time (along with time)
+
+document_openeing_time --- Bid Opening Date/Time
+
+notice_url --- click on "View Details"
+
+notice_text --- page_detail
+#note - also take tender_html_page body
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+document_type_description --- CURRENT TENDERS
+
+org_address --- DEPARTMENT
+
+earnest_money_deposit --- EMD VALUE	
+
+document_cost --- APPLICATION FEE	
+
+document_purchase_start_time --- Tender Document Sales Start Date	
+
+document_purchase_end_time --- Tender Document Sales End Date	
+
+pre_bid_meeting_date --- Pre Bid Meeting Date	
+
+
+
+
+#attachments -- OTHER DOCUMENT >>> DOCUMENT TITLE	
+external_url --- OTHER DOCUMENT >>> DOWNLOADS (click on the href for documents File, ZIP)	
+
+file_name --- OTHER DOCUMENT >>> DOCUMENT TITLE		
+
+file_type --- (extension)... eg - pdf, xls
+
+file_size ---  eg ( 3.13 MB ) , ( 83.5 KB )

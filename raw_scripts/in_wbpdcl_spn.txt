@@ -1,0 +1,39 @@
+Note : Go to URL : "https://wbpdcl.co.in/tender-app/Tender-List#myanchor"
+
+script_name : "in_wbpdcl_spn"				
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'   
+
+procurment_method : 2
+
+notice_type :	 4	Com:If in "Download" this field have "Corrigendum" this keyword than take notice_type 16
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no		: TENDER NIT No.			Com:If notice_no "TENDER NIT No." is blank than take for "WBPDCL Ref No." this field data
+
+local_title		: Tender Description
+
+publish_date		: 	Last date of Sale of Tender Documents		Com:If publish_date "Last date of Sale of Tender Documents" this field is blank than Take a threshold.......than in live code add condition that submission deadline should not be less than current date
+
+notice_deadline		:	Last Date of Submission of Tender
+
+attachments		: Download 		Com:Take left side column.......Click on "Original" hypetlink 
+
+external_url	: Download 		Com:Take left side column.......Click on "Original" hypetlink
+
+additional_tender_url		: 	E-Tender
+
+org_name		: 'THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED (WBPDCL)'
+
+org_parent_id	: '7527503'
+
+notice_url		: pass main url	   "https://wbpdcl.co.in/tender-app/Tender-List#myanchor"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record

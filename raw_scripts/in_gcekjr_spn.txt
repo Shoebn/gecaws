@@ -1,0 +1,115 @@
+Note : Go to URL : "http://www.gcekjr.ac.in/tenders/"
+
+script_name : "in_gcekjr_spn"			
+
+page_no : 3
+
+main_language/ org_language  : IN
+
+procurment_method : 2
+
+notice_type : 4			Com:If in "local_title" start with "Expression of Interest" this keyword than take notice_type "5".  If in "local_title" state with "Corrigendum" this keyyword than take notice_type "16"
+
+================================TenderNotice==========================================
+
+id / Notice no	:Tender Number
+
+publishDate	: "Take a threshold"
+
+externalId / buyer internal id / org_parent_id	:7788357
+
+languageCode / org_language / main_language	:EN
+
+title/ local_title 	:Description
+
+noticeSummary / local_description / notice_summery_english	:null
+
+noticeType / contract_type	: 4
+
+countryNames / performance_country	: IN  
+
+buyerName / org_name	: Pass static "GOVERNMENT COLLEGE OF ENGINEERING, KEONJHAR"
+
+contact.firstName / contact person 	:null
+
+contact.lastName  :    null 
+
+contact.address / org_address	:  add "Department" from main url  + pass static "Jamunalia, Po: Old Town, Keonjhar
+Dist: Keonjhar, Pin: 758002, Odisha"
+
+contact.address2 title	:  null
+
+contact.city / org_city		:  Keonjhar
+
+contact.state / org_state	:  Odisha
+
+contact.country		:  IN
+
+contact.email / org_email	:  pass static "principal@gcekjr.ac.in"
+
+contact.phone / org_phone	:  null
+
+contact.url / org_url	:  http://www.gcekjr.ac.in/
+
+eligibilityCriteria/ eligibility	:  null
+
+projectName / project_Name	:  null
+
+fundingAgency / funding_Agency	:  null
+
+Source of Funds - 	:  null
+
+procurementMethod / procurement_Method	:  2
+
+bidDeadline  / Notice_deadline / submission_deadline	:  Closing Date
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:  null
+
+estimatedAmountCurrency / Currency 	:  INR
+
+contractDuration /contract_Duration		:  null
+
+lotsInfo	:  null
+
+documentCost / document_cost / document_fee		:  null
+
+noticeContractType / Contract_Type	:  null
+
+Attachments / Documents		:   "Tender Document" pass static
+
+External URL  	:  View / Download
+
+CPVNames /class_at_source	:  take auto cpv
+
+CPVCodes	:  null
+
+Name of Product Category of the sources /Category	:  null
+
+class_title_at_source	:  null
+
+
+notice_url 	:   "http:  //www.gcekjr.ac.in/tenders/"
+
+Corrosponsing Codes	:  null
+
+originalUrl / main_url / 	:  "http:  //www.gcekjr.ac.in/tenders/"
+
+additional_url 	:  null
+
+noticeText / html_body / Notice_text	:   take data from "tender_html_element" in notice_text of each record
+
+contractAward.companyName  / bidder_name :  null
+
+contractAward.companyAddress / bidder_address	:  null
+
+contractAward.companyCountry / bidder_Country	:  null
+
+contractAward.contractDuration / contract_Duration	:  null
+
+contractAward.initialEstimatedValue	:  null
+
+contractAward.finalValue   / award_Value	:  null
+
+contractAward.currency	:  null
+
+contractAward.awardDate / award_date	:  null

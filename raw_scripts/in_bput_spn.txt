@@ -1,0 +1,62 @@
+script_name : in_bput_spn
+
+url : "https://www.bput.ac.in/tenders.php"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "TITLE" field has "Corrigendum" keyworded appears then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+dcoument_type_description : "Tenders"
+
+local_title : 	TITLE
+
+publish_date : PUBLISH DATE,  split the data below "Bid No."
+
+notice_deadline : EXPIRY DATE	
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://www.bput.ac.in/tenders.php
+
+
+attachments
+-----------
+
+file_name :  take from "TITLE" field
+
+external_url : download from "TITLE" field
+
+file_name : take from "BROWSE" field
+
+external_url : download from "BROWSE" field
+
+
+customer_details 
+----------------
+
+org_name : "Biju Patnaik University Of Technology"
+
+org_parent_id : 6539737
+
+org_Country : IN
+
+org_language : EN
+
+
+
+
+
+
+
+	

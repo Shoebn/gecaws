@@ -1,0 +1,49 @@
+script_name : in_ilbs_spn
+
+url : "https://www.ilbs.in/?page=tender_list"
+
+page_no : 7
+
+main_language : EN	
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+notice_no : Tender No.	
+	
+local_title :  Tender Name	
+
+publish_date : take threshold
+
+notice_deadline : Tender Closing Date	
+
+
+attachments
+------------
+file_name : "Download"
+external_url : take from "Download" field
+
+
+customer_details
+----------------
+org_parent_id : 7527254
+
+org_name : "INSTITUTE OF LIVER AND BILIARY SCIENCES (ILBS)"
+
+org_country : IN
+
+org_language : EN
+
+
+
+

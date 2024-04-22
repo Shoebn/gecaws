@@ -1,0 +1,34 @@
+{
+  "name" : "test-rds-to-s3",
+  "jobMode" : "SCRIPT",
+  "description" : "",
+  "role" : "arn:aws:iam::725044838577:role/GeCImportExportGlueServiceRole",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "pythonshell",
+    "scriptLocation" : "s3://aws-glue-assets-725044838577-ap-south-1/scripts/test-rds-to-s3.py",
+    "pythonVersion" : "3.9"
+  },
+  "defaultArguments" : {
+    "--enable-job-insights" : "false",
+    "--job-language" : "python",
+    "--TempDir" : "s3://aws-glue-assets-725044838577-ap-south-1/temporary/",
+    "--additional-python-modules" : "awswrangler==3.2.1,psycopg2-binary,sqlalchemy,ipython,jsonschema",
+    "--enable-glue-datacatalog" : "true",
+    "library-set" : "analytics"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 0,
+  "timeout" : 2880,
+  "maxCapacity" : 1.0,
+  "glueVersion" : "3.0",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "gecscraping",
+    "branch" : "01-Feb-Samiksha",
+    "folder" : "test-rds-to-s3"
+  }
+}

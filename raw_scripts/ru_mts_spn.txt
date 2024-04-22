@@ -1,0 +1,67 @@
+Note : Go to URL : "https://tenders.mts.ru/tenders"
+
+script_name : "ru_mts_spn"			
+
+page_no : 10
+
+main_language/ org_language  : 'RU'
+
+performance_country / org_country	: 'RU'   
+
+procurment_method : 2
+
+notice_type :	 4	
+
+currancy	:	'RUB'
+
+=================================================================================================================================================
+
+notice_no		:  Splite after "N" this 	Ex,"N189979"
+
+publish_date		: Размещено	[page_detail]
+
+local_title			: Splite after notice_no		Ex,. "N189979 Маршрутизаторы" take only "Маршрутизаторы"
+
+local_description		: Описание	[page_detail]	Com:Take between "Описание" and "Документы"    Ref_url:"https://tenders.mts.ru/tenders/69512"
+
+org_name		: 		Общая информация >> Организатор	[page_detail]
+
+contact person 	:		Менеджер по закупкам		[page_detail] 			Ref_url: "https://tenders.mts.ru/tenders/69425"
+				:		Контактное лицо				[page_detail]			Ref_url: "https://tenders.mts.ru/tenders/69480"
+				
+org_address		:		Место нахождения/ Почтовый адрес	[page_detail]	Ref_url: "https://tenders.mts.ru/tenders/69425"
+				:		append this in address field	 	Com:Take the line above "Статус" this keyword
+
+org_email		:		Адрес электронной почты		[page_detail]		Ref_url: "https://tenders.mts.ru/tenders/69425"
+				:		Контактное лицо				[page_detail] 		Ref_url: "https://tenders.mts.ru/tenders/69532"	
+
+org_phone		:		Номер контактного телефона		[page_detail]		Ref_url: "https://tenders.mts.ru/tenders/69425"
+				:		тел								[page_detail]		Ref_url: "https://tenders.mts.ru/tenders/69480"	
+
+org_url	:которые доступны на электронной торговой площадке			[page_detail]			Com:Splite after this keyword	Ref_url: "https://tenders.mts.ru/tenders/69425"					
+
+notice_deadline		:	Дата окончания 
+
+est_amount / netbudgetlc	:	Сведения о начальной (максимальной) цене Договора		Ref_url: "https://tenders.mts.ru/tenders/69425"
+
+document_purchase_start_time	:Дата начала приема документации  [page_detail]		Ref_url: "https://tenders.mts.ru/tenders/69532"
+
+document_purchase_end_time	:Срок окончания приема документов		[page_detail]	Ref_url: "https://tenders.mts.ru/tenders/69532"
+
+attachments		:Документы	[page_detail]	Ref_url: "https://tenders.mts.ru/tenders/69530"
+
+external_url 	:Документы	[page_detail]	Ref_url: "https://tenders.mts.ru/tenders/69530" 
+
+Category	:take the line below the "local_title"		Ex, "SZU and cables (+89) Oryol region (+92)" take only "SZU and cables (+89)"
+
+document_type_description	:	Статус 
+
+notice_url 	:Click on "local_title" hyperlink
+
+additional_url :Срок, место и порядок предоставления документации	[page_detail]   Com:Splite between "Срок, место и порядок предоставления документации" and "Место и дата рассмотрения первых частей Заявок на участие"		Ref_url: "https://tenders.mts.ru/tenders/69425"
+
+notice_text	:take all the data from page_detail as well the "tender_html_element" of each record   Com:In page_detail "Регион" this and "Категория" field Click on "Еще" dropdown than grab al data in notice_text
+
+
+				
+				

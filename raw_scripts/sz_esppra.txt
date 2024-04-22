@@ -1,0 +1,111 @@
+click on "Search By Category" drop down menu , select "Works" , "Services" , "Goods" and click on "SEARCH" button
+
+
+script_name :  sz_esppra_spn
+
+url : https://esppra.co.sz/sppra/tender.php
+
+main_language : EN
+
+performance_country : SZ
+
+currency : SZL
+
+notice_type : 4 , if "Procurement Method" field has "Request For Pre-qualification" keyword appears then take notice_type = 2
+
+procurment_method : 2
+
+page_no : 8
+
+--------------------------------------------------
+tender_html_page
+--------------------------------------------------
+
+document_type_description : "TENDER OPPORTUNITIES"
+
+local_title : take first main_title as a local_title (orange coloured)
+
+org_name : take the org_name below from local_title 
+
+org_country : SZ
+
+org_language : EN
+
+notice_no : split the notice_no below from org_name 
+
+document_type_description : Procurement Method
+
+publish_date : Tender Upload Date: , take time too
+
+notice_deadline : Submission Deadline , take time too
+
+notice_url : https://esppra.co.sz/sppra/tender.php?Page=1&txtKeyword=
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+ 
+--------------------------
+attachments
+--------------------------
+
+file_name : "tender docunments" take static
+
+external_url : take from "tender docunments" field
+
+
+
+
+
+----------------------------------------------------------------------------------------contract_award---------------------------------------------------------------------------------------------
+
+note : below script for notice_type = 7  however , contract_award details are not available in source , they are presented within documents
+
+
+script_name :  sz_esppra_ca
+
+url : https://esppra.co.sz/sppra/award_intention.php
+
+main_language : EN
+
+performance_country : SZ
+
+currency : SZL
+
+notice_type : 7
+
+procurment_method : 2
+
+page_no : 8
+
+--------------------------------------------------
+tender_html_page
+--------------------------------------------------
+
+document_type_description : "INTENTION TO AWARD"
+
+local_title : take first main_title as a local_title 
+
+org_name : take the org_name below from local_title 
+
+org_country : SZ
+
+org_language : EN
+
+notice_no : split the notice_no below from org_name 
+
+document_type_description : Procurement Method
+
+publish_date : Upload Date: , take time too
+
+notice_url : https://esppra.co.sz/sppra/award_intention.php
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+ 
+--------------------------
+attachments
+--------------------------
+
+file_name : "tender docunments" take static
+
+external_url : take from "tender docunments" field

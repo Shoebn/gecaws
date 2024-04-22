@@ -1,0 +1,74 @@
+
+######################################################################################################################################################
+
+
+
+script_name: in_edcilindia_ca                    
+
+urls:"https://www.edcilindia.co.in/TenderAwardeds"
+
+page_no: 10
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "7"
+
+procurement_method: "2"
+
+org_name: EDCIL (INDIA) LIMITED	
+
+org_parent_id: 7253573
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Description	
+
+notice_no --- Tender No		
+
+published date --- Date of Opening	
+
+bidder --- Contactor's Name
+
+address --- Contactor's Address	
+	
+document_type_description --- Tenders Awarded(static)
+
+related_tender_id --- LOA No.	
+
+notice_url --- "https://www.edcilindia.co.in/TenderAwardeds"
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+*****************************************************************************
+                                 #page_detail
+*****************************************************************************
+#attachment
+for attachments click on >>> Attachment
+
+external_url --- Attachment
+
+file_name --- Attachment
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+

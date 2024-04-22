@@ -1,0 +1,64 @@
+
+static_fields
+-------------------------------
+script_name : in_iitk_spn	
+
+url : "https://www.iitk.ac.in/new/tenders-notice"
+
+page_no : 3 , cmt : there is only one page on site
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+notice_type : 4
+
+procurement_method : 2
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+notice_no , tender_html_page , Tender Doc , cmt : split only notice_number for ex."Enquiry No: IITK/PHY/RMCB/2023-24/17" , here take only "IITK/PHY/RMCB/2023-24/17" , take as a textual format
+
+notice_deadline , detail_page , Closing Date	 
+
+Publish Date  , tender_html_page , Posting Date
+
+document_type_description : , tender_html_page , Tender Notice
+
+local_title , tender_html_page , Description
+
+notice_url : "https://www.iitk.ac.in/new/tenders-notice"
+
+notice_text : , tender_html_page , selector :  "tr> td:nth-child(2) > div > table > tbody > tr"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+customer_details 
+------------------
+org_name : , tender_html_page , Department
+org_country : "IN"
+org_language : "EN"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+attachment_details
+--------------------
+
+file_name : , tender_html_page , "tender_document" = static
+
+file_type : , tender_html_page ,      cmt : split the file_type by using inspect element
+
+external_url : ,  tender_html_page ,  	Tender Doc
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

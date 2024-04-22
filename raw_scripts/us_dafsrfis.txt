@@ -1,0 +1,67 @@
+Note : Go to URL : "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfis"				Com:Take data from "Active RFIs" only for live records.. currently there is no live records available in this url . but with the archive data add the code for active tenders.					
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+currancy	:	'USD'
+
+============================================================== (REI) =========================================================================
+
+script_name : "us_dafsrfis_spn"			
+
+notice_type : 5        Com: If "Amendments" and "Q&A Summary" field having keyword like "Amendment " and "Q&A Summary with Amendment " than skip this data from REI (notice_type 5)
+					   
+notice_no	: RFI Number
+
+local_title	: RFI Title
+
+org_name	: Issuing Department
+
+publish_date	: Date Posted
+
+notice_deadloine	: Submission Due Date
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfis"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: 	RFI Number 		Com:Click on "RFI Number" this field hyperlink than grab the data		
+				:	Q&A Summary		Com:Click on "Q&A Summary" this field hyperlink than grab the data.		Com:if in this field having like "Q&A Summary with Amendment" keyword than skip the data
+				
+external_url 	: 	RFI Number 		Com:Click on "RFI Number" this field hyperlink than grab the data		
+				:	Q&A Summary		Com:Click on "Q&A Summary" this field hyperlink than grab the data.		Com:if in this field having like "Q&A Summary with Amendment" keyword than skip the data
+
+
+
+============================================================== (AMD) =========================================================================
+
+script_name : "us_dafsrfis_amd"
+
+notice_type : 16       
+
+notice_no	: RFI Number
+
+local_title	: RFI Title
+
+org_name	: Issuing Department
+
+publish_date	: Date Posted
+
+notice_deadloine	: Submission Due Date
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/rfis"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+attachments		: 	RFI Number 		Com:Click on "RFI Number" this field hyperlink than grab the data		
+				:	Q&A Summary		Com:Click on "Q&A Summary" this field hyperlink than grab the data.		
+				:	Amendments		Com:Click on "Amendments" this field hyperlink than grab the data
+				
+external_url 	: 	RFI Number 		Com:Click on "RFI Number" this field hyperlink than grab the data		
+				:	Q&A Summary		Com:Click on "Q&A Summary" this field hyperlink than grab the data.		
+

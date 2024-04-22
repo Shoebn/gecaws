@@ -1,0 +1,114 @@
+Note : Go to URL : "https://armp.cm/"
+
+script_name : cm_armp_spn
+
+page_no : 50
+
+main_language/ org_language  : FR
+
+procurment_method : 2
+	
+notice_type : 4
+
+================================TenderNotice==========================================
+script_name		:cm_armp_spn
+
+id / Notice no	: to get tender no click on "Details  "    and from notice url take notice no ..      Com:Take "notice_no" in notice_url on detail_page
+
+publishDate		:Published on the 	(page_html)	Com:Grab time also
+
+externalId / buyer internal id / org_parent_id	:	null
+
+languageCode / org_language / main_language	:  FR
+
+title/ local_title 	:	take the data above the field  "PO/CA"
+
+noticeSummary / local_description / notice_summery_english	:null
+
+noticeType / contract_type	:4		Com:If in "Type" this field have "Call for Expression of Interest" this keyword than take notice_type "5"	
+
+countryNames / performance_country	:CM
+
+buyerName / org_name	: take from "PO/CA:	" 
+
+contact.firstName / contact person 	: Take the last line on the right side of "Download the original file" this keyword
+
+contact.lastName  :  null 
+
+contact.address / org_address	:null
+
+contact.address2 title	:null
+
+contact.city / org_city	:null
+
+contact.state / org_state	:Null
+
+contact.country		:C M
+
+contact.email / org_email	:mailto:infos@armp.cm   "pass static"
+
+contact.phone / org_phone	:"pass static"  (+237) 222 201 803 ,(+237) 222 200 008 ,(+237) 222 200 009 ,(+237) 222 206 043
+
+contact.url / org_url	: Null
+
+eligibilityCriteria/ eligibility	:null
+
+projectName / project_Name	:null
+
+fundingAgency / funding_Agency	:null
+
+Source of Funds -  : null
+
+procurementMethod / procurement_Method	:  Type:	" Call for Tenders = 2"	/ "National Call for Tenders = 0) " other than above keywords all are in 2
+
+bidDeadline  / Notice_deadline / submission_deadline	:Closing date 	(pge_html)	Com:Grab "Closing time" this field data also
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:Amount (pge_html)
+
+estimatedAmountCurrency / Currency 	:XAF
+
+contractDuration /contract_Duration	:Period of validity of bids		(page_detail)  Com:Splite between "Period of validity of bids" to "Further informations"    Ex:"Les soumissionnaires restent engagés par leurs offres pendant quatre-vingt-dix (90) jours a compté de la date de dépôt de celles-ci." take only "quatre-vingt-dix (90)"
+
+lotsInfo	:null
+
+documentCost / document_cost / document_fee	:null
+
+noticeContractType / Contract_Type	:null
+	
+
+Attachments / Documents		: Dowload 
+External URL  	: Dowload 
+
+CPVNames /class_at_source	: take auto cpv
+CPVCodes	:null
+
+Name of Product Category of the sources /Category		:null
+ class_title_at_source		:null
+
+notice_url 	:Details		Com:Click on this button
+
+Corrosponsing Codes		:null
+
+originalUrl / main_url / 	: "http://armp.cm"
+
+additional_url 	:null
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the  "tender_html_element" of each record
+
+contractAward.companyName  / bidder_name : null
+
+contractAward.companyAddress / bidder_address  : null
+
+contractAward.companyCountry / bidder_Country : null
+
+contractAward.contractDuration / contract_Duration : null
+
+contractAward.initialEstimatedValue : null.
+
+contractAward.finalValue   / award_Value : null
+
+contractAward.currency :null
+
+contractAward.awardDate / award_date  :null
+
+document_type_description		:Type

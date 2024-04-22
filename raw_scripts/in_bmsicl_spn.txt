@@ -1,0 +1,51 @@
+
+######################################################################################################################################################
+
+
+script_name:in_bmsicl_spn	
+   
+urls:"http://bmsicl.gov.in/node/53"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name:BIHAR MEDICAL SERVICES AND INFRASTRUCTURE CORPORATION LIMITED	
+
+org_parent_id: 7252261
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+notice_no --- Nit No	
+
+local_title --- Name of the Work	
+
+notice_deadline --- Last date of Tender
+
+notice_url --- http://bmsicl.gov.in/node/53
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+#attachment >>>> Nit No	
+
+external_url --- Nit No	 (click on the href for documents File)	
+
+file_name --- Nit No		
+
+file_type --- (extension)... eg - pdf	
+

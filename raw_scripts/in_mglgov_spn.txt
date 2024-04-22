@@ -1,0 +1,64 @@
+script_name : in_mglgov_spn	
+
+main_url : "https://meghalaya.gov.in/tenders"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Title" field has "Corrigendum" word available then take notice_type = 16
+
+
+tender_html_page
+----------------
+
+document_type_description : "Tenders"
+
+local_title : Title
+
+notice_deadline : Last Date , if not availabel then take threshold
+
+publish_date : Date Released	
+
+notice_url : click on "Title" fields values
+
+notice_text : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+details_page
+------------
+notice_no : Reference Number:
+
+document_opening_time :Opening Date:
+
+
+attachments
+------------
+
+file_name : "tender_documents"
+
+external_url : click on "Click here to View/Download." 
+
+
+
+customer_details
+----------------
+org_name : GOVERNMENT OF MEGHALAYA
+
+org_parent_id : 7567711
+
+org_adddress : take from "Department" field (main page)	
+
+org_country : IN
+
+org_language : EN
+
+org_state : meghalaya
+
+

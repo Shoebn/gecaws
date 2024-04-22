@@ -1,0 +1,60 @@
+Note : Go to URL : "https://kochimetro.org/tenders/index.php?action=view_tenders&tab=0&ctab=0&sort_field=not_pub_date&sort_order=DESC&limit=50&page=1"
+
+script_name : "in_kmrl_spn"				
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+notice_no		: REF#
+
+publish_date		: Pub. Date ↕
+
+local_title		: TITLE/SUBJECT
+
+document_type_description		: TYP
+
+notice_contract_type / contract_type_actual		: CATEGORY			Com:notice contrac type mapping as per below ("WORK=Works","SERVICE=Service","STORE=Supply")
+
+notice_deadline			: SUB. DEADLINE 		Com:Grab time also
+
+org_name		: 'KOCHI METRO RAIL LIMITED'
+
+org_parent_id	: '7250746'
+
+org_email		: 'itadmin@kmrl.co.in' pass static
+
+org_phone		: ' +91-484-2846700, +91-484-2846770' pass static
+
+document_fee	: Fees >> Description >> Tender Processing Fee		Com:Take amount before "Tender Processing Fee"			Com:Click on "REMARKS" i button than click "Fees" than grab the data
+
+earnest_money_deposit		: Fees >> Description >> Earnest Money Deposit (EMD)			Com:Take amount before "Earnest Money Deposit (EMD)"			Com:Click on "REMARKS" i button than click "Fees" than grab the data
+
+contract_duration		: Description >> Work Completed By			Com:Click on "REMARKS" i button than click "Work Completed By" than grab the data
+
+document_opening_time	: Submission >> Opening Date/Time			Com:Click on "REMARKS" i button than click "Submission" than grab the data
+
+contact_person		: Notification Owner		Com:Click on "REMARKS" i button than click "Description" than grab the data
+
+notic_url		: pass main url "https://kochimetro.org/tenders/index.php?action=view_tenders&tab=0&ctab=0&sort_field=not_pub_date&sort_order=DESC&limit=50&page=1"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record			Com:Click on "REMARKS" i button than grab all tabs data in notice_text
+
+attachments		: Tender Documents >> Doc Name			Com:Click on "REMARKS" i button than click "Tender Documents" than grab the data
+
+file_description	: Tender Documents >> Doc Desc		Com:Click on "REMARKS" i button than click "Tender Documents" than grab the data
+
+file_size		: Tender Documents >> Doc Size			Com:Click on "REMARKS" i button than click "Tender Documents" than grab the data
+
+external_url		: Download				Com:Click on "REMARKS" i button than click "Tender Documents" than grab the data
+
+

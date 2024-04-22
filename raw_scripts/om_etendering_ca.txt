@@ -1,0 +1,25 @@
+script_name='om_etendering_ca'
+urls="https://etendering.tenderboard.gov.om/product/publicDash"		cmt:after opening the url click on "المسندة" to grab the data.
+page_no=
+performance_country	='OM'
+currancy='OMR'	
+main_language='AR'
+notice_type=7
+org_language='AR'
+org_country='OM'
+
+
+grab below data from tender_html_element
+related_tender_id=رقم المناقصة
+local_title=إسم المناقصة		cmt:grab data from "nowrap onmouseover".Here "Tip('صيانة الصبغ الخارجي لمدرسة روي للتعليم الأساسي ولاية مطرح')" grab only "صيانة الصبغ الخارجي لمدرسة روي للتعليم الأساسي ولاية مطرح" this text in local_title.
+org_name=الجهة الحكومية	
+notice_contract_type=[ الدرجة]فئة المشتريات			cmt:Here don't grab the text between 'square brackets[]'.Repleace following keywords with given keywords("Business quality =Service","Consulting work - old =Works","Training Works - Old =Works","Supplies =Supply","Supplies and services - old =Service","Urban contracting and maintenance =Service","Consulting offices =Consultancy","Information technology services =Service","Contracting - old =Service","Electromechanical, communications and maintenance contracting =Service","Ports, roads, bridges, railways, dams and maintenance contracting=Service","Pipeline networks and well drilling contracting=Service")
+contract_type_actual=[ الدرجة]فئة المشتريات			cmt:Here don't grab the text between 'square brackets[]'.
+procurement_method=نوع المناقصه[نوع الشركة]			cmt:if in 'square brackets[]' written as- 1)"محلية" then pass "0"	2)"عالمية" then pass "1"    otherwise pass "2"
+award_date=تاريخ الإسناد	
+publish_date=تاريخ الإسناد			cmt:if grabbed date is less than current date(grabbed date < current date) then don't grab the record.
+
+notice_url=إجْراء 		cmt:clcik on (search=عرض حالة فتح المناقصة) icon.
+notice_text=grab all the page_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.Also grab the data from (إجْراء  >>  تقرير وضع كافة المتناقصين).
+
+notice_no=	cmt:split notice_no from notice_url.

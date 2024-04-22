@@ -1,0 +1,34 @@
+sscript_name='kw_ktendering_spn'
+urls="https://ktendering.com.kw/esop/kuw-kpc-host/public/report/runningTenders.jsp?ipc=0"
+performance_country='KW'
+main_language='EN'   
+notice_type=4
+procurement_method=2
+currency='KWD'
+org_language='EN'
+org_country='KW'
+org_name='KUWAIT PETROLEUM CORPORATION'
+org_parent_id='7561220'
+
+Grab below data from tender_html_element.
+local_title=RFQ TITLE	
+earnest_money_deposite=BID BOND VALUE
+notice_no=RFQ TITLE							cmt:split notice_no from title.ex.,"1049811 - LTSA FOR SUPPLY OF GIVEAWAY GIFTS" grab only this "1049811" number in notice_no.
+notice_no=KNPC CONTRACT NO.					cmt:if "Not specified" or "null" this keywords are present then don't grab this in notice_no.
+notice_no=EVENT_ID
+document_type_description=TYPE				cmt:if "null" this keywords are present then don't grab this in ocument_type_description.
+
+notice_url=RFQ TITLE.
+notice_text=grab all the page_details data as well as take all the "tender_html_element" Row wisedata in Notice Text. 
+
+Grab below data from page_details.
+project_name=Project Information >> PROJECT TITLE
+publish_date=Date & Time Information >> PUBLICATION- DATE				cmt:add time also after date from field(Date & Time Information >> PUBLICATION- TIME)
+notice_deadline=Date & Time Settings >> CLOSING DATE					cmt:add time also after date from field(Date & Time Settings >> CLOSING DATE)
+local_description=Overview >> DESCRIPTION								cmt:ref_url:"https://ktendering.com.kw/esop/kuw-kpc-host/public/report/knpc_t_summary.jsp?rfqId=rfq_66396"
+notice_summary_english=Overview >> DESCRIPTION
+
+
+attachments[]
+file_name='Tender documents'
+external_url=Download PDF

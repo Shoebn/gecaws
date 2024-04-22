@@ -1,0 +1,55 @@
+######################################################################################################################################################
+
+script_name: in_mumbaiport_spn		
+           
+urls:"https://mumbaiport.gov.in/tender_n.asp"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if "Corrigendum" keyword, href, is presnet in page_detail then take notice_type - 16
+ref url - (https://mumbaiport.gov.in/tenderdetail.asp?tenderid=25670)
+
+procurement_method: "2"
+
+org_name: Mumbai Port Authority
+
+org_parent_id: 7777783
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+notice_no --- Tender No	
+
+local_title --- Tender Name	
+
+document_purchase_start_time --- Period Of Sale Of Tender Documents ..(split from "From" till "to")
+
+notice_deadline --- Last Date Of Submission Of Tender Documents (also take time)
+
+notice_url --- Tender Details
+
+notice_text --- page_detail
+ #Note - take HTML body of main page
+
+*****************************************************************************
+                                 #page_detail
+*****************************************************************************
+org_address --- Department	
+
+pre_bid_meeting_date --- Date of Pre bid Meeting
+
+#attachments
+
+file_name --- select the data which has blue color text, the data having href ..                      eg.. Advertisement, Technical Bid (First Cover), Financial Bid (Second Cover)
+
+file_type --- (extension)... eg - pdf	
+
+file_extension --- select the data which has blue color text, the data having href ..                      eg.. Advertisement, Technical Bid (First Cover), Financial Bid (Second Cover)

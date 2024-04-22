@@ -1,0 +1,61 @@
+notice_deadline is in order.
+
+
+script_name = 'mm_themimu_spn'
+urls = "https://themimu.info/calls-for-proposals"
+page_no = 1
+main_language = 'EN'
+performance_country = 'MM'
+currency = 'MMK'
+procurement_method = 2
+notice_type = 4
+org_country = 'MM'
+org_language = 'EN'
+document_type_description = 'Calls for Proposals'
+
+
+*******************************************tender_html_element***************************************
+local_title = Title      
+
+file_name = Title
+
+external_url = Title
+
+org_address = Geographic Coverage
+
+file_type = Format
+
+File_size = Size
+
+notice_deadline = Deadline
+
+org_name = Data Source 		cmt:if org_name is not present in the field only then pass below fields
+			org_name = 'Myanmar Information Management Unit (MIMU)'
+			org_parent_id = '7758969'
+			
+
+notice_url = 	cmt:pass main_url as notice_url.
+
+notice_text = take all the "tender_html_element" Row wisedata in Notice Text.
+
+
+
+
+       
+		
+                  
+		  
+		  
+                  
+		  
+		  
+                  
+
+
+                    
+
+
+
+
+
+

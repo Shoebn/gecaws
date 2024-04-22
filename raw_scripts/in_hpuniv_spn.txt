@@ -1,0 +1,44 @@
+Go to URL : "https://hpuniv.ac.in/tender-listing.php"
+
+script_name : 'in_hpuniv_spn'   
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4				
+
+currency	: 'INR'
+======================================================================================================================================================
+
+local_title	: Tender Title
+
+pblish_date	: Publish Date
+
+notice_deadline	: End Date
+
+attachments	:  'Tender Document' pass static
+
+file_size	: Download
+
+external_url	: Download
+
+org_name	: 'Himachal Pradesh University'
+
+org_parent_id	: '7785768'
+
+org_address	: 'Himachal Pradesh University Summer Hill, Shimla-171005' pass static
+
+org_phone	: '0177 283 3555' pass static
+
+org_email	: 'vc@hpuniv.ac.in' , 'vc_hpu@hotmail.com' pass static
+
+org_website	: 'www.hpuniv.ac.in' pass static
+
+notice_url	: pass main url	"https://hpuniv.ac.in/tender-listing.php"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

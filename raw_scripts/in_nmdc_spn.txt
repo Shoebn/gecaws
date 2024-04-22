@@ -1,0 +1,66 @@
+note : for amendment details click on "Corrigendums" tab
+
+script_name :  in_nmdc_spn
+
+url : "https://nmdcportals.nmdc.co.in/nmdctender"
+
+page_no : 10
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4  , click on "Corrigendums" tab for notice_type = 16 
+
+
+-----------------
+tender_html_page
+-----------------
+
+local_title :  	take the main text (blue coloured) , take the text above from notice_no i.e (GEM/2024/B/4761354)
+
+notice_no : grab the no below from "local_title" , if not available then grab from notice_url
+
+org_city : split the data after notice_no , for ex. " GEM/2024/B/4761354 DONIMALAI" , here take only "DONIMALAI"
+
+publish_date : 	Date of Notification	
+
+notice_deadline : Submission Last Date & Time , take time too
+
+document_opening_time : Opening Date & Time
+
+est_amount / grossbudgetlc : Estimated Value
+		
+notice_text :  take the data from detail_page as well as tender_html_element  give td / tbody of main pg  ----
+
+notice_url : click on "View Details" for detail_page
+
+
+----------------
+detail_page
+-----------------
+earnest_money_deposit : EMD (INR)
+
+document_cost : Tender Doc Cost (INR)
+
+document_type_description : Activity Type
+
+
+-----------------
+customer_details
+----------------
+org_parent_id : 7766905
+
+org_name : "NMDC Limited"
+
+org_country : IN
+
+org_language : EN
+
+
+
+

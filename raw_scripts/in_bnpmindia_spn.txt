@@ -1,0 +1,42 @@
+script_name					in_bnpmindia_spn
+notice_type					4		
+procurement_method			2
+urls						"https://www.bnpmindia.com/ViewActiveTender.aspx"
+page_no						3
+performance_country			IN
+currancy					INR
+main_language				EN
+---------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.bnpmindia.com/ViewActiveTender.aspx" and grab the data
+
+Temder_Html_Element
+
+notice_no		=		Tender Details			Com:Take only text......Don't take <a> tag
+
+local_title		=		Tender Details			Com:Take only <a> tag data... Don't take numaric value			Ex."SUPPLY OF DIFFERENTIAL PRESSURE SWITCH AT BNPM PLANT, MYSURU1493.2KB" Take only "SUPPLY OF DIFFERENTIAL PRESSURE SWITCH AT BNPM PLANT, MYSURU"	
+
+document_fee		=		Tender Fee
+
+publish_date		=		Opening Date		Com:take time also
+
+notice_deadline		=		Closing Date		Cpm:take time also
+
+earnest_money_deposit		=		EMD
+
+attachments			=		Tender Details		Com:Take <a> tag.........EX,"GEM/2024/B/4630687 Supply of Sulfamic Acid at BNPM, Mysuru95.45KB" take only "Supply of Sulfamic Acid at BNPM, Mysuru95.45KB"
+
+notice_url		=		"https://www.bnpmindia.com/ViewActiveTender.aspx"
+
+notice_text			=		take data from "tender_html_element" in notice_text of each record 	
+
+org_name		=		BANK NOTE PAPER MILL INDIA PRIVATE LIMITED
+
+org_parent_id		=	7522346
+
+org_country		=		IN
+
+org_language		=		EN
+
+procurement_method		=		Remarks			Com:If in "Remarks" this field have "NATIONAL COMPETITIVE BIDDING" this keyword than take procurement_method "0".. IF in this field have "OPEN TENDER ENQUIRY" this keyword than take procurement_method "1" .Otherwise takre procurement_method "2"
+
+		

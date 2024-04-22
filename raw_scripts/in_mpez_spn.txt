@@ -1,0 +1,55 @@
+main_url : https://www.mpez.co.in/tender/
+
+script_name : in_mpez_spn
+
+page_no : 10
+
+main_language : EN
+
+performance_country: IN
+
+procurment_method : 2
+
+notice_type = 4 
+
+currency : INR
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "TENDER'S DETAIL"
+
+publish_date : Tender/Enquiry Issue Date 
+
+local_title : Item Description
+
+notice_no : Name of the Office and Tender Number , if not available then grab from notice_url
+
+notice_deadline : Tender/Enquiry Submission Date/Opening Date 
+
+document_opening_time :Tender/Enquiry Submission Date/Opening Date 
+
+notice_url : click on "Item Description" field values
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+customer_details
+----------------
+org_name : Madhya Pradesh Poorv Kshetra Vidyut Vitaran Company Ltd
+
+org_address : take from "Name of the Office and Tender Number" field 
+
+org_parent_id : 7780918
+
+org_country : IN
+
+org_language : EN
+
+
+attachment
+------------
+file_name : Item Description , click on "Item Description"  after that detail_page will be  open grab file_name from detail_page
+
+external_url : Item Description , click on "Item Description"  after that detail_page will be  open grab external_url from detail_page
+

@@ -1,0 +1,61 @@
+
+**********************************************lb_cdr_spn************************************************************
+script_name='lb_cdr_spn'
+
+urls="https://www.cdr.gov.lb/ar/Procurment.aspx"
+
+page_no=1
+
+main_language='AR'
+
+performance_country='LB'
+
+currency='USD'
+
+procurement_method=2		cmt:if in document_type_description "مفتوحة National Bidding" keyword present then pass "procurement_method=0", otherwisw 2.
+
+notice_type=4
+
+org_name = 'Council for Development and Reconstruction'
+
+org_parent_id = '7807619'
+
+org_country = 'LB'
+
+org_language = 'AR'
+
+**************************************************tender_html_element***********************************************
+local_title = إسم المشروع	
+
+document_type_description = نوع المناقصة	
+
+source_of_funds = مصدر التمويل			cmt:if in this field agency name is present then pass "International agencies".Otherwise pass bydefault value.
+
+funding_agency = مصدر التمويل	
+
+document_cost = كلفة شراء ملف التلزيم	
+
+publish_date = تاريخ الإعلان	
+
+notice_deadline = الموعد الاقصى لتقديم العروض	
+
+notice_no = إسم المشروع			cmt:split notice_no from url.
+
+attachments[]
+file_name = جزء من ملف التلزيم
+
+external_url = جزء من ملف التلزيم		cmt:grab the url from <a> tag.
+
+file_type = 	cmt:split file extension from external_url.
+
+
+attachments[]
+file_name = إسم المشروع	
+
+external_url = إسم المشروع			cmt:grab the url from <a> tag.
+
+file_type = 	cmt:split file extension from external_url.
+
+notice_url = 		cmt:pass main url as notice_url.
+
+notice_text = cmt:take all the "tender_html_element" Row wisedata in Notice Text.

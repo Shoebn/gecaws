@@ -1,0 +1,59 @@
+
+######################################################################################################################################################
+
+script_name: in_bengalchemicals_spn	
+           
+urls:"https://apps.bengalchemicals.co.in/tender/1/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note -condition 1: if keywords such as "Expression of Interest (EOI)" is present in "Tender Descriptions" then take notice_type - "5"
+ condition 2: if keywords such as "Corrigendum" is present take notice_type - "16"
+
+
+procurement_method: "2"
+
+org_name: Bengal Chemicals & Pharmaceuticals Ltd.		
+
+org_parent_id: 7612305
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+notice_no --- Tender Ref. Number (split data from start of "Tender Ref. Number"  till "Dated")
+
+publish_date --- Tender Ref. Number (split from "Dated")
+
+local_title --- Tender Descriptions
+
+org_address --- Branch
+
+notice_deadline --- Closing Date
+
+notice_url ---https://apps.bengalchemicals.co.in/tender/1/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment >>>> Tender Ref. Number >>> click on the href for documents File	
+
+external_url --- Tender Ref. Number	 (click on the href for documents File)	
+
+file_name --- Tender Ref. Number
+
+file_type --- (extension)... eg - pdf	
+
+	

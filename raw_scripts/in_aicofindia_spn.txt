@@ -1,0 +1,61 @@
+
+######################################################################################################################################################
+#Note --- for live tenders click on " Tender Description"
+
+
+script_name: in_aicofindia_spn		
+           
+urls:"https://www.aicofindia.com/AICEng/Pages/Tenders.aspx"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: AGRICULTURE INSURANCE COMPANY OF INDIA LIMITED	
+
+org_parent_id: 6974265
+
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+
+publish_date --- Date of Tender 
+
+local_description --- Tender Description
+
+org_address --- Venue
+
+notice_deadline --- Submission Date
+
+
+notice_url --- https://www.aicofindia.com/AICEng/Pages/Tenders.aspx
+
+notice_text --- HTML body 
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment
+
+click on  "Downloads" >>> "Click Here" for attachments
+
+external_url --- "Downloads" >>> "Click Here"  (click on the href for documents File)	
+
+file_name ---  Tender Description	
+
+file_type --- (extension)... eg - aspx, pdf	
+
+

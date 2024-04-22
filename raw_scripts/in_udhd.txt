@@ -1,0 +1,125 @@
+Note : When you open to the main page (tender_html_page) and click on the 'Search' button (green), it will load more details
+
+
+script_name : in_udhd_spn
+
+url : "https://udhd.jharkhand.gov.in/Other/TendersNew.aspx"
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the tender has "Corrigendum" button (yellow) available then take notice_type = 16
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Tenders"
+
+notice_no : Tender Notice No.:
+	
+local_title :  Name of Work:
+
+publish_date : Start Date
+	
+notice_deadline : End Date
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://udhd.jharkhand.gov.in/Other/TendersNew.aspx
+
+
+customer_details
+----------------
+org_address : Dept. / ULB :
+
+org_parent_id : 7522276	
+
+org_name : "URBAN DEVELOPMENT AND HOUSING DEPARTMENT"
+
+org_mail : "ud.secy@gmail.com"
+
+org_phone : "0651-2400962"
+
+org_state : "Jharkhand"
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : take from yellow  button , below from "Start Date " field
+
+external_url : take from yellow  button , below from "Start Date " field
+
+
+
+
+--------------------------------------------------------------------------------------------------spn2--------------------------------------------------------------------------------------------
+
+script_name : in_udhdnot_spn
+
+url : "https://udhd.jharkhand.gov.in/Other/Notices.aspx"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Notices"
+
+notice_no : Notice No	
+	
+local_title :  Description	
+
+publish_date : Date
+	
+notice_deadline : take threshold
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://udhd.jharkhand.gov.in/Other/Notices.aspx
+
+
+customer_details
+----------------
+org_parent_id : 7522276	
+
+org_name : "URBAN DEVELOPMENT AND HOUSING DEPARTMENT"
+
+org_mail : "ud.secy@gmail.com"
+
+org_phone : "0651-2400962"
+
+org_state : "Jharkhand"
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : take from " Download " field
+
+external_url : take from "Download"  field

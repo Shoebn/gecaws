@@ -1,0 +1,67 @@
+in_vocport_spn
+V.O. Chidambaranar Port Authority
+https://www.vocport.gov.in/NewTenders.aspx
+7788296
+######################################################################################################################################################
+script_name: in_vocport_spn
+
+urls: "https://www.vocport.gov.in/NewTenders.aspx"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- V.O. Chidambaranar Port Authority	
+
+org_parent_id -- 7788296
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+#note -- if url is pressent in title then take it in "additional_tender_url"    eg ...  GEM e-Tender (in red text)
+
+notice_no --- Tender No	
+
+org_address --- Department	
+
+published_date --- Start Date	
+
+notice_deadline --- End Date
+
+local_title --- Title	
+
+est_value /grossbudget_lc --- Tender Value
+
+notice_url --- https://www.vocport.gov.in/NewTenders.aspx
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+	
+
+
+
+
+
+#attachment >>>> Details (click on the blue href link o download)
+	
+
+external_url --- "Details" >>> (click on the href for documents File, ZIP)	
+
+file_name --- Details	
+
+file_type --- (extension)... eg - pdf
+
+file_size ---  eg (View ( 105.37 KB ) pdficon)
+
+	
+
+

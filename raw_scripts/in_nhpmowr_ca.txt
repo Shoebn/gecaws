@@ -1,0 +1,44 @@
+Note : Go to URL : "https://nhp.mowr.gov.in/HomeNew/TenderAwardedaspx.aspx"		
+
+script_name : "in_nhpmowr_ca"		
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 7
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+publish_date	 : LOA Issuance Date
+
+award_date	: Contract Signing Date
+
+notice_no	: Package No
+
+local_title		: Package Name
+
+grossawardvaluelc	: Amount (In Rs)
+
+bidder_name	: Name of Consultant/ Supplier/ Contractor
+
+notice_url	: pass main url "https://nhp.mowr.gov.in/HomeNew/TenderAwardedaspx.aspx"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record
+
+org_name	: 'National Hydrology Project'
+
+org_parent_id	: '7105752'
+
+org_address	 : '2nd Floor, Rear wing, MDSS (MTNL) Building, 9,CGO Complex, Lodhi Rd, New Delhi 110003' pass statis
+
+org_phone	: '(+91) 11-24363417 , (+91) 11-24369543 , (+91) 11-24367081' pass statis
+
+org_email	: 'nhp[dot]mowr[at]nic[dot]in' pass statis
+
+org_website	: 'www.nhp.mowr.gov.in' pass statis

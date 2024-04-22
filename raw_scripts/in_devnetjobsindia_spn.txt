@@ -1,0 +1,67 @@
+script_name					in_devnetjobsindia_spn 
+notice_type					4		
+procurement_method			2
+urls						"https://www.devnetjobsindia.org/rfp_assignments.aspx"
+page_no						3
+performance_country			IN
+currancy					INR
+main_language				EN
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.devnetjobsindia.org/rfp_assignments.aspx" and grab the data
+
+Tender_Html_Element
+
+org_name 	= 	One lines above the "Location"
+
+local_title   =   Two lines above the "Location"
+
+notice_deadline		=	Apply by		Com:If time is present tham grab 
+
+publish_date		=  Take a threshold			Com:If publish_date is threshold then notice_deadline should not be less than publish_date 
+
+notice_url    =  to open the page_detail click on " local_title " hyperlink 
+
+notice_text     =      take all the data from page_detail as well the  "tender_html_element" of each record 
+
+-----------------------------------------------------------------------------------------------------------------
+
+Page_Detail
+
+org_website		=	Website
+
+eligibility		=   Minimum Firm Eligibility		Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237818"	
+
+local_description/notice_summary_english	=	Scope of Work			Com:Yake "Scope of Work" till  "Deliverables:"					Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237818"
+
+----------------------------------------------------------
+
+org_email   =  	Job Email id  			Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237818"
+			
+			=	Email ID				Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237746"
+			
+			= 	SUBMISSION ADDRESS		Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237482"
+			
+			=	Email					Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237040"
+
+-----------------------------------------------------------------------
+org_address		=		Address		Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237746"
+		
+org_country   =  IN
+
+org_language	=	EN			
+			
+org_phone	=  	Office Telephone	Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237482"
+
+document_opening_time		=		Bid opening			Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237482"
+			
+attachments			= 		Download Attachment      Ref_url= "https://www.devnetjobsindia.org/JobDescription.aspx?Job_Id=237482"
+
+
+
+
+
+
+
+
+

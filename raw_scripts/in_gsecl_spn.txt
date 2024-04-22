@@ -1,0 +1,37 @@
+Note : Go to URL : "https://gsecl.in/tender/index.html?page=1"
+
+script_name : "in_gsecl_spn"	
+
+page_no : 10
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+notice_no	: Tender No
+
+org_name	: Company
+
+org_address		: Office Location		Com:Grab "Office Name" this filed data also
+
+local_title		: Tender Title
+
+publish_date	: Start Date
+
+notice_deadline	: End Date
+
+attachments		: 'Tender Document' pass static
+
+external_url	: File		Com: grab "Documents" this field date  also
+
+notice_url	: pass main url "https://gsecl.in/tender/index.html?page=1"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

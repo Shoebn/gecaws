@@ -1,0 +1,93 @@
+
+######################################################################################################################################################
+
+script_name: in_ippbonline_spn	
+           
+urls:"https://ippbonline.com/web/ippb/tenders1"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: INDIA POST PAYMENTS BANK LTD	
+
+org_parent_id: 7629471
+
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+notice_no --- Tender Ref No	
+
+local_title --- Tender Description	
+
+publish_date --- Publishing Date 
+
+notice_deadline --- Last Date of Tender Submission
+
+notice_contract_type --- Tender Type	
+#note - Services - Services, Others - Others, Goods - Supply (map it)
+
+org_address --- Location
+
+notice_url --- Tender Description	
+
+notice_text ---page_detail
+#Note - take HTML body of main page
+
+
+
+
+
+#attachment >>>> Download Tender Notice
+
+
+external_url --- Download Tender Notice (click on the href for documents File)	
+
+file_name --- Tender Document	
+
+file_type --- (extension)... eg - pdf	
+
+file_size --- Download Tender Notice eg (64kb, 1164kb)
+
+
+
+******************************************************************************
+                                 #page_detail
+******************************************************************************
+pre_bid_meeting_date --- Pre-bidding Date 		
+
+contact_person --- Contact : >>> Name	
+
+org_email --- Email
+
+org_phone --- Ph 
+ref url - https://ippbonline.com/web/ippb/tender-detail?id=28167538
+
+
+
+
+
+#Attachments >>> Other Documents :	
+
+external_url --- Other Documents : (click on the href for documents File)	
+
+file_name --- Other Documents	
+
+file_type --- (extension)... eg - pdf
+
+
+
+
+
+
+

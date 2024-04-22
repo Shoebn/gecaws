@@ -1,0 +1,48 @@
+script_name : in_canarabank_spn
+
+url : "https://canarabank.com/tenders"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+procurment_method : 2
+
+notice_type : 4 , if following field i.e "Description Of Tender/RFP - Other Notice" has "Cancellation" or "CORRIGENDUM " word appears then take nptice_type = 16
+
+procurment_method : 2
+
+tender_html_page
+----------------
+local_title : Description Of Tender/RFP - Other Notice
+
+notice_no : Ref No.	
+
+publish_date : Tender Date	
+
+notice_deadline : Last Date	
+
+org_parent_id : 7544942
+
+org_name : "Canara Bank"
+
+org_address : take from "Issued By" field 	
+
+org_country : IN
+
+org_language : EN
+
+notice_deadline : Last Date	
+
+notice_url : "https://canarabank.com/tenders"
+
+notice_text : take the data from tender_html_element  give td / tbody of main pg  ----
+
+attachments
+-------------
+
+file_name : take from "Document	" field
+
+external_url : take from "Document	" field

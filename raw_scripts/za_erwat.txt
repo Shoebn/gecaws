@@ -1,0 +1,103 @@
+
+
+*************************************************za_erwat_spn******************************************************
+
+script_name			'za_erwat_spn'		
+urls				"https://erwat.co.za/supply-chain-management-scm/tenders/","https://erwat.co.za/supply-chain-management-scm/quotations-r30000/","https://erwat.co.za/supply-chain-management-scm/fpq-r30000-r200000/"
+page_no					3
+procurement_method		2
+notice_type				4		
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN' 
+org_country				'ZA'
+org_language			'EN'
+
+
+document_type_description:
+				cmt:1)if grabbing data from "https://erwat.co.za/supply-chain-management-scm/tenders/" this url then pass document_type_description as 'GENERAL NOTICE'.
+					2)if grabbing data from "https://erwat.co.za/supply-chain-management-scm/quotations-r30000/" this url then pass document_type_description as "GENERAL NOTICE".
+					3)if grabbing data from "https://erwat.co.za/supply-chain-management-scm/fpq-r30000-r200000/" this url then pass document_type_description as "Quotations".
+
+
+
+Grab below data from tender_html_element.
+publish_date:Date
+notice_no:Bid Number
+local_title: Bid Description
+notice_deadline:Closing Date
+
+notice_url:Bid Description
+notice_text:take all the data from page_detail as well the "tender_html_element" Row wisedata in Notice Text. of each record. 
+
+
+Grab below data from page_details.
+org_Name:Issuing Department
+contact_person:Contact Person [Supply Chain]
+org_phone:Contact Number 
+contact_person:Contact Person [Technical]
+org_phone:Contact Number    
+
+attachments[]	ref_url:"https://erwat.co.za/tender/appointment-of-service-provider-s-for-the-repairs-maintenance-of-gearboxes-for-erwat-water-care-works-for-a-fixed-term-period-on-an-as-when-required-basis/"
+file_name:'Tender documents'
+file_type:Download Tender Document
+		cmt:"grab file_extension from external_url"
+external_url:Download Tender Document	    
+
+
+
+************************************************za_erwat_ca******************************************************
+if in document_type_description "In Progress","Non-Award" this keywords are present then don't grab that data.
+
+script_name			'za_erwat_ca'		
+urls				"https://erwat.co.za/supply-chain-management-scm/bid-status/"
+page_no					3
+procurement_method		2	
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN' 
+org_country				'ZA'
+org_language			'EN'
+org_name				'ERWAT'
+org_parent_id			'7536917'
+org_address				'Hartebeestfontein Office Park,R25 (Bronkhorstspruit/Bapsfontein Road),Kempton Park'
+org_phone				'+27 11 929 7000'
+
+
+
+
+Grab below data from tender_html_element.
+notice_type:7	
+		cmt:1)if in document_type_description "Awarded" keyword is grabbed then pass notice_type=7
+			2)if in document_type_description "Cancelled" keyword is grabbed then pass notice_type=16
+		
+related_tender_id:Bid Number
+local_title:Bid Description
+publish_date:Published Date
+notice_deadline:Closing Date
+			cmt:dont't grab notice_deadline for notice_type=7.
+document_type_description:Status
+
+
+notice_url:Bid Description
+notice_text:take all the data from page_detail as well the "tender_html_element" Row wisedata in Notice Text. of each record. 
+
+
+Grab below data from page_details.
+
+attachments[]	ref_url:"https://erwat.co.za/bid_status/re-tender-the-appointment-of-the-contractor-s-for-the-supply-delivery-of-consumables-at-erwat-sites-for-a-period-of-thirty-six-36-months-on-an-as-and-when-required-basis/"
+file_name:Submitted Bids
+file_type:Submitted Bids
+		cmt:grab only file_extension from external_url
+external_url:Submitted Bids
+
+file_name:Awarded Bidders
+file_type:Awarded Bidders
+		cmt:grab only file_extension from external_url
+external_url:Awarded Bidders
+
+ref_url:"https://erwat.co.za/bid_status/the-supply-delivery-and-commissioning-of-one-dual-beam-non-dispersive-infra-red-ir-analyser-for-total-oil-and-grease-tog-in-wastewater-validity-120-days/"
+bidder_name:Name Of Awarded Bidder
+grossawardvaluelc:Bid Price
+contract_duration:Contract Duration
+	

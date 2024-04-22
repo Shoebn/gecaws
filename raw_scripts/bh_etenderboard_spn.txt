@@ -1,0 +1,52 @@
+Note : Go to URL : "https://etendering.tenderboard.gov.bh/Tenders/publicDash?viewFlag=NewTenders&CTRL_STRDIRECTION=LTR&encparam=viewFlag,CTRL_STRDIRECTION,randomno&hashval=78ca087819d1ecc2ccf72801acd105fc1538485253d7f8c5ff7fd61d0707a420#"
+
+script_name : "bh_etenderboard_spn"	   
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'BH'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'BHD'
+
+=================================================================================================================================================
+notice_no		: Tender (PA Ref.) No
+
+local_title		: Tender Title In English
+
+org_name		: Purchasing Authority
+
+notice_url		: Action		Com:Click on first icon(search icone)
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record
+
+publish_date		: Tender Published Date			[page_detail]
+
+local_description	: Tender Description In English 	[page_detail]
+
+contract_duration	: Contract Duration		[page_detail]
+
+document_fee		: Tender Document Fee (BHD)			[page_detail]
+
+earnest_money_deposit		: Tender Bond Value			[page_detail]
+
+document_purchase_start_time	: Tender Document Purchases Start Date		[page_detail]		Com:Grab time also
+
+document_purchase_end_time	: Tender Document Purchases End Date		[page_detail]			Com:Grab time also
+
+notice_deadline		: Bid Submission Closing		[page_detail]		Com:Grab time also
+
+document_opening_time	: 	Priced Bid Opening		[page_detail]			Com:Grab time also
+
+attachments	: Action		Com:Click on second icone	(Document icone)
+	
+external_url	: Action		Com:Click on second icone	(Document icone)
+
+cpv_code		: Classification / CPV Codes 	[page_detail]	Com:Take a numeric value......Ex.,"33000000-0 - Medical equipments, pharmaceuticals and personal care products" Take only "33000000"
+
+class_title_at_source		: Classification / CPV Codes 	[page_detail]	Com:Don't take numeric value.....Ex.,"33000000-0 - Medical equipments, pharmaceuticals and personal care products" Take only "Medical equipments, pharmaceuticals and personal care products"

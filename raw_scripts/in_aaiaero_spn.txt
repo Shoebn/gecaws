@@ -1,0 +1,63 @@
+Note:Open the site than go to "Status" dropdown button than select "Open" than click on "Search" button 
+
+
+script_name			in_aaiaero_spn
+urls				"https://www.aai.aero/en/tender/tender-search?field_region_tid=All&field_airport_tid=All&term_node_tid_depth=All&field_tender_status_value=All&field_tender_last_sale_date_value%5Bvalue%5D%5Bdate%5D=&combine="
+page_no				tender_html_element 	//*[@id="block-system-main"]/div/div/div[2]/div/ul/li/div/span/div	3
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		: tender_html_element > Tender Type  	
+	Note:In this field have "Domestic" keyword than take procurement_method "0", Otherwise take "2" 
+
+notice_type			4
+
+local_title : tender_html_element > "div.col-md-12.tender-name > div.col-md-10"
+
+notice_no : tender_html_element > E-Bid No	Note:Click on "ui-accordion-header-icon ui-icon ui-icon-triangle-1-e" this button than grab the data
+
+local_description : tender_html_element > Description
+
+notice_summary_english : tender_html_element > Description
+
+notice_deadline : tender_html_elemenet > Last Sale Date
+	Note:Grab time also
+
+publish_date : tender_html_element > Information >> Sale Of Tender Start Date	
+	Note:Click on "Important Dates" this tab than grab the data
+	Note:Take after "Sale Of Tender Start Date" this keyword date
+	
+document_purchase_start_time : tendere_html_element > Information >> Sale Of Tender Start Date
+	Note:Click on "Important Dates" this tab than grab the data
+	Note:Take after "Sale Of Tender Start Date" this keyword date
+
+document_purchase_end_time : tender_html_element > Information >> Sale Of Tender End Date
+	Note:Click on "Important Dates" this tab than grab the data
+	Note:Take after "Sale Of Tender End Date" this keyword date
+
+notice_url :"https://www.aai.aero/en/tender/tender-search?field_region_tid=All&field_airport_tid=All&term_node_tid_depth=All&field_tender_status_value=All&field_tender_last_sale_date_value%5Bvalue%5D%5Bdate%5D=&combine="
+
+notice_text : tender_html_element > "li.views-row > div > span > div"
+
+
+
+customer_detail[]
+	org_name: Airports Authority Of India
+	org_parent_id :1483743
+	org_city : tender_html_element >  Region / Airport
+	org_address : tender_html_element > Department 
+	org_country : IN
+	org_language : EN
+
+
+attachments[] : tender_html_element 
+	file_name:Tender_document
+	file_type: tender_html_element > Download	
+	external_url : tender_html_element > Download
+
+attachments[] : tender_html_element 
+	Note:Go to "div:nth-child(2) > a > div" this tab than grab the data
+	Note:If "Corrigendum" this tab data present than taka 
+	file_name:tender_html_element > Corrigendum Details
+	file_type:tander_html_element > Download
+	external_url :tander_html_element > Download

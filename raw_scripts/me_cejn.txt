@@ -1,0 +1,331 @@
+main_url : https://cejn.gov.me/tenders
+
+script_name : me_cejn
+
+page_no : 15
+
+main_language : ME
+
+performance_country: ME
+
+procurment_method : 2
+
+notice_type = 4 
+
+currency : EUR
+
+------------------------------------------------------------------------
+tender_html_page
+-----------------
+notice_no :  ŠIFRA , not available then grab from notice_url 
+
+local_title : OPIS PREDMETA JAVNE NABAVKE
+
+notice_contract_type : VRSTA PREDMETA , replace the following keyword with respective keywords ("Service = Usluge" , "Works = Radovi" , "Supply = Robe")
+
+contract_type_actual : VRSTA PREDMETA
+
+type_of_procedure_actual : VRSTA POSTUPKA
+
+type_of_proceudre : csv has pushed on github "me_cejn_spn_procedure"
+
+org_name : NAZIV NARUČIOCA
+
+org_country : ME
+
+org_language : ME
+
+publish_date : DATUM OBJAVE , take time too
+
+notice_url : STATUS
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+-----------
+org_email : E-mail
+
+org_phone  : Telefon
+
+org_fax : Fax
+
+org_website : Internet adresa
+
+org_city : Grad
+
+org_address : Adresa
+
+local_description : Opis predmeta javne nabavke
+
+notice_summary_english : Opis predmeta javne nabavke
+
+est_Amount / grossbudgetlc / grossbudgetwuro :  Procijenjena vrijednost nabavke: 
+
+est_Amount / netbudgetlc / netbudgetwuro :  Ukupna procijenjena vrijednost bez PDV   
+
+vat : STAVKE PLANA >> VRIJEDNOST PDV , ref_url : https://cejn.gov.me/tenders/view-tender/69673 	
+
+class_code_at_source : STAVKE PLANA >> 	OPIS , split only code for ex. "34144511 - Vozila za odvoz smeća" , here take only "34144511" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+cpvs : STAVKE PLANA >> 	OPIS , split only code for ex. "34144511 - Vozila za odvoz smeća" , here take only "34144511" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+class_title_at_soure : STAVKE PLANA >> 	OPIS ,  split only title for ex. "34144511 - Vozila za odvoz smeća" , here take only "Vozila za odvoz smeća" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+document_opening_time : DATUM OTVARANJA	 , go to "FAZE	" tab for document_opening_time
+
+
+
+tender_criteria 
+----------------
+tender_criteria_title : KRITERIJUMI >> OPIS  , go to "FAZE" click on button below from "STATUS" and scroll down for criteria
+
+tender_criteria_weight : KRITERIJUMI >> BR. BODOVA , go to "FAZE" on button below from "STATUS" and scroll down for criteria
+
+
+
+lot_details (format 1)
+------------
+lot_title : TEHNIČKA SPECIFIKACIJA PREDMETA NABAVKE >> 	OPIS PREDMETA NABAVKE , ref_url : https://cejn.gov.me/tenders/view-tender/69856
+
+lot_quantity :	KOLIČINA , ref_url : https://cejn.gov.me/tenders/view-tender/69856
+
+
+
+lot_details (format 2) ref_url : "https://cejn.gov.me/tenders/view-tender/69536"
+------------ 
+
+lot_title : OPIS PREDMETA NABAVKE	 , open tab for lot_title , ref_url : "https://cejn.gov.me/tenders/view-tender/69536"
+
+lot_grossbudgetlc / lot_grossbudgleteuro : 	PROCIJENJENA VRIJEDNOST BEZ PDV
+
+lot_quantity :	KOLIČINA , ref_url : https://cejn.gov.me/tenders/view-tender/69837 , open tab for lot_quantity
+
+
+attachments 
+--------------
+
+file_name : DOKUMENTI >> Naziv fajla , take only file_name for ex. "Tenderska dokumentacija BSL za objavu.docx" , here take only "Tenderska dokumentacija BSL za objavu"
+
+file_size : Veličina
+
+external_url : DOKUMENTI >> Naziv fajla
+
+
+
+------------------------------------------------------contract_award-------------------------------------------------------------------------------------------------------
+after clicking url click on "Pretraga" go to "status postupka" drop down menu and select "Okončan" and click on filter button  for contract_aWard
+
+
+main_url : https://cejn.gov.me/tenders
+
+script_name : me_cejn_ca
+
+page_no : 15
+
+main_language : ME
+
+performance_country: ME
+
+procurment_method : 2
+
+notice_type = 7 
+
+currency : EUR
+
+------------------------------------------------------------------------
+tender_html_page
+-----------------
+notice_no :  ŠIFRA , not available then grab from notice_url 
+
+local_title : OPIS PREDMETA JAVNE NABAVKE
+
+notice_contract_type : VRSTA PREDMETA , replace the following keyword with respective keywords ("Service = Usluge" , "Works = Radovi" , "Supply = Robe")
+
+contract_type_actual : VRSTA PREDMETA
+
+type_of_procedure_actual : VRSTA POSTUPKA
+
+type_of_proceudre : csv has pushed on github "me_cejn_spn_procedure"
+
+org_name : NAZIV NARUČIOCA
+
+org_country : ME
+
+org_language : ME
+
+publish_date : DATUM OBJAVE , take time too
+
+notice_url : STATUS
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+detail_page
+-----------
+org_email : E-mail
+
+org_phone  : Telefon
+
+org_fax : Fax
+
+org_website : Internet adresa
+
+org_city : Grad
+
+org_address : Adresa
+
+local_description : Opis predmeta javne nabavke
+
+notice_summary_english : Opis predmeta javne nabavke
+
+est_Amount / grossbudgetlc / grossbudgetwuro :  Procijenjena vrijednost nabavke: 
+
+est_Amount / netbudgetlc / netbudgetwuro :  Ukupna procijenjena vrijednost bez PDV   
+
+vat : STAVKE PLANA >> VRIJEDNOST PDV , ref_url : https://cejn.gov.me/tenders/view-tender/69673 	
+
+class_code_at_source : STAVKE PLANA >> 	OPIS , split only code for ex. "34144511 - Vozila za odvoz smeća" , here take only "34144511" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+cpvs : STAVKE PLANA >> 	OPIS , split only code for ex. "34144511 - Vozila za odvoz smeća" , here take only "34144511" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+class_title_at_soure : STAVKE PLANA >> 	OPIS ,  split only title for ex. "34144511 - Vozila za odvoz smeća" , here take only "Vozila za odvoz smeća" , ref_url : "https://cejn.gov.me/tenders/view-tender/69837"
+
+document_opening_time : DATUM OTVARANJA	 , go to "FAZE	" tab for document_opening_time
+
+
+
+tender_criteria 
+----------------
+tender_criteria_title : KRITERIJUMI >> OPIS  , go to "FAZE" click on button below from "STATUS" and scroll down for criteria
+
+tender_criteria_weight : KRITERIJUMI >> BR. BODOVA , go to "FAZE" on button below from "STATUS" and scroll down for criteria
+
+
+
+lot_details (format 1)
+------------
+lot_title : TEHNIČKA SPECIFIKACIJA PREDMETA NABAVKE >> 	OPIS PREDMETA NABAVKE , ref_url : https://cejn.gov.me/tenders/view-tender/69856
+
+lot_quantity :	KOLIČINA , ref_url : https://cejn.gov.me/tenders/view-tender/69856
+
+
+
+lot_details (format 2) ref_url : "https://cejn.gov.me/tenders/view-tender/69536"
+------------ 
+
+lot_title : OPIS PREDMETA NABAVKE	 , open tab for lot_title , ref_url : "https://cejn.gov.me/tenders/view-tender/69536"
+
+lot_grossbudgetlc / lot_grossbudgleteuro : 	PROCIJENJENA VRIJEDNOST BEZ PDV
+
+lot_quantity :	KOLIČINA , ref_url : https://cejn.gov.me/tenders/view-tender/69837 , open tab for lot_quantity
+
+
+
+award_details (for award details go to "Ugovori" tab)
+-------------
+bidder_name : UGOVORI >> PONUĐAČI
+
+award_date : Datum zaključenja
+
+netawardvaluelc / netawardvalueeuro : Ugovorena vrijednost bez PDV , click on "Zaključen" for page_detail
+
+
+attachments 
+--------------
+file_name : DOKUMENTI >> Naziv fajla , take only file_name for ex. "Tenderska dokumentacija BSL za objavu.docx" , here take only "Tenderska dokumentacija BSL za objavu"
+
+file_size : Veličina
+
+external_url : DOKUMENTI >> Naziv fajla
+
+
+
+
+
+--------------------------------------------------------------------------procurment_plan-----------------------------------------------------------------------------------
+
+main_url : https://cejn.gov.me/plans
+
+script_name : me_cejn_pp
+
+page_no : 15
+
+main_language : ME
+
+performance_country: ME
+
+procurment_method : 2
+
+notice_type = 3
+
+currency : EUR
+
+------------------------------------------------------------------------
+tender_html_page
+-----------------
+notice_no :  ŠIFRA , not available then grab from notice_url 
+
+document_type_description : NASLOV
+
+publish_date : DATUM OBJAVE
+
+notice_url : STATUS
+
+org_name : NAZIV NARUČIOCA
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+org_country : ME
+
+org_language : ME
+
+
+
+
+detail_page
+-----------
+org_email : E-mail
+
+org_phone  : Telefon
+
+org_fax : Fax
+
+org_website : Internet adresa
+
+org_city : Grad
+
+org_address : Adresa
+
+contact_person : OSNOVNI PODACI >> Odgovorna osoba
+
+est_Amount / grossbudgetlc / grossbudgetwuro : OSNOVNI PODACI >> Ukupna vrijednost plana
+ 
+vat : Ukupna vrijednost PDV
+
+local_title : STAVKE PLANA >> OPIS , take only 1st column of the "OPIS" field , for ex . here take only "Serveri, radne stanice, laptopovi, skeneri, štampači, ups"  in local_title , 
+              ref_url : "https://cejn.gov.me/plans/view-plan/19463"
+
+tender_cpvs : STAVKE PLANA >> OPIS , take only for ex. "30000000" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+class_codes_at_source : STAVKE PLANA >> OPIS , take only for ex. "30000000" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+class_title_at_source : STAVKE PLANA >> OPIS , take only title for example "30200000 - Kompjuterska oprema i pribor" , here take only "Kompjuterska oprema i pribor" 
+
+
+lot_details (format 1)
+------------
+lot_title : STAVKE PLANA >> OPIS , take only bold text value for ex. take only "Kancelarijski materijal" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+lot_class_code_at_source : STAVKE PLANA >> OPIS , take only for ex. "30000000" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+lot_cpv_at_source : STAVKE PLANA >> OPIS , take only for ex. "30000000" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+lot_cpv : STAVKE PLANA >> OPIS , take only for ex. "30000000" , ref_url : "https://cejn.gov.me/plans/view-plan/19352"
+
+lot_grossbudgetlc / lot_grossbudgeteuro : STAVKE PLANA >> VRIJEDNOST NABAVKE
+
+lot_vat : VRIJEDNOST PDV
+
+
+

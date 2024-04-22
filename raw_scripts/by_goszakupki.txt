@@ -1,0 +1,143 @@
+script_name :  by_goszakupki_pp
+
+url : "https://goszakupki.by/purchases/all"
+
+page_no : 30
+
+main_language : RU
+
+performance_country : BY
+
+currency : BYN
+
+procurment_method : 2
+
+notice_type : 3 
+
+-----------------
+tender_html_page
+-----------------
+
+notice_no : Номер плана закупок	,   if not available then grab from notice_url 
+
+org_name : Организация / Предмет закупки , split only couted data , for ex . "Коммунальное сельскохозяйственное унитарное предприятие "Луки-Агро"" , here split only "Луки-Агро" , dont take hyperlinked text
+
+publish_date : 	Дата утверждения плана закупок	
+
+org_country : BY
+
+org_language : RU
+
+
+notice_url : click on eye symbol button
+	
+notice_text :  take the data from detail_page as well as tender_html_element  give td / tbody of main pg  ----
+
+
+detail_page
+--------------
+
+lot_details
+----------------
+lot_Actual_no : Номер позиции плана закупок  
+
+
+lot_title : Наименование однородных товаров (работ, услуг)
+
+
+lot_quantity : Ориентировочные объемы в натуральном выражении
+
+
+lot_grossbudgetlc : Ориентировочная стоимость  , split only amount for ex."Бюджетные средства и средства гос. внебюдж. фондов (оплата со счетов казначейства), BYN: 450"  , here split only "450" amount
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------SPN-----------------------------------------------------------------------------------------------------------
+
+
+script_name :  by_goszakupki_spn
+
+url : "https://goszakupki.by/tenders/posted"
+
+page_no : 50
+
+main_language : RU
+
+performance_country : BY
+
+currency : BYN
+
+procurment_method : 2
+
+notice_type : 4 , if the "Статус" field has "Отменен" keyword appears then take notice_type = 16 
+
+
+-----------------
+tender_html_page
+-----------------
+
+notice_no : Номер закупки , split only numebr like "auc0001699847"  if not available then grab from notice_url 
+
+org_name : Организация / Предмет закупки , split only couted data , for ex . "Коммунальное сельскохозяйственное унитарное предприятие "Луки-Агро"" , here split only "Луки-Агро" , dont take hyperlinked text
+
+local_title : Организация / Предмет закупки , grab the hyperlinkd text
+
+type_of_procedure_actual : Вид процедуры закупки
+
+type_of_procedure : mapping file (by_goszakupki_spn_procedure)
+
+org_country : BY
+
+org_language : RU
+
+document_type_description : Статус
+
+notice_deadline : 	Предложения до
+
+est_amount / grossbudgetlc : Ориентировочная стоимость
+
+
+notice_url : Организация / Предмет закупки , click on local_title for detail_page
+	
+notice_text :  take the data from detail_page as well as tender_html_element  give td / tbody of main pg  ----
+
+
+
+----------------
+detail_page
+-----------------
+additional_tender_url  :  Открыть приглашение на сайте ГИАС ,   split the url between "Общая информация" and "Вид процедуры закупки" field
+
+org_address : Сведения о заказчике >> Место нахождения организации
+
+contact_person : Фамилии, имена и отчества, номера телефонов работников заказчика , split only contact_person for ex. "	Кулай Ирина Анатольевна, +375162274034" , here take only "Кулай Ирина Анатольевна" 
+
+org_phone : Фамилии, имена и отчества, номера телефонов работников заказчика , split only contact_person for ex. "Кулай Ирина Анатольевна, +375162274034" , here take only "+375162274034" 
+
+publsih_date : Дата размещения приглашения
+
+
+
+lot_details
+----------------
+lot_Actual_no : № лота  , ref_url : https://goszakupki.by/request/view/1702347
+
+lot_title : Предмет закупки , ref_url : https://goszakupki.by/request/view/1702347
+
+
+lot_quantity :Количество, Ориентировочная стоимость , split only quantity for ex . "1 Единица(ед.), 770.00 BYN" , here take only "1 Единица(ед.)" , ref_url : https://goszakupki.by/request/view/1702347
+
+
+lot_grossbudgetlc : Количество, Ориентировочная стоимость , split only quantity for ex . "1 Единица(ед.), 770.00 BYN" , here take only "770.00 BYN" , ref_url : https://goszakupki.by/request/view/1702347
+
+
+
+attachments / Документы
+------------
+file_name :Документы , split only file_name for ex."  zapros-cenovyh-predlozhenijj-pitatelnye-sredy_1710160954.pdf" , take only "zapros-cenovyh-predlozhenijj-pitatelnye-sredy_1710160954"
+
+external_url :  Документы  , for download click on file_name after that popup will come click on "Получить архив" for download attachments

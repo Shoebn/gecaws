@@ -1,0 +1,55 @@
+script_name='za_samsaorg_amd'
+urls="https://www.samsa.org.za/Pages/Cancelled-TendersBids.aspx"
+page_no=3
+performance_country='ZA'
+currancy='ZAR'
+main_language='EN'   
+procurement_method=2
+notice_type=16
+org_language='EN'
+org_country='ZA'
+org_name="SOUTH AFRICAN MARITIME SAFETY AUTHORITY (SAMSA)"
+org_parent_id="7723936"
+document_type_description='Cancelled Tenders/Bids'
+
+Grab below data from tender_html_element.
+publish_date=Tender Opening Date
+notice_deadline=Tender Closing Date
+local_title=Name
+
+
+notice_url:Name
+notice_text:garb all the page_details_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+
+
+Grab below data from page_details.
+ref_url:"https://www.samsa.org.za/Pages/APPOINTMENT-OF-A-SAGE-ACCREDITED-SERVICE-PROVIDER-TO-PROVIDE-BOTH-SAGE-PAYROLL-AND-HUMAN-RESOURCE,-CONFIGARATION-AND-MIGRAT.aspx"
+notice_no=BID N​O
+org_address=LOCATION OF THE SAMSA HEAD OFFICE
+contact_person=Tel		cmt:grab name left side of the Tel field
+org_phone=Tel
+org_email=Email ​
+
+ref_url:"https://www.samsa.org.za/Pages/South-African-Maritime-Safety-Authority-Invites-all-interested-parties-to-respond-to-the-requests-for-proposal-(RFP)-for-th.aspx"
+contact_person=Technical Enquiries		cmt:grab name above of the Tel field.
+org_phone=Technical Enquiries >> Tel:
+org_email=Technical Enquiries >> Email:
+
+loacl_description=DESCRIPTION
+notice_summary_english=DESCRIPTION
+
+
+attachments		ref_url:"https://www.samsa.org.za/Pages/APPOINTMENT-OF-A-SAGE-ACCREDITED-SERVICE-PROVIDER-TO-PROVIDE-BOTH-SAGE-PAYROLL-AND-HUMAN-RESOURCE,-CONFIGARATION-AND-MIGRAT.aspx"
+file_name=​​​​Tender documents may be obtained from SAMSA's Head Office 
+external_url=​​​​Tender documents may be obtained from SAMSA's Head Office 		cmt:grab url only
+file_type=​​​​Tender documents may be obtained from SAMSA's Head Office 		cmt:split extension
+
+attachments		ref_url:"https://www.samsa.org.za/Pages/South-African-Maritime-Safety-Authority-Invites-all-interested-parties-to-respond-to-the-requests-for-proposal-(RFP)-for-th.aspx"
+file_name=Interested Bidders are advised to download the tender document from the SAMSA website
+external_url=Interested Bidders are advised to download the tender document from the SAMSA website		cmt:grab url only
+file_type=Interested Bidders are advised to download the tender document from the SAMSA website			cmt:split extension
+
+attachments		ref_url:"https://www.samsa.org.za/Pages/SAMSA017202021-APPOINTMENT-OF-A-PANEL-OF-SERVICE-PROVIDERS-(SUPPLIERS)-TO-SUPPLY-SAMSA-MARITIME-SPECIAL-PROJECTS-WITH-LUBRI.aspx"
+file_name=Tender documents can be downloaded on SAMSA website
+external_url=Tender documents can be downloaded on SAMSA website	cmt:grab url only
+file_type=Tender documents can be downloaded on SAMSA website		cmt:split extension

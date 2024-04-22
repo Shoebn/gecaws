@@ -1,0 +1,98 @@
+for spn take the data from multiple tabs such as "IGCAR Tender" , "BARCF Tender" , "GSO Tender" , "MRPU Tender"
+
+for gso tender when you click on "GSO Tender" it will pass in another page (mentioned in format 2 )
+--------------------------------------------------------------------------------------------------------------------
+
+format 1
+----------------
+
+script_name : in_igcar_spn
+
+url : "https://www.igcar.gov.in/tenders.html"
+
+page_no : 3 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if "Tender Notice No" has "Corrigedum" attachments keyword appears then take notice_type =16
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+notice_no : Tender Notice No , take texual format 
+	
+local_title : 	Name of Work
+
+publish_Date :Published on	
+
+notice_deadline : Last Date
+
+
+attachments
+------------
+file_name : take from "Tender Notice No" field , take also corrigendum documents
+external_url : take from "Tender Notice No" field , take also corrigendum documents
+
+
+
+
+
+customer_details
+----------------
+
+org_parent_id : 7549435
+
+org_name : "INDIRA GANDHI CENTRE FOR ATOMIC RESEARCH"
+
+org_country : IN
+
+org_language : EN
+
+	
+------------------------------------------------------------------------------format 2-------------------------------------------------------------------------------------------------------------
+
+for gso tender when you click on "GSO Tender" it will pass in another page
+
+url : "https://www.igcar.gov.in/gso/tender.html"
+
+format 2
+----------------
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+notice_no : Tender Notice No , take texual format 
+	
+local_title : 	Nature of Work
+
+publish_Date :Displayed on
+	
+notice_deadline : Last date for Sale
+
+
+
+attachments
+------------
+file_name : take from "Tender Notice No" field ,
+external_url : take from "Tender Notice No" field 
+
+
+
+customer_details
+----------------
+org_parent_id : 7549435
+
+org_name : "INDIRA GANDHI CENTRE FOR ATOMIC RESEARCH"
+
+org_country : IN
+
+org_language : EN

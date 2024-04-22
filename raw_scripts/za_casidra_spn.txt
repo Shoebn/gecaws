@@ -1,0 +1,77 @@
+script_name			'za_casidra_spn'		
+procurement_method	2
+urls				"https://tenders.casidra.co.za/"
+   
+page_no					3
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN'
+org_Name          		'Casidra'     
+org_parent_id 			'7525404' 
+org_country				'ZA'
+org_language			'EN'
+org_address				'P O Box 660,Southern Paarl,7624,22 Louws Avenue, Southern Paarl, WP 7646, South Africa'
+org_phone				'+27(0)21 863-5000,+27(0)21 863-1055'
+
+
+
+Grab below data from tender_html_element.
+notice_type		4
+		cmt:1)If in local_title "RE-ADVERTISEMENT" keyword is present then pass notice_type=16.
+			2)if in page_details Tender Details >> Call for Expression of Interest is present then pass notice_type=5.	
+				ref_url:"https://tenders.casidra.co.za/tender/provision-of-business-development-services-to-casidra-soc-ltd-2/".
+		
+notice_no:grab from <h3> tag.
+		cmt:1)here "AP2224 WATER SECURITY: PROFESSIONAL CIVIL ENGINEERING – SPECIALIZING IN HYROLOGICAL AND HYDRAULIC ENGINEERING" grab only "AP2224" in notice_no.
+notice_no:View Tender
+		cmt:1)split from notice_url.Here "https://tenders.casidra.co.za/tender/rfq-ap1016-ceres-nduli-food-security-cooperative-ltd-new-security-fences-and-repairs-to-pumphouse/" grab only "rfq-ap1016" no in notice_no.
+notice_no:EOI Number	page_details
+		ref_url:"https://tenders.casidra.co.za/tender/provision-of-business-development-services-to-casidra-soc-ltd-2/".
+		
+local_title:grab from <h3> tag.
+
+
+
+notice_url:to open the detail page click on  "View Tender" button on tender_html_element.
+notice_text:take all the data from page_detail as well the "tender_html_element" Row wisedata in Notice Text. of each record. 
+
+
+Grab below data from page_details.
+
+org_city:Location
+contact_person:Contact Person
+org_email:Contact Email
+
+publish_date:Post Date
+notice_deadline:Closing Date
+
+
+local_description:The scope of works will include
+			ref_url:"https://tenders.casidra.co.za/tender/bid-no-14-2023-cape-nature-hottentots-holand-nature-reserve-provide-and-install-new-security-fencing/"
+			1)split between "The scope of works will include:" and "BID DEADLINE:".
+local_description:PROJECT SCOPE / DELIVERABLES
+			ref_url:"https://tenders.casidra.co.za/tender/rfq-ap0705-uta-development-of-non-financial-indicators-for-emerging-farmers-in-the-eden-district/"
+			1)cmt:split between "PROJECT SCOPE" and "EXPERTISE REQUIRED".
+local_description:The scope of works will include
+			ref_url"https://tenders.casidra.co.za/tender/rfq-legal-support/"
+			cmt:split between "The scope of works will include:" and "RFQ DEADLINE:".
+local_description:The scope of works will include.
+			ref_url:"https://tenders.casidra.co.za/tender/bid-13-2023-wolseley-shiloh-holdings-construction-of-a-security-fence/"
+			cmt:split between "The scope of works will include." and "CONSTRUCTION OF A SECURITY FENCE:".
+			
+			
+attachments[]
+to grab attachments click on "Access Documents" button in page_details.Then pass "Name=sadf","Surname=sadf","Email=sadf@gmail.com" and then click on Submit button.
+file_name:RFQ Document downloads
+file_type:RFQ Document downloads
+		cmt:grab only extension from external_url.
+external_url:RFQ Document downloads
+
+
+
+
+
+
+
+
+

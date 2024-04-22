@@ -1,0 +1,93 @@
+pl_logintradeprzy_spn
+#NOTE -- After the site gets loaded use the following password to log in
+>>> Login : akanksha.a
+ password : Ak@123456
+>>> next click on "Your e-auctions and enquiries"
+>>> next click on "Open enquiries"
+>>> currently there is no live records avaiable on option "auction" and "announcement click" ..so kept that pending 
+
+######################################################################################################################################################
+
+script_name: pl_logintradeprzy_spn
+
+urls: "https://przyjazn.logintrade.net/rynek,zapytania.html"
+
+page_no: 25
+
+performance_country / org_country    : "PL"
+
+currency: "PLN"
+
+main_language / org_language: "PL"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Enquiry name	
+
+notice_no --- Enquiry No.	
+
+publish_date --- Date of publication (along with time)	
+
+notice_deadline --- Deadline for making offers	(along with time)
+
+org_name --- Buying company	
+
+notice_url --- selct the hyperlink of Enquiry name	
+#NOTE - after clicking on "Enquiry name	" a pop up will appear >>> next click on "Enquiry details" >>> next click "ok"
+
+notice_text ---page_detail
+ #Note - take HTML body of main page
+
+
+*****************************************************************************
+                                 #page_detail
+*****************************************************************************
+
+#NOTE - click on "Show contact details" for customer_detail
+
+contact_person --- data which is above "Phone" and below "Purchaser:"      eg.(Agnieszka Kot)
+
+org_phone --- Phone
+
+org_email --- e-mail: akot@jswkoks.pl
+
+
+	
+
+#attachment >>>> Attachments	 
+
+external_url ---Attachments (click on the href for documents File , blue colour text)	
+
+file_name --- Attachments >>> blue colour text 		
+
+file_type --- (extension)... eg - pdf	
+ 
+file_size ---   eg (210352 kb)
+
+
+
+#Lots >>> Products:
+ref url "https://przyjazn.logintrade.net/zapytania_email,1560171,c61d0fbb19042258c4a013db7711d07d.html#"
+	
+lot_title --- Products: >>> Product name	
+
+lot_quantity --- Products: >>> Quantity
+
+lot_quantity_uom --- Products: >>> Unit 
+
+
+
+#award_criteria >>> Offer tender_criteria  
+ref url "https://przyjazn.logintrade.net/zapytania_email,1559973,fd97f917501ae7f063696b7d46279379.html"
+
+tender_criteria_title --- take the word, senetence as title    eg (price)
+
+tender_criteria_weight --- take the value as weight    eg(50%)
+
+

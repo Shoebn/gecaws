@@ -1,0 +1,47 @@
+script_name : in_caluniv_spn	
+
+url : "https://www.caluniv.ac.in/tender/tender_news.html"
+
+page_no : 3 
+
+main_language : EN
+
+performacne_country : IN
+
+notice_type : 4 , if the main title has "Corrigendum" keyword appears then take notice_type = 16
+
+procurment_method : 2
+
+currency : INR
+
+document_type_description : "Tender Notice"
+-----------------------------------------------------------------------
+
+local_title :  	Tender Notice , take only data as a texual format
+
+publish_date : Date
+
+notice_deadline : take threshold
+
+notice_no : split from "Tender Notice" field , take only number such as "N.I.T. No:" , "N.I.Q. No" , "Tender ID:"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+notice_url : https://www.caluniv.ac.in/tender/tender_news.html
+
+
+attachments  
+-----------
+file_name : take name as a "tender documents"
+external_url : 	Tender Notice  , download also red texted attachments
+
+
+customer_details
+----------------
+org_name : "UNIVERSITY OF CALCUTTA"
+
+org_parent_id : 7533423
+
+org_country : IN
+
+org_language : EN

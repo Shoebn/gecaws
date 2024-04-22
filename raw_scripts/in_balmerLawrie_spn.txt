@@ -1,0 +1,83 @@
+script_name					in_balmerLawrie_spn
+notice_type					4		
+procurement_method			2
+urls						"https://balmerlawrie.eproc.in/ProductBL/publicDash?viewFlag=NewTenders"
+page_no						5
+performance_country			IN
+currancy					INR
+main_language				EN
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://balmerlawrie.eproc.in/ProductBL/publicDash?viewFlag=NewTenders" and grab the data
+
+Tender_Html_Element
+
+notice_no		=		Tender No
+
+local_title		=		Tender Title [English]
+
+org_address		=		Department
+
+notice_contract_type		=		Category			Com:Replace follwing keywords with given keywords ("Disposal=Service","Supply Global=Supply","Supply Import=Supply","Supply Indigenous=Supply","Services=Service","Transportation=Service","Work Contracts=Works")
+
+contract_type_actual		=		Category
+
+notice_url    =  to open the page_detail click on "Action" click button than grab the data
+
+notice_text     =      take all the data from page_main as well the  "tender_html_element" of each record  
+-----------------------------------------------------------------------------------------------------
+Page_Main
+
+publish_date		=		Tender Basic Information >> Published Date 
+
+document_fee		=		Tender Document Fee
+
+org_language		=		EN
+
+org_country			=		IN
+
+earnest_money_deposit		=		EMD Value			Ref_url= "notice_no=BL/LC/MAN/DDS/LT/202324/0283"
+
+document_purchase_start_time		=		Tender Document Sales Start Date		Com:Grab time also
+
+document_purchase_end_time			=		Tender Document Sales End Date			Com:Grab time also
+
+notice_deadline			=		Bid Submission Closing Date 		Com:grab time also
+
+document_opening_time		=		Bid Opening & Evaluation 		Com:grab time also
+
+--------------------------------------------------------------
+Lot Format 1
+
+lot	detail		=		Tender Item Details			Ref_url= "notice_no=0100PM2623"
+
+
+Lot Format 2
+
+lot_detail		=		Tender Item Details >> BOQ/Accessories View			Com:Click on first image(button)
+	Ref_url= "notice_no=0100LE2627"
+	
+---------------------------------------------------------------
+org_name      		=   	 Balmer Lawrie & Co. Ltd.
+
+org_parent_id		=		7123717
+
+-------------------------------------------------------------------
+attachments			=		Forms & Other Details >> View Tender Documents >> Tende Document 
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

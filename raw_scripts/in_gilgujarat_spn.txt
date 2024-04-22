@@ -1,0 +1,44 @@
+script_name='in_gilgujarat_spn'
+urls="https://gil.gujarat.gov.in/Tenders"
+page_no=3
+main_language='EN'
+performance_country='IN'
+currency='INR'
+procurement_method=2
+org_name='GUJARAT INFORMATICS LIMITED'
+org_parent_id='7748159'
+org_address='Block No. 2, 2nd Floor, C & D Wing, Karmayogi Bhavan Sector - 10 A, Gandhinagar - 382010 Gujarat.'
+org_phone='91-79-23256022'
+org_fax='91-79-23238925'
+org_email='infogil@gujarat.gov.in'
+
+
+*************************************************tender_html_element*********************************************
+local_title=Announcements of Bids
+
+notice_no=Announcements of Bids		cmt:Split notice_no from local_title.	Ref_notice_no- GEM/2024/B/4757150.	split between "bid No." and "dated".
+notice_no=Announcements of Bids		cmt:Split notice_no from local_title.	Ref_notice_no- GEM/2024/B/4749867.	split between "Bid Number:" and "dated".
+notice_no=Announcements of Bids		cmt:Split notice_no from local_title.	Ref_notice_no- GEM/2024/B/4690151.	split between "(" and "dated".
+notice_no=		cmt:split it from notice_url.
+
+notice_type=4		cmt:if local_title contains keyword "Corrigendum" or "Date Extended" then pass notice_type=16,otherwise 4.
+ 
+publish_date=Announcements of Bids		cmt:Split notice_no from local_title.	split after "dated" keyword.	If not availabel then pass threshold.
+
+pre_bid_meeting_date=Pre-Bid Meeting	
+ 
+notice_deadline=Last Date of Submission	
+
+document_opening_time=Opening of Bid	
+
+notice_url=More
+
+notice_text=take all page_details data as well as the "tender_html_element" Row wisedata in Notice Text.
+ 
+attachments[]	ref_url:"https://gil.gujarat.gov.in/TenderDetails.aspx?TenID=12184" , "https://gil.gujarat.gov.in/TenderDetails.aspx?TenID=12179".
+		if after "Download Bid Document" more attachments are present then also grab that attachments.
+file_name=Download Bid Document  ,RFP  ,Scope of work   
+ 
+external_url=Download Bid Document  ,RFP  ,Scope of work   
+
+file_type=	cmt:grab only file_extension.

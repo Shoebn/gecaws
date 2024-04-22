@@ -1,0 +1,47 @@
+script_name			om_etendering_spn
+urls				"https://etendering.tenderboard.gov.om/product/publicDash?viewFlag=NewTenders"
+page_no				tender_html_element 	/html/body/form/div[3]/div[5]/table/tbody/tr	3
+performance_country		OM
+currancy			OMR	
+main_language			AR
+procurement_method		2
+notice_type			4
+-------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://etendering.tenderboard.gov.om/product/publicDash?viewFlag=NewTenders" and grab the data
+
+tender_html_element
+
+رقم المناقصة = notice_no
+
+الجهة/الوحدة الحكومية = org_name
+
+OM = org_country
+
+AR = org_language
+
+[ الدرجة]فئة المشتريات = notice_contract_type 	com:Don't take "[ الدرجة]" data....  com:Repleace following keywords with given keywords("Business quality =Service","Consulting work - old =Works","Training Works - Old =Works","Supplies =Supply","Supplies and services - old =Service","Urban contracting and maintenance =Service","Consulting offices =Consultancy","Information technology services =Service","Contracting - old =Service","Electromechanical, communications and maintenance contracting =Service","Ports, roads, bridges, railways, dams and maintenance contracting =Service","Pipeline networks and well drilling contracting =Service")
+
+[ الدرجة]فئة المشتريات = contract_type_actual	com:Don't take "[ الدرجة]" data.
+
+to open the tender_html_element page : click on إجْراء > (عرض إشعار دعوة العطاء) button = notice_url
+----------------------------------------------------------------------------------------------------------------------
+take all the data from page_main as well the  "tender_html_element" of each record  = notice_text
+
+page_main
+
+إسم المناقصة : = local_title
+
+تاريخ طرح المناقصة : = publish_date
+
+رسوم المناقصه : = document_fee
+
+تاريخ بدء بيع مستند المناقصة = document_purchase_start_time
+
+تاريخ نهاية بيع مستند المناقصة = document_purchase_end_time
+
+المحافظة : = org_city
+
+الولايات : = org_state
+
+
+

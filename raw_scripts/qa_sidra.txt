@@ -1,0 +1,195 @@
+Go to Url , click on "Show Filters" , go to "status" drop-down menu click on "Active" and click on "Search" button for result
+
+script_name : qa_sidra_spn
+
+originalUrl / main_url / : "https://fa-epxn-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/NegotiationAbstracts?prcBuId=300000003054324&_adf.ctrl-state=5qxar9gn3_90&_afrLoop=1255933668605753&_afrFS=16&_afrMT=screen&_afrMFW=1600&_afrMFH=731&_afrMFDW=1600&_afrMFDH=900&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=96&_afrMFG=0&_afrMFS=0&_afrMFO=0"
+
+page_no : 5
+
+countryNames / performance_country : QA
+
+notice_type : 4 
+
+currency: QAR
+
+languageCode / org_language / main_language :  EN
+
+procurment_emthod : 2
+
+
+tender_html_page
+-----------------------
+local_title : Title
+
+document_type_description : Status
+
+publish_date : Posting Date
+
+document_opening_date : Open Date
+
+document_close_date : Close Date
+
+notice_deadline : Close Date
+
+notice_url : Details
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+award_date : Posting Date
+
+page_main
+-------------
+org_name : "SIDRA MEDICINE" static
+
+org_parent_id : 7373948
+
+org_country : QA
+
+org_language : EN
+
+notice_no :  Retrieve the 'notice_no' from the top-left side of the 'page_main
+
+contact_person : Buyer	
+
+org_email : Email	
+
+
+
+
+
+------------------------------------------------------------------------------------------Amendment----------------------------------------------------------------------------------
+
+
+Go to Url , click on "Show Filters" , go to "status" drop-down menu  and for amendment click on  "Amended" , "Closed" , "Cancelled" and click on "Search" button for result
+
+script_name : qa_sidra_amd
+
+originalUrl / main_url / : "https://fa-epxn-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/NegotiationAbstracts?prcBuId=300000003054324&_adf.ctrl-state=5qxar9gn3_90&_afrLoop=1255933668605753&_afrFS=16&_afrMT=screen&_afrMFW=1600&_afrMFH=731&_afrMFDW=1600&_afrMFDH=900&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=96&_afrMFG=0&_afrMFS=0&_afrMFO=0"
+
+page_no : 5
+
+countryNames / performance_country : QA
+
+notice_type : 16
+
+currency: QAR
+
+languageCode / org_language / main_language :  EN
+
+procurment_emthod : 2
+
+
+tender_html_page
+-----------------------
+
+local_title : Title
+
+document_type_description : Negotiation Type
+
+publish_date : Posting Date
+
+document_opening_date : Open Date
+
+document_close_date : Close Date
+
+notice_deadline : Close Date
+
+notice_url : Details
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+page_main
+-------------
+org_name : "SIDRA MEDICINE" static
+
+org_parent_id : 7373948
+
+org_country : QA
+
+org_language : EN
+
+notice_no :  Retrieve the 'notice_no' from the top-left side of the 'page_main
+
+contact_person : Buyer	
+
+org_email : Email	
+
+
+
+
+
+----------------------------------------------------------------------------------contract_award-------------------------------------------------------------------------------------------------
+
+Go to Url , click on "Show Filters" , go to "status" drop-down menu  and for amendment click on  "Awarded" and click on "Search" button for result
+
+script_name : qa_sidra_ca
+
+originalUrl / main_url / : "https://fa-epxn-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/NegotiationAbstracts?prcBuId=300000003054324&_adf.ctrl-state=5qxar9gn3_90&_afrLoop=1255933668605753&_afrFS=16&_afrMT=screen&_afrMFW=1600&_afrMFH=731&_afrMFDW=1600&_afrMFDH=900&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=96&_afrMFG=0&_afrMFS=0&_afrMFO=0"
+
+page_no : 5
+
+countryNames / performance_country : QA
+
+notice_type : 7
+
+currency: QAR
+
+languageCode / org_language / main_language :  EN
+
+procurment_emthod : 2
+
+
+tender_html_page
+-----------------------
+
+local_title : Title
+
+document_type_description : Negotiation Type
+
+publish_date : Posting Date
+
+document_opening_date : Open Date
+
+document_close_date : Close Date
+
+notice_url : Details
+
+notice_text : along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+
+page_main
+------------------
+org_name : "SIDRA MEDICINE" static
+
+org_parent_id : 7373948
+
+org_country : QA
+
+org_language : EN
+
+notice_no :  Retrieve the 'notice_no' from the top-left side of the 'page_main
+
+contact_person : Buyer	
+
+org_email : Email	
+
+
+lot_details
+----------------
+lot_title : lot_title == local_title
+
+
+attachments 
+--------------
+file_name : Attachments	 , take only file_name for ex."SOW - Redhat PR 169222.docx(279.42 KB)" , here take only "SOW - Redhat PR 169222"
+
+
+file_type : Attachments	, take only file_type for ex."SOW - Redhat PR 169222.docx(279.42 KB)" , here take only "docx"
+
+
+file_size : Attachments	 , take only file_type for ex."SOW - Redhat PR 169222.docx(279.42 KB)" , here take only "279.42 KB"
+
+external_url :  Attachments	

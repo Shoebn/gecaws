@@ -1,0 +1,212 @@
+*use Urban VPN=Morocco
+*publish_date not in order.
+
+
+********************************************************ma_lydec_spn***************************************************
+
+script_name = 'ma_lydec_spn'
+
+urls = "https://am.lydec.ma/?page=entreprise.EntrepriseAdvancedSearch&AllCons&searchAnnCons&csrt="
+
+page_no = 1
+
+main_language = 'FR'
+
+performance_country = 'MA'
+
+currency = 'MAD'
+
+procurement_method = 2
+
+notice_type = 4
+
+org_name = 'LYDEC'
+
+org_parent_id = '6992336'
+
+org_country = 'MA'
+
+org_language = 'FR'
+
+				************************tender_html_element****************************************************
+notice_contract_type = Catégorie		cmt:replace the grabbed_keyword with given("Travaux=Works","Services=Service","Fournitures=Supply").		grab from 2nd line.
+
+contract_type_actual = Catégorie		cmt:grab from 2nd line.
+
+publish_date = Publié le				cmt:grab from 3rd line.
+
+notice_no = Référence					cmt:grab from 1st line.	Split it from notice_url also.
+
+local_title = Objet						cmt:grab from 2nd line.
+
+org_city = Lieu d'exécution
+
+notice_deadline = Date limite de remise des plis
+
+
+notice_url = Actions	cmt:click on first link.
+
+notice_text = cmt:take all the "tender_html_element" Row wisedata in Notice Text.And also add following clicks:	
+		1)click on search icon present in "Lots" column and grab the data.(tender_html_element.)
+		2)Actions(tender_html_element).in this cloumn there 3 clicks in each rows. add this data also.
+		3)add the data from following tabs after clicking on notice_url:1)Publicité / Téléchargement 2)Question 3)Dépôt	4)Messagerie sécurisée.
+		4)in page_details click on '+' sign,left side of the "Date et heure limite de remise des plis :" field.
+		
+
+
+
+
+lot_details[]	Lots		click on search icon present in "Lots" column in tender_html_element and grab the data.
+If multiple lots are present then grab the data accordingly.
+lot_actual_number = Lot 1	
+
+lot_title = Lot 1 	
+	
+lot_description = Description 
+
+lot_grossbudget_lc = Caution provisoire
+
+contract_type = Catégorie 			cmt:replace the grabbed_keyword with given("Travaux=Works","Services=Service","Fournitures=Supply").
+
+lot_contract_type_actual = Catégorie 
+
+
+			***********************page_details*************************************
+			
+attachments[]	Pièces de la consultation
+file_name = Publicité / Téléchargement  >>  Pièces de la consultation		cmt:in file_name don't grab file_size.
+
+external_url = Publicité / Téléchargement  >>  Pièces de la consultation
+
+file_size = Publicité / Téléchargement  >>  Pièces de la consultation		cmt:split file_size only.
+
+
+in page_details click on '+' sign,left side of the "Date et heure limite de remise des plis :" field.
+org_address = Acheteur public :
+
+document_type_description = Type d'annonce :
+
+type_of_procedure = Procédure :					
+        								
+        									
+********************************************************ma_lydec_ca******************************************************
+after opening the url click on "Autres annonces  >>  Tous les résultats définitifs".
+script_name = 'ma_lydec_ca'
+
+urls = "https://am.lydec.ma/?page=entreprise.EntrepriseAdvancedSearch&AllCons&searchAnnCons&csrt="
+
+page_no = 1
+
+main_language = 'FR'
+
+performance_country = 'MA'
+
+currency = 'MAD'
+
+procurement_method = 2
+
+notice_type = 7
+
+org_name = 'LYDEC'
+
+org_parent_id = '6992336'
+
+org_country = 'MA'
+
+org_language = 'FR'
+
+
+				************************tender_html_element****************************************************
+notice_contract_type = Catégorie		cmt:replace the grabbed_keyword with given("Travaux=Works","Services=Service","Fournitures=Supply").		grab from 2nd line.
+
+contract_type_actual = Catégorie		cmt:grab from 2nd line.
+
+publish_date = Publié le				cmt:grab from 3rd line.
+
+related_tender_id = Référence					cmt:grab from 1st line.	
+
+local_title = Objet						cmt:grab from 2nd line.
+
+org_city = Lieu d'exécution
+
+notice_url = Actions	cmt:click on first link.
+
+notice_no =		cmt:Split it from notice_url also.
+
+notice_text = cmt:take all the "tender_html_element" Row wisedata in Notice Text.And also add following clicks:	
+		1)Actions(tender_html_element).in this cloumn there 2 clicks in each rows. add this data also.
+		2)add the data from following tabs after clicking on notice_url:1)Publicité / Téléchargement 2)Question 3)Dépôt	4)Messagerie sécurisée.
+		3)4)in page_details click on '+' sign,left side of the "Date de fin d'affichage :" field.
+		
+		
+		
+in page_details click on '+' sign,left side of the "Date de fin d'affichage :" field.
+org_address = Acheteur public :
+
+document_type_description = Type d'annonce :
+
+type_of_procedure = Procédure :						
+		
+********************************************************ma_lydec_amd******************************************************
+after opening the url click on "Consultations annulées  >>  Toutes les consultations".
+script_name = 'ma_lydec_ca'
+
+urls = "https://am.lydec.ma/?page=entreprise.EntrepriseAdvancedSearch&AllCons&searchAnnCons&csrt="
+
+page_no = 1
+
+main_language = 'FR'
+
+performance_country = 'MA'
+
+currency = 'MAD'
+
+procurement_method = 2
+
+notice_type = 16
+
+org_name = 'LYDEC'
+
+org_parent_id = '6992336'
+
+org_country = 'MA'
+
+org_language = 'FR'
+
+				************************tender_html_element****************************************************
+notice_contract_type = Catégorie		cmt:replace the grabbed_keyword with given("Travaux=Works","Services=Service","Fournitures=Supply").		grab from 2nd line.
+
+contract_type_actual = Catégorie		cmt:grab from 2nd line.
+
+publish_date = Publié le				cmt:grab from 3rd line.
+
+notice_no = Référence					cmt:grab from 1st line.	Split it from notice_url also.
+
+local_title = Objet						cmt:grab from 2nd line.
+
+org_city = Lieu d'exécution
+
+notice_deadline = Date limite de remise des plis
+
+
+notice_url = Actions	cmt:click on first link.
+
+notice_text = cmt:take all the "tender_html_element" Row wisedata in Notice Text.And also add following clicks:	
+		1)click on search icon present in "Lots" column and grab the data.(tender_html_element.)
+		2)Actions(tender_html_element).in this cloumn there 3 clicks in each rows. add this data also.
+		
+
+
+lot_details[]	Lots		click on search icon present in "Lots" column in tender_html_element and grab the data.
+If multiple lots are present then grab the data accordingly.
+lot_actual_number = Lot 1	
+
+lot_title = Lot 1 	
+	
+lot_description = Description 
+
+lot_grossbudget_lc = Caution provisoire
+
+contract_type = Catégorie 			cmt:replace the grabbed_keyword with given("Travaux=Works","Services=Service","Fournitures=Supply").
+
+lot_contract_type_actual = Catégorie     								 

@@ -1,0 +1,50 @@
+######################################################################################################################################################
+
+script_name: tt_pco_spn
+
+urls: "https://pco.tha.gov.tt/tender-notices/"
+
+page_no: 2
+
+performance_country / org_country    : "TT"
+
+currency: "TTD"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if keyword such as "Expression of Interes" is present then take notice_type - "5"
+
+procurement_method: "2"
+ 
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+org_name --- Public Body
+
+notice_no --- Ref. Number	
+
+local_title --- Description	
+
+notice_deadline --- Closing Date	
+
+notice_url --- https://pco.tha.gov.tt/tender-notices/
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+#attachment >>>> click on the "Details" 
+	
+external_url --- "Details" >>>  (click on the href for documents File, ZIP)	
+
+file_name ---Details	
+
+file_type --- (extension)... eg - pdf
+
+
+	

@@ -1,0 +1,63 @@
+#####################################################################################################################################################
+
+script_name: in_ispnasik_ca
+
+urls: "https://ispnasik.spmcil.com/en/awarded-tenders/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "7"
+
+procurement_method: "2"
+
+org_name ---INDIA SECURITY PRESS
+
+org_parent_id -- 7549220
+	
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+related_tender_id --- Tender No
+
+local_title --- Subject
+
+publish_date --- Date Of Publication
+
+notice_url --- click on "view" 
+
+notice_text --- page_detail ... 
+#note - also take tender_html_page
+
+org_address --- Unit Name
+
+document_type_description --- Awarded Tenders
+
+
+
+****************************************************************************
+                                 #page_details
+****************************************************************************
+
+
+
+local_description/ notice_summary_english --- .split between "Item/Nature of work :" and "Date of Publication of NIT :
+
+notice_no --- Contract No :
+
+contract_start_date --- split between "Actual Date of Start of Work :" and "Award Date 
+
+contract_end_date --- split between "Actual Date of Completion :" and "Award Upload Date :
+
+award_date --- Award Date
+
+bidder_name --- Name of Contractor
+
+grossawardvaluelc --- Value of Contract
+

@@ -1,0 +1,79 @@
+script_name='za_samsaorg_ca'
+urls="https://www.samsa.org.za/Pages/Awarded-TendersBids.aspx"
+page_no=3
+performance_country='ZA'
+currancy='ZAR'
+main_language='EN'   
+procurement_method=2
+notice_type=7
+org_language='EN'
+org_country='ZA'
+org_name="SOUTH AFRICAN MARITIME SAFETY AUTHORITY (SAMSA)"
+org_parent_id="7723936"
+document_type_description='Awarded Tenders or Bids'
+
+
+Grab below data from tender_html_element.
+publish_date=Tender Opening Date		cmt:if this date is not present then pass award_date in publish_date.
+local_title=Name
+
+
+notice_url:Name
+notice_text:garb all the page_details_details data as well as take all the "tender_html_element" Row wisedata in Notice Text.
+
+
+Grab below data from page_details.
+related_tender_id=Contract number		ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-three-(3)-service-providers-(suppliers)-to-provide-SAMSA-Maritime-Special-Projects-with-Maritime-.aspx"
+related_tender_id=Contract number		ref_url:"https://www.samsa.org.za/Pages/SOUTH-AFRICAN-MARITIME-SAFETY-AUTHORITY-(SAMSA)-INVITE-ALL-INTERESTED-PARTIES-TO-RESPOND-TO-THE-REQUEST-FOR-PROPOSAL-(RFP)-.aspx"
+related_tender_id=Contract number		ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-service-providers-(suppliers)-to-supply-samsa-maritime-special-projects-with-fuel-%26-diesel.aspx"
+
+award_date=Date of award 				ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-three-(3)-service-providers-(suppliers)-to-provide-SAMSA-Maritime-Special-Projects-with-Maritime-.aspx"
+award_date=Date of award				ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-service-provider-to-provide-a-comprehensive-ports-%26-dock-services.aspx"
+award_date=​Date of award				ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-service-providers-(suppliers)-to-supply-samsa-maritime-special-projects-with-fuel-%26-diesel.aspx"
+
+bidder_name=Name of successful bidder	ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-three-(3)-service-providers-(suppliers)-to-provide-SAMSA-Maritime-Special-Projects-with-Maritime-.aspx"
+bidder_name=Name of successful bidder	cmt:name is present below of the field.		ref_url:"https://www.samsa.org.za/Pages/BID-NO-SAMSA063202324-FOR-THE-APPOINTMENT-OF-A-SERVICE-PROVIDER-FOR-RENOVATIONS-OF-SAMSA-OFFICE-AT-02-SAMORA-MACHEL-STREET,.aspx"
+bidder_name=Name of successful bidder​
+		cmt:split names between "BIDDERS APPOINTED TO SERVE AS A PANEL OF SERVICE PROVIDERS FOR THE PROVISION OF THE EMPLOYEE RISK SERVICES" and "BIDDERS APPOINTED TO SERVE AS A PANEL OF SERVICE PROVIDERS FOR THE PROVISION PSYCHROMETRIC ASSESSMENT".
+		ref_url:"https://www.samsa.org.za/Pages/SOUTH-AFRICAN-MARITIME-SAFETY-AUTHORITY-(SAMSA)-INVITE-ALL-INTERESTED-PARTIES-TO-RESPOND-TO-THE-REQUEST-FOR-PROPOSAL-(RFP)-.aspx"
+bidder_name=Name of successful bidder	ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-service-provider-to-provide-a-comprehensive-ports-%26-dock-services.aspx"
+bidder_name=Name of successful bidder	ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-service-providers-(suppliers)-to-supply-samsa-maritime-special-projects-with-fuel-%26-diesel.aspx"
+
+
+
+ref_url:"https://www.samsa.org.za/Pages/BID-NO-SAMSA063202324-FOR-THE-APPOINTMENT-OF-A-SERVICE-PROVIDER-FOR-RENOVATIONS-OF-SAMSA-OFFICE-AT-02-SAMORA-MACHEL-STREET,.aspx"
+grossawardvaluelc=Contract Amount
+contract_start_date=Start date
+contract_end_date=End  date
+ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-service-providers-(suppliers)-to-supply-samsa-maritime-special-projects-with-fuel-%26-diesel.aspx"
+contract_start_date=Contract period >> Start date
+contract_end_date=Contract period >> End date
+
+
+ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-three-(3)-service-providers-(suppliers)-to-provide-SAMSA-Maritime-Special-Projects-with-Maritime-.aspx"
+contractAward.contractDuration / contract_Duration=Period Cover
+org_address=LOCATION OF THE SAMSA HEAD OFFICE
+contact_person=Tel		cmt:grab the name left side of "Tel" field.
+org_phone=Tel
+org_email=Email
+
+attachments=​​​​Tender documents can be downloaded
+file_name=​​​​Tender documents can be downloaded
+external_url=cmt:grab the urls.
+file_type=​​​​Tender documents can be downloaded	cmt:split it from external_url.
+
+ref_url:"https://www.samsa.org.za/Pages/SOUTH-AFRICAN-MARITIME-SAFETY-AUTHORITY-(SAMSA)-INVITE-ALL-INTERESTED-PARTIES-TO-RESPOND-TO-THE-REQUEST-FOR-PROPOSAL-(RFP)-.aspx"
+attachments=​​​​Date of award		grab the below attachments of the "Date of award" field up to "Name of successful bidder​" field.
+file_name=​​​​Date of award
+external_url=cmt:grab the urls.
+file_type=​​​​Date of award.	cmt:split it from external_url.
+
+ref_url:"https://www.samsa.org.za/Pages/Appointment-of-a-panel-of-five-(5)-Forensic-Investigation-firms-for-the-South-African-Maritime-Safety-Authority-for-a-perio.aspx"
+attachments=Tender documents may be obtained here
+file_name=Tender documents may be obtained here
+external_url=cmt:grab the urls.
+file_type=cmt:split it from external_url.
+
+
+loacl_description:Contract description
+notice_summary_english:Contract description

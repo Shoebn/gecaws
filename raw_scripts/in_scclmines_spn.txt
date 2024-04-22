@@ -1,0 +1,39 @@
+Note : Go to URL : "https://scclmines.com/scclnew/tenders_material-procurement_area-purchase-tenders.asp"
+
+script_name : "in_scclmines_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4	
+
+currancy	:	'INR'
+
+===============================================================================================================================================
+
+local_title	: Name of the work
+
+notice_no	: Tender notice				Com:Don't take "Area" this field date
+
+publish_date	: Enquiry Date
+ 
+notice_deadline	: Closing Date
+
+org_name	: 'THE SINGARENI COLLIERIES COMPANY LIMITED'
+
+org_parent_id	: '7249728'
+
+org_city	: Tender notice >> Area
+
+attachments		: pass static 'Tender Document'
+
+external_url	: Tender notice 	Com:Cilck on "Tender notice" this field hyperlink than grab the data.	Com:Don't take "Area" this field date	
+
+notice_url	: pass main url "https://scclmines.com/scclnew/tenders_material-procurement_area-purchase-tenders.asp"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

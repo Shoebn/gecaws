@@ -1,0 +1,63 @@
+in_mmrda_spn
+MUMBAI METROPOLITAN REGION DEVELOPMENT AUTHORITY (MMRDA)
+7527420
+https://mmrda.maharashtra.gov.in/tenders/tender-notices
+
+######################################################################################################################################################
+
+
+script_name: in_mmrda_spn
+	
+   
+urls: "https://mmrda.maharashtra.gov.in/tenders/tender-notices"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if keyword such as "Corrigendum" encounters in "Type" then take notice_type = "16"
+
+procurement_method: "2"
+
+org_name: MUMBAI METROPOLITAN REGION DEVELOPMENT AUTHORITY (MMRDA)
+
+org_parent_id: 7527420
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- Type
+
+org_name --- Division	
+
+local_title --- Title
+
+publish_date --- Date Of Issue	
+
+notice_deadline --- Valid Upto	
+
+notice_url --- https://mmrda.maharashtra.gov.in/tenders/tender-notices
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment >>>> Title		
+
+external_url --- Title >>> (click on the href for documents File)	
+
+file_name --- Title	
+
+file_type --- (extension)... eg - pdf
+
+file_size --- Title (674.41 KB)
+
+
+

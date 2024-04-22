@@ -1,0 +1,66 @@
+script_name					fr_coordination_spn
+notice_type					4		
+procurement_method			2
+urls						"https://www.coordinationsud.org/appels-doffres/?_sort=1_date_desc"
+page_no						10
+currancy					EUR
+main_language				FR
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.coordinationsud.org/appels-doffres/?_sort=1_date_desc" and grab the data
+
+Tender_Html_Element
+
+notice_deadline  =  Clôture le
+
+local_title   =  Clôture le        Com:line below "Clôture le"	EX..(Enquête Connaissances, Aptitudes et Pratiques (CAP) auprès des adolescent.e.s, Rabat et Oujda)
+
+org_name    =   After local_title line 
+
+performance_country			=   Pays
+
+class_title_at_source    =    Compétences
+
+notice_url    =  to open the page_detail click on " local_title " hyperlink 
+
+notice_text     =      take all the data from page_detail as well the  "tender_html_element" of each record 
+
+-----------------------------------------------------------------------------------------------------------------
+Page_Detail
+
+publish_date  =  Partager		Com:take the line above the Partager.....EX.(Le 30/01/2024)
+
+attachments		=  À télécharger
+
+lot_detail   =  Lot N°		Ref_no="https://www.coordinationsud.org/appel-offre/appel-a-manifestation-dinterets-diverses-prestations-de-service-pour-le-bureau-de-long-alima/"
+
+------------------------------------------------------------
+
+org_email		=  	Contact		  Ref_url= "https://www.coordinationsud.org/appel-offre/hulo-external-evaluation-innovlog-project/"
+				
+				=	La proposition est à adresser à l’adresse électronique suivante 		Ref_url= "https://www.coordinationsud.org/appel-offre/appel-a-devis-09022024-2-production-de-videos/"
+				
+				=	Le dossier complet sera envoyé par chaque candidat.e aux deux adresses électroniques suivantes   Ref_url= "https://www.coordinationsud.org/appel-offre/ifjd-appel-doffre-consultance-sur-les-defenseur-e-s-des-droits-humains/"
+				
+				=   For international tenderers: tenders can be received through electronic mail (e-mail)	Ref_url= "https://www.coordinationsud.org/appel-offre/international-call-tender-provision-of-prosthesis-orthosis-components-and-materials-for-hi-yemen-programme/"
+				
+				=   Les candidats intéressés doivent soumettre leur candidature à    Ref_url= "https://www.coordinationsud.org/appel-offre/whp-evaluation-des-campagnes-de-sensibilisation-et-de-leur-suivi-aupres-des-communautes-2/"
+				
+				=	Please share your application by email    Ref_url= "https://www.coordinationsud.org/appel-offre/lebanon-consultancy-health-system-strengthening-for-children-suffering-from-congenital-orthopedic-disorders-m-w/"
+				
+				=   Les propositions sont à rédiger en anglais et à adresser par mail à l’adresse suivante  Ref_url= "https://www.coordinationsud.org/appel-offre/appel-doffres-pour-la-realisation-de-levaluation-externe-du-projet-kilimo-endelevu-arusha/"
+				
+--------------------------------------------------------------				
+				
+				
+org_website 	=  Site internet	Ref_url= "https://www.coordinationsud.org/appel-offre/consultance-accompagnement-a-la-recherche-action/"
+		
+org_country   =  FR
+
+org_language		=		FR		
+				
+
+
+
+
+
+

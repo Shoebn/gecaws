@@ -1,0 +1,55 @@
+in_grse_spn
+7391846
+GARDEN REACH SHIPBUILDERS AND ENGINEERS LIMITE
+https://grse.in/tender-published/
+
+######################################################################################################################################################
+script_name:in_grse_spn
+
+urls: "https://grse.in/tender-published/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- GARDEN REACH SHIPBUILDERS AND ENGINEERS LIMITE	
+
+org_parent_id -- 7391846
+
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+#note -- click on "single" "open" "limited" and take data 
+
+local_title --- TENDER DETAILS	
+
+notice_deadline --- CLOSING DATE/TIME		
+
+document_cost --- COST OF TENDER DOCUMENT	
+
+earnest_money_deposit --- EMD (RS.)
+
+
+
+
+
+#attachment >>>> ENQUIRY NO.	
+
+
+external_url --- "ENQUIRY NO." >>> (click on the href for documents File)	
+
+file_name --- ENQUIRY NO.		
+
+file_type --- (extension)... eg - pdf
+
+file_size ---  ENQUIRY NO. (136.08 KB,  1.1 MB)

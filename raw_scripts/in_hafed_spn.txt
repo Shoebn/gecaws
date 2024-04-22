@@ -1,0 +1,49 @@
+script_name : in_hafed_spn
+
+url : "http://hafed.gov.in/tenders"
+
+page_no : 7
+
+main_language : EN	
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "TENDERS"
+	
+local_title :  Tender Related Notices
+
+publish_date : Tender Issue Date , take time too
+
+notice_deadline : Last Date of Submission
+
+
+attachments
+------------
+file_name : Documents
+
+external_url : take from "Documents" field
+
+
+customer_details
+----------------
+org_parent_id : 7558161
+
+org_name : "HARYANA STATE COOPERATIVE SUPPLY AND MARKETING FEDERATION LIMITED"
+
+org_country : IN
+
+org_language : EN
+
+org_state : Haryana
+
+
+

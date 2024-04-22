@@ -1,0 +1,56 @@
+script_name : in_tactv_spn
+
+url : "https://www.tactv.in/tenders.php"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if the "Tender Title" field has "Expression of Interest" or "EOI" appears then take notice_type = 5
+
+-----------------
+tender_html_page
+-----------------
+dcoument_type_description : "Tenders/EOI"
+
+local_title : Tender Title , split the data below "Notice Number:" field 
+
+notice_no : Tender Title >> Notice Number: , split the data eafter "Notice Number:"
+
+publish_date : take threshold
+
+notice_deadline : Date >> Last Date to Submit: , take time too
+
+documnent_opening_time : Date  >> Date & time of opening:
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://www.tactv.in/tenders.php
+
+-----------
+attachments
+-----------
+
+file_name :  take from "Download" field
+
+external_url : download from "Download" field
+
+
+----------------
+customer_details 
+----------------
+org_name : "TAMIL NADU ARASU CABLE TV CORPORATION LIMITED"
+
+org_parent_id : 7194538
+
+org_Country : IN
+
+org_language : EN
+
+org_state : "Tamilnadu"

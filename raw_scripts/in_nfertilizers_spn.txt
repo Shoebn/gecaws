@@ -1,0 +1,45 @@
+Note : Go to URL : "https://tenders.nfl.co.in/tender_new.php"
+
+script_name : "in_nfertilizers_spn"			
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4	
+
+currancy	:	'INR'
+
+=================================================================================================================================================
+
+publish_date	: Upload Date
+
+notice_no	: NIT/Tender No.
+
+local_title	: Tender Description
+
+org_city	: Unit
+
+notice_deadline	: Due Date
+
+notice_url	: NIT/Tender No.			Com: Click on "NIT/Tender No." this field hypetlink than grab the data
+
+notice_text		: Take all the data from page_detail as well the "tender_html_element" of each record
+
+attachments		: Grab the hyperlink after "Click below links to download the following Tender Documents:" ths keyword		[page_detail]		Com:grab between "Click below links to download the following Tender Documents:" and "Download Instructions"
+
+external_url	: : Grab the hyperlink after "Click below links to download the following Tender Documents:" ths keyword	[page_detail]		Com:grab between "Click below links to download the following Tender Documents:" and "Download Instructions"
+
+org_name	: 'National Fertilizers Limited'
+
+org_parent_id	: '1488433'
+
+org_address		: 'Corporate Office, A-11, Sector 24, Gautam Budhha Nagar, Uttar Pradesh 201301' pass static
+
+org_email		: 'customercare@nfl.co.in' pass static
+
+org_phone		: '18001806435' pass static

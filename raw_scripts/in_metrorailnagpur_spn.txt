@@ -1,0 +1,68 @@
+script_name : in_metrorailnagpur_spn
+
+url : "https://www.metrorailnagpur.com/tenders#fh5co-tab-feature-center1"
+
+page_no : 3
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4  , if "Remark" field has "Corrigendum" keyword appears then take notice_type=16
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "TENDERS"
+
+notice_no : TENDER NOTICE NO , split the data between "TENDER NOTICE NO" and "DATED"
+
+local_title :  	Name Of Work  , take the text below from  "TENDER NOTICE NO :" and  above from "attachments"
+
+publish_date : Name Of Work >> DATED , grab the date after "DATED"
+
+est_amount / grossbudgetlc  :    Estimated Cost ,  for ex. "Including" word appears then take grossbudgetlc  or "Exclusive of applicable GST" appears then take netbudgetlc , if multiple amount 				 available i.e "Lot-1: 57 Crores, Lot-2 : 96 Crores /-" then take maximum value for ex."96 Crores"
+
+
+earnest_money_deposit : EMD & Document Cost ,  take the amount before "&" , if multiple amount appears then take maximum value 
+
+document_cost : EMD & Document Cost ,  take the amount after "&"
+
+contract_duration : Completion Period , this field contains the unit of duration i.e "Weeks" ,"Months" , "Years" 
+
+document_purchase_start_date : Document Sale	, take the date before "To" keyword	
+
+document_purchase_end_date : Document Sale , take the date after "to" keyword	
+
+pre-bid-meeting_date : Pre-Bid Date 
+
+notice_deadline : Submission upto , take time too
+
+document_opening_time :Opening Date
+		
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+notice_url : https://www.metrorailnagpur.com/tenders#fh5co-tab-feature-center1
+
+
+customer_details
+----------------
+org_parent_id : 7748165
+
+org_name : "NAGPUR METRO RAIL PROJECT"
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : take from "	Name Of Work"  field , take the attachments below from "local_title" field
+
+external_url : take from "Name Of Work"  field , take the attachments below from "local_title" field

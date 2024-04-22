@@ -1,0 +1,47 @@
+######################################################################################################################################################
+script_name: in_madrasfert_spn
+
+urls: "https://madrasfert.co.in/tender/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- MADRAS FERTILIZERS LIMITED
+
+org_parent_id -- 7809472
+
+
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- TENDER DESCRIPTION	
+
+notice_deadline --- DUE DATE
+
+
+notice_url ---https://madrasfert.co.in/tender/
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+
+
+#attachment >>>> TENDER DESCRIPTION	(click on hrerf for attachments)
+
+external_url --- "TENDER DESCRIPTION	" >>> (click on the href for documents File)	
+
+file_name --- TENDER DESCRIPTION	
+
+file_type --- (extension)... eg - pdf

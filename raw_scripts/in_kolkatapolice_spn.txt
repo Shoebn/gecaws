@@ -1,0 +1,58 @@
+in_kolkatapolice_spn
+
+
+######################################################################################################################################################
+#Note - click on "tender" after the url gets loaded
+
+script_name: in_kolkatapolice_spn	
+           
+urls:"https://kolkatapolice.gov.in/tenders/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+
+org_name: KOLKATA POLICE
+
+org_parent_id: 7522483
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- Tenders
+
+procurement_method: "2"
+#note - if date is present in "Extended Upto" field then the notice_deadline will change according to the given date --- at this case take procurement_method ="16"
+
+Notice_no --- Tender No.	
+
+local_title --- Short Description	
+
+publish_date --- Tender Date	
+
+notice_deadline --- Closing Date	
+
+notice_url --- https://kolkatapolice.gov.in/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+#attachment
+
+click on  "Download " for attachments
+
+external_url --- Download File	 (click on the href for documents File)	
+
+file_name --- Tender Document 
+
+file_type --- (extension)... eg - pdf	
+

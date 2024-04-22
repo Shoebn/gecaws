@@ -1,0 +1,42 @@
+Com:Click on "MORE" this button than grab all tender info
+
+Note : Go to URL : "https://capt.gov.kw/en/tenders/opening-tenders/"
+	
+script_name : "kw_capt_spn"
+
+page_no : 3
+
+main_language/ org_language  : AR
+
+procurment_method : 2
+
+notice_type : 4	
+
+================================TenderNotice==========================================
+
+
+id / Notice no		:Take the "notice_no" two lines left of the "MORE" this keyword		Com:"8 / 2023 Jan. 14, 2024" teke only "8 / 2023"
+
+publishDate		:Take the "notice_no" two lines left of the "MORE" this keyword		Com:"8 / 2023 Jan. 14, 2024" teke only "Jan. 14, 2024"
+
+title/ local_title 		:Take the "local_title" left of the "MORE" this keyword		Com:"Public Authority for Industry توريد قطع غيار لمضخة المياه الرئيسية رقم (16) في المحطة الشمالية" take only "توريد قطع غيار لمضخة المياه الرئيسية رقم (16) في المحطة الشمالية"
+
+noticeSummary / local_description / notice_summery_english	:Insurance Items	Click on "Insurance Items >> SHOW INSURANCE ITEMS" this button than grab the data  			Ref : notice_no:2417721222
+
+countryNames / performance_country	:'KW'
+
+buyerName / org_name	:Take the "org_name" left of the "MORE" this keyword	Com:"Ministry of Defense توريد الحبوب والبهارات - لزوم / وحدات الجيش" take only "توريد الحبوب والبهارات - لزوم / وحدات الجيش"
+
+contact.country		:'KW'
+
+bidDeadline  / Notice_deadline / submission_deadline	:Last date   Com:Click on "MORE" this button than grab the data 
+
+est_amount / GROSSBUDGETLC	:Price
+
+estimatedAmountCurrency / Currency	:'KWD'
+
+originalUrl / main_url / notice_url 	:"https://capt.gov.kw/en/tenders/opening-tenders/"
+
+noticeText / html_body / Notice_text	:take data from "tender_html_element" in notice_text of each record 
+
+pre_bid_meeting_date  :Initial meeting date

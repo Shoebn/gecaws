@@ -1,0 +1,56 @@
+after opening the url clicks on below clicks and grab the data fot contract_award.
+1.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  All India Region
+2.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  Eastern Region
+3.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  HO Region
+4.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  Northern Region
+5.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  Southern Region
+6.LIST OF MAJOR CONTRACTS CONCLUDED BY NDDB  >>  Western Region
+
+currently no-2,4 and 5 have no data.
+
+***********************************************************in_nddb_ca*****************************************************************
+script_name = 'in_nddb_ca'
+
+url = "http://tenders.nddb.coop/SitePages/Tenders.aspx"
+
+page_no = 1
+
+main_language = 'EN'
+
+performance_country = 'IN' 
+
+notice_type = 7
+
+org_country = 'IN'
+
+org_language = 'EN'	
+
+org_name = 'NATIONAL DAIRY DEVELOPMENT BOARD'
+
+org_parent_id = '6971886'
+
+
+					******************************tender_html_element***********************************
+related_tender_id = IFB No
+
+local_title = Project
+
+local_description / notice_summary_english = Description
+
+notice_no = P.O No
+
+publish_date = P.O Date
+
+bidder_name = Company Name
+
+grossawardvaluelc = Contract Value
+
+contract_duration = Delivery Period (In Months)			cmt:add "(In Months)" after grabbing the every number.
+
+currency = Contract Value			cmt:here "Rs.17,47,580.00/-" grab only "Rs.".		replace the grabbed text with currency code ("Rs.=INR","US$=USD","EURO=EUR")
+
+procurement_method = Type of Bidding		cmt:if in this field following keyword are present then pass the number ("Local=0")("International=1") oterwise pass 2.
+
+notice_url = 		cmt:apass main url as notice_url.
+
+notice_text 		cmt:take all "tender_html_element" Row wisedata in Notice Text.

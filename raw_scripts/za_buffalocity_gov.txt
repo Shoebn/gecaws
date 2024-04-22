@@ -1,0 +1,45 @@
+
+
+
+
+*****************************************************za_buffalocity_gov_spn************************************
+after opening the main url grab the data.And also grab the data from following clicks.
+1)(Tenders >> Annual Tenders) >> 2024
+2)(Tenders >> Formal Tenders) >> 2024
+
+
+script_name			'za_buffalocity_gov_spn'
+notice_type			4		
+procurement_method	2
+urls				"https://www.buffalocity.gov.za/tender_documents.php?year=2024&type=Formal%20Request%20for%20Quotation"
+   
+page_no					3
+performance_country		'ZA'
+currancy				'ZAR'
+main_language			'EN'
+org_Name          		'BUFFALO CITY METROPOLITAN MUNICIPALITY'     
+org_parent_id 			'7804639' 
+org_country				'ZA'
+org_language			'EN'
+
+
+Grab below data from tender_html_element.
+notice_no:Contract No	
+local_title:Description	
+notice_deadline:Closing Date	
+
+
+attachments:
+	file_name:'Tender Documents'
+			cmt:pass static.
+	file_type:Download
+			cmt:split after external_url
+	external_url:Download
+
+
+notice_url		There is no page_details is availabel, so pass "urls" in notice_url.
+notice_text		take all the Row wisedata in Notice Text.  of each record
+
+
+
+

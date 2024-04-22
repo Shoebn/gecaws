@@ -1,0 +1,36 @@
+Note : Go to URL : "https://sourcing.essar.com/E_tender/USER/Tender_Download.aspx?id=1"
+
+script_name :	'in_essar_spn'			
+
+page_no : 3
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type : 4		
+
+currency	: 'INR'
+======================================================================================================================================================
+
+notice_no	: Tender No
+
+publish_date	: Tender Date
+
+local_description	: 	Tender Description
+
+notice_deadline	: Last submission Date
+
+notice_url	: Tender No		Com:Click on hyperlink than grab the data
+
+notice_text	: Take all the data from page_detail as well the  "tender_html_element" of each record
+
+est_amount / grossbudgetlc	: Tender Value     [page_detail]
+
+org_name	: 'ESSAR'
+
+org_parent_id	: '7529704'
+
+contact_person	: Technical Contact		[page_detail]			Com:Take data also "Commercial Contact" this field

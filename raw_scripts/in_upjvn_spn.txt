@@ -1,0 +1,93 @@
+script_name : in_upjvn_spn
+
+url: "https://www.upjvn.org/Home/Tender"
+
+page_no : 5
+
+procurment_method : 2
+	
+notice_type : 4 , if the "Subject" column field has "Corrigendum" world appears then take notice_type = 16
+
+currency :  INR
+
+id / Notice no : Tender No
+
+document_type_description : "Tenders"
+
+publishDate : 	Tender Date
+
+externalId / buyer internal id / org_parent_id : "7522132" static
+
+languageCode / org_language / main_language : EN
+
+title/ local_title :  Tender Title
+
+document_purchaase_end_date : Last Date of Sale	
+
+noticeSummary / local_description / notice_summery_english : Null
+
+noticeType / contract_type : Null
+
+countryNames / performance_country : IN 
+
+buyerName / org_name : "Uttar Pradesh Jal Vidyut Nigam Limited"
+
+contact.firstName / contact person : Null
+
+contact.lastName  :   Null
+
+contact.address / org_address  :  "Uttar Pradesh Jal Vidyut Nigam Limited.(A Govt. of Uttar Pradesh Enterprise) 12th Floor, Shakti Bhawan Ext., 14-Ashok Marg, Lucknow- 226001"  static
+
+contact.address2 title : Null
+
+contact.city / org_city : "Lucknow" static
+
+contact.state / org_state : "Utter Pradesh" static
+
+contact.country / org_country :	 "IN" static
+
+contact.email / org_email : " info@upjvn.com"  take static
+
+contact.phone / org_phone : Null
+
+contact.url / org_url : Null
+
+eligibilityCriteria/ eligibility : Null
+
+projectName / project_Name :	 Null
+
+fundingAgency / funding_Agency : Null
+
+notice_url : "https://www.upjvn.org/Home/Tender"
+
+notice_text  :  take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+Source of Funds -  : Null
+
+procurementMethod / procurement_Method :  Null
+
+bidDeadline  / Notice_deadline / submission_deadline : Opening Date		
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	:
+
+estimatedAmountCurrency / Currency : INR
+ 
+contractDuration /contract_Duration : Null
+
+
+lotsInfo
+documentCost / document_cost / document_fee
+noticeContractType / Contract_Type
+CPVNames /class_at_source : Null
+CPVCodes : Null
+
+Name of Product Category of the sources /Category : Null
+
+class_title_at_source
+
+attachments
+---------------
+
+file_name : : "View" static
+
+external_url  :  View

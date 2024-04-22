@@ -1,0 +1,160 @@
+Category,Mapped CPV
+agriculture,03000000#16000000
+agricultural equipment,03000000#16000000
+animal control and welfare,85310000
+pest control,90922000
+trees and plants,03000000
+building and property,70000000
+bridges and tunnels,45221000
+building materials,44111000
+cleaning and janitorial services,90910000#98341130
+decontamination,42924720
+demolition,45111100
+electrical,31000000
+excavation,45000000
+facility maintenance,79993100#50000000
+fencing,34928220
+fire suppression and monitoring,35111500
+fit out and interiors,45000000
+heritage restoration,45454100
+hvac,45331000
+landscaping,45112700
+lifts and elevators,42416100#42417000
+management,79400000
+marine,98360000#34930000
+pest control,90922000
+playgrounds and gyms,37535200#37420000
+plumbing and sewerage,45232410#45330000
+property and building sales,70121100
+roads and rail,45000000
+roofing,44112500
+tools and machinery,42600000
+utilities,65000000
+community and social services,98000000
+housing and homelessness,70333000
+meal services,55320000
+social enterprise services,79000000
+construction,45000000
+archaeologist,71351914
+architectural services,71200000
+building upgrades projects,45210000
+commercial,45210000
+industrial,45210000
+infrastructure,71311300#45000000
+new construction projects,45000000
+residential,45210000
+survey,79311000#71250000#71320000
+trades,55900000
+urban planning,71410000
+waste disposal services,90520000
+consultancies,71311000
+advisory consultants,71210000#71240000
+audit and risk,79000000
+construction consultants,71000000
+environmental consultants,90700000#71313000
+financial consultants,66171000
+government and business consultants,79000000
+heritage consultants,71000000
+it consultants,72000000
+management consultants,79400000
+marketing consulants,79342000
+specialised service,79000000
+education,39162000#80000000
+educational services,80000000
+educational supplies,39162000
+teaching and learning,80000000
+traineeships,80000000
+energy,71313000
+coal and gas,09121000
+renewables,31000000#71313000
+engineering and technical,71300000
+civil engineers,71311000
+construction engineers,45000000#71000000
+environmental engineers,71313000
+research testing and modelling,38970000#45214620
+specilised equipment and spares,42000000
+structual engineers,71312000
+technical services,71356000
+finance tax and insurance,66000000
+financial services,66000000
+insurance services,66000000
+taxation services,79221000
+food,15000000
+catering services,55520000
+food preparation,15800000
+raw ingredients,15000000
+healthcare,85100000#33000000
+healthcare services,85100000
+medical equipment,33100000
+pharmaceuticals,33600000
+information and technology,48000000#72000000
+cloud products and support,48000000#72000000
+data and analytics,72000000
+data privacy and security,48732000#72212732#72000000
+electrical devices and equipment,31600000
+end user computing and peripherals,50323000#30200000
+infrastructure and network,32424000
+managed and outsourced services,72000000
+monitoring and security,72000000
+software licensing and support,48218000#72212218
+solution design and development,72000000
+machine learning and ai,48000000#72000000
+satellites and related services ,64200000
+telecommunications,32522000#64200000
+logistics,60000000#63000000
+containers shipping and storage,63000000
+courier and parcel delivery,64121200#64120000
+relocation services,98392000
+manufacturing,39300000
+equipment and spares,42000000#43000000
+fabrication,45255400
+raw materials,14900000
+marketing and advertising,79340000
+advertising,79341000
+digital communications,72000000
+graphic design,79822500
+market research,79310000
+public relations and professional communications services,79416000#79000000
+social media,79000000
+visual communications,32320000
+written communications,80000000
+office supplies,30192000
+cleaning equipment and supplies,39800000
+clothing and uniforms,18000000
+office furniture,39130000
+stationery,30192700
+professional services (excl consultancies),79000000
+cleaning services,90910000
+clerical services ,79000000
+clerical and administrative services,79000000
+estimating services,71242000
+health and safety,71317200
+healthcare services,85100000
+printing services,79810000
+professional procurement services,79000000
+security and protection,72000000#48000000
+training services,80500000
+sustainability and environmental,90000000
+environmental advisory services ,90000000
+ev charging infrastructure,34144900#34000000
+recycling,42914000#90500000
+recruitment services,79600000
+contingent workforce,79000000
+talent acquisition,79000000
+travel,63515000
+accommodation,98341000
+transportation,34000000
+travel insurance,66510000
+vehicles,34100000
+aircraft,34700000
+equipment and spares,42000000#39300000
+fleet management,50111000
+fuels,09100000
+heavy machinery,42000000
+marine craft,34930000
+military and specialist vehicles,34114000#35400000
+passenger vehicles,34110000#34100000
+recreational vehicles,34100000
+safety and rescue vehicles,34114110
+trucks trains and buses,34000000
+other,98390000#39300000

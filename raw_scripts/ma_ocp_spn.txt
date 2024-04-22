@@ -1,0 +1,78 @@
+script_name: ma_ocp_spn                             	
+
+urls:"https://supplier.ocpgroup.ma/#/landing-page/opportunities"
+
+page_no: 3
+
+performance_country/ org_country    : "MA"
+
+currency: "MAD"
+
+main_language. org_language: "FR"
+
+procurement_method: 2 
+
+notice_type: 4
+
+
+*************************************************
+#TENDER_HTML_ELEMENT
+*************************************************
+
+notice_deadline:----- Date limite de réponse 
+
+local_title:----- Objet
+
+class_title_at_source ----- "Dossier_....." take data which is after this keyword
+
+notice_url ----- Click on :Accéder>" 
+
+notice_text ----- page_detail  
+#Note - take HTML body of main page
+
+publish_date ----- take publication date from (detailpage1)"Pièces Jointes De L'opportunité  >  DATE/HEURE DE LA DERNIÈRE MODIFICATION" if the above field is not available on detail page, than it should be grabbed from Detail page1 "Paramètres de la RFI > Publication"   
+
+
+
+*************************************************
+#PAGE_DETAIL
+*************************************************
+
+	
+notice_no: -----  Contenu Du Dossier > Code du dossier
+
+notice_contract_type / contract_type_actual ----- Catégorie de travaux
+
+Locatl Description / Notice_summary_english  ----- Données De L'opportunité
+
+type of procedure actual -----  Type de procédure
+
+
+
+#lot_details[]
+lot_actual_no ----- Lots Publiés > CODE
+
+lot_title -----  Lots Publiés >   TITRE
+
+click on "COLONNE DES ACTIONS" to grabbed  detail page1  (lot ) 
+
+lot_description ----- Données Générales >>>  Description courte
+
+org_name ----- Données De La Structure Achat  > Organisation Acheteur
+
+contact_person ----- Organisation Acheteur
+
+org_email ----- E-mail
+
+
+
+
+#attachments   : Pièces Jointes De L'opportunité
+
+External url ----- Pièces Jointes De L'opportunité > NUMÉRO DE LIGNE	 NOM   (take hyperlink as a external url )
+
+file_name ----- Pièces Jointes De L'opportunité>   DESCRIPTION
+
+file_type ----- take from  file_name extension 
+
+file_size ------ take "()" data as a size (eg:  (221 KB) )

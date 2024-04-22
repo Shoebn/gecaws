@@ -1,0 +1,51 @@
+######################################################################################################################################################
+script_name: in_igcargso_spn	
+
+urls: "https://www.igcar.gov.in/gso/tender.html"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name --- INDIRA GANDHI CENTRE FOR ATOMIC RESEARCH
+
+org_parent_id -- 7549435
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+notice_no --- Tender Notice No.
+
+local_title --- Nature of Work
+
+publish_date --- Displayed on	
+
+notice_deadline --- Last date for Sale
+
+notice_url --- https://www.igcar.gov.in/gso/tender.html
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+
+
+#attachment >>>> Tender Notice No.	(click on hrerf for attachments)
+
+external_url --- "Tender Notice No." >>> (click on the href for documents File)	
+
+file_name --- Tender Notice No.
+
+file_type --- (extension)... eg - pdf

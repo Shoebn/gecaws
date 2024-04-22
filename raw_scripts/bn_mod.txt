@@ -1,0 +1,103 @@
+script_name : bn_mod_spn
+
+main_url : http://www.mod.gov.bn/pwd/Lists/Tender/PWD%20Tender.aspx
+
+page_no : 3
+
+main_language : EN
+
+performance_country : bn
+
+notice_type = 4
+
+procurement_method : 2
+
+currency : BND
+
+
+tender_html_page
+-----------------
+local_title : Title
+
+tender_no : Tender No
+
+notice_dealdine : Tender Closing Date + Tender Closing Time , take time too
+
+notice_url : click on "	Title" fields
+
+notice_text : alog with detail_page take the data from tender_html_page
+
+
+detail_page
+-----------
+document_fee : Tender Fees	
+
+publish_date :Website Publish Date
+
+
+customer_details
+----------------
+org_name : "KEMENTERIAN PEMBANGUNAN BRUNEI DARUSSALAM"
+
+org_address : take from "Department" field (detail_page)
+
+org_parent_id : 7795859
+
+org_country : bn
+
+org_language : EN
+
+
+--------------------------------------------------------------------------------------spn format 2-------------------------------------------------------------------------------------------------
+
+script_name : bn_modc_spn
+
+main_url : http://www.mod.gov.bn/pwd/Lists/Quotation1/PWD%20Quotation.aspx
+
+page_no : 3
+
+main_language : EN
+
+performance_country : bn
+
+notice_type = 4
+
+procurement_method : 2
+
+currency : BND
+
+
+tender_html_page
+-----------------
+document_type_description : "Quotation"
+
+local_title : Title
+
+tender_no : Quotation No
+
+publish_date :Website Publish Date
+
+
+notice_dealdine :  Closing Date +  Time , take time too
+
+notice_url : click on "	Title" fields
+
+notice_text : alog with detail_page take the data from tender_html_page
+
+
+detail_page
+-----------
+document_fee : Quotation Fees	
+
+
+customer_details
+----------------
+org_name : "KEMENTERIAN PEMBANGUNAN BRUNEI DARUSSALAM"
+
+org_address : take from "Department" field (detail_page)
+
+org_parent_id : 7795859
+
+org_country : bn
+
+org_language : EN

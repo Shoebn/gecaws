@@ -1,0 +1,54 @@
+######################################################################################################################################################
+script_name: in_imu_spn 
+   
+urls: " https://www.imu.edu.in/imunew/tender"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if "Corrigendum" appears in tender document then take notice_type - 16
+
+procurement_method: "2"
+
+org_name:INDIAN MARITIME UNIVERSITY (A CENTRAL UNIVERSITY UNDER THE MINISTRY OF SHIPPING. GOVERNMENT OF INDIA)	
+
+org_parent_id: 7073352
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- TENDER
+
+publish_date --- Bid Published Date	
+
+notice_deadline --- Bid Submission Closing Date & Time	
+
+document_opening_time --- Tender Opening Date & time >>> split data from "Tender Opening"
+
+pre_bid_meeting_date --- Tender Opening Date & time >>> Pre-Bid Meeting
+
+local_title --- Description
+
+notice_url ---  https://www.imu.edu.in/imunew/tender
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment >>>> Tender documents
+		
+external_url --- Tender documents >>>pop up will appear "Details" ,"Financial Bid opening-Notification", "CPP Portal Document", etc take all the href links from " Tender documents "   (click on the href for documents File)	
+
+file_name --- Tender Document (take all the title , dont pass static title)	
+
+file_type --- (extension)... eg - pdf
+
+

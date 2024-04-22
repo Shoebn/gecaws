@@ -1,0 +1,55 @@
+
+######################################################################################################################################################
+
+script_name: in_cipet_spn
+	
+           
+urls:"https://www.cipet.gov.in/tender-notice/index.php"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+publish_date --- Date of Notification	
+
+document_type_description --- (statsic) TENDER NOTICE(S)
+
+org_name --- Centre
+
+local_title --- Bid for, IFQ for, Tender for		
+
+notice_deadline --- Last Date	
+
+notice_url ---https://www.cipet.gov.in/tender-notice/index.php
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+#attachment
+
+click on  "Download" 
+
+external_url --- "DOWNLOAD" >>>  (click on the href for documents File)	
+
+file_name ---  Tender Description	
+
+file_type --- (extension)... eg - aspx, pdf
+
+file_size ---  (File Size: 99 KB),(File Size: 114 KB)
+
+
+
+	

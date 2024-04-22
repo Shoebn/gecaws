@@ -1,0 +1,53 @@
+
+######################################################################################################################################################
+
+script_name: in_consumeraffairs_spn	
+           
+urls:"https://consumeraffairs.nic.in/latest-updates"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name:DEPARTMENT OF CONSUMER AFFAIRS FOOD AND PUBLIC DISTRIBUTION	
+
+org_parent_id: 7747314
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+local_title --- Title
+
+publish_date --- Issue Date	
+
+notice_deadline --- End Date
+
+notice_url --- https://consumeraffairs.nic.in/latest-updates
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+#attachment
+
+click on  "Action" 
+
+external_url --- "Action" >>>  (click on the href for documents File)	
+
+file_name ---  Tender Description	
+
+file_type --- Details >>> (extension)... eg - aspx, pdf
+
+file_size --- Details >>> (2.33MB) , (782.08KB) 
+
+

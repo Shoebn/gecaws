@@ -1,0 +1,43 @@
+Note : Go to URL : "http://klsgaci.edu.in/tenders.php"
+
+script_name : "in_klsgaci_spn"	
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'IN'
+
+procurment_method : 2
+
+notice_type :	 4
+
+currancy	:	'INR'
+
+===========================================================================================================================================
+
+local_title		: Title
+
+publish_date		: Published Date
+
+notice_deadline		: Closing Date
+
+org_name		: 'PT. KHUSHILAL SHARMA GOVERNMENT (AUTONOMOUS) AYURVEDA COLLEGE AND INSTITUTE BHOPAL'
+
+org_parent_id		: '7574686'
+
+org_address		: ' "A Centre for Excellence" Science Hills, Nehru Nagar - Kolar Bypass Road, Bhopal 462003 (M.P.) India ' pass static
+
+org_phone		: '+91-755-2970310' , '+91-755-2970319' pass static
+
+org_email		: 'principal@klsgaci.nic.in' pass static
+
+attachments		: Download
+	
+external_url	: Download
+
+notice_url		: pass main url  "http://klsgaci.edu.in/tenders.php"
+
+notice_text		: Take data from "tender_html_element" in notice_text of each record
+
+

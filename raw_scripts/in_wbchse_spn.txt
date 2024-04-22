@@ -1,0 +1,52 @@
+ 	
+######################################################################################################################################################
+script_name: in_wbchse_spn
+   
+urls: "https://wbchse.wb.gov.in/notices/?jsf=jet-engine:notices-grid&tax=type-of-notice:12"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: WEST BENGAL COUNCIL OF HIGHER SECONDARY EDUCATION
+
+org_parent_id: 7726595
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+document_type_description --- (static) TENDER-NIT
+
+local_title --- select fir line (the line written in bold)
+
+publish_date --- take data which is below title and before "to"
+
+org_name --- split data from "From" till "Close Date"
+
+notice_deadline --- Close Date
+
+notice_url --- https://wbchse.wb.gov.in/notices/?jsf=jet-engine:notices-grid&tax=type-of-notice:12
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment >>>> click on "green color ⬇️"		
+
+external_url --- "green color ⬇️" >>> (click on the href for documents File)	
+
+file_name --- Tender Document 	
+
+file_type --- (extension)... eg - pdf

@@ -1,0 +1,35 @@
+Note : Go to URL : "https://www.maine.gov/dafs/bbm/procurementservices/vendors/noi"					Com:Grab "For the list below, these contracts will proceed immediately." this table data also
+
+script_name : "us_dafsnoi_spn"				
+
+page_no : 5
+
+main_language/ org_language  : 'EN'
+
+performance_country / org_country	: 'US'
+
+procurment_method : 2
+
+notice_type : 5		
+
+currancy	:	'USD'
+
+===============================================================================================================================================
+
+local_title	: Description of Goods/Services
+
+notice_no	: NOI #
+
+org_name	: Issuing Department
+
+publish_date	: Posting Start Date
+
+notice_deadline		: Posting End Date
+
+attachments		: NOI #  		Com:Click on "NOI #" this field hyperlink than grab the data
+
+external_url	: NOI #			Com:Click on "NOI #" this field hyperlink than grab the data
+
+notice_url	: pass main url "https://www.maine.gov/dafs/bbm/procurementservices/vendors/noi"
+
+notice_text	: Take data from "tender_html_element" in notice_text of each record

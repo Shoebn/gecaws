@@ -1,0 +1,114 @@
+script_name : in_centralbankofindia_spn
+
+url : "https://www.centralbankofindia.co.in/en/active-tender"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 4 
+
+
+customer_details
+-----------------
+
+org_name : "CENTRAL BANK OF INDIA"
+
+org_parent_id : 7533531
+
+org_language : EN
+
+org_country : IN
+
+org_phone :   02266387777
+
+
+tender_html_page
+------------------
+
+document_type_description : "Active Tender"
+
+notice_no : Tender Ref No.
+
+local_title :  Tender Title
+
+notice_deadline :  Last Date of submission/notification date (whichever is applicable)
+
+publish_date : Date of Publication
+
+notice_url : "https://www.centralbankofindia.co.in/en/active-tender?title=&field_date_of_submission_value_1=&field_date_of_submission_value_2=&page=0"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+attachment
+---------------
+
+file_name :take from  "Document" field
+
+external_url : take from "Document" field
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+script_name : in_centralbankofindia_ca
+
+url : "https://www.centralbankofindia.co.in/en/active-tender"
+
+page_no : 5
+
+main_language : EN
+
+performance_country : IN
+
+procurement_method : 2
+
+currency : INR
+
+notice_type : 7 
+
+
+customer_details
+-----------------
+
+org_name : "CENTRAL BANK OF INDIA"
+
+org_parent_id : 7533531
+
+org_language : EN
+
+org_country : IN
+
+org_phone :   02266387777
+
+
+tender_html_page
+------------------
+
+document_type_description : "Awarded Tender"
+
+local_title :  Tender Title
+
+publish_date : Date of NIT	
+
+notice_url : "https://www.centralbankofindia.co.in/en/awarded-tender"
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+attachment
+---------------
+
+file_name :take from  "View" field
+
+external_url : take from "View" field
+ 

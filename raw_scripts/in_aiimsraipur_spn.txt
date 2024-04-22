@@ -1,0 +1,48 @@
+script_name					in_aiimsraipur_spn
+notice_type					4		
+procurement_method			2
+urls						"https://www.aiimsraipur.edu.in/user/tenders.php"
+page_no						5
+performance_country			IN
+currancy					INR
+main_language				EN
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.aiimsraipur.edu.in/user/tenders.php" and grab the data
+
+Tender_Html_Element
+
+notice_no			=		Tender.No
+
+local_title			=		Title
+
+publish_date		=		Publishing Date
+
+notice_deadline		=		Closing Date
+
+notice_url			=		"https://www.aiimsraipur.edu.in/user/tenders.php"
+
+notice_text			=		take all the data from "tener_html_element"
+
+org_name			=		ALL INDIA INSTITUTE OF MEDICAL SCIENCES, RAIPUR
+
+org_parent_id		=		6973241
+
+org_country			=		IN
+
+org_language		=		EN
+
+------------------------------------------------------
+
+Attachments	Foemat 1
+
+attachments			=		Download
+
+Attachments	Foemat 2
+
+attachments			=		Corrigendum			Com:If data available than take
+
+------------------------------------------------------
+
+
+

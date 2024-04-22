@@ -1,0 +1,55 @@
+Note : Go to URL : "http://jn.upsdc.gov.in/en/tenders"
+
+script_name : "in_upsdc_spn"
+
+page_no : 3
+
+main_language/ org_language  : EN
+
+performance_country / org_country	:	'IN'
+
+procurment_method : 2
+
+notice_type : 4
+
+================================TenderNotice==========================================
+
+id / Notice no	:	Tender Number
+
+publishDate	:	Tender Date
+
+externalId / buyer internal id / org_parent_id	:	'7533416'
+
+title/ local_title 	:	Tender Title	Com:Splite Don't take file_size and language field
+
+buyerName / org_name	: 'UTTAR PRADESH JAL NIGAM'
+
+contact.firstName / contact person 	: "Er. D.K. Singh" pass static
+
+contact.address / org_address	:"6, Rana Pratap Marg,Lucknow - 226001 U.P.(INDIA)" pass static
+
+contact.phone / org_phone	: "(0522) 2620172, 2620272" pass stasic
+
+bidDeadline  / Notice_deadline / submission_deadline	:End Date
+
+estimatedAmountCurrency / Currency 	: 'INR'
+
+Attachments / Documents	:Tender Title
+
+file_size	:Tender Title
+
+External URL  :Tender Title
+
+document_purchase_start_time	:	Date of Opening		Com:grab time also
+
+document_purchase_end_time	:	Last Date of Sale		com:grab time also
+
+notice_url 	: Tender Number		Com:Click on "Tender Number" this keyword than grab the data
+
+org_city	: District Name
+
+originalUrl / main_url / 	: "http://jn.upsdc.gov.in/en/tenders"
+
+noticeText / html_body / Notice_text	:take all the data from page_detail as well the  "tender_html_element" of each record  
+
+identifier	:	notice_no + local_title

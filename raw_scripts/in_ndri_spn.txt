@@ -1,0 +1,65 @@
+script_name : "in_ndri_spn"
+
+url : "http://ndri.res.in/tender/"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type = 4 , if "Corrig-endum 1" field has attachments available then take notice_type= 16	
+
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Tenders"
+
+local_title : Tender Title
+
+notice_no : Reference No.
+
+publish_date : take threshold
+
+notice_deadline : Tender Closing Date
+
+document_opening_time : Tender Opening Date
+
+category : Category
+
+notice_url : "http://ndri.res.in/tender/"
+
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  
+
+
+customer_details
+----------------
+
+org_name : "National Dairy Research Institute"
+
+org_parent_id : 6473138
+
+org_country : IN
+
+org_language : EN
+
+
+
+attachments
+-----------
+file_name :  "Documents" static
+external_url :  take from "Doc" field
+
+file_nam :  "Pdf documents"  static
+external_url : take from "Pdf" field
+
+file_name :"Corrig-endum 1" static
+external_url : take from "Corrig-endum 1" field
+
+file_name :"Corrig-endum 2" static
+external_url : take from "Corrig-endum 2" field

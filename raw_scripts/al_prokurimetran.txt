@@ -1,0 +1,154 @@
+49015
+script_name			  al_prokurimetran_spn
+urls			         'https://prokurimetransparente.al/en/tender/list/status_id/1?'
+page_no/			  25        
+main_language/org_language	  SQ
+performance_country /org_country  AL
+currency			  ALL
+procurement_method 		  2(Others)
+notice_type			  4      in search criteria in "Stage Procedure " select 'Announced Procurement' , 'Signed the Contract + Additional Contract', 'Signed the Contract ' , 'Announced on Planned Registers' for notice_type 4 and 'Planning Stage' for notice_type 3 and 'Cancelled Procurement' , 'Re-Proclaimed Procurement' , 'Re-Proclaimed and Announced the Winner' , 'Re-Proclaimed and Signed the Contract' , 'Re-Proclaimed and Signed the Contract + Additional Contract' , 'Re-Proclaimed and Cancelled'  for notice_type 16  
+	          
+
+tender_html_element
+document_type_description           Stage Procedure
+local_title	                    Tender object
+netbudgetlc                  	    Estimated / Ceiling Value ALL without VAT ALL	               
+org_name                            Procuring Authority by Local Government Entity   
+notice_url	                    Tender object
+                                   
+
+pg detail
+notice_text                   take data from tender_html_element in notice_text of each record 
+notice_summary_english        Tender object
+local_description             Tender object
+publish_date                  Tender Publication Date  
+notice_deadline	              Last date of Submitted Documents
+notice_no                     Reference No.  		                     	      
+type_of_procedure_actual      Procurement Method                                      csv:- al_prokurimetran_spn_procedure
+contract_duration             Planned Milestones of Contract / Start and End Date       
+attachments	              Public Announcement Bulletin    
+
+           
+    
+                                  
+		
+49016
+script_name			al_prokurimetran_ca
+urls			        'https://prokurimetransparente.al/en/tender/list/status_id/1?'
+page_no/			  25        
+main_language/org_language	  SQ
+performance_country /org_country  AL
+currency			  ALL
+procurement_method 		  2(Others)
+notice_type			7      in "Stage Procedure " select 'Announced the Winner' for notice_type 7  
+org_country	                AL
+org_language	                SQ
+
+tender_html_element
+document_type_description        Stage Procedure
+local_title	                 Tender object
+netbudgetlc                   	 Estimated / Ceiling Value ALL without VAT ALL	               
+notice_url	                 Tender object
+org_name                         Procuring Authority by Local Government Entity                                    
+bidder_name                      Successful Bidder /Supplier / Provider    
+grossawardvaluelc                Awarded value           		 	
+
+pg detail
+notice_text                  take data from tender_html_element in notice_text of each record 
+notice_summary_english       Tender object 
+local_description            Tender object
+publish_date                 Tender Publication Date  
+notice_no                    Reference No.  		                     	      
+type_of_procedure_actual     Procurement Method                           csv:- al_prokurimetran_ca_procedure
+contract_duration            Planned Milestones of Contract / Start and End Date       
+award_date	             Bidder Announcement date 	
+attachments	             Public Announcement Bulletin 
+
+
+
+
+
+script_name			  al_prokurimetran_pp
+urls			         'https://prokurimetransparente.al/en/tender/list/status_id/1?'
+page_no/			  25        
+main_language/org_language	  SQ
+performance_country /org_country  AL
+currency			  ALL
+procurement_method 		  2(Others)
+notice_type			  3      in search criteria in "Stage Procedure " select 'Planning Stage' for notice_type 3 
+	          
+
+tender_html_element
+document_type_description           Stage Procedure
+local_title	                    Tender object
+netbudgetlc                  	    Estimated / Ceiling Value ALL without VAT ALL	               
+org_name                            Procuring Authority by Local Government Entity   
+notice_url	                    Tender object
+                                   
+
+pg detail
+notice_text                   take data from tender_html_element in notice_text of each record 
+notice_summary_english        Tender object
+local_description             Tender object
+publish_date                  Tender Publication Date  
+notice_deadline	              Last date of Submitted Documents
+notice_no                     Reference No.  		                     	      
+type_of_procedure_actual      Procurement Method                                      csv:- al_prokurimetran_spn_procedure
+contract_duration             Planned Milestones of Contract / Start and End Date       
+attachments	              Public Announcement Bulletin 
+
+
+
+
+
+script_name			  al_prokurimetran_amd
+urls			         'https://prokurimetransparente.al/en/tender/list/status_id/1?'
+page_no/			  25        
+main_language/org_language	  SQ
+performance_country /org_country  AL
+currency			  ALL
+procurement_method 		  2(Others)
+notice_type			  16      in search criteria in "Stage Procedure " select 'Cancelled Procurement' , 'Re-Proclaimed Procurement' , 'Re-Proclaimed and Announced the Winner' , 'Re-Proclaimed and Signed the Contract' , 'Re-Proclaimed and Signed the Contract + Additional Contract' , 'Re-Proclaimed and Cancelled'  for notice_type 16 
+	          
+
+tender_html_element
+document_type_description           Stage Procedure
+local_title	                    Tender object
+netbudgetlc                  	    Estimated / Ceiling Value ALL without VAT ALL	               
+org_name                            Procuring Authority by Local Government Entity   
+notice_url	                    Tender object
+                                   
+
+pg detail
+notice_text                   take data from tender_html_element in notice_text of each record 
+notice_summary_english        Tender object
+local_description             Tender object
+publish_date                  Tender Publication Date  
+notice_deadline	              Last date of Submitted Documents
+notice_no                     Reference No.  		                     	      
+type_of_procedure_actual      Procurement Method                                      csv:- al_prokurimetran_spn_procedure
+contract_duration             Planned Milestones of Contract / Start and End Date       
+attachments	              Public Announcement Bulletin
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

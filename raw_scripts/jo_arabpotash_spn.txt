@@ -1,0 +1,127 @@
+script_name : jo_arabpotash_spn
+
+page_no : 7
+
+main_language : AR
+
+procurment_method : 2
+
+currency : JOD
+
+notice_type : 4
+
+id / Notice no , cmt : grab the notice no from  textual bold data , 
+- for ex(1) ."Request for information number 022024/AN: Design, supply, construction, testing and commissioning of channels mobile dredger" , here grab only "022024/AN" 
+- for ex(2) . "IFB No. 202400053/GS - تقديم خدمات صيانة الروافع الرأسية المملوكة لشركة البوتاس العربية" , here grab only "202400053/GS"
+- if not available then grab from notice_url 
+
+publishDate , take thresold 
+
+externalId , null
+
+languageCode / org_language / main_language  ,  EN / EN
+
+
+title/ local_title , cmt : grab the  textual bold data (main title) , local_title contains notice_no so, take data after notice_no 
+
+noticeSummary / local_description / notice_summery_english , Null
+
+document_purchase_end_time ,  Purchase Date:
+
+notice_deadline , Closing date:
+
+earnest_money_deposit ,  Bid Bond Value:
+
+document_type_description , "Active Tenders" take static
+
+noticeType / contract_type , Null
+
+countryNames / performance_country , JO
+
+buyerName / org_name  , Arab Potash
+
+contact.firstName / contact person , Null
+contact.lastName  : , Null
+contact.address / org_address , Null
+contact.address2 title , Null
+contact.city / org_city  , Null
+contact.state / org_state , Null
+
+contact.country / org_country ,  JO
+
+contact.email / org_email , "procurment@arabpotash.com" take static
+
+parent_id , 7805282
+
+contact.phone / org_phone , "+962-6-5200520" take static
+
+contact.url / org_url , Null
+
+eligibilityCriteria/ eligibility , Null
+
+projectName / project_Name , Null
+
+fundingAgency / funding_Agency , Null
+
+Source of Funds - 
+
+procurementMethod / procurement_Method , Null
+
+bidDeadline  / Notice_deadline / submission_deadline , Null
+
+estimatedAmount  /est_amount / GROSSBUDGET / NETBUDGET	, Null
+
+estimatedAmountCurrency / Currency , Null 
+
+contractDuration /contract_Duration , Null
+
+lotsInfo
+
+documentCost / document_cost / document_fee   ,   Copy Price:
+
+noticeContractType / Contract_Type , Null
+
+Attachments / Documents , Null
+
+CPVNames /class_at_source , Null
+
+CPVCodes , Null
+
+Name of Product Category of the sources /Category , Null
+
+class_title_at_source , Null
+
+Corrosponsing Codes , Null
+
+originalUrl / main_url / notice_url ,  https://www.arabpotash.com/En/Modules/Tenders / cmt , for notice_url click on "Read More" button
+
+External URL / additional_url 
+
+noticeText / html_body / Notice_text   , cmt : along with detail_page take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+contractAward.companyName  / bidder_name , Null
+
+contractAward.companyAddress / bidder_address , Null
+
+contractAward.companyCountry / bidder_Country , Null
+
+contractAward.contractDuration / contract_Duration , Null
+
+contractAward.initialEstimatedValue , Null
+
+contractAward.finalValue   / award_Value , Null
+
+contractAward.currency , Null
+
+contractAward.awardDate / award_date , Null
+
+
+detail_page
+-----------------
+attachment : take attachments from below "remark" word i.e (sky blue text)
+
+file_name , take attachments from below "remark" word i.e (sky blue text)
+
+file_type , take attachments from below "remark" word i.e (sky blue text)
+
+external_url , take attachments from below "remark" word i.e (sky blue text) 

@@ -1,0 +1,34 @@
+script_name					za_sibanye_spn		
+procurement_method			2
+urls						"https://www.sibanyestillwater.com/suppliers/south-africa/available-tenders/"
+page_no						3
+performance_country	/ org_country		ZA
+main_language / org_language			EN
+currancy				ZAR
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://www.sibanyestillwater.com/suppliers/south-africa/available-tenders/" and grab the data
+
+Temder_Html_Element
+
+notice_type					4
+
+local_title     =    Ref:       Com:before thois keyword grab the data
+
+notice_no			=		Ref
+
+publish_date        =   RFI issued				Com:grab time also
+
+notice_deadline		=   RFI closing				Com:grab time also
+
+contract_person   =  Com:"For queries, please contact:"Grab after this keyword first line
+
+org_email		=	Com:"For queries, please contact:" Grab after this keyword secound line
+
+org_name    =   Sibanye-Stillwater
+
+org_parent_id	=		7780916
+
+notice_url     =  "https://www.sibanyestillwater.com/suppliers/south-africa/available-tenders/"
+
+notice_text		=  take all the data from "tener_html_element"

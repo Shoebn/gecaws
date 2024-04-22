@@ -1,0 +1,35 @@
+script_name					in_banka_spn
+notice_type					4		
+procurement_method			2
+urls						"https://banka.nic.in/notice_category/tenders/"
+page_no						3
+performance_country	/ org_country			IN
+main_language / org_language				EN
+currancy				INR
+
+-----------------------------------------------------------------------------------------------------------------
+Follow "tender_html_element" "https://banka.nic.in/notice_category/tenders/" and grab the data
+
+Tender_Html_Element
+
+local_title		=	Title
+
+local_description/notice_summary_english		=		Description
+
+publish_date		=		Start Date
+
+notice_dedline		=		End Date
+
+attachments			=		File
+
+file_size			=		File
+
+external_url		=		File
+
+notice_url		=	"https://banka.nic.in/notice_category/tenders/"
+
+notice_text		=	take all the data from "tener_html_element"
+
+org_name		=	GOVERNMENT OF BIHAR
+
+org_parent_id	=	7248574

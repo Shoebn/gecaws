@@ -1,0 +1,315 @@
+-------------------------------------------------------------------------------procurment-plan----------------------------------------------------------------------------------------------------
+
+----- click on  url "https://info.iub.gov.lv/lv/meklet/pt/"  go to "Izvēlieties paziņojumu veidu:"  tab and select "Iepriekšējie informatīvie paziņojumi" option for procurment plan  details and click on "Meklēt PAZIŅOJUMUS" 
+
+
+
+script_name : lv_iub_pp
+
+originalUrl / main_url / : "https://info.iub.gov.lv/lv/meklet/pt/"
+
+page_no : 10
+
+countryNames / performance_country : LV 
+
+procurment_method : 2
+
+notice_type : 3  if the detail_page has "Grozijumi" tab available   then take notice_type = 16 , ref_url : "https://eformsb.pvs.iub.gov.lv/show/f5b71e25-5659-499d-b743-70b03b53066f"
+ 
+main_language :  LV              
+
+currency: EUR
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+tender_html_page
+------------------
+
+
+id / Notice no : split the notice_no from notice_url for ex."https://eformsb.pvs.iub.gov.lv/show/f5b71e25-5659-499d-b743-70b03b53066f" , here take only "70b03b53066f"
+
+publishDate :  take only publish_Date for ex. take only "23/02/2024"
+
+notice_deadline : " take threshold
+
+title/ local_title  :  	Iepirkuma priekšmets, uzvarētāji, summa
+
+buyerName / org_name : Pasūtītājs , take only org_name for ex."Latvijas Biozinātņu un tehnoloģiju universitāte" , dont take number which is in parenthisis
+
+       
+notice_url :  take hyperlink url of "Publikācijas veids"
+
+
+
+detail_page 
+-----------------
+
+document_type_description : Veidlapas tips
+
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+languageCode / org_language / : LV
+
+contact.city / org_city :   Pasūtītājs >> Organizācijas pilsēta 
+
+contact.address / org_address :  Pasūtītājs >> Organizācijas iela
+
+org_website : Organizācijas interneta adrese
+
+org_email :  Pasūtītājs >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2 --- take only email for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only dome@balvi.lv"
+
+org_phone :  Pasūtītājs  >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2  -- take only org_phone for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only  "+37126104539"
+
+org_country : LV
+
+org_language : LV
+
+
+notice_contract_type :  Iepirkuma dati >> Pamatveids   ,    take only "√" keyword value, replace the following keyword with given respective keyword ("Works = būvdarbi" , "Supply = piegādes" ,  "Service = pakalpojumi")
+
+contract_type_actual :  Iepirkuma dati >> Pamatveids
+
+CPV_at_source :  take from  both field "CPV galvenais kods" and  "CPV papildkods"
+
+CPVCodes : take from  both field "CPV galvenais kods" and  "CPV papildkods"
+
+
+bidDeadline  / Notice_deadline / submission_deadline  :  Iepirkuma priekšmeta detalizācija >> Piedāvājumu iesniegšanas termiņš  , take time also
+
+document_opening_time :  Iepirkuma priekšmeta detalizācija >> Piedāvājumu atvēršanas laiks
+
+contractDuration /contract_Duration : Līguma darbības termiņa ilgums
+    
+
+source_of_fund :  International agencies , Iepirkuma priekšmeta detalizācija  >> ES fondi                     
+,if the above  text written as " financed by European Union funds: YES  " than pass the "Funding agency" name as "European Agency (internal id: 1344862) " in field name "T.FUNDING_AGENCIES::TEXT"
+
+additional_url / External URL   : Saziņa >> Adrese, kurā iesniedzami piedāvājumi
+
+estimatedAmount  /est_amount / GROSSBUDGET / GROSSBUDGETLC	:   Iepirkuma priekšmeta detalizācija >> Paredzamā vērtība
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------spn---------------------------------------------------------------------------------------------------
+
+----- click on  url "https://info.iub.gov.lv/lv/meklet/pt/"  go to "Izvēlieties paziņojumu veidu:"  tab and select "Iepirkumu publikācijas" option for spn details and click on "Meklēt PAZIŅOJUMUS" 
+
+
+script_name : lv_iub_spn
+
+originalUrl / main_url / : "https://info.iub.gov.lv/lv/meklet/pt/"
+
+page_no : 10
+
+countryNames / performance_country : LV 
+
+procurment_method : 2
+
+notice_type : 4  , if the detail_page has "Grozijumi" tab available   then take notice_type = 16 , ref_url : "https://eformsb.pvs.iub.gov.lv/show/f5b71e25-5659-499d-b743-70b03b53066f"
+ 
+main_language :  LV              
+
+currency: EUR
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+tender_html_page
+------------------
+
+related_tender_id : Publikācijas datums unidentifikācijas numurs , take only notice_no which is below the publication_date for ex. take only "LBTU 2024/17/AK"
+
+id / Notice no : split the notice_no from notice_url for ex."https://eformsb.pvs.iub.gov.lv/show/f5b71e25-5659-499d-b743-70b03b53066f" , here take only "70b03b53066f"
+
+publishDate : Publikācijas datums unidentifikācijas numurs , take only publish_Date which is above at the notice_no for ex. take only "23/02/2024"
+
+title/ local_title  :  Iepirkuma priekšmets, uzvarētāji, summa
+
+buyerName / org_name : Pasūtītājs , take only org_name for ex."Latvijas Biozinātņu un tehnoloģiju universitāte" (dont take number)
+       
+notice_url :  take hyperlink url of "Publikācijas veids"
+
+
+
+detail_page 
+-----------------
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+document_type_description : Paziņojuma tips
+
+languageCode / org_language / : LV
+
+contact.city / org_city :   Pasūtītājs >> Organizācijas pilsēta 
+
+contact.address / org_address :  Pasūtītājs >> Organizācijas iela
+
+org_website : Organizācijas interneta adrese
+
+org_email :  Pasūtītājs >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2 --- take only email for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only dome@balvi.lv"
+
+org_phone :  Pasūtītājs  >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2  -- take only org_phone for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only  "+37126104539"
+
+org_country : LV
+
+org_language : LV
+
+noticeSummary / local_description / notice_summery_english : Iepirkuma apraksts
+
+
+notice_contract_type :  Iepirkuma dati >> Pamatveids   ,    take only "√" keyword value, replace the following keyword with given respective keyword ("Works = būvdarbi" , "Supply = piegādes" ,  "Service = pakalpojumi")
+
+contract_type_actual :  Iepirkuma dati >> Pamatveids
+
+CPV_at_source :  take from both field  "CPV galvenais kods" and  "CPV papildkods"  , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2
+
+CPVCodes : take from both field  "CPV galvenais kods" and  "CPV papildkods" , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2
+
+contractDuration /contract_Duration : Līguma darbības termiņa ilgums
+
+bidDeadline  / Notice_deadline / submission_deadline  :  Iepirkuma priekšmeta detalizācija >> Piedāvājumu iesniegšanas termiņš  , take time also
+
+document_opening_time :  Iepirkuma priekšmeta detalizācija >> Piedāvājumu atvēršanas laiks
+
+
+souce_of_fund : if  "Norādiet, vai iepirkums tiek finansēts no Eiropas Savienības fondiem"  field has "Yes" (√) , then  than pass the "Funding agency" name as "European Agency (internal id: 1344862) " in field name "T.FUNDING_AGENCIES::TEXT"
+
+
+est_amount / GROSSBUDGET / GROSSBUDGETLC:   Iepirkuma priekšmeta detalizācija >> Paredzamā vērtība
+additional_url / External URL   : Saziņa >> Adrese, kurā iesniedzami piedāvājumi
+
+
+contact.lastName  :  null 
+
+contact.address2 title : Null
+
+contact.state / org_state : NULL
+
+contact.country :  Organizācijas valsts
+
+contact.email / org_email :  Pasūtītājs >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2
+contact.phone / org_phone :  Pasūtītājs  >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2
+
+eligibilityCriteria/ eligibility
+projectName / project_Name
+
+
+additional_tender_url : Saziņa >>  Adrese, kurā pieejami dokumenti
+
+
+
+
+
+-------------------------------------------------------------contract_award----------------------------------------------------------------------------------------------------------------
+
+----- click on  url "https://info.iub.gov.lv/lv/meklet/pt/"  go to "Rezultātu paziņojumi"  tab and select "Iepirkumu publikācijas" option for contract award details and click on "Meklēt PAZIŅOJUMUS" 
+
+
+
+-----------------------------------------------------------------------------------------
+script_name : lv_iub_ca
+
+originalUrl / main_url / : "https://info.iub.gov.lv/lv/meklet/pt/_pp/"
+
+page_no : 10
+
+countryNames / performance_country : LV 
+
+procurment_method : 2
+
+notice_type : 7   , if the detail_page has "Grozijumi" tab available   then take notice_type = 16 , ref_url : "https://eformsb.pvs.iub.gov.lv/show/f5b71e25-5659-499d-b743-70b03b53066f"
+ 
+
+main_language :  LV              
+
+currency: EUR
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+tender_html_page
+------------------
+
+
+id / Notice no : Publikācijas datums unidentifikācijas numurs , take only notice_no which is below the publication_date for ex. take only "LBTU 2024/17/AK"
+
+publishDate : Publikācijas datums unidentifikācijas numurs , take only publish_Date which is above the notice_no for ex. take only "23/02/2024"
+
+
+title/ local_title  : 	Iepirkuma priekšmets, uzvarētāji, summa   ,   this field contains three values "Purchase subject",  "winners" , " amount" here take only "Purchase subject"
+
+buyerName / org_name : Pasūtītājs , take only org_name for ex."Meža pētīšanas stacija (90010256120)" , here take only "Meža pētīšanas stacija "
+
+award_date : 	Datums , take only date 
+       
+notice_url :  take hyperlink url of "Publikācijas veids"
+
+
+
+
+detail_page 
+-----------------
+
+document_type_description : Paziņojuma tips
+
+notice_text : there multiple tabs available in detail_page , Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+languageCode / org_language / : LV
+
+contact.city / org_city :   Pasūtītājs >> Organizācijas pilsēta 
+
+contact.address / org_address :  Pasūtītājs >> Organizācijas iela
+
+org_website : Organizācijas interneta adrese
+
+org_email :  Pasūtītājs >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2 --- take only email for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only dome@balvi.lv"
+
+org_phone :  Pasūtītājs  >> Organizācijas kontaktpunkts , ref_url : https://eformsb.pvs.iub.gov.lv/show/dec31d42-3c41-4939-b9b4-4791f1169ee2  -- take only org_phone for ex ."Balvu novada pašvaldība, dome@balvi.lv, +37126104539" here take only  "+37126104539"
+
+org_country : LV
+
+org_language : LV
+
+
+notice_contract_type :  Iepirkuma dati >> Pamatveids   ,    take only "√" keyword value, replace the following keyword with given respective keyword ("Works = būvdarbi" , "Supply = piegādes" ,  "Service = pakalpojumi")
+
+contract_type_actual :  Iepirkuma dati >> Pamatveids
+
+CPV_at_source :  take from  both field "CPV galvenais kods" and  "CPV papildkods"
+
+CPVCodes : take from  both field "CPV galvenais kods" and  "CPV papildkods"
+
+noticeSummary / local_description / notice_summery_english
+
+document_opening_time :  Iepirkuma priekšmeta detalizācija >> Piedāvājumu atvēršanas laiks
+
+contractDuration /contract_Duration : Līguma darbības termiņa ilgums
+
+
+
+souce_of_fund : if  "Norādiet, vai iepirkums tiek finansēts no Eiropas Savienības fondiem"  field has "Yes" (√) , then  than pass the "Funding agency" name as "European Agency (internal id: 1344862) " in field name "T.FUNDING_AGENCIES::TEXT"
+
+additional_url / External URL   : Saziņa >> Adrese, kurā iesniedzami piedāvājumi
+
+eligibilityCriteria/ eligibility
+projectName / project_Name
+
+
+estimatedAmount  /est_amount / GROSSBUDGET / GROSSBUDGETLC	:   Iepirkuma priekšmeta detalizācija >> Paredzamā vērtība  
+
+
+lot_details
+-----------
+lot_title : lot_title == local_title	
+
+note : some notice has multiple winners 
+
+contractAward.companyName  / bidder_name :  Iepirkuma priekšmeta detalizācija (tab) >>  Līguma informācija (tab) >> Nosaukums 
+   
+contractAward.companyAddress / bidder_address :  Iepirkuma priekšmeta detalizācija (tab) >>  Līguma informācija (tab) >>  Iela , for open address click on "bidder_name" it will open popup 
+
+contractAward.companyCountry / bidder_Country : Iepirkuma priekšmeta detalizācija (tab) >>  Līguma informācija (tab) >> Valsts
+
+
+contractAward.finalValue   / award_Value / grossawardvaluelc  :   Iepirkuma priekšmeta detalizācija (tab) >>  Līguma informācija (tab) >>  "Norādiet piedāvājuma vērtību, ieskaitot iespējas un atkārtojumus" , 

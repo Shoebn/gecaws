@@ -1,0 +1,138 @@
+publish_date is in order.
+
+*******************************************************************************************************
+script_name= 'ch_intelli_spn'
+
+urls= "https://intelliprocure.ch/beschaffungen-ausschreibungen?order=datePublication_DESC"
+
+page_no= 10
+
+performance_country= 'CH'
+
+currency= 'CHF'
+
+procurement_method= 2
+
+notice_type= 4		
+							
+org_country = 'CH'
+
+
+*********************************************************tender_html_element**********************************************
+publish_date = Publikation 
+
+local_title =  Projekttitel 
+
+notice_no = Projekt ID 
+
+org_name =  Auftraggeber 
+
+type_of_authority_code =  Auftraggeber Art 
+
+type_of_procedure =  Verfahrensart 			file_name:ch_intelli_spn_category.csv
+
+notice_url = Projekttitel					cmt:click on local_title.	
+
+notice_text = grab all the page_details data as well as the row wisw data of tender_html_element.
+
+
+*********************************************************page_details**********************************************
+main_language / org_language = if given keywords found in page_details then pass the language code.(Auftraggeber=DE),(Appel d'offres=FR).
+
+
+
+format-1 German)ref_notice_no:270991
+org_name = Offizieller Name und Adresse des Auftraggebers >> Bedarfsstelle/Vergabestelle					cmt:if org_name not present in tender_html_element page then grab from this field.
+
+org_address = Offizieller Name und Adresse des Auftraggebers >>  Ressourcen und Support,  zu Hdn. von Projekt:		cmt:split between "Ressourcen und Support,  zu Hdn. von Projekt:" and "Telefon:".
+
+org_phone = Offizieller Name und Adresse des Auftraggebers >>  Ressourcen und Support,  zu Hdn. von Projekt: 		cmt:split between "Telefon:" and "E-Mail:".
+
+org_email = Offizieller Name und Adresse des Auftraggebers >>  Ressourcen und Support,  zu Hdn. von Projekt: 		cmt:split after "E-Mail:".
+
+org_website = Offizieller Name und Adresse des Auftraggebers >>  Ressourcen und Support,  zu Hdn. von Projekt: 		cmt:split after "URL"
+
+notice_deadline = Frist für die Einreichung des Angebotes >> Datum:													cmt:if not present then pass threshold.
+
+document_opening_time = Datum der Offertöffnung:
+
+notice_contract_type = Auftragsart				cmt:1.Replace follwing keywords with given respective keywords ('Dienstleistungsauftrag =Service'),('Lieferauftrag=Supply'),('Bauauftrag=Works').
+
+contract_type_actual = Auftragsart
+
+
+
+cmt:if multiple cpv's are present then grab all the cpv's.ref_notice_no=276955
+class_at_source = 'CPV'
+
+class_codes_at_source = Gemeinschaftsvokabular >> CPV:  	cmt:split only the number.
+
+class_title_at_source =  Gemeinschaftsvokabular >> CPV:  	cmt:split only the text.
+
+cpvs[]
+	cpv_code =  Gemeinschaftsvokabular >> CPV:  	cmt:split only the number. 
+	
+cpv_at_source= Gemeinschaftsvokabular >> CPV:  		cmt:split only the number.
+
+
+local_description / notice_summary_english = Gegenstand und Umfang des Auftrags
+
+cmt:ref_notice_no:270991
+tender_contract_start_date = Laufzeit des Vertrags, der Rahmenvereinbarung oder des dynamischen Beschaffungssystems >> Beginn:		cmt:split between "Beginn:" and "Ende:".
+
+tender_contract_end_date = Laufzeit des Vertrags, der Rahmenvereinbarung oder des dynamischen Beschaffungssystems >> Ende: 			cmt:split after "Ende:".
+
+cmt:ref_notice_no:276955
+contract_duration = Laufzeit des Vertrags, der Rahmenvereinbarung oder des dynamischen Beschaffungssystems			cmt:grab only the first line.
+
+
+tender_criteria_title = Zuschlagskriterien			cmt:grab text before "Gewichtung".
+
+tender_criteria_weight = Zuschlagskriterien			cmt:grab text after "Gewichtung".
+
+
+eligibilty = Eignungskriterien
+
+
+
+
+format-2 French)ref_notice_no:275741,277033
+org_name = Nom officiel et adresse du pouvoir adjudicateur >> Service demandeur/Entité adjudicatrice: 				cmt:if org_name not present in tender_html_element page then grab from this field.
+
+org_address = Nom officiel et adresse du pouvoir adjudicateur >>  Service organisateur/Entité organisatrice:		cmt:split between "Service organisateur/Entité organisatrice:" and "Téléphone:".
+
+org_phone = Nom officiel et adresse du pouvoir adjudicateur >> Service organisateur/Entité organisatrice:  			cmt:split between "Téléphone:" and "E-Mail:".
+
+org_email = Nom officiel et adresse du pouvoir adjudicateur >> Service organisateur/Entité organisatrice:  			cmt:split after "E-Mail:".
+
+notice_deadline = Délai de clôture pour le dépôt des offres >> Date:
+
+document_opening_time = Date de l’ouverture des offres:
+
+notice_contract_type = Genre de marché			cmt:1.Replace follwing keywords with given respective keywords ('Marché de services=Service','Travaux = Works','Marché de fournitures=Supply','Marché de travaux de construction=Works',)
+
+contract_type_actual = Genre de marché
+
+
+cmt:if multiple cpv's are present then grab all the cpv's.
+class_at_source = 'CPV'
+
+class_codes_at_source = Vocabulaire commun des marchés publics >> CPV:  	cmt:split only the number.
+
+class_title_at_source =  Vocabulaire commun des marchés publics >> CPV:  	cmt:split only the text.
+
+cpvs[]
+	cpv_code =  Vocabulaire commun des marchés publics >> CPV:  	cmt:split only the number. 
+	
+cpv_at_source= Vocabulaire commun des marchés publics >> CPV:  		cmt:split only the number.
+
+
+
+local_description / notice_summary_english = Objet et étendue du marché
+
+contract_duration = Durée du marché, de l'accord-cadre ou du système d'acquisition dynamique		cmt:grab only first line.
+
+
+tender_criteria_title =  Criteria of adjudication			cmt:grab text before "Pondération".
+
+tender_criteria_weight =  Criteria of adjudication			cmt:grab text after "Pondération".

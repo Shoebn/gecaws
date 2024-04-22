@@ -1,0 +1,246 @@
+script_name : mfa_afdbprp_spn
+
+url : https://www.afdb.org/fr/documents/project-related-procurement
+
+page_no : 8
+
+main_language : FR
+
+performance_country : ZA
+
+currency : ZAR
+
+notice_type = 4 , if the local_title has "EOI" keyword appears then take notice_type=5
+
+procurment_method = 2
+
+
+tender_html_page
+-----------------
+document_type_description : "Acquisitions de biens et services relatives aux projets"
+
+attachments
+------------
+file_name : 'tender documents' static
+external_url : grab the attachments below from "Title" field
+
+notice_deadline : take threshold
+
+publish_Date : split the publish_Date  below from "Country" field
+
+local_title : split the title below from "Sector" field 
+
+notice_url : click the url from local_title 
+
+notice_text : along with detail_page take the notice_text from tender_html_page
+
+
+detail_page
+------------
+local_description  : split the data between publish_date and attachement , ref_url : "https://www.afdb.org/en/documents/eoi-south-africa-procurement-services-afiap"
+notice_summary_english :  split the data between publish_date and attachement , ref_url : "https://www.afdb.org/en/documents/eoi-south-africa-procurement-services-afiap" 
+
+
+
+customer_details
+--------------
+org_name : 'AFRICAN DEVELOPMENT BANK GROUP'
+
+org_country : ZAF
+
+org_language : FR
+
+org_parent_id : 7493658
+
+
+
+-------------------------------------------------------------------------------------REI-----------------------------------------------------------------------------------------------------
+script_name : mfa_afdbeoi_rei
+
+url : https://www.afdb.org/fr/about-us/careers/current-vacancies/consultants
+
+page_no : 8
+
+main_language : FR
+
+performance_country : ZA
+
+currency : ZAR
+
+notice_type = 5
+
+procurment_method = 2
+
+
+tender_html_page
+-----------------
+document_type_description : Consultants
+
+local_title : Intitulé du poste
+
+notice_no : if notice_no not available grab from notice_url
+
+notice_deadline : Date de clôture
+
+publish_Date : 	Date de publication	
+
+notice_url : click the fields from "Intitulé du poste"
+
+notice_text : along with detail_page take the notice_text from tender_html_page
+
+
+detail_page
+------------
+local_description  : split the data between "Domaine:" field and "Télécharger" button , ref_url : "https://www.afdb.org/fr/consultants/eoi-solution-architect-tcis-69648"
+
+notice_summary_english :  split the data between "Domaine:" field and "Télécharger" button , ref_url : "https://www.afdb.org/fr/consultants/eoi-solution-architect-tcis-69648" 
+
+category : take from "Domaine:" field
+
+attachments
+---------------
+file_name : "Tender documents"
+external_url : click on "Télécharger" button
+
+
+
+customer_details
+--------------
+org_name : 'AFRICAN DEVELOPMENT BANK GROUP'
+
+org_country : ZAF
+
+org_language : FR
+
+org_parent_id : 7493658
+
+
+
+-----------------------------------------------------------------------------------------------------spn------------------------------------------------------------------------------------------
+
+script_name : mfa_afdbcp_spn
+
+url : https://www.afdb.org/fr/about-us/corporate-procurement
+
+page_no : 8
+
+main_language : EN
+
+performance_country : ZA
+
+currency : ZAR
+
+notice_type = 4 , if in detail_page "Amendment Document: " fields data available then take notice_type= 16 , ref_url for amendment : https://www.afdb.org/fr/corporate-procurement/appel-manifestation-dinteret-pour-la-selection-dune-societe-de-gestion-devenements-pour-le-forum-pour-linvestissement-en-afrique-aif-qui-se-tiendra-au-maroc-en-decembre-2024-69154
+
+procurment_method = 2
+
+
+tender_html_page
+-----------------
+document_type_description : Achats institutionnels
+
+notice_no : Reference , if not available then grab from notice_url 
+
+local_title : take from first column (green textual data)
+
+notice_deadline : Deadline Date
+
+publish_Date : 	Publication Date
+
+notice_url : click the fields from "local_title" field column
+
+notice_text : along with detail_page take the notice_text from tender_html_page
+
+
+detail_page
+------------
+local_description : split the data between "Deadline Date:" and "Procurement Reference" 
+
+notice_summary_english : split the data between "Deadline Date:" and "Procurement Reference" 
+
+
+attachments
+---------------
+file_name : take from "IFB Document:" , ref_url : https://www.afdb.org/en/corporate-procurement/acquisition-de-vehicules-de-type-landcruiser-pour-les-bureaux-pays-de-la-banque-africaine-de-developpement-en-afrique-69378
+external_url : take from "IFB Document:" , ref_url : https://www.afdb.org/en/corporate-procurement/acquisition-de-vehicules-de-type-landcruiser-pour-les-bureaux-pays-de-la-banque-africaine-de-developpement-en-afrique-69378
+
+attachments
+----------------
+file_name : take from "Tender Documents: " field
+external_url : take from "Tender Documents: " field
+
+
+attachments
+------------
+file_name : take from "Amendment Document:" field
+external_url : take from "Amendment Document:" field
+
+
+customer_details
+--------------
+org_name : 'AFRICAN DEVELOPMENT BANK GROUP'
+
+org_country : ZAF
+
+org_language : FR
+
+org_parent_id : 7493658
+
+
+
+
+-----------------------------------------------------------------------------------------------------rei------------------------------------------------------------------------------------------
+
+
+script_name : mfa_afdbcv_rei
+
+url : https://www.afdb.org/en/about-careers/current-vacancies
+
+page_no : 3
+
+main_language : EN
+
+performance_country : ZA
+
+currency : ZAR
+
+notice_type = 5
+
+procurment_method = 2
+
+
+tender_html_page
+-----------------
+document_type_description : Postes vacants
+
+notice_no : Reference , if not available then grab from notice_url 
+
+local_title : Position title
+
+notice_deadline : Closing date
+
+publish_Date : 	Publication Date
+
+notice_url : click the fields from "Position title"
+
+notice_text : along with detail_page take the notice_text from tender_html_page
+
+
+detail_page
+------------
+local_description : split the data between "LE POSTE :" and "Politique et respect des exigences environnementales :" , ref_url : "https://www.afdb.org/fr/poste-vacant/charge-principal-en-sauvegarde-et-conformite-environnementale-69310"
+
+notice_summary_english : split the data between "LE POSTE :" and "Politique et respect des exigences environnementales :" , ref_url : "https://www.afdb.org/fr/poste-vacant/charge-principal-en-sauvegarde-et-conformite-environnementale-69310"
+ 
+
+
+
+customer_details
+--------------
+org_name : 'AFRICAN DEVELOPMENT BANK GROUP'
+
+org_country : ZAF
+
+org_language : FR
+
+org_parent_id : 7493658

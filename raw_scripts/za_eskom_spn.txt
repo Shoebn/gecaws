@@ -1,0 +1,78 @@
+data_id : 34952
+
+static_fields
+-----------------
+
+script_name : za_eskom_spn	
+
+url : "https://tenderbulletin.eskom.co.za/"
+
+page_no : 10 
+
+main_language : EN
+
+performacne_country : za
+
+notice_type : 4 
+
+procurment_method : 2
+
+currency : USD
+---------------------------------------------------------
+
+tender_html_page
+-------------------
+
+notice_deadline , tender_html_page , Closing Date , cmt : take time too	
+
+Published Date  , tender_html_page , Published Date , cmt : take time too , for latest publish data click on "Publish Date" button once
+	                                                                                                                   		
+local_title , tender_html_page , Description
+
+org_address , tender_html_page , Office Location
+
+org_name = "Eskom"
+
+org_parent_id = "272593"
+
+
+org_country : ZA
+
+org_language : EN
+
+notice_url : , tender_html_page , Actions >> "eye symbol" , cmt : click on "eye symbol" for page_main
+--------------------------------------------------------------------------
+
+
+page_main
+-------------------------
+
+notice_text , page_main ,  selector :  #modal-tender > div
+
+org_email , page_main , Email Address
+
+local_description , page_main , Description
+
+notice_summary_english , page_main , Description
+
+
+
+page_details
+-----------------
+attachments details has 2 variation 
+
+1)  tender_html_page > Action  >>  detail_page >> detail_page > multiple folders > attachments  , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=73658"
+
+2) tender_html_page > Action  >>  detail_page >> detail_page >  attachments , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=76689"
+
+
+
+file_name : , detail_page , File Name , cmt : split only file_name for ex."240-12248652 Category2- List of Tender Returnables Documents Rev 6.pdf" , here 		take only "240-12248652 Category2- List of Tender Returnables Documents Rev 6"  , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=77972"
+
+file_type : , detail_page , file_type , cmt : split only file_type for ex."240-12248652 Category2- List of Tender Returnables Documents Rev 6.pdf" , here 		take only "PDF"  , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=77972"
+
+	
+external_url : , detail_page , 	Action , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=77972"
+
+
+file_size : , detail_page , Size , ref_url : "https://tenderbulletin.eskom.co.za/Tenders/Docs?TENDERID=77972"

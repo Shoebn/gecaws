@@ -1,0 +1,97 @@
+
+static_fields
+-------------------------------
+script_name : us_maryland_spn	
+
+url : "https://emma.maryland.gov/page.aspx/en/rfp/request_browse_public"
+
+page_no : 7
+
+main_language : EN
+
+performance_country : US
+
+currency : USD
+
+notice_type : 4
+
+procurement_method : 2
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+notice_no , tender_html_page , ID
+
+local_title , tender_html_page , Title
+
+notice_deadline , detail_page , 	Due / Close Date (EST) , cmt: take time too
+
+
+Publish Date  , tender_html_page , Publish Date UTC-5
+
+category , tender_html_page , 	Main Category
+
+document_type_description , tender_html_page , 	Solicitation Type
+
+notice_url  , tender_html_page , Title
+
+
+notice_text , detail_page , selector : div.panel-content div.iv-content   , cmt : when you open detail_page there are three tabs as follows : "Solicitation Info" , "Pricing (Ext)" , "Questionnaire (Ext)"  ,   Note:along with notice text (page detail) also take data from tender_html_element (main page) ---- tbody of main pg 
+
+
+local_description , detail_page , olicitation Summary
+
+notice_summary_english , detail_page , Solicitation Summary
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+customer_details 
+------------------
+
+org_name : , tender_html_page , Issuing Agency
+org_country : "US"
+org_language : "EN"
+contact_person : detail_page , Procurement Officer / Buyer
+org_email , detail_page , Email
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+attachment_details
+--------------------
+
+file_name : , detail_page , Attachments >> Title  , 
+
+file_type : , detail_page ,  	Att. ,   cmt : split only file_type for ex."RFQ - Data Collection Tool .pdf" , here take only "pdf" , ref_url : "https://emma.maryland.gov/page.aspx/en/bpm/process_manage_extranet/66678"
+
+external_url : ,  detail_page ,  Att. ,   
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+lot_details  (for lot_details go to "Pricing(Ext)" tab in detail_page )
+-------------
+
+lot_no , detail_page , Item Code 
+
+lot_title , detail_page , Item Label
+
+lot_description , detail_page , Detailed Description
+
+lot_quantity , detail_page , 	Qty
+
+lot_quantity_uom, detail_page ,	UoM
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 					 	 
+additional_tender_url , detail_page , Solicitation Links
+
+
+
+
+
+
+
+
+

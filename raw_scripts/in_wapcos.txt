@@ -1,0 +1,107 @@
+
+script_name : in_wapcos_spn
+
+url : "https://www.wapcos.co.in/current-tender-list.aspx"
+
+page_no : 7 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 4 , if "Document" field has " Corrigendum" keyowrd document available then take notice_type = 16
+
+
+-----------------
+tender_html_page
+-----------------
+document_type_description : "Current Tenders"
+
+notice_no : Reference No. 
+	
+local_title :  Tender Title 
+
+publish_date : Opening Date 	
+	
+notice_deadline : Closing Date
+
+notice_url : https://www.wapcos.co.in/current-tender-list.aspx 
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+
+customer_details
+----------------
+
+org_parent_id : 7808907	
+
+org_name : "WAPCOS Limited"
+
+org_country : IN
+
+org_language : EN
+
+
+attachments
+-------------
+file_name : take from  "Document" field
+
+external_url : take from  "Document" field
+
+
+
+
+----------------------------------------------------------------------------------contract-award----------------------------------------------------------------------------------------------------
+
+script_name : in_wapcos_ca
+
+url : "https://www.wapcos.co.in/tender-award.aspx"
+
+page_no : 7 
+
+main_language : EN
+
+performance_country : IN
+
+currency : INR
+
+procurment_method : 2
+
+notice_type : 7
+
+-----------------
+tender_html_page
+-----------------
+
+document_type_description : "Awarded Tenders"
+
+reference_no : Tender No. . 
+	
+local_title :  Tender Title 
+
+bidder_name : Agency Awarded/ Awardee 
+
+award_date : Date of Award 
+
+grossawardvaluelc : Award Value (in INR) 
+
+publish_date : Date of Award 
+
+notice_url : https://www.wapcos.co.in/tender-award.aspx 
+	
+notice_text :  take the data from tender_html_element  give td / tbody of main pg  ----
+
+
+customer_details
+----------------
+org_parent_id : 7808907	
+
+org_name : "WAPCOS Limited"
+
+org_country : IN
+
+org_language : EN

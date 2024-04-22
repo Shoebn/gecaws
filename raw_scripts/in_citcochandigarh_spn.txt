@@ -1,0 +1,61 @@
+	
+######################################################################################################################################################
+
+script_name: in_citcochandigarh_spn	
+           
+urls:"https://citcochandigarh.com/tenders-notices/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: CHANDIGARH INDUSTRIAL AND TOURISM DEVELOPMENT CORPORATION LIMITED (CITCO)	
+
+org_parent_id: 7577516
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************	
+local_title --- TITLE/TENDER DETAILS	
+
+publish_date --- LAST DATE OF SUBMISSION ( also take time )
+condition 1 - split from "Starting date of submission of GeM -bid is" till "Last date of submission of GeM -bid is"
+condition 2 - sentences for spliting is not given for each tender in some only date and time is given so grab that for publish date
+
+notice_deadline --- LAST DATE OF SUBMISSION ( also take time )	
+condition 1 - split from "Last date of submission of GeM -bid is" 
+condition 2 - sentences for spliting is not given for each tender in some only date and time is given so dont grab that as it is for publish date
+
+pre_bid_meeting_date --- LAST DATE OF SUBMISSION (just take time and date .. do not take any more data except date and time)	
+condition 1 - split from "A pre-bid meeting will be held on" till "Starting date of submission of GeM -bid"
+condition 2 - split from "A pre-bid meeting will be held on" till "Last date of submission of GeM -bid"
+
+notice_url --- https://citcochandigarh.com/tenders-notices/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment
+
+click on  "DOWNLOAD" 
+
+external_url --- "DOWNLOAD" >>>  (click on the href for documents File)	
+
+file_name ---  Tender Description	
+
+file_type --- (extension)... eg - aspx, pdf	
+
+	

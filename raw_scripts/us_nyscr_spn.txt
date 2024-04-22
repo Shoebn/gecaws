@@ -1,0 +1,62 @@
+LogIn ID=akanksha.a@dgmarket.com
+Password=Ak@1234567
+
+Note:Open the site than first "Lon in" than on "My Opportunities" than click "Open Opportunities" tab than grab the data 
+ 
+script_name:us_nyscr_spn	36300
+
+urls:"https://www.nyscr.ny.gov/contracts.cfm"
+
+page_no:       tender_html_element 	//*[@id="adData"]/table/tbody/tr    10
+
+performance_country:'US'
+
+currancy:'USD'	
+
+main_language:'EN'      
+
+procurement_method:2
+
+notice_type:4
+
+local_title  : tender_html_element  > Title
+
+publish_date : tender_html_elementt  >  Issue Date
+
+notice_deadline : tender_html_element > Due Date
+
+category : tender_html_element  > Category		File_name:us_nyscr_spn_unspscpv.csv
+
+notice_url : tender_html_element > View this ad
+
+notice_text: page_detail															Note:Grab "Description","Contact Info","Documents","Updates","Bid Results/Awards" this all tab data in notice_text.	Note:Take "tender_html_element" data also
+
+notice_no : page_detail > Contract Number
+	Note:If notice_no is blank than grab frmo "CR Number:" this filed
+
+pre_bid_meeting_date: page_detail > Pre-Bid Conference
+
+contract_duration : page_detail > Contract term
+
+customer_detail[]
+	Note:Click on "Contact Info" this tab than grab the data
+   	org_name:	tender_html_element > Agency
+    	org_country:'US'
+    	org_city: page_detaiul > County(ies)
+    	org_language:'EN'
+    	org_address :  page_detail  > Primary contact 	Note:Click on "Contact Info" this tab than grab the data	Note:Splite between "Primary contact:" and "Ph:" data
+    	org_phone : page_detail > Ph:
+	org_email : page_detail > Primary contact 	Note:Splite <a> tab
+
+attachments[] : page_detail > Documents		Note: Click on "Documents" this tab on page_detail
+	Ref_url=https://www.nyscr.ny.gov/business/adsPubView.cfm?ID=F81ABC92-B761-4F79-B6E9-65B242FB09ED&page=Open%20Ads	
+	file_name : page_detail	 > Document title	Note:Take only text
+	external_url: page_detail > Document title	
+	
+
+
+
+
+
+
+

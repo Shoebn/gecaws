@@ -1,0 +1,51 @@
+
+######################################################################################################################################################
+
+
+script_name: in_ivri_spn		
+           
+urls:"https://www.ivri.nic.in/tender/NewTenders.aspx"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: Indian Veterinary Research Institute	
+
+org_parent_id: 7098316
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+publish_date --- Publishing date: (along with time)
+
+notice_deadline --- Last Submission date:(along with time)
+
+local_title --- first line which is underlined , have href , most of them start with "director" keyword  	
+
+notice_url --- https://www.ivri.nic.in/tender/NewTenders.aspx
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+#attachment
+
+click on ... Downloads >>>  "a.) Click here for tender notice" for attachments
+
+external_url --- Downloads >>>  "a.) Click here for tender notice" (click on the href for documents File)	
+
+file_name --- Tender Documents
+
+file_type --- (extension)... eg - pdf	
+	

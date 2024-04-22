@@ -1,0 +1,47 @@
+######################################################################################################################################################
+script_name: in_tiss_spn
+   
+urls: "https://www.tiss.edu/tenders/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: TATA INSTITUTE OF SOCIAL SCIENCES
+
+org_parent_id: 7807512
+
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+
+publish_date --- Posted on
+
+local_title --- text which is below "Posted on" and above "Last Date for application"
+
+notice_daedline --- Last Date for application
+
+
+notice_url --- https://www.tiss.edu/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+#attachment >>>> Download details 
+
+external_url ---Download details  (click on the href for documents File)	
+
+file_name --- Tender Document 		
+
+file_type --- (extension)... eg - pdf	

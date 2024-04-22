@@ -1,0 +1,57 @@
+in_patnanic_spn
+District of Patna	
+7793805
+https://patna.nic.in/notice_category/tenders/
+######################################################################################################################################################
+script_name: in_patnanic_spn
+
+urls: "https://patna.nic.in/notice_category/tenders/"
+
+page_no: 2
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note --- "
+
+procurement_method: "2"
+
+org_name --- District of Patna	
+
+org_parent_id -- 7793805
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+local_title --- Description	 
+
+document_type_description --- Tenders
+
+Description --- Title
+
+publish_date --- Start Date	
+
+notice_deadline --- End Date	
+
+notice_url --- https://patna.nic.in/notice_category/tenders/
+
+notice_text --- HTML_page
+ #Note - take HTML body of main page
+
+
+
+
+#attachment >>>> File (click on the blue href link o download_
+
+external_url --- "File" >>> (click on the href for documents File, ZIP)	
+
+file_name --- File	
+
+file_type --- (extension)... eg - pdf
+
+file_size ---  eg (View ( 612 KB, 1 MB)

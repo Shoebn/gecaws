@@ -1,0 +1,58 @@
+######################################################################################################################################################
+script_name: in_hpcl_spn
+
+urls: "https://tenders.hpcl.co.in/tenders/tender_prog/public_tenders.asp"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+#note - if data/value is presnt in "ADDENDUMS" then take notice_type = 16
+
+procurement_method: "2"
+
+org_name --- HINDUSTAN PETROLEUM CORPORATION LIMITED	
+
+org_parent_id -- 7522441
+
+ 
+****************************************************************************
+                                 #Tender_html_page
+****************************************************************************
+
+local_title --- TITLE	
+
+notice_deadline --- CLOSING DATE	
+
+publish_date --- NOTICE DATE	
+
+notice_url --- click on "Details" for page_detail
+
+notice_text --- page_detail
+ #Note - take HTML body of main pag
+
+
+
+****************************************************************************
+                                 #page_detail
+****************************************************************************
+
+notice_no --- the first line which is below "Tenders" take it as notice_no                eg.."GEM/2023/B/3986416"
+
+
+
+
+#attachment >>>> DOWNLOAD (click on the ⬇️ symbol) >>> click on >>>  Download Tender (ZIP File)	
+
+external_url --- " Download Tender (ZIP File)" >>> (click on the href for documents File)	
+
+file_name ---  Download Tender (ZIP File)		
+
+file_type --- (extension)... eg - pdf
+
+file_size ---  Download Tender  ( 104724 Bytes - 92424 Bytes)

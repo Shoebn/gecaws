@@ -1,0 +1,94 @@
+contracttype,mapping
+art supplies,Supply
+courses,Supply
+educational supplies,Supply
+gifts & souvenirs,Supply
+medals & trophies,Supply
+music & video,Supply
+office supplies & stationery,Supply
+paper,Supply
+sports & recreational equipment,Supply
+toners & cartridges,Supply
+others,Supply
+laboratory equipment & supplies,Supply
+av equipment photographic equipment & accessories,Supply
+containers & storageequipment,Supply
+copiers,Supply
+electrical appliances & supplies,Supply
+furniture,Supply
+office equipment,Supply
+others,Supply
+computer accessories,Supply
+desktop computers,Supply
+it services & software development,Supply
+notebooks,Supply
+others,Supply
+personal digital assistants,Supply
+printers & scanners,Supply
+servers,Supply
+softwares & licences,Supply
+storage devices & drives,Supply
+telecommunication devices,Supply
+safety & rescue equipment,Supply
+workshop furniture,Supply
+workshop machinery diy machinery & supplies,Supply
+workshop tools diy tools & accessories,Supply
+printing services,Service
+survey services,Service
+photographic & imaging services,Service
+postage & courier,Service
+civil engineering,Service
+publications & periodicals,Service
+concrete products & repairs,Service
+corrosion protection,Service
+equipment testing & calibration services,Service
+accommodation,Service
+catering services,Service
+event organising,Service
+meeting venues & facilities,Service
+outdoor event facilities,Service
+pantry supplies,Service
+restaurants,Service
+building m&e maintenance,Service
+cleaning equipment & supplies,Service
+cleaning services,Service
+fire fighting equipment & maintenance,Service
+horticulture works,Service
+management services,Service
+pest management services,Service
+security equipment & supplies,Service
+security services,Service
+disposal management,Service
+advertising services,Service
+child care services,Service
+data entry supply of manpower services,Service
+disposal and management of waste chemicals,Service
+grooming services,Service
+laundry services,Service
+professional services,Service
+public relations & counselling,Service
+storage services,Service
+tailoring,Service
+undertaker services,Service
+bus hire,Service
+carrental,Service
+moving services,Service
+other vehicle rental,Service
+others,Service
+petroleum oil & lubricants,Service
+shipbuilding marine supplies & services,Service
+ticketing travel services tours & excursions,Service
+vehicle maintenance,Service
+workshop tools maintenance,Service
+asphalt works & road marking,Works
+demolition,Works
+fencing & ironworks,Works
+general building & minor construction works,Works
+interior decoration,Works
+others,Works
+piling,Works
+pipe or cable laying & road reinstatement,Works
+renovation supplies & services,Works
+repairs & redecoration,Works
+signages,Works
+soil investigation & stabilization,Works

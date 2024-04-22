@@ -1,0 +1,71 @@
+script_name			in_cewacor_spn
+urls				"https://cewacor.nic.in/Home/TenderList"
+page_no				tender_html_element 	//*[@id="datatablelist"]/tbody/tr		3
+performance_country		IN
+currancy			INR	
+main_language			EN
+procurement_method		2
+notice_type			4		Note:If in "tender_html_element" page have "Corrigendum" this keyword in "VIEW" this field than take notice_type 16 , If in page_detail we have "Expression of Interest" in this keyword in "Tender Type" this field than take notice_type 5
+
+local_title : tender_html_element > WORK/ITEM TITLE
+
+notice_no : tender_html_element > TENDER REFERENCE NUMBER
+
+notice_deadline	: tender_html_element > BID SUB.CLOSING DATE		Note:Grab time also
+
+notice_url : tender_html_element > VIEW    Note:Click on the "View" button than grab the data
+
+notice_text : page_detail 	Note:Take "tender_html_element" page data also
+
+notice_contract_type : page_Detail > Tender Category 	
+	Note:Repleace following keywords with given  keywords("Services=Service","Works=Works","Goods=Supply")
+
+contract_type_actual : page_Detail > Tender Category 
+
+est_emount : page_detail > Tender Value		Ref_url="https://cewacor.nic.in/Home/ViewTenderData?TenderID=tcnlkJIW5uZkwZd4l%2B5KSw%3D%3D"
+
+grossbudgetlc : page_detail > Tender Value
+
+type_of_procedure : page_detail > 
+
+contract_duration : page_detail > Bid Validity Days
+
+document_fee : page_detail > Fee Details >> Tender Fee
+
+publish_dete : page_Detail > Critical Dates >> Publishing Date		Note:Grab time also
+
+document_opening_time : page_detail > Critical Dates >> Bid Opening Date	Note:Grab time also
+
+pre_bid_meeting_date : page_detail > Critical Dates >> PreBid Meeting Date	Note:Grab time also
+
+document_type_description : page_detail > Tender Type
+
+
+
+customer_detail[] : page_detail
+	org_name: tender_html_element > INVITING OFFICER
+	org_address : tender_html_element > LOCATION DETAIL		
+		Note:If "As detailed in the tender document" , "As mentioned in bid document" this keyword is present than don't take org_address data
+	org_state: page_detail > State
+	postal_code:page_detail > Pincode
+	org_country : IN
+	org_language : EN
+
+
+attachments[] : page_detail > Work/Item Documents		
+	Ref_url=https://cewacor.nic.in/Home/ViewTenderData?TenderID=ufJ2tWS0wuj21t7y6SSU3Q%3D%3D
+	file_name : page_detail > Work/Item Documents >> DESCRIPTION	Note:Don't take file extention
+	file_type : page_detail > Work/Item Documents >> DESCRIPTION	Note:Take only file extention
+	external_url : page_detail > Work/Item Documents >> DOCUMENT
+
+attachments[] : page_detail > NIT Document
+	Ref_url=https://cewacor.nic.in/Home/ViewTenderData?TenderID=4PmmuZC3JkdwncDyVY5EIw%3D%3D
+	file_name : page_detail > NIT Document >> DESCRIPTION	Note:Don't take file extention
+	file_type : page_detail > NIT Document >> DESCRIPTION	Note:Take only file extention
+	external_url : page_detail > NIT Document >> DOCUMENT		
+
+attachments[] : tender_html_element > VIEW
+	Note:If in "VIEW" this field have "Corrigendum" this keyword than take otherwise don't take
+	File_name : tender_html_element > VIEW		Note:Don't take "VIEW" this kwyword
+	external_url : tender_html_element > VIEW	Note:Don't take "VIEW" this kwyword
+	

@@ -1,0 +1,56 @@
+script_name : ke_treasury_spn
+
+url: https://www.treasury.go.ke/tenders/
+
+page_no : 5
+
+main_language : EN
+
+currency : KES
+
+notice_type : 4 , if "ADDITIONAL INFORMATION" field has "Addendum" word names attachment appears then take notice_type = 16 , also "REOI" word appears then take notice_type : 5
+
+performance_country : KN
+
+
+tender_html_page
+--------------------
+notice_no : TENDER NUMBER
+
+local_title : TENDER DESCRIPTION
+
+publish_Date : take threshold 
+
+notice_deadline : TENDER CLOSING DATE 
+
+org_name :  "The National Treasury"
+
+org_parent_id : 7251498
+
+org_address : "Harambee Avenue, Treasury Building, P.O Box 30007-00100 Nairobi"
+
+org_phone : "+254 20 2252299"
+
+org_email : "pstnt@treasury.go.ke"
+
+org_language : EN
+
+org_country : KN
+
+notice_url : https://www.treasury.go.ke/tenders/
+
+notice_text : take data from tender_html_element (main page) ---- give td / tbody of main pg
+
+
+attachment
+----------
+file_name :  TENDER DOCUMENT 
+
+external_url : take attachmetns from "TENDER DOCUMENT" field
+
+attachments
+------------
+
+file_name : take from "ADDITIONAL INFORMATION" field
+
+external_url : take from "ADDITIONAL INFORMATION" field

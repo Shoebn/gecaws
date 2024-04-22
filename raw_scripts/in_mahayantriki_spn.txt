@@ -1,0 +1,60 @@
+in_mahayantriki_spn	
+
+Water Resources Department (Mechanical)	
+
+######################################################################################################################################################
+
+
+script_name: in_mahayantriki_spn		
+           
+urls:"https://www.mahayantriki.org/tenders_master/"
+
+page_no: 5
+
+performance_country / org_country    : "IN"
+
+currency: "INR"
+
+main_language / org_language: "EN"
+
+notice_type: "4"
+
+procurement_method: "2"
+
+org_name: Water Resources Department (Mechanical)	
+
+org_parent_id: 7778447
+
+*****************************************************************************
+                                 #Tender_html_page
+*****************************************************************************
+notice_no --- TNR No	
+
+local_title --- Detail Work description	
+
+publish_date --- Issue Date	
+
+notice_deadline --- Closing Date	
+
+org_address --- Division Name	
+#note -- take data till comma                                           eg - Mechanical Division, Satara ... then just take "Mechanical Division"
+
+org_city --- Division Name
+#note -- take data whic is after comma.. i.e just take city             eg - Mechanical Division, Satara ... then just take "Satara"
+ 	
+notice_url --- https://kolkatapolice.gov.in/tenders/
+
+notice_text --- HTML body
+ #Note - take HTML body of main page
+
+
+
+
+
+#attachment --- "Detail Tender Notice" and "Detail Tender Estimate"
+
+external_url ---"Detail Tender Notice" and "Detail Tender Estimate"	 (click on the href for documents File i.e - on the logo )	
+
+file_name --- Tender Document 
+
+file_type --- (extension)... eg - pdf	
